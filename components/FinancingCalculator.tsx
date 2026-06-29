@@ -2,7 +2,14 @@
 import { useState } from 'react';
 import FinancingOptions from '@/components/FinancingOptions';
 
-const AMOUNTS = [2800, 3500, 4500, 5500, 6500];
+const AMOUNTS = [2800, 4000, 5500, 6000];
+
+const MONTHLY: Record<number, number> = {
+  2800: 48,
+  4000: 68,
+  5500: 68,
+  6000: 74,
+};
 
 function fmt(n: number) {
   return '$' + Math.round(n).toLocaleString('en-US');
@@ -21,7 +28,7 @@ function chipStyle(selected: boolean): React.CSSProperties {
 }
 
 export default function FinancingCalculator() {
-  const [amt, setAmt] = useState(4500);
+  const [amt, setAmt] = useState(4000);
 
   return (
     <div style={{ background: '#111827', border: '1px solid rgba(255,255,255,.1)', borderRadius: 18, padding: 'clamp(22px,4vw,38px)' }}>
@@ -33,30 +40,16 @@ export default function FinancingCalculator() {
           </button>
         ))}
       </div>
-      <div style={{ fontSize: 15, color: '#9CA3AF', marginBottom: 16 }}>
-        At <span style={{ color: '#F5A623', fontWeight: 800 }}>{fmt(amt)}</span>, your estimated monthly payment is:
+      <div style={{ background: 'rgba(245,166,35,.08)', border: '1.5px solid rgba(245,166,35,.35)', borderRadius: 14, padding: '22px 24px', marginBottom: 26, textAlign: 'center' }}>
+        <div style={{ fontSize: 13, fontWeight: 700, letterSpacing: '.06em', textTransform: 'uppercase', color: '#9CA3AF', marginBottom: 8 }}>
+          {fmt(amt)} investment — as low as
+        </div>
+        <div style={{ fontFamily: "'Barlow Condensed',sans-serif", fontWeight: 800, fontSize: 56, color: '#F5A623', lineHeight: 1 }}>
+          {fmt(MONTHLY[amt])}<span style={{ fontSize: 20, color: '#c3a05a', fontFamily: "'Inter',sans-serif", fontWeight: 600 }}>/mo</span>
+        </div>
+        <div style={{ fontSize: 12, color: '#6b7280', marginTop: 8 }}>For qualified borrowers through Acorn Finance</div>
       </div>
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(150px,1fr))', gap: 12, marginBottom: 26 }}>
-        <div style={{ background: 'rgba(255,255,255,.04)', border: '1px solid rgba(255,255,255,.12)', borderRadius: 12, padding: 18, textAlign: 'center' }}>
-          <div style={{ fontSize: 12, fontWeight: 700, letterSpacing: '.06em', textTransform: 'uppercase', color: '#9CA3AF', marginBottom: 6 }}>12 Months</div>
-          <div style={{ fontFamily: "'Barlow Condensed',sans-serif", fontWeight: 800, fontSize: 38, color: '#fff', lineHeight: 1 }}>
-            {fmt(amt / 12)}<span style={{ fontSize: 15, color: '#9CA3AF', fontFamily: "'Inter',sans-serif", fontWeight: 600 }}>/mo</span>
-          </div>
-        </div>
-        <div style={{ background: 'rgba(245,166,35,.12)', border: '1.5px solid #F5A623', borderRadius: 12, padding: 18, textAlign: 'center', position: 'relative' }}>
-          <div style={{ position: 'absolute', top: -11, left: '50%', transform: 'translateX(-50%)', background: '#F5A623', color: '#0D0D0D', font: "800 10px 'Inter',sans-serif", letterSpacing: '.08em', textTransform: 'uppercase', padding: '3px 10px', borderRadius: 20, whiteSpace: 'nowrap' }}>Most Popular</div>
-          <div style={{ fontSize: 12, fontWeight: 700, letterSpacing: '.06em', textTransform: 'uppercase', color: '#F5A623', marginBottom: 6 }}>18 Months</div>
-          <div style={{ fontFamily: "'Barlow Condensed',sans-serif", fontWeight: 800, fontSize: 38, color: '#F5A623', lineHeight: 1 }}>
-            {fmt(amt / 18)}<span style={{ fontSize: 15, color: '#c3a05a', fontFamily: "'Inter',sans-serif", fontWeight: 600 }}>/mo</span>
-          </div>
-        </div>
-        <div style={{ background: 'rgba(255,255,255,.04)', border: '1px solid rgba(255,255,255,.12)', borderRadius: 12, padding: 18, textAlign: 'center' }}>
-          <div style={{ fontSize: 12, fontWeight: 700, letterSpacing: '.06em', textTransform: 'uppercase', color: '#9CA3AF', marginBottom: 6 }}>24 Months</div>
-          <div style={{ fontFamily: "'Barlow Condensed',sans-serif", fontWeight: 800, fontSize: 38, color: '#fff', lineHeight: 1 }}>
-            {fmt(amt / 24)}<span style={{ fontSize: 15, color: '#9CA3AF', fontFamily: "'Inter',sans-serif", fontWeight: 600 }}>/mo</span>
-          </div>
-        </div>
-      </div>
+
       <FinancingOptions />
     </div>
   );
