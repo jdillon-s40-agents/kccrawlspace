@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import InspectionForm from '@/components/InspectionForm';
+import AcornBanner from '@/components/AcornBanner';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
@@ -276,7 +277,7 @@ export default function HomePage() {
                 <div style={{ fontFamily: "'Barlow Condensed',sans-serif", fontWeight: 800, fontSize: 'clamp(56px,11vw,84px)', color: '#F5A623', lineHeight: .9 }}>
                   $165<span style={{ fontSize: '.32em', color: '#c3a05a', fontFamily: "'Inter',sans-serif", fontWeight: 600 }}>/mo</span>
                 </div>
-                <div style={{ font: "700 12px 'Inter',sans-serif", letterSpacing: '.06em', textTransform: 'uppercase' as const, color: '#F5A623', marginTop: 8 }}>0% APR Plans Available</div>
+                <div style={{ font: "700 12px 'Inter',sans-serif", letterSpacing: '.06em', textTransform: 'uppercase' as const, color: '#F5A623', marginTop: 8 }}>Flexible Payment Plans</div>
               </div>
               <div style={{ flex: '1 1 300px', minWidth: 260 }}>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
@@ -295,9 +296,7 @@ export default function HomePage() {
                 </div>
               </div>
             </div>
-            <Link href="#book" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 9, background: '#F5A623', color: '#0D0D0D', font: "800 16px 'Inter',sans-serif", textDecoration: 'none', padding: 16, borderRadius: 10, minHeight: 54, marginTop: 30 }}>
-              Apply for Financing — 60-Second Approval <Arrow />
-            </Link>
+            <AcornBanner style={{ marginTop: 30 }} />
           </div>
         </div>
       </section>

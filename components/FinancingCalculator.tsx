@@ -1,6 +1,6 @@
 'use client';
 import { useState } from 'react';
-import Link from 'next/link';
+import AcornBanner from '@/components/AcornBanner';
 
 const AMOUNTS = [2800, 3500, 4500, 5500, 6500];
 
@@ -45,7 +45,7 @@ export default function FinancingCalculator() {
         </div>
         <div style={{ background: 'rgba(245,166,35,.12)', border: '1.5px solid #F5A623', borderRadius: 12, padding: 18, textAlign: 'center', position: 'relative' }}>
           <div style={{ position: 'absolute', top: -11, left: '50%', transform: 'translateX(-50%)', background: '#F5A623', color: '#0D0D0D', font: "800 10px 'Inter',sans-serif", letterSpacing: '.08em', textTransform: 'uppercase', padding: '3px 10px', borderRadius: 20, whiteSpace: 'nowrap' }}>Most Popular</div>
-          <div style={{ fontSize: 12, fontWeight: 700, letterSpacing: '.06em', textTransform: 'uppercase', color: '#F5A623', marginBottom: 6 }}>18 Months · 0% APR</div>
+          <div style={{ fontSize: 12, fontWeight: 700, letterSpacing: '.06em', textTransform: 'uppercase', color: '#F5A623', marginBottom: 6 }}>18 Months</div>
           <div style={{ fontFamily: "'Barlow Condensed',sans-serif", fontWeight: 800, fontSize: 38, color: '#F5A623', lineHeight: 1 }}>
             {fmt(amt / 18)}<span style={{ fontSize: 15, color: '#c3a05a', fontFamily: "'Inter',sans-serif", fontWeight: 600 }}>/mo</span>
           </div>
@@ -57,10 +57,7 @@ export default function FinancingCalculator() {
           </div>
         </div>
       </div>
-      <Link href="/contact" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 9, background: '#F5A623', color: '#0D0D0D', font: "800 16px 'Inter',sans-serif", textDecoration: 'none', padding: 16, borderRadius: 10, minHeight: 54 }}>
-        Apply for Financing — 60-Second Approval
-        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.3" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg>
-      </Link>
+      <AcornBanner />
     </div>
   );
 }
