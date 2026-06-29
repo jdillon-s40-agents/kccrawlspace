@@ -18,12 +18,13 @@ export default function FinancingOptions({ style }: { style?: React.CSSPropertie
         </div>
 
         {/* Hidden button the Denefits script attaches its click handler to */}
-        <button
-          ref={btnRef}
-          data-denefits-button-code="prod_iXLJNnH7wJ"
-          data-denefits-auth_token="7ef713991f3c186402690a4e37c4af49"
-          style={{ display: 'none' }}
-        />
+        <div style={{ position: 'absolute', width: 0, height: 0, overflow: 'hidden', opacity: 0, pointerEvents: 'none' }}>
+          <button
+            ref={btnRef}
+            data-denefits-button-code="prod_iXLJNnH7wJ"
+            data-denefits-auth_token="7ef713991f3c186402690a4e37c4af49"
+          />
+        </div>
 
         {/* Visible banner image — clicking triggers the hidden Denefits button */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
