@@ -1,28 +1,10 @@
 'use client';
-import { useRef, useEffect } from 'react';
+import { useRef } from 'react';
 import Script from 'next/script';
 import AcornBanner from './AcornBanner';
 
 export default function FinancingOptions({ style }: { style?: React.CSSProperties }) {
   const btnRef = useRef<HTMLButtonElement>(null);
-
-  useEffect(() => {
-    const observer = new MutationObserver(() => {
-      // Constrain any iframe or wrapper Denefits injects
-      document.querySelectorAll<HTMLElement>('iframe[src*="denefits"]').forEach((el) => {
-        el.style.setProperty('max-width', 'min(680px, 92vw)', 'important');
-        el.style.setProperty('max-height', '82vh', 'important');
-        el.style.setProperty('width', 'min(680px, 92vw)', 'important');
-      });
-      document.querySelectorAll<HTMLElement>('[class*="denefits-modal"],[class*="denefits-container"],[id*="denefits"]').forEach((el) => {
-        el.style.setProperty('max-width', 'min(680px, 92vw)', 'important');
-        el.style.setProperty('max-height', '88vh', 'important');
-        el.style.setProperty('overflow-y', 'auto', 'important');
-      });
-    });
-    observer.observe(document.body, { childList: true, subtree: true });
-    return () => observer.disconnect();
-  }, []);
 
   return (
     <>
