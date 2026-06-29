@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import InspectionForm from '@/components/InspectionForm';
-import AcornBanner from '@/components/AcornBanner';
+import FinancingOptions from '@/components/FinancingOptions';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
@@ -244,7 +244,7 @@ export default function AirQualityLandingPage() {
           <div style={{ background: '#111827', border: '1px solid rgba(255,255,255,.1)', borderRadius: 18, padding: 'clamp(24px,4vw,40px)', marginBottom: 24 }}>
             <InspectionForm />
           </div>
-          <AcornBanner />
+          <FinancingOptions />
           <p style={{ textAlign: 'center', fontSize: 14, color: '#4b5563', marginTop: 20 }}>
             Or call us directly: <a href={PHONE_HREF} style={{ color: '#F5A623', textDecoration: 'none', fontWeight: 700 }}>{PHONE}</a> · <a href="https://crawlspacekc.com" style={{ color: '#6b7280', textDecoration: 'none' }}>CrawlspaceKC.com</a>
           </p>

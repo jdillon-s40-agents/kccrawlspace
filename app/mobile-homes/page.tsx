@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import AcornBanner from '@/components/AcornBanner';
+import FinancingOptions from '@/components/FinancingOptions';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
@@ -202,7 +202,7 @@ export default function MobileHomesPage() {
       {/* FINANCING BANNER */}
       <section style={{ background: '#0a0a0a', padding: 'clamp(28px,5vw,44px) clamp(16px,5vw,24px)' }}>
         <div style={{ maxWidth: 680, margin: '0 auto' }}>
-          <AcornBanner />
+          <FinancingOptions />
         </div>
       </section>
 

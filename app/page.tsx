@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import InspectionForm from '@/components/InspectionForm';
-import AcornBanner from '@/components/AcornBanner';
+import FinancingOptions from '@/components/FinancingOptions';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
@@ -296,7 +296,7 @@ export default function HomePage() {
                 </div>
               </div>
             </div>
-            <AcornBanner style={{ marginTop: 30 }} />
+            <FinancingOptions style={{ marginTop: 30 }} />
           </div>
         </div>
       </section>

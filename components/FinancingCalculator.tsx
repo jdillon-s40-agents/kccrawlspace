@@ -1,6 +1,6 @@
 'use client';
 import { useState } from 'react';
-import AcornBanner from '@/components/AcornBanner';
+import FinancingOptions from '@/components/FinancingOptions';
 
 const AMOUNTS = [2800, 3500, 4500, 5500, 6500];
 
@@ -57,7 +57,7 @@ export default function FinancingCalculator() {
           </div>
         </div>
       </div>
-      <AcornBanner />
+      <FinancingOptions />
     </div>
   );
 }
