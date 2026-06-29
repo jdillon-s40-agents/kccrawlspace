@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   },
   description:
     "Kansas City's only dedicated crawlspace specialist. Encapsulation, vapor barriers, and mobile home underbelly repair. Free inspection. Lifetime warranty.",
-  metadataBase: new URL('https://kccrawlspacespecialists.com'),
+  metadataBase: new URL('https://crawlspacekc.com'),
   icons: {
     icon: '/logo.png',
     apple: '/logo.png',
@@ -39,8 +39,8 @@ const localBusiness = {
   '@type': 'LocalBusiness',
   name: 'KC Crawl Space Specialists LLC',
   telephone: '+18169622111',
-  email: 'info@kccrawlspacespecialists.com',
-  url: 'https://kccrawlspacespecialists.com',
+  email: 'info@crawlspacekc.com',
+  url: 'https://crawlspacekc.com',
   address: {
     '@type': 'PostalAddress',
     addressLocality: 'Kansas City',
