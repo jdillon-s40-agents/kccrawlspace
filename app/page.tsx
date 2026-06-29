@@ -264,7 +264,7 @@ export default function HomePage() {
           <div style={{ textAlign: 'center', maxWidth: '58ch', margin: '0 auto 36px' }}>
             <Eyebrow>Financing Available</Eyebrow>
             <h2 style={{ fontFamily: "'Barlow Condensed',sans-serif", fontWeight: 800, fontSize: 'clamp(32px,6.5vw,56px)', lineHeight: 1, textTransform: 'uppercase' as const, margin: '0 0 14px', color: '#fff' }}>
-              As Low As <span style={{ color: '#F5A623' }}>$165/Month</span>
+              As Low As <span style={{ color: '#F5A623' }}>$74/Month</span>
             </h2>
             <p style={{ fontSize: 'clamp(16px,2.2vw,18px)', lineHeight: 1.6, color: '#c3d0e6', margin: 0 }}>
               60-second approval. No impact to your credit score to check.
@@ -275,7 +275,7 @@ export default function HomePage() {
               <div style={{ flex: '1 1 220px', minWidth: 200, textAlign: 'center' }}>
                 <div style={{ font: "700 12px 'Inter',sans-serif", letterSpacing: '.08em', textTransform: 'uppercase' as const, color: '#9CA3AF', marginBottom: 8 }}>Payments as low as</div>
                 <div style={{ fontFamily: "'Barlow Condensed',sans-serif", fontWeight: 800, fontSize: 'clamp(56px,11vw,84px)', color: '#F5A623', lineHeight: .9 }}>
-                  $165<span style={{ fontSize: '.32em', color: '#c3a05a', fontFamily: "'Inter',sans-serif", fontWeight: 600 }}>/mo</span>
+                  $74<span style={{ fontSize: '.32em', color: '#c3a05a', fontFamily: "'Inter',sans-serif", fontWeight: 600 }}>/mo</span>
                 </div>
                 <div style={{ font: "700 12px 'Inter',sans-serif", letterSpacing: '.06em', textTransform: 'uppercase' as const, color: '#F5A623', marginTop: 8 }}>Flexible Payment Plans</div>
               </div>

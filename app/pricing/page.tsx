@@ -6,7 +6,7 @@ import { PHONE, PHONE_HREF } from '@/lib/constants';
 export const metadata: Metadata = {
   title: 'Crawlspace Encapsulation Pricing Kansas City | Honest, Upfront Costs',
   description:
-    'See exactly how KC Crawl Space Specialists prices crawlspace encapsulation and mobile home underbelly repair. Three honest tiers, financing from $156/mo, no hidden fees.',
+    'See exactly how KC Crawl Space Specialists prices crawlspace encapsulation and mobile home underbelly repair. Three honest tiers, financing from $74/mo, no hidden fees.',
 };
 
 function Yes() {
@@ -40,7 +40,7 @@ const encapRows = [
   { label: 'Commercial dehumidifier', c0: <No />, c1: <No />, c2: <Yes /> },
   { label: 'Drainage matting', c0: <No />, c1: <No />, c2: <Yes /> },
   { label: 'Lifetime warranty', c0: <Yes />, c1: <Yes />, c2: <Yes /> },
-  { label: 'Financing from', c0: <Txt>$156/mo</Txt>, c1: <Txt>$250/mo</Txt>, c2: <Txt>$361/mo</Txt> },
+  { label: 'Financing from', c0: <Txt>$74/mo</Txt>, c1: <Txt>$250/mo</Txt>, c2: <Txt>$361/mo</Txt> },
 ];
 
 const mobileRows = [
@@ -54,7 +54,7 @@ const mobileRows = [
 // Data for mobile card views
 const encapTiers = [
   {
-    name: 'Essential', price: '$2,800+', financing: '$156/mo',
+    name: 'Essential', price: '$2,800+', financing: '$74/mo',
     popular: false,
     features: [
       { label: '20-mil vapor barrier', yes: true },
@@ -341,7 +341,7 @@ export default function PricingPage() {
         <div style={{ maxWidth: 880, margin: '0 auto' }}>
           <div style={{ textAlign: 'center', maxWidth: '54ch', margin: '0 auto 34px' }}>
             <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, color: '#F5A623', font: "600 13px 'Inter',sans-serif", letterSpacing: '.16em', textTransform: 'uppercase' as const, marginBottom: 14 }}>Financing Calculator</div>
-            <h2 style={{ fontFamily: "'Barlow Condensed',sans-serif", fontWeight: 800, fontSize: 'clamp(30px,6vw,50px)', lineHeight: 1.02, textTransform: 'uppercase' as const, margin: '0 0 12px', color: '#fff' }}>As Low As $156/Month</h2>
+            <h2 style={{ fontFamily: "'Barlow Condensed',sans-serif", fontWeight: 800, fontSize: 'clamp(30px,6vw,50px)', lineHeight: 1.02, textTransform: 'uppercase' as const, margin: '0 0 12px', color: '#fff' }}>As Low As $74/Month</h2>
             <p style={{ fontSize: 16, lineHeight: 1.6, color: '#9CA3AF', margin: 0 }}>60-second approval. Checking your rate never affects your credit score.</p>
           </div>
           <FinancingCalculator />

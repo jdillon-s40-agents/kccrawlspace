@@ -20,7 +20,7 @@ export default function FinancingOptions({ style }: { style?: React.CSSPropertie
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/denefits banner.png"
+            src="/denefits-banner.png"
             alt="Get Pre-Approved with Denefits – No credit check, 99% approval rate, flexible payment options"
             style={{ maxWidth: '100%', height: 'auto', borderRadius: 8, display: 'block', margin: '0 auto' }}
           />
