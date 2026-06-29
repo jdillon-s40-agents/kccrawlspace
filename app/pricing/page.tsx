@@ -19,6 +19,17 @@ function Txt({ children }: { children: string }) {
   return <span style={{ fontSize: 13, color: '#9CA3AF' }}>{children}</span>;
 }
 
+function CheckIcon() {
+  return (
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#16A34A" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" style={{ flex: 'none', marginTop: 1 }}>
+      <polyline points="20 6 9 17 4 12" />
+    </svg>
+  );
+}
+function DashIcon() {
+  return <span style={{ color: 'rgba(255,255,255,.2)', fontSize: 15, lineHeight: 1, flex: 'none' }}>—</span>;
+}
+
 const encapRows = [
   { label: 'Best for', c0: <Txt>Basic control</Txt>, c1: <Txt>Most KC homes</Txt>, c2: <Txt>Max protection</Txt> },
   { label: '20-mil vapor barrier', c0: <Yes />, c1: <Yes />, c2: <Yes /> },
@@ -40,9 +51,139 @@ const mobileRows = [
   { label: 'Financing from', c0: <Txt>$22/mo</Txt>, c1: <Txt>$83/mo</Txt>, c2: <Txt>$111/mo</Txt> },
 ];
 
+// Data for mobile card views
+const encapTiers = [
+  {
+    name: 'Essential', price: '$2,800+', financing: '$156/mo',
+    popular: false,
+    features: [
+      { label: '20-mil vapor barrier', yes: true },
+      { label: 'Vent sealing', yes: true },
+      { label: 'Seam taping', yes: true },
+      { label: 'Termination bar', yes: true },
+      { label: 'Mold treatment', yes: false },
+      { label: 'Commercial dehumidifier', yes: false },
+      { label: 'Drainage matting', yes: false },
+      { label: 'Lifetime warranty', yes: true },
+    ],
+  },
+  {
+    name: 'Complete', price: '$4,500+', financing: '$250/mo',
+    popular: true,
+    features: [
+      { label: '20-mil vapor barrier', yes: true },
+      { label: 'Vent sealing', yes: true },
+      { label: 'Seam taping', yes: true },
+      { label: 'Termination bar', yes: true },
+      { label: 'Mold treatment', yes: true },
+      { label: 'Commercial dehumidifier', yes: false },
+      { label: 'Drainage matting', yes: false },
+      { label: 'Lifetime warranty', yes: true },
+    ],
+  },
+  {
+    name: 'Premium', price: '$6,500+', financing: '$361/mo',
+    popular: false,
+    features: [
+      { label: '20-mil vapor barrier', yes: true },
+      { label: 'Vent sealing', yes: true },
+      { label: 'Seam taping', yes: true },
+      { label: 'Termination bar', yes: true },
+      { label: 'Mold treatment', yes: true },
+      { label: 'Commercial dehumidifier', yes: true },
+      { label: 'Drainage matting', yes: true },
+      { label: 'Lifetime warranty', yes: true },
+    ],
+  },
+];
+
+const mobileTiers = [
+  {
+    name: 'Patch', price: '$400+', financing: '$22/mo', popular: false,
+    features: [
+      { label: 'Belly board repair', yes: true },
+      { label: 'Full insulation', yes: false, note: 'Partial' },
+      { label: 'Pipe & duct sealing', yes: true },
+      { label: 'Ground vapor barrier', yes: false },
+    ],
+  },
+  {
+    name: 'Full Replacement', price: '$1,500+', financing: '$83/mo', popular: true,
+    features: [
+      { label: 'Belly board repair', yes: true },
+      { label: 'Full insulation', yes: true },
+      { label: 'Pipe & duct sealing', yes: true },
+      { label: 'Ground vapor barrier', yes: false },
+    ],
+  },
+  {
+    name: 'Full + Vapor Barrier', price: '$2,000+', financing: '$111/mo', popular: false,
+    features: [
+      { label: 'Belly board repair', yes: true },
+      { label: 'Full insulation', yes: true },
+      { label: 'Pipe & duct sealing', yes: true },
+      { label: 'Ground vapor barrier', yes: true },
+    ],
+  },
+];
+
+function TierCard({ name, price, financing, popular, features, dark = false }: {
+  name: string; price: string; financing: string; popular: boolean;
+  features: { label: string; yes: boolean; note?: string }[];
+  dark?: boolean;
+}) {
+  return (
+    <div style={{
+      background: dark ? '#0D0D0D' : '#fff',
+      border: popular ? '2px solid #F5A623' : `1px solid ${dark ? 'rgba(255,255,255,.12)' : '#e5e7eb'}`,
+      borderRadius: 16,
+      padding: 22,
+      position: 'relative',
+      boxShadow: popular ? '0 16px 40px -16px rgba(245,166,35,.4)' : 'none',
+      display: 'flex',
+      flexDirection: 'column',
+    }}>
+      {popular && (
+        <div style={{ position: 'absolute', top: -12, left: '50%', transform: 'translateX(-50%)', background: '#F5A623', color: '#0D0D0D', font: "800 11px 'Inter',sans-serif", letterSpacing: '.08em', textTransform: 'uppercase', padding: '4px 12px', borderRadius: 20, whiteSpace: 'nowrap' }}>
+          Most Popular
+        </div>
+      )}
+      <div style={{ font: "600 12px 'Inter',sans-serif", letterSpacing: '.1em', textTransform: 'uppercase', color: popular ? '#F5A623' : (dark ? '#9CA3AF' : '#6b7280'), marginBottom: 4 }}>{name}</div>
+      <div style={{ fontFamily: "'Barlow Condensed',sans-serif", fontWeight: 800, fontSize: 30, color: dark ? '#fff' : '#0D0D0D', lineHeight: 1, marginBottom: 2 }}>{price}</div>
+      <div style={{ fontSize: 13, color: '#9CA3AF', marginBottom: 16 }}>From {financing}</div>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 10, marginBottom: 18, flex: 1 }}>
+        {features.map((f) => (
+          <div key={f.label} style={{ display: 'flex', alignItems: 'center', gap: 9, fontSize: 14, color: dark ? (f.yes ? '#e5e7eb' : '#6b7280') : (f.yes ? '#1f2937' : '#9CA3AF') }}>
+            {f.yes ? <CheckIcon /> : <DashIcon />}
+            <span>{f.note ? `${f.label} (${f.note})` : f.label}</span>
+          </div>
+        ))}
+      </div>
+      <Link href="/contact" style={{
+        display: 'flex', alignItems: 'center', justifyContent: 'center',
+        background: popular ? '#F5A623' : 'transparent',
+        border: popular ? 'none' : `1.5px solid ${dark ? 'rgba(255,255,255,.25)' : '#d1d5db'}`,
+        color: popular ? '#0D0D0D' : (dark ? '#fff' : '#1f2937'),
+        font: "800 14px 'Inter',sans-serif",
+        textDecoration: 'none', padding: 13, borderRadius: 9, minHeight: 46,
+      }}>
+        Get This Quote
+      </Link>
+    </div>
+  );
+}
+
 export default function PricingPage() {
   return (
     <div style={{ background: '#0D0D0D', overflowX: 'hidden' }}>
+      <style>{`
+        .kc-table-view { display: block; }
+        .kc-card-view  { display: none;  }
+        @media (max-width: 767px) {
+          .kc-table-view { display: none;  }
+          .kc-card-view  { display: grid; grid-template-columns: 1fr; gap: 16px; }
+        }
+      `}</style>
 
       {/* HERO */}
       <section style={{ position: 'relative', background: 'radial-gradient(120% 90% at 80% 0%, rgba(37,99,235,.18) 0%, rgba(37,99,235,0) 45%), radial-gradient(90% 80% at 0% 100%, rgba(245,166,35,.12) 0%, rgba(245,166,35,0) 50%), #0D0D0D', padding: 'clamp(40px,7vw,80px) clamp(16px,5vw,24px)' }}>
@@ -62,14 +203,16 @@ export default function PricingPage() {
         </div>
       </section>
 
-      {/* COMPARISON TABLE — ENCAPSULATION */}
+      {/* ENCAPSULATION COMPARISON */}
       <section style={{ background: '#F9FAFB', padding: 'clamp(52px,8vw,88px) clamp(16px,5vw,24px)' }}>
         <div style={{ maxWidth: 1000, margin: '0 auto' }}>
           <div style={{ textAlign: 'center', maxWidth: '54ch', margin: '0 auto 38px' }}>
             <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, color: '#1B3A6B', font: "600 13px 'Inter',sans-serif", letterSpacing: '.16em', textTransform: 'uppercase' as const, marginBottom: 14 }}>Encapsulation Packages</div>
             <h2 style={{ fontFamily: "'Barlow Condensed',sans-serif", fontWeight: 800, fontSize: 'clamp(30px,6vw,50px)', lineHeight: 1.02, textTransform: 'uppercase' as const, margin: 0, color: '#0D0D0D' }}>Compare Your Three Options</h2>
           </div>
-          <div style={{ overflowX: 'auto', borderRadius: 16, border: '1px solid #e5e7eb', background: '#fff', boxShadow: '0 8px 30px -12px rgba(0,0,0,.12)' }}>
+
+          {/* Desktop table */}
+          <div className="kc-table-view" style={{ overflowX: 'auto', borderRadius: 16, border: '1px solid #e5e7eb', background: '#fff', boxShadow: '0 8px 30px -12px rgba(0,0,0,.12)' }}>
             <table style={{ borderCollapse: 'collapse', width: '100%', minWidth: 580, fontSize: 14.5 }}>
               <thead>
                 <tr style={{ background: '#0D0D0D', color: '#fff' }}>
@@ -100,6 +243,14 @@ export default function PricingPage() {
               </tbody>
             </table>
           </div>
+
+          {/* Mobile cards */}
+          <div className="kc-card-view">
+            {encapTiers.map((t) => (
+              <TierCard key={t.name} {...t} />
+            ))}
+          </div>
+
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(160px,1fr))', gap: 12, marginTop: 18 }}>
             <Link href="/contact" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#1B3A6B', color: '#fff', font: "800 14px 'Inter',sans-serif", textDecoration: 'none', padding: 14, borderRadius: 9, minHeight: 50 }}>Quote Essential</Link>
             <Link href="/contact" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#F5A623', color: '#0D0D0D', font: "800 14px 'Inter',sans-serif", textDecoration: 'none', padding: 14, borderRadius: 9, minHeight: 50 }}>Quote Complete</Link>
@@ -135,14 +286,16 @@ export default function PricingPage() {
         </div>
       </section>
 
-      {/* MOBILE HOME PRICING TABLE */}
+      {/* MOBILE HOME PRICING */}
       <section style={{ background: '#1B3A6B', padding: 'clamp(52px,8vw,88px) clamp(16px,5vw,24px)' }}>
         <div style={{ maxWidth: 1000, margin: '0 auto' }}>
           <div style={{ textAlign: 'center', maxWidth: '54ch', margin: '0 auto 38px' }}>
             <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, color: '#F5A623', font: "600 13px 'Inter',sans-serif", letterSpacing: '.16em', textTransform: 'uppercase' as const, marginBottom: 14 }}>Manufactured Homes</div>
             <h2 style={{ fontFamily: "'Barlow Condensed',sans-serif", fontWeight: 800, fontSize: 'clamp(30px,6vw,50px)', lineHeight: 1.02, textTransform: 'uppercase' as const, margin: 0, color: '#fff' }}>Mobile Home Pricing</h2>
           </div>
-          <div style={{ overflowX: 'auto', borderRadius: 16, border: '1px solid rgba(255,255,255,.12)' }}>
+
+          {/* Desktop table */}
+          <div className="kc-table-view" style={{ overflowX: 'auto', borderRadius: 16, border: '1px solid rgba(255,255,255,.12)' }}>
             <table style={{ borderCollapse: 'collapse', width: '100%', minWidth: 520, fontSize: 14.5, background: '#0D0D0D' }}>
               <thead>
                 <tr style={{ borderBottom: '1px solid rgba(255,255,255,.12)' }}>
@@ -172,6 +325,13 @@ export default function PricingPage() {
                 ))}
               </tbody>
             </table>
+          </div>
+
+          {/* Mobile cards */}
+          <div className="kc-card-view">
+            {mobileTiers.map((t) => (
+              <TierCard key={t.name} {...t} dark />
+            ))}
           </div>
         </div>
       </section>
