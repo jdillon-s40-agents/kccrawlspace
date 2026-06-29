@@ -28,3 +28,17 @@ details[open] summary .faq-q { color: #F5A623; }
   html { scroll-behavior: auto; }
   *, .faq-plus { transition: none !important; }
 }
+
+/* Denefits modal — constrain to viewport */
+iframe[src*="denefits"] {
+  max-width: min(680px, 92vw) !important;
+  max-height: 82vh !important;
+  width: min(680px, 92vw) !important;
+}
+[class*="denefits-modal"],
+[class*="denefits-container"],
+[class*="denefits-overlay"] > div {
+  max-width: min(680px, 92vw) !important;
+  max-height: 88vh !important;
+  overflow-y: auto !important;
+}
