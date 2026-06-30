@@ -69,8 +69,52 @@ export default function Footer() {
             <div style={{ display: 'flex', flexDirection: 'column', gap: 11 }}>
               {[
                 { label: 'Crawlspace Encapsulation', href: '/encapsulation' },
+                { label: 'Crawl Space Repair', href: '/crawl-space-repair-kansas-city/' },
+                { label: 'Vapor Barrier Installation', href: '/crawl-space-vapor-barrier-kansas-city/' },
+                { label: 'Crawl Space Waterproofing', href: '/crawl-space-waterproofing-kansas-city/' },
+                { label: 'Crawl Space Dehumidifiers', href: '/crawl-space-dehumidifier-kansas-city/' },
                 { label: 'Mobile Home Underbelly', href: '/mobile-homes' },
                 { label: 'Pricing & Financing', href: '/pricing' },
+              ].map((l) => (
+                <Link key={l.href} href={l.href} style={{ color: '#9CA3AF', fontSize: 14.5, textDecoration: 'none' }}>
+                  {l.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          {/* Service Areas */}
+          <div>
+            <div style={{ font: "800 13px 'Inter',sans-serif", letterSpacing: '.08em', textTransform: 'uppercase', color: '#fff', marginBottom: 16 }}>
+              Service Areas
+            </div>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 11 }}>
+              {[
+                { label: 'Kansas City, MO', href: '/crawl-space-encapsulation-kansas-city-mo/' },
+                { label: 'Overland Park, KS', href: '/crawl-space-encapsulation-overland-park-ks/' },
+                { label: "Lee's Summit, MO", href: '/crawl-space-encapsulation-lees-summit-mo/' },
+                { label: 'Olathe, KS', href: '/crawl-space-encapsulation-olathe-ks/' },
+                { label: 'View All 29 Cities', href: '/service-areas/' },
+              ].map((l) => (
+                <Link key={l.href} href={l.href} style={{ color: '#9CA3AF', fontSize: 14.5, textDecoration: 'none' }}>
+                  {l.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          {/* Guides */}
+          <div>
+            <div style={{ font: "800 13px 'Inter',sans-serif", letterSpacing: '.08em', textTransform: 'uppercase', color: '#fff', marginBottom: 16 }}>
+              Guides
+            </div>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 11 }}>
+              {[
+                { label: 'Encapsulation Cost', href: '/crawl-space-encapsulation-cost-kansas-city/' },
+                { label: 'Mold in Crawl Space', href: '/crawl-space-mold-kansas-city/' },
+                { label: 'Standing Water', href: '/standing-water-in-crawl-space/' },
+                { label: 'Musty Smell', href: '/crawl-space-smells-musty/' },
+                { label: 'All Guides & FAQ', href: '/guides/' },
               ].map((l) => (
                 <Link key={l.href} href={l.href} style={{ color: '#9CA3AF', fontSize: 14.5, textDecoration: 'none' }}>
                   {l.label}
