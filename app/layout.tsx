@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   },
   description:
     "Kansas City's only dedicated crawlspace specialist. Encapsulation, vapor barriers, and mobile home underbelly repair. Free inspection. Lifetime warranty.",
-  metadataBase: new URL('https://crawlspacekc.com'),
+  metadataBase: new URL('https://www.crawlspacekc.com'),
   icons: {
     icon: '/logo.png',
     apple: '/logo.png',

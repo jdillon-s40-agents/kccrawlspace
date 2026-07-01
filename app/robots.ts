@@ -9,7 +9,7 @@ export default function robots(): MetadataRoute.Robots {
         disallow: '/api/',
       },
     ],
-    sitemap: 'https://crawlspacekc.com/sitemap.xml',
-    host: 'https://crawlspacekc.com',
+    sitemap: 'https://www.crawlspacekc.com/sitemap.xml',
+    host: 'https://www.crawlspacekc.com',
   };
 }

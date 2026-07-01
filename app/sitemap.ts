@@ -1,6 +1,6 @@
 import type { MetadataRoute } from 'next';
 
-const BASE_URL = 'https://crawlspacekc.com';
+const BASE_URL = 'https://www.crawlspacekc.com';
 
 const coreServicePages = [
   'crawl-space-encapsulation-kansas-city',
