@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import InspectionForm from '@/components/InspectionForm';
@@ -106,20 +105,20 @@ export default function HomePage() {
           </div>
 
           <div>
-            <div style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', border: '1px solid rgba(255,255,255,.14)', boxShadow: '0 36px 70px -24px rgba(0,0,0,.8)' }}>
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 2, background: 'rgba(255,255,255,.12)' }}>
-                <div style={{ position: 'relative', background: '#1a140c', aspectRatio: '4/5' }}>
-                  <Image src="/before.jpg" alt="Crawlspace before encapsulation — damp and moldy" fill style={{ objectFit: 'cover' }} />
-                  <span style={{ position: 'absolute', top: 10, left: 10, background: '#DC2626', color: '#fff', font: "700 11px 'Inter',sans-serif", letterSpacing: '.1em', padding: '4px 9px', borderRadius: 5 }}>BEFORE</span>
-                </div>
-                <div style={{ position: 'relative', background: '#0e1c2e', aspectRatio: '4/5' }}>
-                  <Image src="/after.jpg" alt="Crawlspace after encapsulation — sealed and dry" fill style={{ objectFit: 'cover' }} />
-                  <span style={{ position: 'absolute', top: 10, right: 10, background: '#16A34A', color: '#fff', font: "700 11px 'Inter',sans-serif", letterSpacing: '.1em', padding: '4px 9px', borderRadius: 5 }}>AFTER</span>
-                </div>
-              </div>
+            <div style={{ borderRadius: 16, overflow: 'hidden', border: '1px solid rgba(255,255,255,.14)', boxShadow: '0 36px 70px -24px rgba(0,0,0,.8)' }}>
+              {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
+              <video
+                src="/hero.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
+                preload="auto"
+                style={{ width: '100%', height: 'auto', display: 'block', aspectRatio: '16/9', objectFit: 'cover' }}
+              />
             </div>
             <p style={{ textAlign: 'center', fontSize: 12, color: '#6b7280', margin: '12px 0 0', letterSpacing: '.03em' }}>
-              Real KC crawlspace — moldy &amp; damp vs. sealed &amp; dry
+              Real crawlspace encapsulation — Kansas City homes sealed by our team
             </p>
           </div>
         </div>
