@@ -109,11 +109,9 @@ export default function HomePage() {
               {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
               <video
                 src="/hero.mp4"
-                autoPlay
-                loop
-                muted
+                controls
                 playsInline
-                preload="auto"
+                preload="metadata"
                 style={{ width: '100%', height: 'auto', display: 'block', aspectRatio: '16/9', objectFit: 'cover' }}
               />
             </div>
