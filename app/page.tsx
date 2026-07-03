@@ -108,6 +108,7 @@ export default function HomePage() {
               {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
               <video
                 src="/hero.mp4"
+                poster="/hero-poster.png"
                 controls
                 playsInline
                 preload="metadata"
