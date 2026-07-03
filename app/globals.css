@@ -24,6 +24,11 @@ details > summary::-webkit-details-marker { display: none; }
 .faq-plus { transition: transform .2s ease; display: inline-block; }
 details[open] summary .faq-plus { transform: rotate(45deg); }
 details[open] summary .faq-q { color: #F5A623; }
+.hero-video-mobile { display: none; }
+@media (max-width: 767px) {
+  .hero-video-mobile { display: block; }
+  .hero-video-desktop { display: none; }
+}
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, .faq-plus { transition: none !important; }

@@ -85,6 +85,18 @@ export default function HomePage() {
             <p style={{ fontSize: 'clamp(16px,2.3vw,19px)', lineHeight: 1.6, color: '#9CA3AF', maxWidth: '34ch', margin: '0 0 28px' }}>
               We don&apos;t do foundations. We don&apos;t do basements. We seal crawlspaces — and we do it better than anyone in KC.
             </p>
+            {/* Mobile-only video — above trust stats, above the fold */}
+            <div className="hero-video-mobile" style={{ borderRadius: 16, overflow: 'hidden', border: '1px solid rgba(255,255,255,.14)', boxShadow: '0 24px 50px -16px rgba(0,0,0,.8)', marginBottom: 28 }}>
+              {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
+              <video
+                src="/hero.mp4"
+                poster="/hero-poster.png"
+                controls
+                playsInline
+                preload="metadata"
+                style={{ width: '100%', height: 'auto', display: 'block', aspectRatio: '16/9', objectFit: 'cover' }}
+              />
+            </div>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: 'clamp(8px,2vw,18px)', marginBottom: 30, maxWidth: 520 }}>
               {[{ val: '10+', lbl: 'Years Exp.' }, { val: '4.9★', lbl: 'Google Rating' }, { val: 'Lifetime', lbl: 'Warranty', small: true }, { val: '48hr', lbl: 'Service' }].map((s) => (
                 <div key={s.lbl}>
@@ -103,7 +115,7 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div>
+          <div className="hero-video-desktop">
             <div style={{ borderRadius: 16, overflow: 'hidden', border: '1px solid rgba(255,255,255,.14)', boxShadow: '0 36px 70px -24px rgba(0,0,0,.8)' }}>
               {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
               <video
