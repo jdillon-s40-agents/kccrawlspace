@@ -5,7 +5,7 @@ import FinancingOptions from '@/components/FinancingOptions';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Crawl Space Encapsulation Gardner KS | KC Crawl Space Specialists',
+  title: { absolute: 'Crawl Space Encapsulation Gardner, KS | KC Crawl Space Specialists' },
   description:
     'Crawl space encapsulation in Gardner, KS. Serving downtown and new subdivisions in south Johnson County. Free inspection. Same-week service.',
 };

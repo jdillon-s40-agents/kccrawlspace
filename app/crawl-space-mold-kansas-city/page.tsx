@@ -5,9 +5,8 @@ import FinancingOptions from '@/components/FinancingOptions';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Crawl Space Mold Kansas City | Mold Removal & Moisture Control',
-  description:
-    'Crawl space mold in Kansas City is a moisture problem. Learn the warning signs, why mold grows under homes, and how encapsulation and treatment address the root cause.',
+  title: { absolute: 'Crawl Space Mold Kansas City | Treatment & Root Cause Fix' },
+  description: 'Crawl space mold in Kansas City signals excess moisture — not just a surface issue. Learn the warning signs and how encapsulation + treatment fixes the root cause.',
 };
 
 function Check({ color = '#16A34A', size = 16 }: { color?: string; size?: number }) {

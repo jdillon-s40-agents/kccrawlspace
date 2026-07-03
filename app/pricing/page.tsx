@@ -4,9 +4,8 @@ import FinancingCalculator from '@/components/FinancingCalculator';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Crawlspace Encapsulation Pricing Kansas City | Honest, Upfront Costs',
-  description:
-    'See exactly how KC Crawl Space Specialists prices crawlspace encapsulation and mobile home underbelly repair. Three honest tiers, financing from $74/mo, no hidden fees.',
+  title: { absolute: 'Crawlspace Encapsulation Pricing Kansas City | No Hidden Fees' },
+  description: "See how KC Crawl Space Specialists prices crawlspace encapsulation and mobile home repair. 3 honest tiers, financing from $74/mo, no hidden fees.",
 };
 
 function Yes() {

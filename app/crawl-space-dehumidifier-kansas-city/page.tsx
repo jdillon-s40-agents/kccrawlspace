@@ -5,9 +5,8 @@ import FinancingOptions from '@/components/FinancingOptions';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Crawl Space Dehumidifier Kansas City | Humidity & Moisture Control',
-  description:
-    'Crawl space dehumidifier installation in Kansas City. Control humidity, stop condensation, and prevent mold in sealed or encapsulated crawl spaces. Free estimate.',
+  title: { absolute: 'Crawl Space Dehumidifier Kansas City | Stop Humidity & Mold' },
+  description: 'Stop humidity, condensation & mold in your Kansas City crawl space. Commercial-grade dehumidifier for sealed crawl spaces. Same-week installation. Free estimate.',
 };
 
 function Check({ color = '#16A34A', size = 16 }: { color?: string; size?: number }) {

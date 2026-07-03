@@ -5,7 +5,7 @@ import FinancingOptions from '@/components/FinancingOptions';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Crawl Space Mold Warning Signs | Kansas City Guide',
+  title: { absolute: 'Crawl Space Mold Warning Signs | Kansas City Mold Guide' },
   description:
     'Learn the warning signs of crawl space mold — musty odors, white or dark growth, condensation — and why fixing the moisture source matters in Kansas City homes.',
 };

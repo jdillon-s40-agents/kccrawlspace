@@ -5,7 +5,7 @@ import FinancingOptions from '@/components/FinancingOptions';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Crawl Space Encapsulation Olathe KS | KC Crawl Space Specialists',
+  title: { absolute: 'Crawl Space Encapsulation Olathe, KS | KC Crawl Space Specialists' },
   description:
     'Crawl space encapsulation in Olathe, KS. Serving Historic Downtown Olathe, Cedar Creek, and all of Johnson County. Free inspection. Same-week appointments available.',
 };

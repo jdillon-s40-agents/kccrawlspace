@@ -5,7 +5,7 @@ import FinancingOptions from '@/components/FinancingOptions';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Crawl Space Encapsulation Overland Park KS | KC Crawl Space Specialists',
+  title: { absolute: 'Crawl Space Encapsulation Overland Park, KS | Free Inspection' },
   description:
     'Crawl space encapsulation in Overland Park, KS. Serving Corinth, Blue Valley, Indian Creek, Nall Hills, and all of Johnson County. Free inspection. Same-week service.',
 };

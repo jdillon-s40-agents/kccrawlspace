@@ -5,7 +5,7 @@ import FinancingOptions from '@/components/FinancingOptions';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Crawl Space Encapsulation Shawnee KS | KC Crawl Space Specialists',
+  title: { absolute: 'Crawl Space Encapsulation Shawnee, KS | KC Crawl Space Specialists' },
   description:
     'Crawl space encapsulation in Shawnee, KS. Serving Shawnee Mission area, Clear Creek, and western Johnson County. Older ranch homes especially. Free inspection.',
 };

@@ -5,7 +5,7 @@ import FinancingOptions from '@/components/FinancingOptions';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Crawl Space Encapsulation Basehor KS | KC Crawl Space Specialists',
+  title: { absolute: 'Crawl Space Encapsulation Basehor, KS | KC Crawl Space Specialists' },
   description:
     'Crawl space encapsulation in Basehor, KS. Leavenworth County suburb growing along K-7. Free inspection. Same-week service.',
 };

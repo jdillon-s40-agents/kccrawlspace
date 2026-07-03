@@ -4,9 +4,8 @@ import InspectionForm from '@/components/InspectionForm';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Crawl Space Guides & FAQ | Kansas City Crawl Space Specialists',
-  description:
-    'Answers to the most common crawl space questions — moisture, mold, vapor barriers, vents, insulation, and more — from Kansas City crawl space specialists.',
+  title: { absolute: 'Crawl Space Guides & FAQ | Kansas City Homeowners' },
+  description: 'Answers to the most common crawl space questions — moisture, mold, vapor barriers, vents, insulation, and more — from Kansas City crawl space specialists.',
 };
 
 const guides = [

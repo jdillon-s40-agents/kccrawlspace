@@ -5,9 +5,8 @@ import FinancingOptions from '@/components/FinancingOptions';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Should Crawl Space Vents Be Open or Closed? | Kansas City Guide',
-  description:
-    'Should you keep crawl space vents open or closed? Learn why open vents cause humidity problems in Kansas City homes and when vents should be sealed for moisture control.',
+  title: { absolute: 'Should Crawl Space Vents Be Open or Closed? | Kansas City Guide' },
+  description: 'Should crawl space vents be open or closed in Kansas City? Learn why open vents cause humidity problems and when sealing them is the right call for moisture control.',
 };
 
 function Check({ color = '#16A34A', size = 16 }: { color?: string; size?: number }) {

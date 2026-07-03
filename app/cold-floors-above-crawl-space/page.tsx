@@ -5,7 +5,7 @@ import FinancingOptions from '@/components/FinancingOptions';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Cold Floors Above Crawl Space | Kansas City Fix',
+  title: { absolute: 'Cold Floors Above Crawl Space | Causes & Kansas City Fix' },
   description:
     'Cold floors above your crawl space in winter? Learn what causes it and how air sealing, encapsulation, and insulation fix cold floors in Kansas City homes.',
 };

@@ -5,9 +5,8 @@ import FinancingOptions from '@/components/FinancingOptions';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: "Crawl Space Encapsulation vs Vapor Barrier | What's the Difference?",
-  description:
-    'What is the difference between crawl space encapsulation and a vapor barrier? Learn when a vapor barrier is enough and when full encapsulation is the right choice for Kansas City homes.',
+  title: { absolute: "Crawl Space Encapsulation vs Vapor Barrier | What's the Difference?" },
+  description: "Vapor barrier vs. full crawl space encapsulation — what's the difference? Learn when a vapor barrier alone is enough and when full encapsulation is the right call.",
 };
 
 function Check({ color = '#16A34A', size = 16 }: { color?: string; size?: number }) {

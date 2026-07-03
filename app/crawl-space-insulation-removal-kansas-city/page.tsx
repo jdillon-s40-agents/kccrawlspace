@@ -5,9 +5,8 @@ import FinancingOptions from '@/components/FinancingOptions';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Crawl Space Insulation Removal Kansas City | Wet & Falling Insulation',
-  description:
-    'Wet, falling, or moldy crawl space insulation in Kansas City should be removed before encapsulation. Learn why it fails, what removal costs, and what comes next.',
+  title: { absolute: 'Crawl Space Insulation Removal Kansas City | Wet Insulation Fix' },
+  description: 'Wet, falling or moldy crawl space insulation in Kansas City must be removed before encapsulation. Learn why it fails, what it costs & what comes next.',
 };
 
 function Check({ color = '#16A34A', size = 16 }: { color?: string; size?: number }) {

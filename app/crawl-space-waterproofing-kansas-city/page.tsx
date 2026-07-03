@@ -5,9 +5,8 @@ import FinancingOptions from '@/components/FinancingOptions';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Crawl Space Waterproofing Kansas City | Wet Crawl Space Repair',
-  description:
-    'Fix a wet crawl space in Kansas City with interior drainage, sump pump installation, and encapsulation. Standing water, seepage, and water after rain — we fix it right.',
+  title: { absolute: 'Crawl Space Waterproofing Kansas City | Fix a Wet Crawl Space' },
+  description: 'Fix a wet crawl space in Kansas City: interior drainage, sump pump & encapsulation. We handle standing water, foundation seepage & water after rain. Free inspection.',
 };
 
 function Check({ color = '#16A34A', size = 16 }: { color?: string; size?: number }) {

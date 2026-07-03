@@ -5,9 +5,8 @@ import FinancingOptions from '@/components/FinancingOptions';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Kansas City Crawlspace Encapsulation | KC Crawl Space Specialists',
-  description:
-    "Kansas City's only dedicated crawlspace specialist. Free inspection, lifetime warranty, same-week service.",
+  title: { absolute: 'Kansas City Crawlspace Encapsulation | KC Crawl Space Specialists' },
+  description: "Fix moisture, mold & musty odors under your Kansas City home. KC's only dedicated crawlspace specialist. Free inspection · lifetime warranty · same-week service.",
 };
 
 const reviews = [

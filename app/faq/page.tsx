@@ -3,9 +3,8 @@ import Link from 'next/link';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Crawlspace FAQ — Answers for Kansas City Homeowners',
-  description:
-    'Common questions about crawlspace encapsulation cost, mold, moisture, and what encapsulation really does — answered straight.',
+  title: { absolute: 'Crawlspace FAQ | Answers for Kansas City Homeowners' },
+  description: 'Answers to the most common crawlspace questions for Kansas City homeowners: cost, mold, moisture, vents, vapor barriers & insulation — answered straight.',
 };
 
 const faqSchema = {

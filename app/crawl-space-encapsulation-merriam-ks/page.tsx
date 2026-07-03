@@ -5,9 +5,9 @@ import FinancingOptions from '@/components/FinancingOptions';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Crawl Space Encapsulation Merriam KS | KC Crawl Space Specialists',
+  title: { absolute: 'Crawl Space Encapsulation Merriam, KS | KC Crawl Space Specialists' },
   description:
-    'Crawl space encapsulation in Merriam, KS. Older Johnson County suburb. 1950s-1970s homes. Adjacent to Mission and Shawnee. Free inspection.',
+    'Crawl space encapsulation in Merriam, KS. Older Johnson County suburb. 1950s-1970s homes. Adjacent to Mission and Shawnee. Lifetime warranty. Free inspection.',
 };
 
 function Check({ size = 16 }: { size?: number }) {

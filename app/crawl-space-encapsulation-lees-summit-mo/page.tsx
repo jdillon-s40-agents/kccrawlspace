@@ -5,7 +5,7 @@ import FinancingOptions from '@/components/FinancingOptions';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: "Crawl Space Encapsulation Lee's Summit MO | KC Crawl Space Specialists",
+  title: { absolute: "Crawl Space Encapsulation Lee's Summit, MO | KC Crawl Space Specialists" },
   description:
     "Crawl space encapsulation in Lee's Summit, MO. We serve Lakewood, Legacy, Downtown Lee's Summit, and all Jackson County neighborhoods. Free inspection. Same-week service.",
 };

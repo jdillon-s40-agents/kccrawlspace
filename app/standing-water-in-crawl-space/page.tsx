@@ -5,7 +5,7 @@ import FinancingOptions from '@/components/FinancingOptions';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Standing Water in Crawl Space | Kansas City Repair',
+  title: { absolute: 'Standing Water in Crawl Space | Kansas City Emergency Repair' },
   description:
     'Standing water in your crawl space after rain? Learn why it happens, why it is urgent, and how Kansas City pros remove water and stop it from coming back.',
 };

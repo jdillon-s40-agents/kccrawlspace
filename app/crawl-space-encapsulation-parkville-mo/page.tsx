@@ -5,7 +5,7 @@ import FinancingOptions from '@/components/FinancingOptions';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Crawl Space Encapsulation Parkville MO | KC Crawl Space Specialists',
+  title: { absolute: 'Crawl Space Encapsulation Parkville, MO | KC Crawl Space Specialists' },
   description:
     'Crawl space encapsulation in Parkville, MO. Serving Historic Downtown Parkville, English Landing, and Platte County. Free inspection. Same-week service.',
 };

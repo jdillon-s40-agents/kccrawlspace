@@ -4,9 +4,8 @@ import InspectionForm from '@/components/InspectionForm';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Crawl Space Encapsulation Service Areas | Kansas City Metro',
-  description:
-    'KC Crawl Space Specialists serves the entire Kansas City metro — find crawl space encapsulation, repair, and waterproofing services in your Missouri or Kansas city.',
+  title: { absolute: 'Crawl Space Encapsulation Service Areas | Kansas City Metro' },
+  description: 'KC Crawl Space Specialists serves 29 cities across the Kansas City metro. Find crawl space encapsulation, repair & waterproofing in your MO or KS city.',
 };
 
 const moCities = [

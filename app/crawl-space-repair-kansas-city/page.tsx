@@ -5,9 +5,8 @@ import FinancingOptions from '@/components/FinancingOptions';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Crawl Space Repair Kansas City | Moisture, Mold & Water Problems',
-  description:
-    'Crawl space repair in Kansas City for moisture damage, wet insulation, standing water, mold, wood rot, and drainage problems. Get a free crawl space estimate.',
+  title: { absolute: 'Crawl Space Repair Kansas City | KC Crawl Space Specialists' },
+  description: 'Crawl space repair in Kansas City: moisture damage, wet insulation, standing water, mold, wood rot & drainage problems. 4.9★ rated. Free inspection.',
   alternates: {
     canonical: 'https://crawlspacekc.com/crawl-space-repair-kansas-city/',
   },

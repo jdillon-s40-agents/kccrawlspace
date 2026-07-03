@@ -5,7 +5,7 @@ import FinancingOptions from '@/components/FinancingOptions';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Crawl Space Encapsulation Raymore MO | KC Crawl Space Specialists',
+  title: { absolute: 'Crawl Space Encapsulation Raymore, MO | KC Crawl Space Specialists' },
   description:
     'Crawl space encapsulation in Raymore, MO. Serving new and established neighborhoods in Cass County. Free inspection. Same-week service available.',
 };

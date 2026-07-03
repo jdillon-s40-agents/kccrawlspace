@@ -5,7 +5,7 @@ import FinancingOptions from '@/components/FinancingOptions';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Crawl Space Encapsulation Independence MO | KC Crawl Space Specialists',
+  title: { absolute: 'Crawl Space Encapsulation Independence, MO | KC Crawl Space Specialists' },
   description:
     'Crawl space encapsulation in Independence, MO. Serving historic neighborhoods, 23rd Street area, and all of Jackson County. Older homes especially. Free inspection.',
 };

@@ -5,9 +5,8 @@ import FinancingOptions from '@/components/FinancingOptions';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Wet Crawl Space After Rain Kansas City | What to Do & How to Fix It',
-  description:
-    'A crawl space that gets wet after rain may have drainage, grading, or foundation seepage problems. Learn why it happens and how to fix a wet crawl space in Kansas City.',
+  title: { absolute: 'Wet Crawl Space After Rain | Causes & How to Fix It in Kansas City' },
+  description: 'Crawl space wet after rain in Kansas City? It may be drainage, grading or foundation seepage. Learn what causes it and how pros fix wet crawl spaces for good.',
 };
 
 function Check({ color = '#16A34A', size = 16 }: { color?: string; size?: number }) {

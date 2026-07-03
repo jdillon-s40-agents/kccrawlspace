@@ -5,7 +5,7 @@ import FinancingOptions from '@/components/FinancingOptions';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Crawl Space Encapsulation Kansas City KS | KC Crawl Space Specialists',
+  title: { absolute: 'Crawl Space Encapsulation Kansas City, KS | KC Crawl Space Specialists' },
   description:
     'Crawl space encapsulation in Kansas City, KS. Serving Argentine, Armourdale, Turner, Piper, and all of Wyandotte County. Older homes. Free inspection.',
 };

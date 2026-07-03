@@ -5,7 +5,7 @@ import FinancingOptions from '@/components/FinancingOptions';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Crawl Space Encapsulation Spring Hill KS | KC Crawl Space Specialists',
+  title: { absolute: 'Crawl Space Encapsulation Spring Hill, KS | KC Crawl Space Specialists' },
   description:
     'Crawl space encapsulation in Spring Hill, KS. Serving south Johnson County and Miami County border communities. Free inspection. Same-week service.',
 };

@@ -5,7 +5,7 @@ import FinancingOptions from '@/components/FinancingOptions';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Your Air Purifier Isn\'t the Problem | KC Crawl Space Specialists',
+  title: { absolute: "Your Air Purifier Isn't the Problem | KC Crawl Space Specialists" },
   description:
     "KC homeowners spend thousands on air purifiers and allergy meds — most have a crawlspace moisture problem. Free inspection this week.",
 };

@@ -5,7 +5,7 @@ import FinancingOptions from '@/components/FinancingOptions';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Falling Insulation in Crawl Space: Causes & Fixes | KC',
+  title: { absolute: 'Falling Insulation in Crawl Space | Moisture Causes & KC Fix' },
   description:
     'Why is insulation falling in your crawl space? Learn the moisture causes behind sagging or fallen insulation and how Kansas City homeowners fix it for good.',
 };

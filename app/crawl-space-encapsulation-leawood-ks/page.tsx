@@ -5,9 +5,9 @@ import FinancingOptions from '@/components/FinancingOptions';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Crawl Space Encapsulation Leawood KS | KC Crawl Space Specialists',
+  title: { absolute: 'Crawl Space Encapsulation Leawood, KS | KC Crawl Space Specialists' },
   description:
-    'Crawl space encapsulation in Leawood, KS. Serving Town Center area, Hallbrook, Ironwoods, and all of south Johnson County. Free inspection.',
+    'Crawl space encapsulation in Leawood, KS. Serving Town Center area, Hallbrook, Ironwoods, and all of south Johnson County. Lifetime warranty. Free inspection.',
 };
 
 const jsonLd = {

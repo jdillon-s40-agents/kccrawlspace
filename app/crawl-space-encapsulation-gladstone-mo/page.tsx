@@ -5,9 +5,9 @@ import FinancingOptions from '@/components/FinancingOptions';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Crawl Space Encapsulation Gladstone MO | KC Crawl Space Specialists',
+  title: { absolute: 'Crawl Space Encapsulation Gladstone, MO | KC Crawl Space Specialists' },
   description:
-    'Crawl space encapsulation in Gladstone, MO. Serving Barry Road corridor, Vivion Road area, and all of Clay County. Older ranch homes. Free inspection.',
+    'Crawl space encapsulation in Gladstone, MO. Serving Barry Road corridor, Vivion Road area, and all of Clay County. Older ranch homes. Free inspection · same-week service.',
 };
 
 const jsonLd = {

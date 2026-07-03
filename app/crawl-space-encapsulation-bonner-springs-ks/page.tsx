@@ -5,9 +5,9 @@ import FinancingOptions from '@/components/FinancingOptions';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Crawl Space Encapsulation Bonner Springs KS | KC Crawl Space Specialists',
+  title: { absolute: 'Crawl Space Encapsulation Bonner Springs, KS | Free Inspection' },
   description:
-    'Crawl space encapsulation in Bonner Springs, KS. Wyandotte County, near I-70 and Kansas River. Older homes. Free inspection.',
+    'Crawl space encapsulation in Bonner Springs, KS. Wyandotte County, near I-70 and Kansas River. Older homes. Lifetime warranty. Free inspection.',
 };
 
 function Check({ size = 16 }: { size?: number }) {

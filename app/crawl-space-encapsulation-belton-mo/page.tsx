@@ -5,7 +5,7 @@ import FinancingOptions from '@/components/FinancingOptions';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Crawl Space Encapsulation Belton MO | KC Crawl Space Specialists',
+  title: { absolute: 'Crawl Space Encapsulation Belton, MO | KC Crawl Space Specialists' },
   description:
     'Crawl space encapsulation in Belton, MO. Serving established Cass County neighborhoods. Older homes especially. Free inspection. Same-week service.',
 };

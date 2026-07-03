@@ -5,9 +5,8 @@ import FinancingOptions from '@/components/FinancingOptions';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Crawlspace Encapsulation Kansas City | Vapor Barrier & Moisture Control',
-  description:
-    "Kansas City's crawlspace encapsulation specialists. 20-mil vapor barrier, vent sealing, mold treatment, commercial dehumidifier. Lifetime transferable warranty. Free inspection.",
+  title: { absolute: 'Crawlspace Encapsulation Kansas City | KC Crawl Space Specialists' },
+  description: "Kansas City crawlspace encapsulation: 20-mil vapor barrier, vent sealing, mold treatment & commercial dehumidifier. Lifetime transferable warranty. Free inspection.",
 };
 
 function Check({ color = '#16A34A', size = 16 }: { color?: string; size?: number }) {

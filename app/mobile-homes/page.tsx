@@ -4,9 +4,8 @@ import FinancingOptions from '@/components/FinancingOptions';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Mobile Home Underbelly Repair Kansas City | Belly Board & Insulation',
-  description:
-    'KC Crawl Space Specialists replaces torn belly board, blown insulation, and damaged vapor barriers in manufactured homes across the KC metro. Most jobs done in a single day.',
+  title: { absolute: 'Mobile Home Underbelly Repair Kansas City | Done in One Day' },
+  description: 'KC Crawl Space Specialists replaces torn belly board, blown insulation & damaged vapor barriers in manufactured homes across the KC metro. Most jobs done in one day.',
 };
 
 function Check({ color = '#16A34A', size = 16 }: { color?: string; size?: number }) {

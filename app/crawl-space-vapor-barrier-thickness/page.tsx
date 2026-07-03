@@ -5,9 +5,8 @@ import FinancingOptions from '@/components/FinancingOptions';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Crawl Space Vapor Barrier Thickness | 6 Mil vs 10 Mil vs 20 Mil',
-  description:
-    'Which crawl space vapor barrier thickness is right? Learn the difference between 6 mil, 10 mil, 12 mil, and 20 mil liners and why reinforced barriers last longer in Kansas City crawl spaces.',
+  title: { absolute: 'Crawl Space Vapor Barrier Thickness | 6, 10 & 20-Mil Guide' },
+  description: 'Which crawl space vapor barrier thickness do you need? Understand the difference between 6, 10, 12 & 20-mil liners and why thicker reinforced barriers last longer.',
 };
 
 function Check({ color = '#16A34A', size = 16 }: { color?: string; size?: number }) {

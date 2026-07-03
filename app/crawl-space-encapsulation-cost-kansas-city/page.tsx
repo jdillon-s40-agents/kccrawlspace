@@ -5,9 +5,8 @@ import FinancingOptions from '@/components/FinancingOptions';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Crawl Space Encapsulation Cost Kansas City | Pricing & Financing',
-  description:
-    'How much does crawl space encapsulation cost in Kansas City? Pricing depends on size, water issues, drainage, vapor barrier thickness, and more. Get a free estimate.',
+  title: { absolute: 'Crawl Space Encapsulation Cost Kansas City | Honest Pricing' },
+  description: 'How much does crawl space encapsulation cost in Kansas City? See honest pricing by size, moisture level & liner type. Financing from $74/mo. Free estimate.',
 };
 
 function Check({ color = '#16A34A', size = 16 }: { color?: string; size?: number }) {

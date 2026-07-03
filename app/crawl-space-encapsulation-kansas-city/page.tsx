@@ -6,9 +6,8 @@ import FinancingOptions from '@/components/FinancingOptions';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Crawl Space Encapsulation Kansas City | Vapor Barrier & Moisture Control',
-  description:
-    'Get crawl space encapsulation in Kansas City for musty odors, moisture, wet insulation, mold concerns, and high humidity. Request a free crawl space estimate today.',
+  title: { absolute: 'Crawl Space Encapsulation Kansas City | KC Crawl Space Specialists' },
+  description: 'Fix musty odors, moisture & wet insulation under your Kansas City home. 20-mil vapor barrier, full encapsulation, mold treatment. Free inspection.',
   alternates: {
     canonical: 'https://crawlspacekc.com/crawl-space-encapsulation-kansas-city/',
   },
