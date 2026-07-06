@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: { absolute: 'Crawl Space Repair Kansas City | KC Crawl Space Specialists' },
   description: 'Crawl space repair in Kansas City: moisture damage, wet insulation, standing water, mold, wood rot & drainage problems. 4.9★ rated. Free inspection.',
   alternates: {
-    canonical: 'https://crawlspacekc.com/crawl-space-repair-kansas-city/',
+    canonical: 'https://www.crawlspacekc.com/crawl-space-repair-kansas-city/',
   },
 };
 
