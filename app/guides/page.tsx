@@ -18,6 +18,42 @@ const guides = [
       'Can you encapsulate your own crawl space? Yes — with the right evaluation and a step-by-step plan built for your specific space, materials and all.',
   },
   {
+    title: 'DIY Vapor Barrier Cost',
+    href: '/diy-crawl-space-vapor-barrier-kansas-city/',
+    answer:
+      'DIY vapor barrier materials run $375-$525 for a typical 1,500 sq ft crawlspace vs. $1,200-$4,000 professionally installed.',
+  },
+  {
+    title: 'DIY vs. Professional Encapsulation',
+    href: '/diy-vs-professional-crawl-space-encapsulation/',
+    answer:
+      'An honest side-by-side comparison of cost, time, and risk to help you decide which approach fits your crawlspace.',
+  },
+  {
+    title: 'DIY Tools & Materials List',
+    href: '/diy-crawl-space-encapsulation-tools-and-materials/',
+    answer:
+      'The full checklist of tools, materials, and safety gear for a DIY crawl space encapsulation project.',
+  },
+  {
+    title: 'DIY Crawl Space Mold Treatment',
+    href: '/diy-crawl-space-mold-treatment-kansas-city/',
+    answer:
+      'What actually works for small areas of crawl space mold, what doesn\'t, and when it\'s time to call a professional.',
+  },
+  {
+    title: 'DIY Crawl Space Vent Sealing',
+    href: '/diy-crawl-space-vent-sealing-kansas-city/',
+    answer:
+      'How to seal crawl space vents yourself — and the one mistake (sealing too early) that can make moisture worse.',
+  },
+  {
+    title: 'DIY Dehumidifier Installation',
+    href: '/diy-crawl-space-dehumidifier-installation-kansas-city/',
+    answer:
+      'Placement, drainage, and electrical basics for installing your own crawl space dehumidifier — and why it needs a sealed crawlspace to work.',
+  },
+  {
     title: 'Wet Crawl Space After Rain',
     href: '/wet-crawl-space-after-rain/',
     answer:
