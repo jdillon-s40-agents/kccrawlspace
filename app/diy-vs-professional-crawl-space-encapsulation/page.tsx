@@ -31,6 +31,7 @@ const faqItems = [
 ];
 
 const otherGuides = [
+  { title: 'DIY Encapsulation Cost Breakdown', href: '/diy-crawl-space-encapsulation-cost/' },
   { title: 'DIY Vapor Barrier Cost', href: '/diy-crawl-space-vapor-barrier-kansas-city/' },
   { title: 'Tools & Materials You Need', href: '/diy-crawl-space-encapsulation-tools-and-materials/' },
   { title: 'DIY Mold Treatment', href: '/diy-crawl-space-mold-treatment-kansas-city/' },

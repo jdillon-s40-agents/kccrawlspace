@@ -18,6 +18,12 @@ const guides = [
       'Can you encapsulate your own crawl space? Yes — with the right evaluation and a step-by-step plan built for your specific space, materials and all.',
   },
   {
+    title: 'DIY Encapsulation Cost Breakdown',
+    href: '/diy-crawl-space-encapsulation-cost/',
+    answer:
+      'The full component-by-component cost of a DIY crawl space encapsulation — $1,200-$3,000 in materials nationwide vs. $3,000-$15,000 professionally installed.',
+  },
+  {
     title: 'DIY Vapor Barrier Cost',
     href: '/diy-crawl-space-vapor-barrier-kansas-city/',
     answer:

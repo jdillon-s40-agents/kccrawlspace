@@ -3,43 +3,47 @@ import Link from 'next/link';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: { absolute: 'DIY Crawl Space Mold Treatment Kansas City | What Works' },
+  title: { absolute: 'DIY Crawl Space Encapsulation Cost | Full Project Breakdown' },
   description:
-    'Can you treat crawl space mold yourself? For small areas, yes — with the right products. Here\'s what actually works, and when it\'s time to call a professional.',
+    'DIY crawl space encapsulation costs $1,200-$3,000 in materials vs. $5,000-$20,000 professionally installed nationwide. See the full project cost breakdown by component.',
   alternates: {
-    canonical: 'https://www.crawlspacekc.com/diy-crawl-space-mold-treatment-kansas-city/',
+    canonical: 'https://www.crawlspacekc.com/diy-crawl-space-encapsulation-cost/',
   },
 };
 
 const faqItems = [
   {
-    q: 'Can I remove crawl space mold myself?',
-    a: 'For surface mold covering less than about 10 square feet, yes — a borate-based wood treatment like Boracare, or a vinegar/detergent solution for light staining, can handle it. Bleach is generally not recommended on wood; it doesn\'t penetrate and can make the surface look clean while mold survives underneath.',
+    q: 'How much does it cost to encapsulate a crawl space yourself?',
+    a: 'A full DIY encapsulation — vapor barrier, seam tape, vent block-off, and basic sealing — typically runs $1,200 to $3,000 in materials for an average 1,000-1,500 sq ft crawlspace. Add a dehumidifier and that climbs another $500-$2,000 depending on size and brand.',
   },
   {
-    q: 'Why does mold keep coming back after I clean it?',
-    a: 'Because cleaning treats the symptom, not the cause. Mold needs moisture to grow — if your crawlspace still has high humidity, standing water, or no vapor barrier, the conditions that grew the mold are still there and it will return.',
+    q: 'How much does professional crawl space encapsulation cost by comparison?',
+    a: 'Nationally, professional encapsulation runs $3,000-$15,000 for most homes, averaging around $5,500, with severe moisture, mold, or structural issues pushing costs toward $20,000+. Labor is typically 50-70% of that total.',
   },
   {
-    q: 'When should I call a professional instead of treating it myself?',
-    a: 'If mold covers more than roughly 10 square feet (the general EPA guideline), if you can\'t identify or fix the moisture source yourself, or if there\'s a musty smell with no visible mold (which can mean it\'s spread somewhere you can\'t see), it\'s worth getting a professional evaluation.',
+    q: 'What drives the cost up on a DIY project?',
+    a: 'Prep work you didn\'t plan for: mold treatment, plumbing repairs, debris removal, and buying a dehumidifier separately from the vapor barrier kit. Guessing at material quantities is the other common cost driver — running short mid-project means a second trip and often overbuying "to be safe" the first time.',
   },
   {
-    q: 'Is crawl space mold dangerous to my health?',
-    a: 'Reactions vary by person, and we can\'t make medical claims. If household members have ongoing respiratory or allergy symptoms, it\'s worth talking to a doctor and having the crawlspace evaluated for the underlying moisture issue.',
+    q: 'Is a DIY cost estimate accurate without seeing my actual crawlspace?',
+    a: 'Rough ranges like the ones above are a starting point, not a quote. Your exact square footage, wall height, number of piers, existing moisture level, and whether prep work is needed all change the real number — which is what a proper evaluation is for.',
+  },
+  {
+    q: 'Does this service work outside Kansas City?',
+    a: 'Yes — the virtual DIY assessment works from anywhere in the US. You submit photos and measurements, and get back a written plan with exact materials and costs for your crawlspace. In-person assessments are currently limited to the Kansas City metro area.',
   },
 ];
 
 const otherGuides = [
-  { title: 'DIY Encapsulation Cost Breakdown', href: '/diy-crawl-space-encapsulation-cost/' },
-  { title: 'DIY Vapor Barrier Cost', href: '/diy-crawl-space-vapor-barrier-kansas-city/' },
   { title: 'DIY vs. Professional Encapsulation', href: '/diy-vs-professional-crawl-space-encapsulation/' },
+  { title: 'DIY Vapor Barrier Cost', href: '/diy-crawl-space-vapor-barrier-kansas-city/' },
   { title: 'Tools & Materials You Need', href: '/diy-crawl-space-encapsulation-tools-and-materials/' },
+  { title: 'DIY Mold Treatment', href: '/diy-crawl-space-mold-treatment-kansas-city/' },
   { title: 'DIY Vent Sealing', href: '/diy-crawl-space-vent-sealing-kansas-city/' },
   { title: 'DIY Dehumidifier Installation', href: '/diy-crawl-space-dehumidifier-installation-kansas-city/' },
 ];
 
-export default function DiyMoldTreatmentPage() {
+export default function DiyEncapsulationCostPage() {
   return (
     <main>
       <script
@@ -52,7 +56,7 @@ export default function DiyMoldTreatmentPage() {
                 '@type': 'BreadcrumbList',
                 itemListElement: [
                   { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.crawlspacekc.com' },
-                  { '@type': 'ListItem', position: 2, name: 'DIY Crawl Space Mold Treatment', item: 'https://www.crawlspacekc.com/diy-crawl-space-mold-treatment-kansas-city/' },
+                  { '@type': 'ListItem', position: 2, name: 'DIY Crawl Space Encapsulation Cost', item: 'https://www.crawlspacekc.com/diy-crawl-space-encapsulation-cost/' },
                 ],
               },
               {
@@ -76,52 +80,61 @@ export default function DiyMoldTreatmentPage() {
       <section style={{ background: '#0D0D0D', padding: 'clamp(52px,8vw,88px) clamp(16px,5vw,24px)' }}>
         <div style={{ maxWidth: 900, margin: '0 auto' }}>
           <p style={{ font: "600 13px 'Inter',sans-serif", letterSpacing: '.16em', textTransform: 'uppercase' as const, color: '#F5A623', margin: '0 0 16px' }}>
-            DIY Crawl Space Mold
+            Full Project Cost Breakdown
           </p>
           <h1 style={{ fontFamily: "'Barlow Condensed',sans-serif", fontWeight: 800, fontSize: 'clamp(34px,6.5vw,58px)', textTransform: 'uppercase' as const, color: '#fff', margin: '0 0 20px', lineHeight: 1.05 }}>
-            DIY Crawl Space Mold Treatment <span style={{ color: '#F5A623' }}>— What Actually Works</span>
+            DIY Crawl Space Encapsulation <span style={{ color: '#F5A623' }}>Cost</span>
           </h1>
           <p style={{ fontSize: 'clamp(16px,2.2vw,18px)', lineHeight: 1.6, color: '#9CA3AF', maxWidth: '62ch', margin: 0 }}>
-            Small areas of surface mold can be treated yourself with the right products. Here&apos;s what works,
-            what doesn&apos;t, and how to know when the moisture problem behind it needs more than a spray bottle.
+            The real, component-by-component cost of encapsulating a crawlspace yourself — and how it stacks up
+            against hiring it out.
           </p>
         </div>
       </section>
 
-      {/* What works / what doesn't */}
+      {/* Cost by component */}
       <section style={{ background: '#F9FAFB', padding: 'clamp(52px,8vw,88px) clamp(16px,5vw,24px)' }}>
-        <div style={{ maxWidth: 1000, margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(300px,1fr))', gap: 24 }}>
-          <div style={{ background: '#fff', border: '1px solid #E5E7EB', borderRadius: 16, padding: 28 }}>
-            <h2 style={{ fontFamily: "'Barlow Condensed',sans-serif", fontWeight: 800, fontSize: 22, textTransform: 'uppercase' as const, color: '#0D0D0D', margin: '0 0 14px' }}>What Works — Under 10 Sq Ft</h2>
-            <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column' as const, gap: 10, fontSize: 14.5, color: '#374151', lineHeight: 1.6 }}>
-              <li>• Boracare or Tim-Bor (borate wood treatments) — penetrate wood and prevent regrowth</li>
-              <li>• Diluted vinegar solution for light surface staining</li>
-              <li>• HEPA-filter vacuum for loose spore removal before treatment</li>
-              <li>• N95+ respirator, gloves, and goggles — always</li>
-            </ul>
+        <div style={{ maxWidth: 900, margin: '0 auto' }}>
+          <h2 style={{ fontFamily: "'Barlow Condensed',sans-serif", fontWeight: 800, fontSize: 'clamp(26px,5vw,40px)', textTransform: 'uppercase' as const, color: '#0D0D0D', margin: '0 0 24px', textAlign: 'center' as const }}>
+            DIY Cost By Component
+          </h2>
+          <div style={{ overflowX: 'auto' as const }}>
+            <table style={{ width: '100%', borderCollapse: 'collapse' as const, fontSize: 14.5, minWidth: 480 }}>
+              <tbody>
+                {[
+                  ['Vapor barrier (20-mil, floor + partial wall)', '$225–$400'],
+                  ['Seam tape & fasteners', '$75–$125'],
+                  ['Vent block-off plates', '$25–$75'],
+                  ['Spray foam / sealant for gaps', '$40–$80'],
+                  ['Safety gear (mask, gloves, coveralls)', '$75–$100'],
+                  ['Dehumidifier (if needed)', '$500–$2,000'],
+                  ['Mold treatment (if needed)', '$50–$150'],
+                ].map((row) => (
+                  <tr key={row[0]}>
+                    <td style={{ padding: '12px 14px', color: '#111827', background: '#fff', borderBottom: '1px solid #E5E7EB' }}>{row[0]}</td>
+                    <td style={{ padding: '12px 14px', fontWeight: 700, color: '#166534', background: '#fff', borderBottom: '1px solid #E5E7EB', textAlign: 'right' as const }}>{row[1]}</td>
+                  </tr>
+                ))}
+                <tr>
+                  <td style={{ padding: '14px', fontWeight: 800, color: '#1B3A6B', background: '#FEF3D7' }}>Typical total (no dehumidifier)</td>
+                  <td style={{ padding: '14px', fontWeight: 800, color: '#1B3A6B', background: '#FEF3D7', textAlign: 'right' as const }}>$1,200–$3,000</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-          <div style={{ background: '#fff', border: '1px solid #E5E7EB', borderRadius: 16, padding: 28 }}>
-            <h2 style={{ fontFamily: "'Barlow Condensed',sans-serif", fontWeight: 800, fontSize: 22, textTransform: 'uppercase' as const, color: '#0D0D0D', margin: '0 0 14px' }}>What Doesn&apos;t Work</h2>
-            <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column' as const, gap: 10, fontSize: 14.5, color: '#374151', lineHeight: 1.6 }}>
-              <li>• Bleach on wood — doesn&apos;t penetrate, often just bleaches the surface</li>
-              <li>• Cleaning without fixing the moisture source — mold returns</li>
-              <li>• Painting over mold — traps it, doesn&apos;t kill it</li>
-              <li>• Treating anything over ~10 sq ft yourself (EPA guidance)</li>
-            </ul>
-          </div>
+          <p style={{ fontSize: 14, color: '#6b7280', textAlign: 'center' as const, marginTop: 18 }}>
+            Compare to professional encapsulation nationally: $3,000–$15,000, averaging around $5,500.
+          </p>
         </div>
       </section>
 
-      {/* Root cause callout */}
-      <section style={{ background: '#0D0D0D', padding: 'clamp(48px,7vw,72px) clamp(16px,5vw,24px)' }}>
+      {/* National reach note */}
+      <section style={{ background: '#0D0D0D', padding: 'clamp(40px,6vw,60px) clamp(16px,5vw,24px)' }}>
         <div style={{ maxWidth: 720, margin: '0 auto', textAlign: 'center' }}>
-          <h2 style={{ fontFamily: "'Barlow Condensed',sans-serif", fontWeight: 800, fontSize: 'clamp(24px,4.5vw,36px)', textTransform: 'uppercase' as const, color: '#fff', margin: '0 0 14px' }}>
-            Cleaning Isn&apos;t Fixing
-          </h2>
-          <p style={{ fontSize: 16, lineHeight: 1.7, color: '#9CA3AF', margin: 0 }}>
-            Mold needs moisture to grow. If your crawlspace still has high humidity, damp soil, or no vapor barrier,
-            treated mold will come back — usually within months. Vapor barrier, sealed vents, and dehumidification
-            address the actual cause.
+          <p style={{ fontSize: 15.5, color: '#9CA3AF', lineHeight: 1.7 }}>
+            The virtual DIY assessment works from anywhere in the US — you submit photos and measurements, and Jason
+            builds a written plan with exact materials and costs for your specific crawlspace. In-person assessments
+            are currently available in the Kansas City metro.
           </p>
         </div>
       </section>
@@ -130,10 +143,10 @@ export default function DiyMoldTreatmentPage() {
       <section style={{ background: '#F5A623', padding: 'clamp(48px,7vw,72px) clamp(16px,5vw,24px)' }}>
         <div style={{ maxWidth: 700, margin: '0 auto', textAlign: 'center' }}>
           <h2 style={{ fontFamily: "'Barlow Condensed',sans-serif", fontWeight: 800, fontSize: 'clamp(26px,5vw,40px)', textTransform: 'uppercase' as const, color: '#1B3A6B', margin: '0 0 14px' }}>
-            Not Sure How Bad It Is?
+            Get Your Exact Number
           </h2>
           <p style={{ fontSize: 16, lineHeight: 1.6, color: '#1B3A6B', margin: '0 0 24px' }}>
-            Get an honest evaluation of your crawlspace and a plan that addresses the moisture source, not just the mold on top of it.
+            Skip the range — get a materials list and cost built for your specific crawlspace, wherever you are.
           </p>
           <Link
             href="/diy-crawl-space-kansas-city/#assessment-form"
@@ -148,7 +161,7 @@ export default function DiyMoldTreatmentPage() {
       <section style={{ background: '#0D0D0D', padding: 'clamp(52px,8vw,88px) clamp(16px,5vw,24px)' }}>
         <div style={{ maxWidth: 800, margin: '0 auto' }}>
           <h2 style={{ fontFamily: "'Barlow Condensed',sans-serif", fontWeight: 800, fontSize: 'clamp(28px,5vw,44px)', textTransform: 'uppercase' as const, color: '#fff', margin: '0 0 28px', textAlign: 'center' as const }}>
-            Mold Treatment FAQ
+            Cost FAQ
           </h2>
           <div style={{ display: 'flex', flexDirection: 'column' as const, gap: 16 }}>
             {faqItems.map((item) => (
