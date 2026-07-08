@@ -4,9 +4,9 @@ import AssessmentForm from '@/components/AssessmentForm';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: { absolute: 'Crawl Space Assessment Kansas City | KC Crawl Space Specialists' },
+  title: { absolute: 'DIY Crawl Space Game Plan Kansas City | KC Crawl Space Specialists' },
   description:
-    'Get an honest professional crawlspace assessment from $97 — virtual or in-person. Written game plan, moisture readings, no sales pressure. KC’s only crawlspace-only specialist.',
+    'Get a step-by-step DIY crawlspace plan from $97 — exact products, quantities, and install instructions for your specific space. Virtual or in-person. Fix it yourself, done right.',
   alternates: {
     canonical: 'https://www.crawlspacekc.com/crawl-space-assessment-kansas-city/',
   },
@@ -26,8 +26,16 @@ const faqItems = [
     a: 'About 30 minutes. Jason sends a photo guide with your invoice showing exactly what shots to capture.',
   },
   {
+    q: 'What’s actually in the game plan?',
+    a: 'A written condition assessment, a step-by-step install sequence for your specific crawlspace (vapor barrier, sealing, insulation, drainage — whatever applies), an exact materials list with quantities, and links to where to buy everything. It’s written so a reasonably handy homeowner can follow it start to finish.',
+  },
+  {
+    q: 'Do I need construction experience to follow the plan?',
+    a: 'No special license or trade experience is required — this is written for homeowners. If you’re comfortable with basic DIY projects (and can get in and out of a crawlspace), you can follow the plan. If a section of your job calls for a licensed trade — like electrical near a sump pump — the plan will flag that clearly.',
+  },
+  {
     q: 'What if the game plan says I need a professional?',
-    a: 'Jason will tell you honestly, and explain exactly why and what scope is needed — so you can evaluate any quotes you get. KC Crawl Space Specialists is available for the job if you’d like, with no pressure either way.',
+    a: 'Jason will tell you honestly, and explain exactly why and what scope is needed — so you can evaluate any quotes you get, or decide which parts to DIY and which to hire out. KC Crawl Space Specialists is available for the job if you’d like, with no pressure either way.',
   },
   {
     q: 'Do you serve the whole KC metro?',
@@ -53,8 +61,8 @@ const steps = [
     body: 'Pay securely via the invoice link sent to your email. Virtual: then submit your photos. In-person: Jason schedules your visit.',
   },
   {
-    n: '3', title: 'Receive Your Game Plan',
-    body: 'Get your written assessment and game plan within 48 hours (virtual) or 24 hours (in-person).',
+    n: '3', title: 'Receive Your DIY Game Plan',
+    body: 'Get a written plan telling you exactly what to buy, how much, and how to install it — step by step, for your specific crawlspace. 48 hours (virtual) or 24 hours (in-person).',
   },
 ];
 
@@ -113,14 +121,14 @@ export default function CrawlSpaceAssessmentPage() {
       <section style={{ background: '#0D0D0D', padding: 'clamp(52px,8vw,88px) clamp(16px,5vw,24px)' }}>
         <div style={{ maxWidth: 900, margin: '0 auto', textAlign: 'center' }}>
           <p style={{ font: "600 13px 'Inter',sans-serif", letterSpacing: '.16em', textTransform: 'uppercase' as const, color: '#F5A623', margin: '0 0 16px' }}>
-            Crawl Space Assessments
+            DIY Crawlspace Game Plans
           </p>
           <h1 style={{ fontFamily: "'Barlow Condensed',sans-serif", fontWeight: 800, fontSize: 'clamp(36px,7vw,64px)', textTransform: 'uppercase' as const, color: '#fff', margin: '0 0 20px', lineHeight: 1.05 }}>
-            Know What&apos;s Under Your Home <span style={{ color: '#F5A623' }}>Before You Spend A Dime</span>
+            We&apos;ll Show You <span style={{ color: '#F5A623' }}>Exactly How To Fix It Yourself</span>
           </h1>
           <p style={{ fontSize: 'clamp(16px,2.3vw,19px)', lineHeight: 1.6, color: '#9CA3AF', maxWidth: '52ch', margin: '0 auto 32px' }}>
-            Get Jason’s professional eyes on your crawlspace — virtually or in person — for a fraction of what a full contractor visit costs.
-            Honest assessment. Clear game plan. Zero sales pressure.
+            Skip the guesswork and the contractor markup. Jason evaluates your specific crawlspace and hands you a step-by-step plan —
+            what to buy, how much, and exactly how to install it — whether you go virtual or in person.
           </p>
           <Link
             href="#assessment-form"
@@ -131,7 +139,7 @@ export default function CrawlSpaceAssessmentPage() {
               boxShadow: '0 12px 32px -10px rgba(245,166,35,.65)',
             }}
           >
-            See Assessment Options ↓
+            Get My DIY Game Plan ↓
           </Link>
         </div>
       </section>
@@ -141,18 +149,18 @@ export default function CrawlSpaceAssessmentPage() {
         <div style={{ maxWidth: 1000, margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(320px,1fr))', gap: 28 }}>
           <div style={{ background: '#0D0D0D', border: '1px solid rgba(255,255,255,.1)', borderRadius: 16, padding: 32 }}>
             <div style={{ font: "800 13px 'Inter',sans-serif", letterSpacing: '.08em', textTransform: 'uppercase' as const, color: '#F5A623', marginBottom: 10 }}>
-              Virtual Assessment
+              Virtual DIY Game Plan
             </div>
             <div style={{ font: "800 40px 'Barlow Condensed',sans-serif", color: '#fff', marginBottom: 18 }}>$97</div>
             <p style={{ fontSize: 15, color: '#9CA3AF', lineHeight: 1.6, marginBottom: 18 }}>
-              You submit photos, measurements, and moisture readings. Jason reviews everything and sends back:
+              You submit photos, measurements, and moisture readings. Jason evaluates your crawlspace and builds you a plan to do it yourself:
             </p>
             <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 22px', display: 'flex', flexDirection: 'column' as const, gap: 10 }}>
               {[
-                'Written condition assessment',
-                'Step-by-step game plan for your specific space',
-                'Complete materials list with quantities',
-                'Honest opinion — do you need a contractor or not?',
+                'Written evaluation of your crawlspace conditions',
+                'Step-by-step DIY install instructions for your specific space',
+                'Exact materials list with quantities and where to buy them',
+                'Honest call on what you can DIY vs. when to hire it out',
               ].map((t) => (
                 <li key={t} style={{ display: 'flex', gap: 9, fontSize: 14.5, color: '#e5e7eb' }}>
                   <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#16A34A" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" style={{ flex: 'none', marginTop: 2 }}>
@@ -163,31 +171,31 @@ export default function CrawlSpaceAssessmentPage() {
               ))}
             </ul>
             <p style={{ fontSize: 13, color: '#6b7280', marginBottom: 20 }}>
-              Delivered within 48 hours of photo submission. Perfect for DIYers and homeowners who want a second opinion before hiring anyone.
+              Delivered within 48 hours of photo submission. Built for homeowners who want to do the work themselves — or at least know exactly what needs to happen.
             </p>
             <Link
               href="#assessment-form"
               style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#F5A623', color: '#0D0D0D', font: "800 15px 'Inter',sans-serif", textDecoration: 'none', padding: '14px 20px', borderRadius: 10, minHeight: 50 }}
             >
-              Book Virtual Assessment — $97
+              Get My Virtual DIY Plan — $97
             </Link>
           </div>
 
           <div style={{ background: '#0D0D0D', border: '1px solid rgba(255,255,255,.1)', borderRadius: 16, padding: 32 }}>
             <div style={{ font: "800 13px 'Inter',sans-serif", letterSpacing: '.08em', textTransform: 'uppercase' as const, color: '#F5A623', marginBottom: 10 }}>
-              In-Person Assessment
+              In-Person DIY Game Plan
             </div>
             <div style={{ font: "800 40px 'Barlow Condensed',sans-serif", color: '#fff', marginBottom: 18 }}>$197</div>
             <p style={{ fontSize: 15, color: '#9CA3AF', lineHeight: 1.6, marginBottom: 18 }}>
-              Jason comes to your KC property, goes under your home, documents everything, and delivers:
+              Jason comes to your KC property, goes under your home, documents everything, and builds you a plan based on what he actually finds:
             </p>
             <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 22px', display: 'flex', flexDirection: 'column' as const, gap: 10 }}>
               {[
-                'Professional in-person inspection',
-                'Moisture readings at 6+ locations',
+                'Professional in-person inspection with moisture readings at 6+ locations',
                 'Photo documentation of all conditions',
-                'Written game plan same day or within 24 hours',
-                '$197 credited toward full installation*',
+                'Step-by-step DIY install plan built on what he finds under your home',
+                'Exact materials list with quantities and sourcing links',
+                '$197 credited toward full installation if you’d rather we do it*',
               ].map((t) => (
                 <li key={t} style={{ display: 'flex', gap: 9, fontSize: 14.5, color: '#e5e7eb' }}>
                   <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#16A34A" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" style={{ flex: 'none', marginTop: 2 }}>
@@ -198,7 +206,7 @@ export default function CrawlSpaceAssessmentPage() {
               ))}
             </ul>
             <p style={{ fontSize: 13, color: '#6b7280', marginBottom: 20 }}>
-              Most appointments scheduled within 3 days of booking.
+              Most appointments scheduled within 3 days of booking. For homeowners who want eyes-on accuracy before committing to a DIY project.
               <br />
               *Credit applies to KC Crawl Space Specialists installation jobs booked within 90 days.
             </p>
@@ -206,7 +214,7 @@ export default function CrawlSpaceAssessmentPage() {
               href="#assessment-form"
               style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#F5A623', color: '#0D0D0D', font: "800 15px 'Inter',sans-serif", textDecoration: 'none', padding: '14px 20px', borderRadius: 10, minHeight: 50 }}
             >
-              Book In-Person Assessment — $197
+              Get My In-Person DIY Plan — $197
             </Link>
           </div>
         </div>
@@ -234,7 +242,7 @@ export default function CrawlSpaceAssessmentPage() {
       <section id="assessment-form" style={{ background: '#111827', padding: 'clamp(52px,8vw,88px) clamp(16px,5vw,24px)' }}>
         <div style={{ maxWidth: 700, margin: '0 auto' }}>
           <h2 style={{ fontFamily: "'Barlow Condensed',sans-serif", fontWeight: 800, fontSize: 'clamp(28px,5vw,44px)', textTransform: 'uppercase' as const, color: '#fff', textAlign: 'center' as const, margin: '0 0 32px' }}>
-            Book Your Crawlspace Assessment
+            Get Your DIY Crawlspace Game Plan
           </h2>
           <AssessmentForm />
         </div>
@@ -247,7 +255,7 @@ export default function CrawlSpaceAssessmentPage() {
             FAQ
           </p>
           <h2 style={{ fontFamily: "'Barlow Condensed',sans-serif", fontWeight: 800, fontSize: 'clamp(28px,5vw,44px)', textTransform: 'uppercase' as const, color: '#fff', margin: '0 0 36px', textAlign: 'center' as const }}>
-            Assessment FAQ
+            DIY Game Plan FAQ
           </h2>
           <div style={{ display: 'flex', flexDirection: 'column' as const, gap: 16 }}>
             {faqItems.map((item) => (
@@ -266,16 +274,16 @@ export default function CrawlSpaceAssessmentPage() {
       <section style={{ background: '#F5A623', padding: 'clamp(52px,8vw,80px) clamp(16px,5vw,24px)' }}>
         <div style={{ maxWidth: 700, margin: '0 auto', textAlign: 'center' }}>
           <h2 style={{ fontFamily: "'Barlow Condensed',sans-serif", fontWeight: 800, fontSize: 'clamp(28px,5vw,44px)', textTransform: 'uppercase' as const, color: '#1B3A6B', margin: '0 0 16px' }}>
-            Stop Guessing. Start Knowing.
+            Stop Wondering. Start Fixing It Yourself.
           </h2>
           <p style={{ fontSize: 17, lineHeight: 1.6, color: '#1B3A6B', margin: '0 0 28px' }}>
-            For less than most contractor inspection fees, you&apos;ll know exactly what&apos;s under your home — and exactly what to do about it.
+            For less than most contractor inspection fees, you&apos;ll have a step-by-step plan telling you exactly what to buy and exactly how to install it.
           </p>
           <Link
             href="#assessment-form"
             style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: 9, background: '#1B3A6B', color: '#fff', font: "800 16px 'Inter',sans-serif", textDecoration: 'none', padding: '16px 28px', borderRadius: 10, minHeight: 54, marginBottom: 18 }}
           >
-            Book Your Assessment ↓
+            Get My DIY Game Plan ↓
           </Link>
           <p style={{ fontSize: 15, color: '#1B3A6B', margin: 0 }}>
             Or text Jason directly: <a href={PHONE_HREF} style={{ color: '#1B3A6B', fontWeight: 800 }}>{PHONE}</a>

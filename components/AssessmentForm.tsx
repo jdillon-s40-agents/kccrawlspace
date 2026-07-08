@@ -435,7 +435,7 @@ export default function AssessmentForm() {
               transition: 'all .15s ease',
             }}
           >
-            {loading ? 'Submitting…' : `Book My Assessment — ${serviceType === 'virtual' ? '$97' : '$197'}`}
+            {loading ? 'Submitting…' : `Get My DIY Game Plan — ${serviceType === 'virtual' ? '$97' : '$197'}`}
             {!loading && (
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.3" strokeLinecap="round" strokeLinejoin="round">
                 <line x1="5" y1="12" x2="19" y2="12" />
