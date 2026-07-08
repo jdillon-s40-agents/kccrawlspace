@@ -6,7 +6,9 @@ import { PHONE, PHONE_HREF } from '@/lib/constants';
 export const metadata: Metadata = {
   title: { absolute: 'Crawlspace Encapsulation Pricing Kansas City | No Hidden Fees' },
   description: "See how KC Crawl Space Specialists prices crawlspace encapsulation and mobile home repair. 3 honest tiers, financing from $74/mo, no hidden fees.",
-};
+  alternates: {
+    canonical: 'https://www.crawlspacekc.com/pricing/',
+  }};
 
 function Yes() {
   return <span style={{ color: '#16A34A', fontWeight: 900, fontSize: 17 }}>✓</span>;

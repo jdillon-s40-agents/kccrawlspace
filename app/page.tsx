@@ -7,7 +7,9 @@ import { PHONE, PHONE_HREF } from '@/lib/constants';
 export const metadata: Metadata = {
   title: { absolute: 'Kansas City Crawlspace Encapsulation | KC Crawl Space Specialists' },
   description: "Fix moisture, mold & musty odors under your Kansas City home. KC's only dedicated crawlspace specialist. Free inspection · lifetime warranty · same-week service.",
-};
+  alternates: {
+    canonical: 'https://www.crawlspacekc.com/',
+  }};
 
 const reviews = [
   {

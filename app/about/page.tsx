@@ -5,7 +5,9 @@ import { PHONE, PHONE_HREF } from '@/lib/constants';
 export const metadata: Metadata = {
   title: { absolute: 'About KC Crawl Space Specialists | Only Crawlspace Specialists' },
   description: 'Not a foundation company or generalist. The only KC company focused solely on crawlspace encapsulation and mobile home repair. 4.9★ rated in Kansas City.',
-};
+  alternates: {
+    canonical: 'https://www.crawlspacekc.com/about/',
+  }};
 
 function Check({ color = '#16A34A', size = 20 }: { color?: string; size?: number }) {
   return (

@@ -7,7 +7,9 @@ import { PHONE, PHONE_HREF } from '@/lib/constants';
 export const metadata: Metadata = {
   title: { absolute: 'Crawl Space Vapor Barrier Kansas City | 6, 10 & 20-Mil Options' },
   description: 'Control ground moisture, musty odors & humidity in your Kansas City crawl space. Vapor barrier installation with 6, 10 & 20-mil liner options. Free inspection.',
-};
+  alternates: {
+    canonical: 'https://www.crawlspacekc.com/crawl-space-vapor-barrier-kansas-city/',
+  }};
 
 function Check({ color = '#16A34A', size = 16 }: { color?: string; size?: number }) {
   return (

@@ -8,7 +8,9 @@ export const metadata: Metadata = {
   title: { absolute: 'Crawl Space Encapsulation Kansas City, MO | KC Crawl Space Specialists' },
   description:
     'Crawl space encapsulation in Kansas City, MO. Serving Waldo, Brookside, Westport, Hyde Park, Northland, South KC, and all KCMO neighborhoods. Free inspection.',
-};
+  alternates: {
+    canonical: 'https://www.crawlspacekc.com/crawl-space-encapsulation-kansas-city-mo/',
+  }};
 
 const jsonLd = {
   '@context': 'https://schema.org',

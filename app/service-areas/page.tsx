@@ -6,7 +6,9 @@ import { PHONE, PHONE_HREF } from '@/lib/constants';
 export const metadata: Metadata = {
   title: { absolute: 'Crawl Space Encapsulation Service Areas | Kansas City Metro' },
   description: 'KC Crawl Space Specialists serves 29 cities across the Kansas City metro. Find crawl space encapsulation, repair & waterproofing in your MO or KS city.',
-};
+  alternates: {
+    canonical: 'https://www.crawlspacekc.com/service-areas/',
+  }};
 
 const moCities = [
   { label: 'Kansas City, MO', href: '/crawl-space-encapsulation-kansas-city-mo/' },

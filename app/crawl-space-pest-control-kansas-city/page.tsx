@@ -5,11 +5,11 @@ import FinancingOptions from '@/components/FinancingOptions';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: { absolute: 'Crawl Space Mold Warning Signs | Kansas City Mold Guide' },
+  title: { absolute: 'Crawl Space Pest & Rodent Control Kansas City | Sealing & Exclusion' },
   description:
-    'Learn the warning signs of crawl space mold — musty odors, white or dark growth, condensation — and why fixing the moisture source matters in Kansas City homes.',
+    'Mice, rodents, and pests get into crawl spaces through open vents and gaps. We seal and encapsulate Kansas City crawl spaces to keep them out. Free inspection.',
   alternates: {
-    canonical: 'https://www.crawlspacekc.com/crawl-space-mold-warning-signs/',
+    canonical: 'https://www.crawlspacekc.com/crawl-space-pest-control-kansas-city/',
   }};
 
 function Check({ color = '#16A34A', size = 16 }: { color?: string; size?: number }) {
@@ -51,47 +51,47 @@ function XMark({ size = 16 }: { size?: number }) {
 
 const faqItems = [
   {
-    q: 'What does mold look like in a crawl space?',
-    a: 'Crawl space mold commonly appears as fuzzy white patches, dark gray or black staining, or a powdery coating on wood framing, subfloor, and insulation. It is often paired with a musty, earthy smell even before it is visible.',
+    q: 'Do you exterminate pests or remove animals from my crawl space?',
+    a: 'No. We are a crawl space encapsulation and moisture control contractor, not a licensed pest control or wildlife removal company. Our role is exclusion and sealing — closing the vents, gaps, and penetrations pests use to get in, and removing the damp conditions that make a crawl space attractive to them. If you have an active infestation or an animal currently living in the crawl space, we recommend a licensed pest control or wildlife removal specialist handle that first, and we are happy to coordinate our sealing work around theirs.',
   },
   {
-    q: 'Is white mold or black mold worse?',
-    a: 'Color alone does not tell you how serious a mold problem is. White mold tends to grow faster on damp wood and can spread quickly across framing, while dark mold often signals more prolonged moisture exposure. Both indicate a moisture problem that needs to be corrected.',
+    q: 'Does crawl space encapsulation stop mice from getting in?',
+    a: 'A properly sealed crawl space removes the easiest entry points mice use — open foundation vents, gaps around plumbing and wiring penetrations, and damaged vent screens. Combined with a sealed vapor barrier that eliminates the food and water sources rodents look for, encapsulation makes a crawl space far less hospitable and far harder to access. No sealing method can guarantee against every possible entry point on an older home, but exclusion is the most effective long-term approach.',
   },
   {
-    q: 'Can I just clean the mold myself?',
-    a: 'Surface cleaning can remove visible growth temporarily, but if the moisture source is not corrected, mold typically returns. For larger or recurring growth, a professional evaluation is recommended to assess the extent of the problem and the right remediation approach.',
+    q: 'What attracts snakes to a crawl space?',
+    a: 'Snakes are typically drawn to crawl spaces for two reasons: rodent prey and a cool, damp, dark environment. A crawl space with an active mouse or rat population, standing moisture, and open vent access checks every box a snake is looking for. Sealing entry points and eliminating the rodent food source through exclusion and moisture control addresses both attractions at once.',
   },
   {
-    q: 'Why does crawl space mold keep coming back after cleaning?',
-    a: 'Mold needs moisture to grow, so cleaning the surface without addressing humidity, ground moisture, or water intrusion leaves the underlying condition in place. Recurring mold is usually a sign that the crawl space needs a vapor barrier, sealing, or dehumidification, not just another cleaning.',
+    q: 'Can pest droppings in a crawl space affect indoor air quality?',
+    a: 'Crawl space air can move into the living space above through gaps, ductwork, and the natural stack effect of a home. Rodent droppings, nesting material, and pest debris in the crawl space may contribute to what circulates upstairs. A sealed vapor barrier and encapsulated crawl space reduce that pathway between the crawl space and your living areas.',
   },
   {
-    q: 'Does crawl space mold affect air quality in my house?',
-    a: 'Crawl space air can move into the living space through gaps, ductwork, and the stack effect, so conditions below the home may contribute to indoor air quality concerns. An inspection can help determine whether your crawl space is a factor in your home\'s air quality.',
+    q: 'How do I know if I have a rodent problem in my crawl space?',
+    a: 'Common signs include droppings on the vapor barrier or insulation, gnaw marks on floor joists, wiring, or ductwork, shredded insulation or debris used as nesting material, scratching or scurrying sounds from below the floor, and a distinct musky or ammonia-like odor. If you notice any of these, a crawl space inspection can confirm the extent of activity and identify the entry points involved.',
   },
   {
-    q: 'How do I know if I need a professional mold inspection?',
-    a: 'If you notice a persistent musty odor, visible staining or growth on wood, recurring high humidity, or mold that returns after cleaning, a professional inspection can identify the extent of the issue and the moisture source causing it.',
+    q: 'Will sealing my crawl space vents cause moisture problems?',
+    a: 'Closing vents without addressing moisture can raise humidity if nothing replaces the ventilation. That is why we do not simply close vents and walk away — proper vent sealing is paired with a sealed ground vapor barrier and, where needed, a dedicated crawl space dehumidifier to actively manage humidity year-round. Done correctly, a sealed crawl space runs drier than a vented one, not wetter.',
   },
   {
-    q: 'Does encapsulation stop mold from growing?',
-    a: 'Encapsulation is designed to control the humidity and ground moisture that mold needs to grow. Combined with a sealed vapor barrier and dehumidification, it addresses the conditions that allow mold to return after cleaning or remediation.',
+    q: 'How much does crawl space sealing and exclusion work cost?',
+    a: 'Cost depends on the size of the crawl space, the number and condition of vents and penetrations that need sealing, whether damaged insulation needs to be removed, and whether full encapsulation is included. We provide a free, no-obligation inspection and a written estimate so you know the scope and cost before any work begins.',
   },
   {
-    q: 'Is crawl space mold dangerous to my health?',
-    a: 'Reactions to mold vary by individual, and we are not able to make medical claims. If you or household members have ongoing respiratory or allergy concerns, it is best to consult a physician and have the crawl space professionally evaluated for moisture and mold.',
+    q: 'Is pest damage to insulation or wiring a safety concern?',
+    a: 'It can be. Rodents commonly gnaw on wiring insulation and can expose or damage electrical wiring running through a crawl space, which is a potential fire and safety hazard. Damaged batt insulation also loses its effectiveness and can fall or sag onto the vapor barrier. If we find chewed wiring during an inspection, we recommend having it evaluated by a licensed electrician in addition to addressing the crawl space sealing.',
   },
 ];
 
 const relatedLinks = [
-  { label: 'Crawl Space Mold KC', href: '/crawl-space-mold-kansas-city/' },
-  { label: 'Musty Crawl Space', href: '/crawl-space-smells-musty/' },
-  { label: 'Dehumidifier KC', href: '/crawl-space-dehumidifier-kansas-city/' },
   { label: 'Crawl Space Encapsulation KC', href: '/crawl-space-encapsulation-kansas-city/' },
+  { label: 'Crawl Space Vents: Open or Closed?', href: '/crawl-space-vents-open-or-closed/' },
+  { label: 'Falling Insulation in Crawl Space', href: '/falling-insulation-in-crawl-space/' },
+  { label: 'Crawl Space Repair KC', href: '/crawl-space-repair-kansas-city/' },
 ];
 
-export default function CrawlSpaceMoldWarningSignsPage() {
+export default function CrawlSpacePestControlPage() {
   return (
     <main>
       <script
@@ -107,8 +107,8 @@ export default function CrawlSpaceMoldWarningSignsPage() {
                   {
                     '@type': 'ListItem',
                     position: 2,
-                    name: 'Crawl Space Mold Warning Signs',
-                    item: 'https://crawlspacekc.com/crawl-space-mold-warning-signs/',
+                    name: 'Crawl Space Pest & Rodent Control Kansas City',
+                    item: 'https://crawlspacekc.com/crawl-space-pest-control-kansas-city/',
                   },
                 ],
               },
@@ -167,7 +167,7 @@ export default function CrawlSpaceMoldWarningSignsPage() {
               margin: '0 0 16px',
             }}
           >
-            Crawl Space Mold
+            Seal It. Keep Them Out.
           </p>
           <h1
             style={{
@@ -180,8 +180,8 @@ export default function CrawlSpaceMoldWarningSignsPage() {
               lineHeight: 1.05,
             }}
           >
-            Crawl Space Mold{' '}
-            <span style={{ color: '#F5A623' }}>Warning Signs</span>
+            Crawl Space Pest &amp; Rodent{' '}
+            <span style={{ color: '#F5A623' }}>Exclusion in Kansas City</span>
           </h1>
           <p
             style={{
@@ -192,7 +192,7 @@ export default function CrawlSpaceMoldWarningSignsPage() {
               lineHeight: 1.6,
             }}
           >
-            Mold under your home rarely shows up out of nowhere. Here are the warning signs Kansas City homeowners should watch for, and why fixing the moisture behind it matters more than cleaning the surface.
+            Open foundation vents and unsealed gaps around pipes and wiring turn a crawl space into an open door for mice, rats, snakes, and insects. Sealing and encapsulation close those entry points and remove the damp, sheltered conditions pests are drawn to — the long-term fix, not a temporary trap.
           </p>
           <div style={{ display: 'flex', gap: 16, flexWrap: 'wrap' as const, alignItems: 'center' }}>
             <Link
@@ -259,10 +259,10 @@ export default function CrawlSpaceMoldWarningSignsPage() {
               margin: '0 0 24px',
             }}
           >
-            What Are the Warning Signs of Crawl Space Mold?
+            How Do You Keep Pests Out of a Crawl Space?
           </h2>
           <p style={{ fontSize: 17, color: '#4b5563', lineHeight: 1.7, margin: '0 0 28px', maxWidth: 760 }}>
-            Common crawl space mold warning signs include musty odors, visible white or dark growth on wood, high humidity, damp insulation, condensation, wood staining, and recurring moisture. Mold should be treated as a moisture problem first because it can return if humidity, water intrusion, or ventilation issues are not corrected.
+            Keeping pests out of a crawl space starts with closing the entry points they use to get in: sealing foundation vents, closing gaps around plumbing and wiring penetrations, and repairing damaged or torn vent screens. A full encapsulation with a sealed vapor barrier goes a step further by removing the damp, dark conditions that make a crawl space attractive to rodents, snakes, and insects in the first place. Exclusion and moisture control together address both the access and the appeal.
           </p>
           <div
             style={{
@@ -274,13 +274,13 @@ export default function CrawlSpaceMoldWarningSignsPage() {
             }}
           >
             <p style={{ fontSize: 16, color: '#0D0D0D', margin: 0, lineHeight: 1.6 }}>
-              <strong>Short answer:</strong> Musty smells, visible growth, and recurring humidity are the clearest signs. Cleaning mold without fixing the moisture source usually means it comes back.
+              <strong>Short answer:</strong> Seal the openings, then encapsulate to remove the moisture. Pests need shelter, warmth, and moisture — take those away and a crawl space stops being worth getting into.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Common Warning Signs */}
+      {/* Common Pests */}
       <section
         style={{
           background: '#0D0D0D',
@@ -297,7 +297,7 @@ export default function CrawlSpaceMoldWarningSignsPage() {
               margin: '0 0 12px',
             }}
           >
-            What to Look For
+            What We See
           </p>
           <h2
             style={{
@@ -309,10 +309,10 @@ export default function CrawlSpaceMoldWarningSignsPage() {
               margin: '0 0 24px',
             }}
           >
-            Common Warning Signs of Mold in a Crawl Space
+            Common Crawl Space Pests in Kansas City
           </h2>
           <p style={{ fontSize: 17, color: '#9CA3AF', lineHeight: 1.7, margin: '0 0 36px', maxWidth: 760 }}>
-            Mold growth is often noticed in the living space before it is ever seen in the crawl space. These are the most common indicators homeowners report, either upstairs or during a crawl space inspection.
+            These are the pests we most often find evidence of during crawl space inspections around the KC metro, and why each one ends up down there.
           </p>
           <div
             style={{
@@ -323,20 +323,20 @@ export default function CrawlSpaceMoldWarningSignsPage() {
           >
             {[
               {
-                title: 'Musty Odor',
-                body: 'A persistent earthy or musty smell in the home, especially near floor vents or in rooms above the crawl space, is one of the earliest signs.',
+                title: 'Mice & Rats',
+                body: 'Rodents gnaw on insulation and wiring and build nests from shredded debris. They can squeeze through gaps smaller than a quarter, making unsealed vents and penetrations an easy way in.',
               },
               {
-                title: 'Visible Growth on Wood',
-                body: 'Fuzzy white patches or dark staining on floor joists, subfloor, and beams indicate active or past mold growth.',
+                title: 'Snakes',
+                body: 'Snakes are drawn into crawl spaces by rodent prey and by the cool, damp, dark environment itself. Where mice are present, snakes are often not far behind.',
               },
               {
-                title: 'Condensation and Damp Insulation',
-                body: 'Sweating pipes, ductwork, or insulation that feels damp to the touch points to humidity levels high enough to support mold.',
+                title: 'Termites & Wood-Destroying Insects',
+                body: 'Moisture-damaged wood is far more attractive to termites and other wood-destroying insects than dry framing. Chronic crawl space dampness raises that risk over time.',
               },
               {
-                title: 'High Humidity Readings',
-                body: 'Crawl space humidity consistently above 60% creates the conditions mold needs to establish and spread.',
+                title: 'Spiders & Insects',
+                body: 'Humid, cluttered crawl spaces with standing debris are ideal habitat for spiders, roaches, and other insects that thrive in dark, moist conditions.',
               },
             ].map((card) => (
               <div
@@ -367,7 +367,7 @@ export default function CrawlSpaceMoldWarningSignsPage() {
         </div>
       </section>
 
-      {/* White Mold vs Dark Mold */}
+      {/* Signs of Activity */}
       <section
         style={{
           background: '#F9FAFB',
@@ -384,7 +384,7 @@ export default function CrawlSpaceMoldWarningSignsPage() {
               margin: '0 0 12px',
             }}
           >
-            Comparison
+            What to Look For
           </p>
           <h2
             style={{
@@ -393,74 +393,30 @@ export default function CrawlSpaceMoldWarningSignsPage() {
               fontSize: 'clamp(28px,5vw,44px)',
               textTransform: 'uppercase' as const,
               color: '#0D0D0D',
-              margin: '0 0 36px',
+              margin: '0 0 32px',
             }}
           >
-            White Mold vs Dark Mold in a Crawl Space
+            Signs of Pest Activity in a Crawl Space
           </h2>
-          <div
-            style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit,minmax(260px,1fr))',
-              gap: 20,
-            }}
-          >
-            <div
-              style={{
-                background: '#fff',
-                border: '1px solid #E5E7EB',
-                borderRadius: 12,
-                padding: 24,
-              }}
-            >
-              <h3
-                style={{
-                  fontFamily: "'Barlow Condensed',sans-serif",
-                  fontWeight: 800,
-                  fontSize: 20,
-                  textTransform: 'uppercase' as const,
-                  color: '#1B3A6B',
-                  margin: '0 0 12px',
-                }}
-              >
-                White Mold
-              </h3>
-              <p style={{ fontSize: 15, color: '#4b5563', margin: 0, lineHeight: 1.6 }}>
-                Often appears powdery or fuzzy on wood surfaces and can spread quickly across framing in humid conditions. It can be easy to overlook because it sometimes blends in with raw wood or efflorescence.
-              </p>
-            </div>
-            <div
-              style={{
-                background: '#fff',
-                border: '1px solid #E5E7EB',
-                borderRadius: 12,
-                padding: 24,
-              }}
-            >
-              <h3
-                style={{
-                  fontFamily: "'Barlow Condensed',sans-serif",
-                  fontWeight: 800,
-                  fontSize: 20,
-                  textTransform: 'uppercase' as const,
-                  color: '#1B3A6B',
-                  margin: '0 0 12px',
-                }}
-              >
-                Dark / Black Mold
-              </h3>
-              <p style={{ fontSize: 15, color: '#4b5563', margin: 0, lineHeight: 1.6 }}>
-                Tends to appear as dark gray, green-black, or black staining and is more visible against wood. It often signals more prolonged or repeated moisture exposure in that area.
-              </p>
-            </div>
+          <div style={{ display: 'flex', flexDirection: 'column' as const, gap: 16, maxWidth: 700 }}>
+            {[
+              'Droppings on the vapor barrier, insulation, or ductwork',
+              'Gnaw marks on floor joists, wiring, or duct insulation',
+              'Nesting material such as shredded insulation, leaves, or debris',
+              'Scratching, scurrying, or rustling sounds from below the floor',
+              'A musky, ammonia-like, or pheromone odor in the crawl space or living space',
+              'Insulation batts pulled down, sagging, or displaced from the joists',
+            ].map((item) => (
+              <div key={item} style={{ display: 'flex', alignItems: 'flex-start', gap: 12 }}>
+                <Check size={18} />
+                <span style={{ fontSize: 16, color: '#374151', lineHeight: 1.6 }}>{item}</span>
+              </div>
+            ))}
           </div>
-          <p style={{ fontSize: 15, color: '#6B7280', fontStyle: 'italic', margin: '24px 0 0', lineHeight: 1.6, maxWidth: 760 }}>
-            Color is not a reliable way to judge severity or species on its own. Both white and dark growth indicate active moisture and should be evaluated rather than compared by appearance alone.
-          </p>
         </div>
       </section>
 
-      {/* Why Mold Keeps Coming Back */}
+      {/* Why Crawl Spaces Attract Pests */}
       <section
         style={{
           background: '#1B3A6B',
@@ -477,7 +433,7 @@ export default function CrawlSpaceMoldWarningSignsPage() {
               margin: '0 0 12px',
             }}
           >
-            Recurring Mold
+            Root Cause
           </p>
           <h2
             style={{
@@ -486,32 +442,64 @@ export default function CrawlSpaceMoldWarningSignsPage() {
               fontSize: 'clamp(28px,5vw,44px)',
               textTransform: 'uppercase' as const,
               color: '#fff',
-              margin: '0 0 32px',
+              margin: '0 0 24px',
             }}
           >
-            Why Mold Keeps Coming Back After Cleaning
+            Why Crawl Spaces Attract Pests
           </h2>
-          <div style={{ display: 'flex', flexDirection: 'column' as const, gap: 16, maxWidth: 700, marginBottom: 24 }}>
+          <p style={{ fontSize: 17, color: '#D1D5DB', lineHeight: 1.7, margin: '0 0 32px', maxWidth: 760 }}>
+            Every pest that ends up in a crawl space is looking for the same three things: shelter, warmth, and moisture. An open-vent crawl space with high humidity, standing debris, and easy access through gaps and damaged screens checks all three boxes. A sealed and dehumidified crawl space removes them — no easy entry, no standing dampness, and no debris to nest in.
+          </p>
+          <div
+            style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit,minmax(220px,1fr))',
+              gap: 20,
+            }}
+          >
             {[
-              'Surface cleaning removes visible growth but not the moisture feeding it',
-              'Ground moisture continues to evaporate into the crawl space air',
-              'No vapor barrier means humidity keeps cycling above the mold threshold',
-              'Open or leaking vents let humid outdoor air in during warm months',
-              'Plumbing leaks or poor drainage are never identified or repaired',
-            ].map((item) => (
-              <div key={item} style={{ display: 'flex', alignItems: 'flex-start', gap: 12 }}>
-                <XMark size={18} />
-                <span style={{ fontSize: 16, color: '#D1D5DB', lineHeight: 1.6 }}>{item}</span>
+              {
+                title: 'Shelter',
+                body: 'Open vents, torn screens, and gaps around penetrations give pests a protected, low-traffic space to hide and nest.',
+              },
+              {
+                title: 'Warmth',
+                body: 'The ground beneath a home holds heat more evenly than the outdoors, making a crawl space a comfortable refuge in cold and hot weather alike.',
+              },
+              {
+                title: 'Moisture',
+                body: 'Ground moisture and humid outdoor air entering through open vents give pests the water source they need to survive.',
+              },
+            ].map((card) => (
+              <div
+                key={card.title}
+                style={{
+                  background: '#0D0D0D',
+                  border: '1px solid rgba(255,255,255,.1)',
+                  borderRadius: 12,
+                  padding: 20,
+                }}
+              >
+                <h3
+                  style={{
+                    fontFamily: "'Barlow Condensed',sans-serif",
+                    fontWeight: 800,
+                    fontSize: 19,
+                    textTransform: 'uppercase' as const,
+                    color: '#F5A623',
+                    margin: '0 0 10px',
+                  }}
+                >
+                  {card.title}
+                </h3>
+                <p style={{ fontSize: 15, color: '#D1D5DB', margin: 0, lineHeight: 1.6 }}>{card.body}</p>
               </div>
             ))}
           </div>
-          <p style={{ fontSize: 15, color: '#9CA3AF', fontStyle: 'italic', margin: 0, lineHeight: 1.6, maxWidth: 700 }}>
-            Mold remediation that does not address moisture is typically a temporary fix. Lasting results come from controlling the conditions mold needs to grow.
-          </p>
         </div>
       </section>
 
-      {/* Moisture Control: The Real Fix */}
+      {/* Our Process */}
       <section
         style={{
           background: '#F9FAFB',
@@ -528,7 +516,7 @@ export default function CrawlSpaceMoldWarningSignsPage() {
               margin: '0 0 12px',
             }}
           >
-            The Real Fix
+            Our Process
           </p>
           <h2
             style={{
@@ -537,61 +525,56 @@ export default function CrawlSpaceMoldWarningSignsPage() {
               fontSize: 'clamp(28px,5vw,44px)',
               textTransform: 'uppercase' as const,
               color: '#0D0D0D',
-              margin: '0 0 24px',
+              margin: '0 0 32px',
             }}
           >
-            Moisture Control: Encapsulation and Dehumidification
+            Our Crawl Space Exclusion Process
           </h2>
-          <p style={{ fontSize: 17, color: '#4b5563', lineHeight: 1.7, margin: '0 0 36px', maxWidth: 760 }}>
-            Long-term mold control starts with controlling moisture, not just cleaning what is already there. A full encapsulation system combines a sealed ground and wall vapor barrier with vent sealing and active dehumidification to keep crawl space humidity below the level mold needs to grow.
-          </p>
-          <div
-            style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit,minmax(240px,1fr))',
-              gap: 20,
-            }}
-          >
+          <div style={{ display: 'flex', flexDirection: 'column' as const, gap: 20, maxWidth: 760 }}>
             {[
               {
-                title: 'Sealed Vapor Barrier',
-                body: 'A heavy-duty liner on the ground and walls blocks ground moisture from evaporating into the crawl space air.',
+                title: '1. Free Inspection',
+                body: 'We inspect the crawl space for existing entry points, damaged vents, and signs of pest activity such as droppings, gnaw marks, or nesting material.',
               },
               {
-                title: 'Vent and Air Sealing',
-                body: 'Sealing foundation vents and gaps keeps humid outdoor air from entering and re-raising crawl space humidity.',
+                title: '2. Seal Entry Points',
+                body: 'We seal foundation vents and repair gaps and penetrations around pipes, wiring, and framing that pests use to get in.',
               },
               {
-                title: 'Dehumidification',
-                body: 'A crawl space dehumidifier actively maintains target humidity year-round, which standard ventilation cannot reliably do.',
+                title: '3. Remove Damaged Insulation',
+                body: 'Where insulation has been chewed, soiled, or displaced, we remove and dispose of it so it does not continue to shelter pests or feed moisture problems.',
               },
               {
-                title: 'Drainage Where Needed',
-                body: 'In crawl spaces with standing water or seasonal flooding, drainage matting and a sump pump remove bulk water before it becomes a moisture source.',
+                title: '4. Install Vapor Barrier & Encapsulation',
+                body: 'A sealed ground and wall vapor barrier removes the moisture pests depend on, and full encapsulation locks the crawl space down as a controlled, unwelcoming environment.',
               },
-            ].map((card) => (
+              {
+                title: '5. Coordinate on Active Infestations',
+                body: 'If there is an active infestation or an animal currently living in the crawl space, that should be handled by a licensed pest control or wildlife removal specialist before or alongside our sealing work. We are glad to coordinate timing with a specialist you choose.',
+              },
+            ].map((step) => (
               <div
-                key={card.title}
+                key={step.title}
                 style={{
                   background: '#fff',
                   border: '1px solid #E5E7EB',
                   borderRadius: 12,
-                  padding: 20,
+                  padding: '20px 24px',
                 }}
               >
                 <h3
                   style={{
                     fontFamily: "'Barlow Condensed',sans-serif",
                     fontWeight: 800,
-                    fontSize: 18,
+                    fontSize: 19,
                     textTransform: 'uppercase' as const,
                     color: '#1B3A6B',
-                    margin: '0 0 10px',
+                    margin: '0 0 8px',
                   }}
                 >
-                  {card.title}
+                  {step.title}
                 </h3>
-                <p style={{ fontSize: 15, color: '#4b5563', margin: 0, lineHeight: 1.6 }}>{card.body}</p>
+                <p style={{ fontSize: 15, color: '#4b5563', margin: 0, lineHeight: 1.6 }}>{step.body}</p>
               </div>
             ))}
           </div>
@@ -700,7 +683,7 @@ export default function CrawlSpaceMoldWarningSignsPage() {
               margin: '0 0 36px',
             }}
           >
-            Crawl Space Mold FAQ
+            Crawl Space Pest Control FAQ
           </h2>
           <div style={{ display: 'flex', flexDirection: 'column' as const, gap: 16 }}>
             {faqItems.map((item) => (

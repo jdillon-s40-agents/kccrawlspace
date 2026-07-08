@@ -8,7 +8,9 @@ export const metadata: Metadata = {
   title: { absolute: 'Crawl Space Encapsulation Parkville, MO | KC Crawl Space Specialists' },
   description:
     'Crawl space encapsulation in Parkville, MO. Serving Historic Downtown Parkville, English Landing, and Platte County. Free inspection. Same-week service.',
-};
+  alternates: {
+    canonical: 'https://www.crawlspacekc.com/crawl-space-encapsulation-parkville-mo/',
+  }};
 
 const jsonLd = {
   '@context': 'https://schema.org',

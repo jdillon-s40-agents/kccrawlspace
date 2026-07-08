@@ -8,7 +8,9 @@ export const metadata: Metadata = {
   title: { absolute: 'Crawl Space Encapsulation Spring Hill, KS | KC Crawl Space Specialists' },
   description:
     'Crawl space encapsulation in Spring Hill, KS. Serving south Johnson County and Miami County border communities. Free inspection. Same-week service.',
-};
+  alternates: {
+    canonical: 'https://www.crawlspacekc.com/crawl-space-encapsulation-spring-hill-ks/',
+  }};
 
 function Check({ size = 16 }: { size?: number }) {
   return (

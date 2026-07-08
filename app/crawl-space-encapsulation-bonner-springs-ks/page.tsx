@@ -8,7 +8,9 @@ export const metadata: Metadata = {
   title: { absolute: 'Crawl Space Encapsulation Bonner Springs, KS | Free Inspection' },
   description:
     'Crawl space encapsulation in Bonner Springs, KS. Wyandotte County, near I-70 and Kansas River. Older homes. Lifetime warranty. Free inspection.',
-};
+  alternates: {
+    canonical: 'https://www.crawlspacekc.com/crawl-space-encapsulation-bonner-springs-ks/',
+  }};
 
 function Check({ size = 16 }: { size?: number }) {
   return (

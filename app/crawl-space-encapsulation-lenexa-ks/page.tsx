@@ -8,7 +8,9 @@ export const metadata: Metadata = {
   title: { absolute: 'Crawl Space Encapsulation Lenexa, KS | KC Crawl Space Specialists' },
   description:
     'Crawl space encapsulation in Lenexa, KS. Serving Shawnee Mission area, 87th Street Parkway, and all of Johnson County. Free inspection. Same-week appointments.',
-};
+  alternates: {
+    canonical: 'https://www.crawlspacekc.com/crawl-space-encapsulation-lenexa-ks/',
+  }};
 
 const cardStyle = {
   background: '#111827',

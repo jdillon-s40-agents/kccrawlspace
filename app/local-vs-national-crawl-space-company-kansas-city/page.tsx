@@ -5,11 +5,11 @@ import FinancingOptions from '@/components/FinancingOptions';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: { absolute: 'Crawl Space Mold Warning Signs | Kansas City Mold Guide' },
+  title: { absolute: 'Local Specialist vs. National Franchise | Kansas City Crawl Space Companies' },
   description:
-    'Learn the warning signs of crawl space mold — musty odors, white or dark growth, condensation — and why fixing the moisture source matters in Kansas City homes.',
+    'Comparing quotes for crawl space work in Kansas City? Learn the real differences between independently owned local specialists and national home-services franchises.',
   alternates: {
-    canonical: 'https://www.crawlspacekc.com/crawl-space-mold-warning-signs/',
+    canonical: 'https://www.crawlspacekc.com/local-vs-national-crawl-space-company-kansas-city/',
   }};
 
 function Check({ color = '#16A34A', size = 16 }: { color?: string; size?: number }) {
@@ -51,47 +51,83 @@ function XMark({ size = 16 }: { size?: number }) {
 
 const faqItems = [
   {
-    q: 'What does mold look like in a crawl space?',
-    a: 'Crawl space mold commonly appears as fuzzy white patches, dark gray or black staining, or a powdery coating on wood framing, subfloor, and insulation. It is often paired with a musty, earthy smell even before it is visible.',
+    q: 'Are national franchises always more expensive than local companies?',
+    a: 'Not necessarily, and pricing varies by company on both sides. What is generally true across the home-services industry is that large franchises often carry higher overhead — national marketing, corporate staff, and commissioned sales roles — which can be reflected in bundled package pricing. Local specialists typically have lower overhead, but the only way to know for a specific job is to compare itemized, written estimates.',
   },
   {
-    q: 'Is white mold or black mold worse?',
-    a: 'Color alone does not tell you how serious a mold problem is. White mold tends to grow faster on damp wood and can spread quickly across framing, while dark mold often signals more prolonged moisture exposure. Both indicate a moisture problem that needs to be corrected.',
+    q: 'Are local crawl space companies less reliable than big national brands?',
+    a: 'Company size does not determine reliability. Reliability comes down to licensing, insurance, workmanship, and how a company stands behind its work, not whether it operates in one metro area or dozens. A well-established local specialist with a track record in Kansas City can be just as reliable as a national brand, and homeowners should evaluate any company on its own merits.',
   },
   {
-    q: 'Can I just clean the mold myself?',
-    a: 'Surface cleaning can remove visible growth temporarily, but if the moisture source is not corrected, mold typically returns. For larger or recurring growth, a professional evaluation is recommended to assess the extent of the problem and the right remediation approach.',
+    q: 'Do local companies offer the same warranties as national franchises?',
+    a: 'Many local companies offer strong warranties on their materials and workmanship. The key difference is who stands behind it. With a local specialist, the same business that installed the system is the one honoring the warranty. With a franchise, warranty terms are often set at the corporate level, which can mean more standardized paperwork but a longer chain between the homeowner and the people who actually did the work. Always ask for the warranty in writing and confirm exactly what it covers before signing anything.',
   },
   {
-    q: 'Why does crawl space mold keep coming back after cleaning?',
-    a: 'Mold needs moisture to grow, so cleaning the surface without addressing humidity, ground moisture, or water intrusion leaves the underlying condition in place. Recurring mold is usually a sign that the crawl space needs a vapor barrier, sealing, or dehumidification, not just another cleaning.',
+    q: 'How do I verify a company is licensed and insured in Missouri or Kansas?',
+    a: 'Ask any company for proof of general liability insurance and, where applicable, any local business licensing before work begins. You can also ask for references from recent local jobs. A legitimate company, local or national, should provide this documentation without hesitation.',
   },
   {
-    q: 'Does crawl space mold affect air quality in my house?',
-    a: 'Crawl space air can move into the living space through gaps, ductwork, and the stack effect, so conditions below the home may contribute to indoor air quality concerns. An inspection can help determine whether your crawl space is a factor in your home\'s air quality.',
+    q: 'Should I get multiple quotes before choosing a crawl space company?',
+    a: 'Yes. Getting two or three written, itemized estimates is one of the best ways to understand the scope of work being recommended, compare pricing structures, and see how each company communicates. It also gives you a chance to compare a local specialist and a national franchise side by side using the same crawl space conditions.',
   },
   {
-    q: 'How do I know if I need a professional mold inspection?',
-    a: 'If you notice a persistent musty odor, visible staining or growth on wood, recurring high humidity, or mold that returns after cleaning, a professional inspection can identify the extent of the issue and the moisture source causing it.',
+    q: 'Is it normal for an estimate to include financing options?',
+    a: 'Yes, financing is common in the crawl space and foundation repair industry given the scope of many projects. Both local companies and national franchises may offer financing. What matters is understanding the terms clearly and making sure financing is offered as an option, not a pressure tactic to close the sale on the spot.',
   },
   {
-    q: 'Does encapsulation stop mold from growing?',
-    a: 'Encapsulation is designed to control the humidity and ground moisture that mold needs to grow. Combined with a sealed vapor barrier and dehumidification, it addresses the conditions that allow mold to return after cleaning or remediation.',
+    q: 'Why do some companies use commissioned sales reps instead of technicians for estimates?',
+    a: 'Commission-based sales structures are common across the home-services franchise industry broadly, where a sales representative handles the quote and a separate crew performs the installation. This is simply a business model choice, not a reflection of quality. Some homeowners prefer speaking directly with the person who will do the work, which is more common with smaller, owner-operated companies.',
   },
   {
-    q: 'Is crawl space mold dangerous to my health?',
-    a: 'Reactions to mold vary by individual, and we are not able to make medical claims. If you or household members have ongoing respiratory or allergy concerns, it is best to consult a physician and have the crawl space professionally evaluated for moisture and mold.',
+    q: 'What is the biggest tradeoff between a local specialist and a national franchise?',
+    a: 'In general terms, national franchises can offer the scale, standardized systems, and brand recognition of a larger organization, while local specialists tend to offer more direct communication, scheduling flexibility, and personal accountability since the owner is often involved in the work itself. Neither model is automatically better — the right choice depends on what matters most to you for this specific project.',
   },
 ];
 
 const relatedLinks = [
-  { label: 'Crawl Space Mold KC', href: '/crawl-space-mold-kansas-city/' },
-  { label: 'Musty Crawl Space', href: '/crawl-space-smells-musty/' },
-  { label: 'Dehumidifier KC', href: '/crawl-space-dehumidifier-kansas-city/' },
   { label: 'Crawl Space Encapsulation KC', href: '/crawl-space-encapsulation-kansas-city/' },
+  { label: 'Encapsulation Cost KC', href: '/crawl-space-encapsulation-cost-kansas-city/' },
+  { label: 'About Us', href: '/about' },
+  { label: 'Pricing', href: '/pricing' },
 ];
 
-export default function CrawlSpaceMoldWarningSignsPage() {
+const comparisonRows = [
+  {
+    factor: 'Who Gives the Quote',
+    local: 'The owner or an experienced technician, often the same person who may do or oversee the work',
+    national: 'Frequently a commissioned sales representative rather than the installing crew',
+  },
+  {
+    factor: 'Pricing Structure',
+    local: 'Transparent, itemized line pricing for the specific work being recommended',
+    national: 'Often bundled into standardized "packages" set at the corporate level',
+  },
+  {
+    factor: 'Scheduling Flexibility',
+    local: 'Direct scheduling with the business, often same-week appointments',
+    national: 'Routed through a corporate scheduling queue across a larger service area',
+  },
+  {
+    factor: 'Warranty Backing',
+    local: 'The local business that did the work honors the warranty directly',
+    national: 'Warranty terms and honoring are typically set by corporate policy',
+  },
+  {
+    factor: 'Focus',
+    local: 'Specializes solely in crawl space work',
+    national: 'Often one of several service lines (basements, foundations, gutters, pest control) under one brand',
+  },
+];
+
+const questionsToAsk = [
+  'Is the person quoting me the person doing the work?',
+  'Is the estimate written and itemized, or a bundled package price?',
+  'What exactly does the warranty cover, and who honors it?',
+  'Can I get a same-week or fixed appointment window?',
+  'Do you specialize in crawl spaces, or is this one of several services you offer?',
+];
+
+export default function LocalVsNationalCrawlSpaceCompanyPage() {
   return (
     <main>
       <script
@@ -107,8 +143,8 @@ export default function CrawlSpaceMoldWarningSignsPage() {
                   {
                     '@type': 'ListItem',
                     position: 2,
-                    name: 'Crawl Space Mold Warning Signs',
-                    item: 'https://crawlspacekc.com/crawl-space-mold-warning-signs/',
+                    name: 'Local Specialist vs. National Franchise',
+                    item: 'https://crawlspacekc.com/local-vs-national-crawl-space-company-kansas-city/',
                   },
                 ],
               },
@@ -167,7 +203,7 @@ export default function CrawlSpaceMoldWarningSignsPage() {
               margin: '0 0 16px',
             }}
           >
-            Crawl Space Mold
+            What Homeowners Should Know
           </p>
           <h1
             style={{
@@ -180,8 +216,8 @@ export default function CrawlSpaceMoldWarningSignsPage() {
               lineHeight: 1.05,
             }}
           >
-            Crawl Space Mold{' '}
-            <span style={{ color: '#F5A623' }}>Warning Signs</span>
+            Local Specialist or National Franchise?{' '}
+            <span style={{ color: '#F5A623' }}>Choosing a Kansas City Crawl Space Company</span>
           </h1>
           <p
             style={{
@@ -192,7 +228,7 @@ export default function CrawlSpaceMoldWarningSignsPage() {
               lineHeight: 1.6,
             }}
           >
-            Mold under your home rarely shows up out of nowhere. Here are the warning signs Kansas City homeowners should watch for, and why fixing the moisture behind it matters more than cleaning the surface.
+            Kansas City homeowners often end up with quotes from both large national home-services franchises and small, independently owned local specialists. The differences between the two go well beyond the number at the bottom of the estimate.
           </p>
           <div style={{ display: 'flex', gap: 16, flexWrap: 'wrap' as const, alignItems: 'center' }}>
             <Link
@@ -208,7 +244,7 @@ export default function CrawlSpaceMoldWarningSignsPage() {
                 display: 'inline-block',
               }}
             >
-              Get a Free Estimate
+              Get a Free Local Estimate
             </Link>
             <a
               href={PHONE_HREF}
@@ -259,10 +295,10 @@ export default function CrawlSpaceMoldWarningSignsPage() {
               margin: '0 0 24px',
             }}
           >
-            What Are the Warning Signs of Crawl Space Mold?
+            What&apos;s the Difference Between a Local Specialist and a National Franchise?
           </h2>
           <p style={{ fontSize: 17, color: '#4b5563', lineHeight: 1.7, margin: '0 0 28px', maxWidth: 760 }}>
-            Common crawl space mold warning signs include musty odors, visible white or dark growth on wood, high humidity, damp insulation, condensation, wood staining, and recurring moisture. Mold should be treated as a moisture problem first because it can return if humidity, water intrusion, or ventilation issues are not corrected.
+            National franchises generally operate a standardized sales process across many locations, and it is common in that model for a commissioned sales representative — rather than the technician who ultimately performs the work — to run the in-home estimate. Independently owned local specialists are typically structured differently: the owner or a senior technician often handles the quote directly, and the same business stays the single point of contact from the initial estimate through the completed installation and any warranty follow-up.
           </p>
           <div
             style={{
@@ -274,13 +310,13 @@ export default function CrawlSpaceMoldWarningSignsPage() {
             }}
           >
             <p style={{ fontSize: 16, color: '#0D0D0D', margin: 0, lineHeight: 1.6 }}>
-              <strong>Short answer:</strong> Musty smells, visible growth, and recurring humidity are the clearest signs. Cleaning mold without fixing the moisture source usually means it comes back.
+              <strong>Short answer:</strong> Neither business model is inherently better. The tradeoffs are about who quotes the job, how pricing is structured, how flexible scheduling is, and how directly a company is accountable to you once the work is done.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Common Warning Signs */}
+      {/* Comparison */}
       <section
         style={{
           background: '#0D0D0D',
@@ -297,7 +333,7 @@ export default function CrawlSpaceMoldWarningSignsPage() {
               margin: '0 0 12px',
             }}
           >
-            What to Look For
+            Business Models Compared
           </p>
           <h2
             style={{
@@ -309,65 +345,88 @@ export default function CrawlSpaceMoldWarningSignsPage() {
               margin: '0 0 24px',
             }}
           >
-            Common Warning Signs of Mold in a Crawl Space
+            Local Specialist vs. National Franchise, Factor by Factor
           </h2>
           <p style={{ fontSize: 17, color: '#9CA3AF', lineHeight: 1.7, margin: '0 0 36px', maxWidth: 760 }}>
-            Mold growth is often noticed in the living space before it is ever seen in the crawl space. These are the most common indicators homeowners report, either upstairs or during a crawl space inspection.
+            These are general, well-known differences between the two business models common in the crawl space and foundation repair industry, not a claim about any specific company.
           </p>
           <div
             style={{
               display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit,minmax(240px,1fr))',
+              gridTemplateColumns: 'repeat(auto-fit,minmax(260px,1fr))',
               gap: 20,
+              marginBottom: 20,
             }}
           >
-            {[
-              {
-                title: 'Musty Odor',
-                body: 'A persistent earthy or musty smell in the home, especially near floor vents or in rooms above the crawl space, is one of the earliest signs.',
-              },
-              {
-                title: 'Visible Growth on Wood',
-                body: 'Fuzzy white patches or dark staining on floor joists, subfloor, and beams indicate active or past mold growth.',
-              },
-              {
-                title: 'Condensation and Damp Insulation',
-                body: 'Sweating pipes, ductwork, or insulation that feels damp to the touch points to humidity levels high enough to support mold.',
-              },
-              {
-                title: 'High Humidity Readings',
-                body: 'Crawl space humidity consistently above 60% creates the conditions mold needs to establish and spread.',
-              },
-            ].map((card) => (
-              <div
-                key={card.title}
+            <div
+              style={{
+                background: '#111827',
+                border: '2px solid #F5A623',
+                borderRadius: 12,
+                padding: 24,
+              }}
+            >
+              <h3
                 style={{
-                  background: '#111827',
-                  border: '1px solid rgba(255,255,255,.08)',
-                  borderRadius: 12,
-                  padding: 20,
+                  fontFamily: "'Barlow Condensed',sans-serif",
+                  fontWeight: 800,
+                  fontSize: 20,
+                  textTransform: 'uppercase' as const,
+                  color: '#F5A623',
+                  margin: '0 0 16px',
                 }}
               >
-                <h3
-                  style={{
-                    fontFamily: "'Barlow Condensed',sans-serif",
-                    fontWeight: 800,
-                    fontSize: 19,
-                    textTransform: 'uppercase' as const,
-                    color: '#F5A623',
-                    margin: '0 0 10px',
-                  }}
-                >
-                  {card.title}
-                </h3>
-                <p style={{ fontSize: 15, color: '#D1D5DB', margin: 0, lineHeight: 1.6 }}>{card.body}</p>
+                Independently Owned Local Specialist
+              </h3>
+              <div style={{ display: 'flex', flexDirection: 'column' as const, gap: 14 }}>
+                {comparisonRows.map((row) => (
+                  <div key={row.factor} style={{ display: 'flex', alignItems: 'flex-start', gap: 10 }}>
+                    <Check size={16} />
+                    <span style={{ fontSize: 14.5, color: '#D1D5DB', lineHeight: 1.55 }}>
+                      <strong style={{ color: '#fff' }}>{row.factor}:</strong> {row.local}
+                    </span>
+                  </div>
+                ))}
               </div>
-            ))}
+            </div>
+            <div
+              style={{
+                background: '#111827',
+                border: '1px solid rgba(255,255,255,.08)',
+                borderRadius: 12,
+                padding: 24,
+              }}
+            >
+              <h3
+                style={{
+                  fontFamily: "'Barlow Condensed',sans-serif",
+                  fontWeight: 800,
+                  fontSize: 20,
+                  textTransform: 'uppercase' as const,
+                  color: '#9CA3AF',
+                  margin: '0 0 16px',
+                }}
+              >
+                National Franchise
+              </h3>
+              <div style={{ display: 'flex', flexDirection: 'column' as const, gap: 14 }}>
+                {comparisonRows.map((row) => (
+                  <div key={row.factor} style={{ display: 'flex', alignItems: 'flex-start', gap: 10 }}>
+                    <span style={{ fontSize: 14.5, color: '#9CA3AF', lineHeight: 1.55 }}>
+                      <strong style={{ color: '#D1D5DB' }}>{row.factor}:</strong> {row.national}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
+          <p style={{ fontSize: 15, color: '#6B7280', fontStyle: 'italic', margin: 0, lineHeight: 1.6, maxWidth: 760 }}>
+            These are general industry patterns, not a statement about any specific competitor. Individual companies on both sides can vary.
+          </p>
         </div>
       </section>
 
-      {/* White Mold vs Dark Mold */}
+      {/* When a National Franchise Might Make Sense */}
       <section
         style={{
           background: '#F9FAFB',
@@ -384,7 +443,7 @@ export default function CrawlSpaceMoldWarningSignsPage() {
               margin: '0 0 12px',
             }}
           >
-            Comparison
+            To Be Fair
           </p>
           <h2
             style={{
@@ -393,74 +452,27 @@ export default function CrawlSpaceMoldWarningSignsPage() {
               fontSize: 'clamp(28px,5vw,44px)',
               textTransform: 'uppercase' as const,
               color: '#0D0D0D',
-              margin: '0 0 36px',
+              margin: '0 0 24px',
             }}
           >
-            White Mold vs Dark Mold in a Crawl Space
+            When a National Franchise Might Make Sense
           </h2>
-          <div
-            style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit,minmax(260px,1fr))',
-              gap: 20,
-            }}
-          >
-            <div
-              style={{
-                background: '#fff',
-                border: '1px solid #E5E7EB',
-                borderRadius: 12,
-                padding: 24,
-              }}
-            >
-              <h3
-                style={{
-                  fontFamily: "'Barlow Condensed',sans-serif",
-                  fontWeight: 800,
-                  fontSize: 20,
-                  textTransform: 'uppercase' as const,
-                  color: '#1B3A6B',
-                  margin: '0 0 12px',
-                }}
-              >
-                White Mold
-              </h3>
-              <p style={{ fontSize: 15, color: '#4b5563', margin: 0, lineHeight: 1.6 }}>
-                Often appears powdery or fuzzy on wood surfaces and can spread quickly across framing in humid conditions. It can be easy to overlook because it sometimes blends in with raw wood or efflorescence.
-              </p>
-            </div>
-            <div
-              style={{
-                background: '#fff',
-                border: '1px solid #E5E7EB',
-                borderRadius: 12,
-                padding: 24,
-              }}
-            >
-              <h3
-                style={{
-                  fontFamily: "'Barlow Condensed',sans-serif",
-                  fontWeight: 800,
-                  fontSize: 20,
-                  textTransform: 'uppercase' as const,
-                  color: '#1B3A6B',
-                  margin: '0 0 12px',
-                }}
-              >
-                Dark / Black Mold
-              </h3>
-              <p style={{ fontSize: 15, color: '#4b5563', margin: 0, lineHeight: 1.6 }}>
-                Tends to appear as dark gray, green-black, or black staining and is more visible against wood. It often signals more prolonged or repeated moisture exposure in that area.
-              </p>
-            </div>
+          <div style={{ display: 'flex', flexDirection: 'column' as const, gap: 16, maxWidth: 760 }}>
+            {[
+              'You own property in multiple states and want a single brand relationship across locations.',
+              'Your job requires a specialized, proprietary system that is only installed by a particular franchise network.',
+              'You place a high priority on the scale, bonding capacity, or corporate infrastructure of a larger organization.',
+            ].map((item) => (
+              <div key={item} style={{ display: 'flex', alignItems: 'flex-start', gap: 12 }}>
+                <Check size={18} />
+                <span style={{ fontSize: 16, color: '#374151', lineHeight: 1.6 }}>{item}</span>
+              </div>
+            ))}
           </div>
-          <p style={{ fontSize: 15, color: '#6B7280', fontStyle: 'italic', margin: '24px 0 0', lineHeight: 1.6, maxWidth: 760 }}>
-            Color is not a reliable way to judge severity or species on its own. Both white and dark growth indicate active moisture and should be evaluated rather than compared by appearance alone.
-          </p>
         </div>
       </section>
 
-      {/* Why Mold Keeps Coming Back */}
+      {/* When a Local Specialist Might Make Sense */}
       <section
         style={{
           background: '#1B3A6B',
@@ -477,7 +489,7 @@ export default function CrawlSpaceMoldWarningSignsPage() {
               margin: '0 0 12px',
             }}
           >
-            Recurring Mold
+            Also Worth Considering
           </p>
           <h2
             style={{
@@ -486,35 +498,31 @@ export default function CrawlSpaceMoldWarningSignsPage() {
               fontSize: 'clamp(28px,5vw,44px)',
               textTransform: 'uppercase' as const,
               color: '#fff',
-              margin: '0 0 32px',
+              margin: '0 0 24px',
             }}
           >
-            Why Mold Keeps Coming Back After Cleaning
+            When a Local Specialist Might Make Sense
           </h2>
-          <div style={{ display: 'flex', flexDirection: 'column' as const, gap: 16, maxWidth: 700, marginBottom: 24 }}>
+          <div style={{ display: 'flex', flexDirection: 'column' as const, gap: 16, maxWidth: 760 }}>
             {[
-              'Surface cleaning removes visible growth but not the moisture feeding it',
-              'Ground moisture continues to evaporate into the crawl space air',
-              'No vapor barrier means humidity keeps cycling above the mold threshold',
-              'Open or leaking vents let humid outdoor air in during warm months',
-              'Plumbing leaks or poor drainage are never identified or repaired',
+              'You want to speak directly with the person doing the actual work, from the first quote through completion.',
+              'You want faster scheduling without routing through a corporate call center or regional queue.',
+              'You want a company that focuses solely on crawl spaces rather than splitting attention across basements, foundations, gutters, pest control, and other service lines.',
+              'You value personal accountability from an owner-operator who has a direct stake in the reputation of the work.',
             ].map((item) => (
               <div key={item} style={{ display: 'flex', alignItems: 'flex-start', gap: 12 }}>
-                <XMark size={18} />
+                <Check size={18} />
                 <span style={{ fontSize: 16, color: '#D1D5DB', lineHeight: 1.6 }}>{item}</span>
               </div>
             ))}
           </div>
-          <p style={{ fontSize: 15, color: '#9CA3AF', fontStyle: 'italic', margin: 0, lineHeight: 1.6, maxWidth: 700 }}>
-            Mold remediation that does not address moisture is typically a temporary fix. Lasting results come from controlling the conditions mold needs to grow.
-          </p>
         </div>
       </section>
 
-      {/* Moisture Control: The Real Fix */}
+      {/* Questions to Ask */}
       <section
         style={{
-          background: '#F9FAFB',
+          background: '#0D0D0D',
           padding: 'clamp(52px,8vw,88px) clamp(16px,5vw,24px)',
         }}
       >
@@ -524,11 +532,11 @@ export default function CrawlSpaceMoldWarningSignsPage() {
               font: "600 13px 'Inter',sans-serif",
               letterSpacing: '.16em',
               textTransform: 'uppercase' as const,
-              color: '#1B3A6B',
+              color: '#F5A623',
               margin: '0 0 12px',
             }}
           >
-            The Real Fix
+            Before You Sign Anything
           </p>
           <h2
             style={{
@@ -536,64 +544,32 @@ export default function CrawlSpaceMoldWarningSignsPage() {
               fontWeight: 800,
               fontSize: 'clamp(28px,5vw,44px)',
               textTransform: 'uppercase' as const,
-              color: '#0D0D0D',
+              color: '#fff',
               margin: '0 0 24px',
             }}
           >
-            Moisture Control: Encapsulation and Dehumidification
+            Questions to Ask Any Company Before Hiring
           </h2>
-          <p style={{ fontSize: 17, color: '#4b5563', lineHeight: 1.7, margin: '0 0 36px', maxWidth: 760 }}>
-            Long-term mold control starts with controlling moisture, not just cleaning what is already there. A full encapsulation system combines a sealed ground and wall vapor barrier with vent sealing and active dehumidification to keep crawl space humidity below the level mold needs to grow.
+          <p style={{ fontSize: 17, color: '#9CA3AF', lineHeight: 1.7, margin: '0 0 32px', maxWidth: 760 }}>
+            Whether you are talking to a local specialist or a national franchise, these five questions will tell you a lot about how the company operates and what to expect after you sign.
           </p>
           <div
             style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit,minmax(240px,1fr))',
-              gap: 20,
+              background: '#111827',
+              border: '1px solid rgba(255,255,255,.08)',
+              borderRadius: 12,
+              padding: 28,
+              maxWidth: 760,
             }}
           >
-            {[
-              {
-                title: 'Sealed Vapor Barrier',
-                body: 'A heavy-duty liner on the ground and walls blocks ground moisture from evaporating into the crawl space air.',
-              },
-              {
-                title: 'Vent and Air Sealing',
-                body: 'Sealing foundation vents and gaps keeps humid outdoor air from entering and re-raising crawl space humidity.',
-              },
-              {
-                title: 'Dehumidification',
-                body: 'A crawl space dehumidifier actively maintains target humidity year-round, which standard ventilation cannot reliably do.',
-              },
-              {
-                title: 'Drainage Where Needed',
-                body: 'In crawl spaces with standing water or seasonal flooding, drainage matting and a sump pump remove bulk water before it becomes a moisture source.',
-              },
-            ].map((card) => (
-              <div
-                key={card.title}
-                style={{
-                  background: '#fff',
-                  border: '1px solid #E5E7EB',
-                  borderRadius: 12,
-                  padding: 20,
-                }}
-              >
-                <h3
-                  style={{
-                    fontFamily: "'Barlow Condensed',sans-serif",
-                    fontWeight: 800,
-                    fontSize: 18,
-                    textTransform: 'uppercase' as const,
-                    color: '#1B3A6B',
-                    margin: '0 0 10px',
-                  }}
-                >
-                  {card.title}
-                </h3>
-                <p style={{ fontSize: 15, color: '#4b5563', margin: 0, lineHeight: 1.6 }}>{card.body}</p>
-              </div>
-            ))}
+            <div style={{ display: 'flex', flexDirection: 'column' as const, gap: 18 }}>
+              {questionsToAsk.map((question) => (
+                <div key={question} style={{ display: 'flex', alignItems: 'flex-start', gap: 12 }}>
+                  <Check size={18} />
+                  <span style={{ fontSize: 16, color: '#D1D5DB', lineHeight: 1.6 }}>{question}</span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -700,7 +676,7 @@ export default function CrawlSpaceMoldWarningSignsPage() {
               margin: '0 0 36px',
             }}
           >
-            Crawl Space Mold FAQ
+            Local vs. National Crawl Space Companies: FAQ
           </h2>
           <div style={{ display: 'flex', flexDirection: 'column' as const, gap: 16 }}>
             {faqItems.map((item) => (
@@ -746,7 +722,7 @@ export default function CrawlSpaceMoldWarningSignsPage() {
                 color: '#fff',
               }}
             >
-              Get a Free Crawl Space Estimate
+              Get a Free Local Crawl Space Estimate
             </h2>
             <p style={{ fontSize: 16, color: '#9CA3AF', margin: 0 }}>
               No obligation. Same-week appointments available in Kansas City.

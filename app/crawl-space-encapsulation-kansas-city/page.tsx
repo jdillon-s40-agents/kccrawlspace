@@ -80,6 +80,8 @@ const relatedServices = [
   { label: 'Waterproofing KC', href: '/crawl-space-waterproofing-kansas-city/' },
   { label: 'Dehumidifier KC', href: '/crawl-space-dehumidifier-kansas-city/' },
   { label: 'Cost Calculator', href: '/crawl-space-encapsulation-cost-kansas-city/' },
+  { label: 'Pest & Rodent Sealing', href: '/crawl-space-pest-control-kansas-city/' },
+  { label: 'Free Inspection Explained', href: '/free-crawl-space-inspection-kansas-city/' },
 ];
 
 const includedItems = [

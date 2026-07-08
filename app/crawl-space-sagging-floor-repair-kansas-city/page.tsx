@@ -5,11 +5,11 @@ import FinancingOptions from '@/components/FinancingOptions';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: { absolute: 'Crawl Space Mold Warning Signs | Kansas City Mold Guide' },
+  title: { absolute: 'Sagging Floor Repair Kansas City | Crawl Space Support Jacks' },
   description:
-    'Learn the warning signs of crawl space mold — musty odors, white or dark growth, condensation — and why fixing the moisture source matters in Kansas City homes.',
+    'Bouncy or sagging floors above your crawl space? We install steel support jacks, sister joists, and fix the moisture causing rot. Free Kansas City inspection.',
   alternates: {
-    canonical: 'https://www.crawlspacekc.com/crawl-space-mold-warning-signs/',
+    canonical: 'https://www.crawlspacekc.com/crawl-space-sagging-floor-repair-kansas-city/',
   }};
 
 function Check({ color = '#16A34A', size = 16 }: { color?: string; size?: number }) {
@@ -51,47 +51,47 @@ function XMark({ size = 16 }: { size?: number }) {
 
 const faqItems = [
   {
-    q: 'What does mold look like in a crawl space?',
-    a: 'Crawl space mold commonly appears as fuzzy white patches, dark gray or black staining, or a powdery coating on wood framing, subfloor, and insulation. It is often paired with a musty, earthy smell even before it is visible.',
+    q: 'How many support jacks does my house need?',
+    a: 'The number of jacks depends on the span and condition of the beam, the joist spacing, and how much deflection has already occurred. Most homes need anywhere from a handful of jacks under a single weak span to a full row spaced every few feet along a badly sagging beam. An inspection will measure the floor and recommend an exact count.',
   },
   {
-    q: 'Is white mold or black mold worse?',
-    a: 'Color alone does not tell you how serious a mold problem is. White mold tends to grow faster on damp wood and can spread quickly across framing, while dark mold often signals more prolonged moisture exposure. Both indicate a moisture problem that needs to be corrected.',
+    q: 'Can I fix a sagging floor myself?',
+    a: 'Temporary shoring with a jack post from a hardware store can sometimes stop a floor from getting worse, but it is easy to lift unevenly, crack drywall or tile, or push a beam that is already rotted. Properly diagnosing the cause and lifting a structure back into place safely is a job best handled by someone experienced with crawl space framing.',
   },
   {
-    q: 'Can I just clean the mold myself?',
-    a: 'Surface cleaning can remove visible growth temporarily, but if the moisture source is not corrected, mold typically returns. For larger or recurring growth, a professional evaluation is recommended to assess the extent of the problem and the right remediation approach.',
+    q: 'Is a sagging floor an emergency?',
+    a: "It depends on the severity. A slight bounce is usually not urgent, but a floor that has visibly dropped, cracked joists, or a beam that is separating from its support should be looked at quickly. Structural problems tend to get worse, not better, and repair costs generally increase the longer they're left unaddressed.",
   },
   {
-    q: 'Why does crawl space mold keep coming back after cleaning?',
-    a: 'Mold needs moisture to grow, so cleaning the surface without addressing humidity, ground moisture, or water intrusion leaves the underlying condition in place. Recurring mold is usually a sign that the crawl space needs a vapor barrier, sealing, or dehumidification, not just another cleaning.',
+    q: 'Does homeowners insurance cover structural crawl space repair?',
+    a: 'Coverage varies by policy and by cause. Damage from a sudden covered event, such as a burst pipe, is more likely to be covered than gradual deterioration from long-term humidity or wear. We recommend checking with your insurance provider directly, and we can provide documentation and photos from our inspection to support a claim if needed.',
   },
   {
-    q: 'Does crawl space mold affect air quality in my house?',
-    a: 'Crawl space air can move into the living space through gaps, ductwork, and the stack effect, so conditions below the home may contribute to indoor air quality concerns. An inspection can help determine whether your crawl space is a factor in your home\'s air quality.',
+    q: 'How long does a sagging floor repair take?',
+    a: 'Installing support jacks or sistering a few joists is often completed in a single day. Larger jobs involving beam replacement, multiple support points, or moisture control work alongside the structural repair can take one to three days depending on access and scope.',
   },
   {
-    q: 'How do I know if I need a professional mold inspection?',
-    a: 'If you notice a persistent musty odor, visible staining or growth on wood, recurring high humidity, or mold that returns after cleaning, a professional inspection can identify the extent of the issue and the moisture source causing it.',
+    q: 'Will fixing the floor stop the squeaking too?',
+    a: 'Often, yes. Squeaks are frequently caused by the same loose, weak, or shifting framing that causes sagging, so restoring solid support under the joists and beam commonly reduces or eliminates squeaks. Some squeaks come from subfloor fasteners rather than the framing below, so we cannot guarantee every squeak is eliminated, but structural repair resolves the majority of cases.',
   },
   {
-    q: 'Does encapsulation stop mold from growing?',
-    a: 'Encapsulation is designed to control the humidity and ground moisture that mold needs to grow. Combined with a sealed vapor barrier and dehumidification, it addresses the conditions that allow mold to return after cleaning or remediation.',
+    q: 'Do support jacks cause problems when selling my house?',
+    a: 'Professionally installed, permanent steel support jacks are a recognized structural repair and are generally viewed as a positive by inspectors and buyers, especially with documentation of the work. Undocumented DIY shoring or visibly failing supports are far more likely to raise concerns during a home sale.',
   },
   {
-    q: 'Is crawl space mold dangerous to my health?',
-    a: 'Reactions to mold vary by individual, and we are not able to make medical claims. If you or household members have ongoing respiratory or allergy concerns, it is best to consult a physician and have the crawl space professionally evaluated for moisture and mold.',
+    q: 'Is structural crawl space repair covered by a warranty?',
+    a: 'We stand behind our structural repair work and can walk you through the specific coverage for your project at the time of your estimate. Warranty terms can vary depending on the scope of work performed, so ask your technician for written details before work begins.',
   },
 ];
 
 const relatedLinks = [
-  { label: 'Crawl Space Mold KC', href: '/crawl-space-mold-kansas-city/' },
-  { label: 'Musty Crawl Space', href: '/crawl-space-smells-musty/' },
-  { label: 'Dehumidifier KC', href: '/crawl-space-dehumidifier-kansas-city/' },
+  { label: 'Crawl Space Repair KC', href: '/crawl-space-repair-kansas-city/' },
+  { label: 'Crawl Space Waterproofing KC', href: '/crawl-space-waterproofing-kansas-city/' },
   { label: 'Crawl Space Encapsulation KC', href: '/crawl-space-encapsulation-kansas-city/' },
+  { label: 'Standing Water in Crawl Space', href: '/standing-water-in-crawl-space/' },
 ];
 
-export default function CrawlSpaceMoldWarningSignsPage() {
+export default function CrawlSpaceSaggingFloorRepairKansasCityPage() {
   return (
     <main>
       <script
@@ -107,8 +107,8 @@ export default function CrawlSpaceMoldWarningSignsPage() {
                   {
                     '@type': 'ListItem',
                     position: 2,
-                    name: 'Crawl Space Mold Warning Signs',
-                    item: 'https://crawlspacekc.com/crawl-space-mold-warning-signs/',
+                    name: 'Sagging Floor Repair Kansas City',
+                    item: 'https://crawlspacekc.com/crawl-space-sagging-floor-repair-kansas-city/',
                   },
                 ],
               },
@@ -167,7 +167,7 @@ export default function CrawlSpaceMoldWarningSignsPage() {
               margin: '0 0 16px',
             }}
           >
-            Crawl Space Mold
+            Structural Crawl Space Repair
           </p>
           <h1
             style={{
@@ -180,8 +180,8 @@ export default function CrawlSpaceMoldWarningSignsPage() {
               lineHeight: 1.05,
             }}
           >
-            Crawl Space Mold{' '}
-            <span style={{ color: '#F5A623' }}>Warning Signs</span>
+            Sagging Floor Repair{' '}
+            <span style={{ color: '#F5A623' }}>in Kansas City</span>
           </h1>
           <p
             style={{
@@ -192,7 +192,7 @@ export default function CrawlSpaceMoldWarningSignsPage() {
               lineHeight: 1.6,
             }}
           >
-            Mold under your home rarely shows up out of nowhere. Here are the warning signs Kansas City homeowners should watch for, and why fixing the moisture behind it matters more than cleaning the surface.
+            Bouncy, sloping, or sagging floors are usually a structural problem in the crawl space below, not the flooring itself. We install adjustable steel support jacks, repair weak joists, and fix the underlying cause so the floor stays solid.
           </p>
           <div style={{ display: 'flex', gap: 16, flexWrap: 'wrap' as const, alignItems: 'center' }}>
             <Link
@@ -259,10 +259,10 @@ export default function CrawlSpaceMoldWarningSignsPage() {
               margin: '0 0 24px',
             }}
           >
-            What Are the Warning Signs of Crawl Space Mold?
+            What Causes a Sagging Floor Above a Crawl Space?
           </h2>
           <p style={{ fontSize: 17, color: '#4b5563', lineHeight: 1.7, margin: '0 0 28px', maxWidth: 760 }}>
-            Common crawl space mold warning signs include musty odors, visible white or dark growth on wood, high humidity, damp insulation, condensation, wood staining, and recurring moisture. Mold should be treated as a moisture problem first because it can return if humidity, water intrusion, or ventilation issues are not corrected.
+            A sagging or bouncy floor almost always traces back to the framing underneath it. Common causes include floor joists that were undersized for the span or have weakened from rot, support columns and posts spaced too far apart to properly carry the load, posts settling into soft or shifting soil, water damage that has softened and decayed wood over time, and support jacks that were never installed, have failed, or were installed with insufficient capacity. Identifying which of these is happening in your crawl space determines the right repair.
           </p>
           <div
             style={{
@@ -274,13 +274,13 @@ export default function CrawlSpaceMoldWarningSignsPage() {
             }}
           >
             <p style={{ fontSize: 16, color: '#0D0D0D', margin: 0, lineHeight: 1.6 }}>
-              <strong>Short answer:</strong> Musty smells, visible growth, and recurring humidity are the clearest signs. Cleaning mold without fixing the moisture source usually means it comes back.
+              <strong>Short answer:</strong> Weak or rotted joists, undersized support, and settling posts are the most common causes. A crawl space inspection identifies the exact point of failure before any repair begins.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Common Warning Signs */}
+      {/* Signs of a Sagging Floor */}
       <section
         style={{
           background: '#0D0D0D',
@@ -309,10 +309,10 @@ export default function CrawlSpaceMoldWarningSignsPage() {
               margin: '0 0 24px',
             }}
           >
-            Common Warning Signs of Mold in a Crawl Space
+            Signs You Have a Sagging Floor Problem
           </h2>
           <p style={{ fontSize: 17, color: '#9CA3AF', lineHeight: 1.7, margin: '0 0 36px', maxWidth: 760 }}>
-            Mold growth is often noticed in the living space before it is ever seen in the crawl space. These are the most common indicators homeowners report, either upstairs or during a crawl space inspection.
+            Structural issues below the home often show up as small annoyances upstairs before they become obvious. These are the most common signs homeowners notice, either in the living space or during a crawl space inspection.
           </p>
           <div
             style={{
@@ -323,20 +323,28 @@ export default function CrawlSpaceMoldWarningSignsPage() {
           >
             {[
               {
-                title: 'Musty Odor',
-                body: 'A persistent earthy or musty smell in the home, especially near floor vents or in rooms above the crawl space, is one of the earliest signs.',
+                title: 'Bouncy or Spongy Floors',
+                body: 'Floors that flex, bounce, or feel soft underfoot when you walk across them indicate the joists or support below are no longer rigid.',
               },
               {
-                title: 'Visible Growth on Wood',
-                body: 'Fuzzy white patches or dark staining on floor joists, subfloor, and beams indicate active or past mold growth.',
+                title: 'Doors and Windows Sticking',
+                body: 'When a floor sags, the framing around it shifts, which can throw door and window frames out of square so they bind or stick.',
               },
               {
-                title: 'Condensation and Damp Insulation',
-                body: 'Sweating pipes, ductwork, or insulation that feels damp to the touch points to humidity levels high enough to support mold.',
+                title: 'Gaps Between Floor and Baseboard',
+                body: 'A visible gap opening up between the floor and the baseboard is a sign the floor has dropped away from the wall framing.',
               },
               {
-                title: 'High Humidity Readings',
-                body: 'Crawl space humidity consistently above 60% creates the conditions mold needs to establish and spread.',
+                title: 'Cracks in Drywall or Ceilings',
+                body: 'Diagonal cracks in drywall above the affected area, especially near corners, often follow structural movement in the floor below.',
+              },
+              {
+                title: 'Sloping or Uneven Floors',
+                body: 'A floor that visibly slopes toward the center of the house or feels uneven when you set a ball or level on it points to a beam or post settling.',
+              },
+              {
+                title: 'Visible Damage in the Crawl Space',
+                body: 'Cracked, split, or sagging joists, and beams pulling away from their supports are visible confirmation of the problem when viewed from below.',
               },
             ].map((card) => (
               <div
@@ -367,100 +375,7 @@ export default function CrawlSpaceMoldWarningSignsPage() {
         </div>
       </section>
 
-      {/* White Mold vs Dark Mold */}
-      <section
-        style={{
-          background: '#F9FAFB',
-          padding: 'clamp(52px,8vw,88px) clamp(16px,5vw,24px)',
-        }}
-      >
-        <div style={{ maxWidth: 900, margin: '0 auto' }}>
-          <p
-            style={{
-              font: "600 13px 'Inter',sans-serif",
-              letterSpacing: '.16em',
-              textTransform: 'uppercase' as const,
-              color: '#1B3A6B',
-              margin: '0 0 12px',
-            }}
-          >
-            Comparison
-          </p>
-          <h2
-            style={{
-              fontFamily: "'Barlow Condensed',sans-serif",
-              fontWeight: 800,
-              fontSize: 'clamp(28px,5vw,44px)',
-              textTransform: 'uppercase' as const,
-              color: '#0D0D0D',
-              margin: '0 0 36px',
-            }}
-          >
-            White Mold vs Dark Mold in a Crawl Space
-          </h2>
-          <div
-            style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit,minmax(260px,1fr))',
-              gap: 20,
-            }}
-          >
-            <div
-              style={{
-                background: '#fff',
-                border: '1px solid #E5E7EB',
-                borderRadius: 12,
-                padding: 24,
-              }}
-            >
-              <h3
-                style={{
-                  fontFamily: "'Barlow Condensed',sans-serif",
-                  fontWeight: 800,
-                  fontSize: 20,
-                  textTransform: 'uppercase' as const,
-                  color: '#1B3A6B',
-                  margin: '0 0 12px',
-                }}
-              >
-                White Mold
-              </h3>
-              <p style={{ fontSize: 15, color: '#4b5563', margin: 0, lineHeight: 1.6 }}>
-                Often appears powdery or fuzzy on wood surfaces and can spread quickly across framing in humid conditions. It can be easy to overlook because it sometimes blends in with raw wood or efflorescence.
-              </p>
-            </div>
-            <div
-              style={{
-                background: '#fff',
-                border: '1px solid #E5E7EB',
-                borderRadius: 12,
-                padding: 24,
-              }}
-            >
-              <h3
-                style={{
-                  fontFamily: "'Barlow Condensed',sans-serif",
-                  fontWeight: 800,
-                  fontSize: 20,
-                  textTransform: 'uppercase' as const,
-                  color: '#1B3A6B',
-                  margin: '0 0 12px',
-                }}
-              >
-                Dark / Black Mold
-              </h3>
-              <p style={{ fontSize: 15, color: '#4b5563', margin: 0, lineHeight: 1.6 }}>
-                Tends to appear as dark gray, green-black, or black staining and is more visible against wood. It often signals more prolonged or repeated moisture exposure in that area.
-              </p>
-            </div>
-          </div>
-          <p style={{ fontSize: 15, color: '#6B7280', fontStyle: 'italic', margin: '24px 0 0', lineHeight: 1.6, maxWidth: 760 }}>
-            Color is not a reliable way to judge severity or species on its own. Both white and dark growth indicate active moisture and should be evaluated rather than compared by appearance alone.
-          </p>
-        </div>
-      </section>
-
-      {/* Why Mold Keeps Coming Back */}
+      {/* Why It Happens in KC */}
       <section
         style={{
           background: '#1B3A6B',
@@ -477,7 +392,7 @@ export default function CrawlSpaceMoldWarningSignsPage() {
               margin: '0 0 12px',
             }}
           >
-            Recurring Mold
+            Local Conditions
           </p>
           <h2
             style={{
@@ -489,29 +404,18 @@ export default function CrawlSpaceMoldWarningSignsPage() {
               margin: '0 0 32px',
             }}
           >
-            Why Mold Keeps Coming Back After Cleaning
+            Why Sagging Floors Are Common in Kansas City Homes
           </h2>
-          <div style={{ display: 'flex', flexDirection: 'column' as const, gap: 16, maxWidth: 700, marginBottom: 24 }}>
-            {[
-              'Surface cleaning removes visible growth but not the moisture feeding it',
-              'Ground moisture continues to evaporate into the crawl space air',
-              'No vapor barrier means humidity keeps cycling above the mold threshold',
-              'Open or leaking vents let humid outdoor air in during warm months',
-              'Plumbing leaks or poor drainage are never identified or repaired',
-            ].map((item) => (
-              <div key={item} style={{ display: 'flex', alignItems: 'flex-start', gap: 12 }}>
-                <XMark size={18} />
-                <span style={{ fontSize: 16, color: '#D1D5DB', lineHeight: 1.6 }}>{item}</span>
-              </div>
-            ))}
-          </div>
-          <p style={{ fontSize: 15, color: '#9CA3AF', fontStyle: 'italic', margin: 0, lineHeight: 1.6, maxWidth: 700 }}>
-            Mold remediation that does not address moisture is typically a temporary fix. Lasting results come from controlling the conditions mold needs to grow.
+          <p style={{ fontSize: 17, color: '#D1D5DB', lineHeight: 1.7, margin: '0 0 24px', maxWidth: 760 }}>
+            Kansas City sits on expansive clay soil that swells when wet and shrinks when dry, which causes support posts and footings to shift and settle unevenly over time. Combined with the region's humid summers, that soil movement puts crawl space framing under constant stress.
+          </p>
+          <p style={{ fontSize: 17, color: '#D1D5DB', lineHeight: 1.7, margin: 0, maxWidth: 760 }}>
+            Moisture is usually the other half of the story. A damp or wet crawl space accelerates wood rot in joists and beams, which is one of the leading causes of a sagging floor. That means the structural problem and the moisture problem are frequently the same root cause, and a lasting repair often needs to address both, not just the sag itself.
           </p>
         </div>
       </section>
 
-      {/* Moisture Control: The Real Fix */}
+      {/* Repair Solutions */}
       <section
         style={{
           background: '#F9FAFB',
@@ -528,7 +432,7 @@ export default function CrawlSpaceMoldWarningSignsPage() {
               margin: '0 0 12px',
             }}
           >
-            The Real Fix
+            The Fix
           </p>
           <h2
             style={{
@@ -540,10 +444,10 @@ export default function CrawlSpaceMoldWarningSignsPage() {
               margin: '0 0 24px',
             }}
           >
-            Moisture Control: Encapsulation and Dehumidification
+            Sagging Floor Repair Solutions
           </h2>
           <p style={{ fontSize: 17, color: '#4b5563', lineHeight: 1.7, margin: '0 0 36px', maxWidth: 760 }}>
-            Long-term mold control starts with controlling moisture, not just cleaning what is already there. A full encapsulation system combines a sealed ground and wall vapor barrier with vent sealing and active dehumidification to keep crawl space humidity below the level mold needs to grow.
+            The right repair depends on what is actually causing the sag. In most crawl spaces, one or more of the following solutions restores the floor and stops further movement.
           </p>
           <div
             style={{
@@ -554,20 +458,20 @@ export default function CrawlSpaceMoldWarningSignsPage() {
           >
             {[
               {
-                title: 'Sealed Vapor Barrier',
-                body: 'A heavy-duty liner on the ground and walls blocks ground moisture from evaporating into the crawl space air.',
+                title: 'Adjustable Steel Support Jacks',
+                body: 'Galvanized steel jacks and piers are installed on solid footings beneath sagging beams to gradually lift the floor and provide permanent, adjustable support.',
               },
               {
-                title: 'Vent and Air Sealing',
-                body: 'Sealing foundation vents and gaps keeps humid outdoor air from entering and re-raising crawl space humidity.',
+                title: 'Sistering Damaged Joists',
+                body: 'A new joist is cut to fit and bolted alongside a split, cracked, or weakened joist, restoring the load-carrying capacity of the original framing member.',
               },
               {
-                title: 'Dehumidification',
-                body: 'A crawl space dehumidifier actively maintains target humidity year-round, which standard ventilation cannot reliably do.',
+                title: 'Beam and Post Replacement',
+                body: 'When a beam or post has rotted or failed beyond repair, it is replaced outright with properly sized lumber or steel and set on a stable footing.',
               },
               {
-                title: 'Drainage Where Needed',
-                body: 'In crawl spaces with standing water or seasonal flooding, drainage matting and a sump pump remove bulk water before it becomes a moisture source.',
+                title: 'Encapsulation and Moisture Control',
+                body: 'Sealing the crawl space with a vapor barrier and controlling humidity stops the moisture that causes rot, protecting the new structural repair from recurring.',
               },
             ].map((card) => (
               <div
@@ -595,6 +499,162 @@ export default function CrawlSpaceMoldWarningSignsPage() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Process */}
+      <section
+        style={{
+          background: '#0D0D0D',
+          padding: 'clamp(52px,8vw,88px) clamp(16px,5vw,24px)',
+        }}
+      >
+        <div style={{ maxWidth: 900, margin: '0 auto' }}>
+          <p
+            style={{
+              font: "600 13px 'Inter',sans-serif",
+              letterSpacing: '.16em',
+              textTransform: 'uppercase' as const,
+              color: '#F5A623',
+              margin: '0 0 12px',
+            }}
+          >
+            How It Works
+          </p>
+          <h2
+            style={{
+              fontFamily: "'Barlow Condensed',sans-serif",
+              fontWeight: 800,
+              fontSize: 'clamp(28px,5vw,44px)',
+              textTransform: 'uppercase' as const,
+              color: '#fff',
+              margin: '0 0 36px',
+            }}
+          >
+            Our Sagging Floor Repair Process
+          </h2>
+          <div style={{ display: 'flex', flexDirection: 'column' as const, gap: 20, maxWidth: 760 }}>
+            {[
+              {
+                title: 'Free Inspection and Structural Assessment',
+                body: 'A technician crawls the space, measures the floor, and identifies exactly which joists, beams, or posts are causing the sag.',
+              },
+              {
+                title: 'Written Estimate',
+                body: 'You receive a detailed, itemized quote covering the repair scope, materials, and cost before any work is scheduled.',
+              },
+              {
+                title: 'Install Support Jacks and Repair Joists',
+                body: 'Support jacks are set on proper footings and adjusted to lift the floor, while any sistered or replaced joists and beams are installed.',
+              },
+              {
+                title: 'Address the Moisture Source',
+                body: 'Since rot-driven sag tends to return without it, we identify and correct the humidity or water issue feeding the damage.',
+              },
+              {
+                title: 'Final Walkthrough',
+                body: 'We review the completed repair with you, confirm the floor is level and stable, and answer any remaining questions.',
+              },
+            ].map((step, i) => (
+              <div key={step.title} style={{ display: 'flex', gap: 20, alignItems: 'flex-start' }}>
+                <div
+                  style={{
+                    flex: 'none',
+                    width: 40,
+                    height: 40,
+                    borderRadius: '50%',
+                    background: '#F5A623',
+                    color: '#0D0D0D',
+                    font: "800 18px 'Barlow Condensed',sans-serif",
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                  }}
+                >
+                  {i + 1}
+                </div>
+                <div>
+                  <h3
+                    style={{
+                      fontFamily: "'Barlow Condensed',sans-serif",
+                      fontWeight: 800,
+                      fontSize: 20,
+                      textTransform: 'uppercase' as const,
+                      color: '#fff',
+                      margin: '0 0 6px',
+                    }}
+                  >
+                    {step.title}
+                  </h3>
+                  <p style={{ fontSize: 15, color: '#9CA3AF', margin: 0, lineHeight: 1.6 }}>{step.body}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Cost */}
+      <section
+        style={{
+          background: '#F9FAFB',
+          padding: 'clamp(52px,8vw,88px) clamp(16px,5vw,24px)',
+        }}
+      >
+        <div style={{ maxWidth: 900, margin: '0 auto' }}>
+          <p
+            style={{
+              font: "600 13px 'Inter',sans-serif",
+              letterSpacing: '.16em',
+              textTransform: 'uppercase' as const,
+              color: '#1B3A6B',
+              margin: '0 0 12px',
+            }}
+          >
+            Cost
+          </p>
+          <h2
+            style={{
+              fontFamily: "'Barlow Condensed',sans-serif",
+              fontWeight: 800,
+              fontSize: 'clamp(28px,5vw,44px)',
+              textTransform: 'uppercase' as const,
+              color: '#0D0D0D',
+              margin: '0 0 24px',
+            }}
+          >
+            How Much Does Sagging Floor Repair Cost?
+          </h2>
+          <p style={{ fontSize: 17, color: '#4b5563', lineHeight: 1.7, margin: '0 0 28px', maxWidth: 760 }}>
+            Pricing depends on how many support points are needed, how much of the framing is damaged, and how easy the crawl space is to access. As a general guide:
+          </p>
+          <div style={{ display: 'flex', flexDirection: 'column' as const, gap: 14, maxWidth: 700, marginBottom: 28 }}>
+            {[
+              { label: 'Support jack installation', range: '$150 – $500 per jack' },
+              { label: 'Joist sistering', range: '$100 – $300 per joist' },
+              { label: 'Full beam replacement', range: '$1,000 – $3,000+' },
+            ].map((row) => (
+              <div
+                key={row.label}
+                style={{
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  gap: 16,
+                  flexWrap: 'wrap' as const,
+                  background: '#fff',
+                  border: '1px solid #E5E7EB',
+                  borderRadius: 10,
+                  padding: '16px 20px',
+                }}
+              >
+                <span style={{ fontSize: 16, color: '#0D0D0D', fontWeight: 600 }}>{row.label}</span>
+                <span style={{ fontSize: 16, color: '#1B3A6B', fontWeight: 700 }}>{row.range}</span>
+              </div>
+            ))}
+          </div>
+          <p style={{ fontSize: 15, color: '#6B7280', fontStyle: 'italic', margin: 0, lineHeight: 1.6, maxWidth: 700 }}>
+            Exact pricing requires an on-site inspection to determine the number of support points and extent of any damage. We provide a written quote before any work begins, and no work starts until you approve it.
+          </p>
         </div>
       </section>
 
@@ -700,7 +760,7 @@ export default function CrawlSpaceMoldWarningSignsPage() {
               margin: '0 0 36px',
             }}
           >
-            Crawl Space Mold FAQ
+            Sagging Floor Repair FAQ
           </h2>
           <div style={{ display: 'flex', flexDirection: 'column' as const, gap: 16 }}>
             {faqItems.map((item) => (

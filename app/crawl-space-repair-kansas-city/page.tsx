@@ -180,6 +180,7 @@ const relatedServices = [
   { label: 'Waterproofing KC', href: '/crawl-space-waterproofing-kansas-city/' },
   { label: 'Vapor Barrier KC', href: '/crawl-space-vapor-barrier-kansas-city/' },
   { label: 'Dehumidifier KC', href: '/crawl-space-dehumidifier-kansas-city/' },
+  { label: 'Sagging Floor Repair', href: '/crawl-space-sagging-floor-repair-kansas-city/' },
   { label: 'Insulation Removal', href: '/encapsulation' },
 ];
 

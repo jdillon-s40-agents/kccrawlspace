@@ -5,11 +5,11 @@ import FinancingOptions from '@/components/FinancingOptions';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: { absolute: 'Crawl Space Mold Warning Signs | Kansas City Mold Guide' },
+  title: { absolute: 'How to Choose a Crawl Space Contractor in Kansas City' },
   description:
-    'Learn the warning signs of crawl space mold — musty odors, white or dark growth, condensation — and why fixing the moisture source matters in Kansas City homes.',
+    'A homeowner\'s guide to vetting crawl space contractors in Kansas City — licensing, warranties, red flags, and the right questions to ask before you sign.',
   alternates: {
-    canonical: 'https://www.crawlspacekc.com/crawl-space-mold-warning-signs/',
+    canonical: 'https://www.crawlspacekc.com/how-to-choose-a-crawl-space-contractor-kansas-city/',
   }};
 
 function Check({ color = '#16A34A', size = 16 }: { color?: string; size?: number }) {
@@ -49,49 +49,80 @@ function XMark({ size = 16 }: { size?: number }) {
   );
 }
 
+const checklistSteps = [
+  {
+    name: 'Verify licensing and insurance',
+    text: 'Confirm the company carries the applicable Missouri or Kansas licensing for the work being performed, plus general liability insurance and workers\' compensation coverage. Ask for proof, not just a verbal assurance.',
+  },
+  {
+    name: 'Insist on an in-person inspection before any quote',
+    text: 'A trustworthy contractor will physically get into the crawl space and look at the ground, framing, insulation, and any water staining before proposing a fix. Be wary of anyone willing to quote a price over the phone or from a photo alone.',
+  },
+  {
+    name: 'Get a written, itemized estimate',
+    text: 'The estimate should break down materials, labor, and scope of work line by line rather than a single bundled "package" price. Itemization makes it possible to compare quotes and know exactly what you are paying for.',
+  },
+  {
+    name: 'Ask exactly what the warranty covers and who honors it',
+    text: 'Find out whether the warranty is backed by the installing company, a materials manufacturer, or a franchisor, and get clarity on what specifically is covered — the vapor barrier, the dehumidifier, labor, or all three.',
+  },
+  {
+    name: 'Ask whether moisture sources are diagnosed before encapsulation is proposed',
+    text: 'Encapsulation should follow a diagnosis of where water or humidity is coming from. If a company proposes a full encapsulation without ever discussing grading, drainage, plumbing, or ventilation, that is a gap worth questioning.',
+  },
+  {
+    name: 'Ask how long the company has worked in the Kansas City area',
+    text: 'Local experience matters because Kansas City soil, grading, and seasonal humidity patterns differ from other regions. A contractor familiar with local conditions is more likely to diagnose the actual cause correctly.',
+  },
+  {
+    name: 'Get the estimate in writing with no same-day signing pressure',
+    text: 'A reputable contractor will leave you with a written estimate and give you time to review it, compare it, and ask follow-up questions without pressuring you to sign the same day to "lock in" a discount.',
+  },
+];
+
 const faqItems = [
   {
-    q: 'What does mold look like in a crawl space?',
-    a: 'Crawl space mold commonly appears as fuzzy white patches, dark gray or black staining, or a powdery coating on wood framing, subfloor, and insulation. It is often paired with a musty, earthy smell even before it is visible.',
+    q: 'Should I get multiple quotes before hiring a crawl space contractor?',
+    a: 'Yes. Getting two or three written, itemized estimates lets you compare scope of work and pricing side by side, and it also helps you spot outliers — either a company skipping steps to come in low, or one padding the price for a straightforward job.',
   },
   {
-    q: 'Is white mold or black mold worse?',
-    a: 'Color alone does not tell you how serious a mold problem is. White mold tends to grow faster on damp wood and can spread quickly across framing, while dark mold often signals more prolonged moisture exposure. Both indicate a moisture problem that needs to be corrected.',
+    q: 'How do I verify a contractor is actually licensed and insured?',
+    a: 'Ask for their license number and insurance certificate directly, and don\'t hesitate to ask for a certificate of insurance naming you or your address. You can also check with your city or county licensing office, and confirm the company has a verifiable local address rather than a P.O. box or out-of-state office.',
   },
   {
-    q: 'Can I just clean the mold myself?',
-    a: 'Surface cleaning can remove visible growth temporarily, but if the moisture source is not corrected, mold typically returns. For larger or recurring growth, a professional evaluation is recommended to assess the extent of the problem and the right remediation approach.',
+    q: 'Is a lifetime warranty always trustworthy?',
+    a: 'Not automatically. A lifetime warranty is only as good as the company standing behind it. Ask who specifically honors the warranty, whether it transfers to a new homeowner if you sell, and whether it is backed by the installer, a manufacturer, or a franchise network rather than a local branch that could close.',
   },
   {
-    q: 'Why does crawl space mold keep coming back after cleaning?',
-    a: 'Mold needs moisture to grow, so cleaning the surface without addressing humidity, ground moisture, or water intrusion leaves the underlying condition in place. Recurring mold is usually a sign that the crawl space needs a vapor barrier, sealing, or dehumidification, not just another cleaning.',
+    q: 'What is a fair price range to expect for crawl space encapsulation in Kansas City?',
+    a: 'Pricing varies widely based on square footage, existing moisture conditions, and whether drainage or a dehumidifier is needed, which is exactly why an in-person inspection matters more than a phone quote. Comparing itemized estimates from a few local contractors is the most reliable way to gauge a fair price for your specific crawl space.',
   },
   {
-    q: 'Does crawl space mold affect air quality in my house?',
-    a: 'Crawl space air can move into the living space through gaps, ductwork, and the stack effect, so conditions below the home may contribute to indoor air quality concerns. An inspection can help determine whether your crawl space is a factor in your home\'s air quality.',
+    q: 'Should I be suspicious of unusually low quotes?',
+    a: 'A quote that is significantly lower than others is worth a closer look at what is actually included. It may reflect thinner vapor barrier material, no drainage component, no dehumidifier, or a shorter warranty, rather than simply a better deal.',
   },
   {
-    q: 'How do I know if I need a professional mold inspection?',
-    a: 'If you notice a persistent musty odor, visible staining or growth on wood, recurring high humidity, or mold that returns after cleaning, a professional inspection can identify the extent of the issue and the moisture source causing it.',
+    q: 'Can I ask to see photos or references from past jobs in my area?',
+    a: 'Yes, and you should. A contractor with real local experience should be able to show before-and-after photos of completed crawl spaces and, in many cases, provide references from homeowners in your area who had similar work done.',
   },
   {
-    q: 'Does encapsulation stop mold from growing?',
-    a: 'Encapsulation is designed to control the humidity and ground moisture that mold needs to grow. Combined with a sealed vapor barrier and dehumidification, it addresses the conditions that allow mold to return after cleaning or remediation.',
+    q: 'What is the biggest mistake homeowners make when hiring a crawl space contractor?',
+    a: 'Signing based on a phone quote or a same-day discount without an in-person inspection is the most common mistake. Since the work is hidden under the house once it is finished, that upfront diagnosis is the homeowner\'s best chance to confirm the right fix is actually being proposed.',
   },
   {
-    q: 'Is crawl space mold dangerous to my health?',
-    a: 'Reactions to mold vary by individual, and we are not able to make medical claims. If you or household members have ongoing respiratory or allergy concerns, it is best to consult a physician and have the crawl space professionally evaluated for moisture and mold.',
+    q: 'Do I need a mold or moisture inspection before getting an encapsulation quote?',
+    a: 'It helps to have any existing moisture or mold concerns identified before a contractor proposes a fix, since encapsulation should address the specific conditions in your crawl space rather than being a one-size-fits-all product pitch.',
   },
 ];
 
 const relatedLinks = [
-  { label: 'Crawl Space Mold KC', href: '/crawl-space-mold-kansas-city/' },
-  { label: 'Musty Crawl Space', href: '/crawl-space-smells-musty/' },
-  { label: 'Dehumidifier KC', href: '/crawl-space-dehumidifier-kansas-city/' },
   { label: 'Crawl Space Encapsulation KC', href: '/crawl-space-encapsulation-kansas-city/' },
+  { label: 'Encapsulation Cost KC', href: '/crawl-space-encapsulation-cost-kansas-city/' },
+  { label: 'About Us', href: '/about' },
+  { label: 'Frequently Asked Questions', href: '/faq' },
 ];
 
-export default function CrawlSpaceMoldWarningSignsPage() {
+export default function HowToChooseCrawlSpaceContractorPage() {
   return (
     <main>
       <script
@@ -107,8 +138,8 @@ export default function CrawlSpaceMoldWarningSignsPage() {
                   {
                     '@type': 'ListItem',
                     position: 2,
-                    name: 'Crawl Space Mold Warning Signs',
-                    item: 'https://crawlspacekc.com/crawl-space-mold-warning-signs/',
+                    name: 'How to Choose a Crawl Space Contractor in Kansas City',
+                    item: 'https://crawlspacekc.com/how-to-choose-a-crawl-space-contractor-kansas-city/',
                   },
                 ],
               },
@@ -136,6 +167,15 @@ export default function CrawlSpaceMoldWarningSignsPage() {
                   'Lenexa KS',
                   'Liberty MO',
                 ],
+              },
+              {
+                '@type': 'HowTo',
+                name: 'How to Choose a Crawl Space Contractor',
+                step: checklistSteps.map((item) => ({
+                  '@type': 'HowToStep',
+                  name: item.name,
+                  text: item.text,
+                })),
               },
               {
                 '@type': 'FAQPage',
@@ -167,7 +207,7 @@ export default function CrawlSpaceMoldWarningSignsPage() {
               margin: '0 0 16px',
             }}
           >
-            Crawl Space Mold
+            A Homeowner&apos;s Vetting Guide
           </p>
           <h1
             style={{
@@ -180,8 +220,8 @@ export default function CrawlSpaceMoldWarningSignsPage() {
               lineHeight: 1.05,
             }}
           >
-            Crawl Space Mold{' '}
-            <span style={{ color: '#F5A623' }}>Warning Signs</span>
+            How to Choose a{' '}
+            <span style={{ color: '#F5A623' }}>Crawl Space Contractor</span> in Kansas City
           </h1>
           <p
             style={{
@@ -192,7 +232,7 @@ export default function CrawlSpaceMoldWarningSignsPage() {
               lineHeight: 1.6,
             }}
           >
-            Mold under your home rarely shows up out of nowhere. Here are the warning signs Kansas City homeowners should watch for, and why fixing the moisture behind it matters more than cleaning the surface.
+            Crawl space work is hard to inspect once it&apos;s finished — it&apos;s hidden under your house behind a sealed vapor barrier. Unlike a repair you can walk by and look at anytime, you're largely trusting the contractor's diagnosis and workmanship going in. That makes choosing the right contractor upfront more important than with almost any other home improvement project.
           </p>
           <div style={{ display: 'flex', gap: 16, flexWrap: 'wrap' as const, alignItems: 'center' }}>
             <Link
@@ -259,10 +299,10 @@ export default function CrawlSpaceMoldWarningSignsPage() {
               margin: '0 0 24px',
             }}
           >
-            What Are the Warning Signs of Crawl Space Mold?
+            What Should I Look for in a Crawl Space Contractor?
           </h2>
           <p style={{ fontSize: 17, color: '#4b5563', lineHeight: 1.7, margin: '0 0 28px', maxWidth: 760 }}>
-            Common crawl space mold warning signs include musty odors, visible white or dark growth on wood, high humidity, damp insulation, condensation, wood staining, and recurring moisture. Mold should be treated as a moisture problem first because it can return if humidity, water intrusion, or ventilation issues are not corrected.
+            Verify the contractor's licensing and insurance, and insist on a written, itemized estimate rather than a vague bundled package price. Confirm exactly what the warranty covers and who is responsible for honoring it. Make sure the contractor physically inspects your crawl space before quoting, and ask whether they are diagnosing and addressing the actual moisture or water source rather than simply selling encapsulation over an existing, unresolved problem.
           </p>
           <div
             style={{
@@ -274,13 +314,13 @@ export default function CrawlSpaceMoldWarningSignsPage() {
             }}
           >
             <p style={{ fontSize: 16, color: '#0D0D0D', margin: 0, lineHeight: 1.6 }}>
-              <strong>Short answer:</strong> Musty smells, visible growth, and recurring humidity are the clearest signs. Cleaning mold without fixing the moisture source usually means it comes back.
+              <strong>Short answer:</strong> Licensing, an in-person inspection, a written itemized estimate, and clear warranty terms are the four things worth confirming before you sign anything.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Common Warning Signs */}
+      {/* Checklist */}
       <section
         style={{
           background: '#0D0D0D',
@@ -297,7 +337,7 @@ export default function CrawlSpaceMoldWarningSignsPage() {
               margin: '0 0 12px',
             }}
           >
-            What to Look For
+            The Checklist
           </p>
           <h2
             style={{
@@ -309,65 +349,67 @@ export default function CrawlSpaceMoldWarningSignsPage() {
               margin: '0 0 24px',
             }}
           >
-            Common Warning Signs of Mold in a Crawl Space
+            A 7-Step Contractor Vetting Checklist
           </h2>
           <p style={{ fontSize: 17, color: '#9CA3AF', lineHeight: 1.7, margin: '0 0 36px', maxWidth: 760 }}>
-            Mold growth is often noticed in the living space before it is ever seen in the crawl space. These are the most common indicators homeowners report, either upstairs or during a crawl space inspection.
+            Work through these steps before you sign anything. They take an extra day or two up front, but they are the difference between hiring someone who solves the actual problem and someone who sells you a product.
           </p>
-          <div
-            style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit,minmax(240px,1fr))',
-              gap: 20,
-            }}
-          >
-            {[
-              {
-                title: 'Musty Odor',
-                body: 'A persistent earthy or musty smell in the home, especially near floor vents or in rooms above the crawl space, is one of the earliest signs.',
-              },
-              {
-                title: 'Visible Growth on Wood',
-                body: 'Fuzzy white patches or dark staining on floor joists, subfloor, and beams indicate active or past mold growth.',
-              },
-              {
-                title: 'Condensation and Damp Insulation',
-                body: 'Sweating pipes, ductwork, or insulation that feels damp to the touch points to humidity levels high enough to support mold.',
-              },
-              {
-                title: 'High Humidity Readings',
-                body: 'Crawl space humidity consistently above 60% creates the conditions mold needs to establish and spread.',
-              },
-            ].map((card) => (
+          <div style={{ display: 'flex', flexDirection: 'column' as const, gap: 20, maxWidth: 760 }}>
+            {checklistSteps.map((item, i) => (
               <div
-                key={card.title}
+                key={item.name}
                 style={{
                   background: '#111827',
                   border: '1px solid rgba(255,255,255,.08)',
                   borderRadius: 12,
-                  padding: 20,
+                  padding: '20px 22px',
+                  display: 'flex',
+                  gap: 16,
+                  alignItems: 'flex-start',
                 }}
               >
-                <h3
+                <div
                   style={{
-                    fontFamily: "'Barlow Condensed',sans-serif",
-                    fontWeight: 800,
-                    fontSize: 19,
-                    textTransform: 'uppercase' as const,
+                    flex: 'none',
+                    width: 30,
+                    height: 30,
+                    borderRadius: '50%',
+                    background: 'rgba(245,166,35,.15)',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    font: "800 14px 'Barlow Condensed',sans-serif",
                     color: '#F5A623',
-                    margin: '0 0 10px',
                   }}
                 >
-                  {card.title}
-                </h3>
-                <p style={{ fontSize: 15, color: '#D1D5DB', margin: 0, lineHeight: 1.6 }}>{card.body}</p>
+                  {i + 1}
+                </div>
+                <div>
+                  <h3
+                    style={{
+                      fontFamily: "'Barlow Condensed',sans-serif",
+                      fontWeight: 800,
+                      fontSize: 19,
+                      textTransform: 'uppercase' as const,
+                      color: '#fff',
+                      margin: '0 0 8px',
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: 8,
+                    }}
+                  >
+                    <Check size={16} />
+                    {item.name}
+                  </h3>
+                  <p style={{ fontSize: 15, color: '#D1D5DB', margin: 0, lineHeight: 1.6 }}>{item.text}</p>
+                </div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* White Mold vs Dark Mold */}
+      {/* Red Flags */}
       <section
         style={{
           background: '#F9FAFB',
@@ -384,7 +426,7 @@ export default function CrawlSpaceMoldWarningSignsPage() {
               margin: '0 0 12px',
             }}
           >
-            Comparison
+            Watch For This
           </p>
           <h2
             style={{
@@ -393,74 +435,82 @@ export default function CrawlSpaceMoldWarningSignsPage() {
               fontSize: 'clamp(28px,5vw,44px)',
               textTransform: 'uppercase' as const,
               color: '#0D0D0D',
-              margin: '0 0 36px',
+              margin: '0 0 24px',
             }}
           >
-            White Mold vs Dark Mold in a Crawl Space
+            Red Flags to Watch For
           </h2>
+          <p style={{ fontSize: 17, color: '#4b5563', lineHeight: 1.7, margin: '0 0 36px', maxWidth: 760 }}>
+            These are common warning signs that a contractor may be more focused on closing a sale than diagnosing and fixing the actual problem under your home.
+          </p>
           <div
             style={{
               display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit,minmax(260px,1fr))',
+              gridTemplateColumns: 'repeat(auto-fit,minmax(240px,1fr))',
               gap: 20,
             }}
           >
-            <div
-              style={{
-                background: '#fff',
-                border: '1px solid #E5E7EB',
-                borderRadius: 12,
-                padding: 24,
-              }}
-            >
-              <h3
+            {[
+              {
+                title: 'High-Pressure, Same-Day-Only Discounts',
+                body: 'Legitimate pricing does not usually expire at the end of the visit. Pressure to sign the same day to "lock in" a discount is a common closing tactic, not a real deadline.',
+              },
+              {
+                title: 'Verbal-Only Warranty Promises',
+                body: 'If warranty terms are described only out loud and are not spelled out in the written estimate or contract, they are difficult to enforce later.',
+              },
+              {
+                title: 'Encapsulation Quoted Without Inspecting for Water',
+                body: 'If a company proposes full encapsulation without checking for standing water, grading issues, or a moisture source, they may be selling a product rather than solving your specific problem.',
+              },
+              {
+                title: 'Refusal to Provide a Written, Itemized Estimate',
+                body: 'A company unwilling to put a detailed estimate in writing makes it difficult to compare quotes or hold them accountable to what was promised.',
+              },
+              {
+                title: 'No Verifiable Local Address or Licensing Info',
+                body: 'A company that cannot provide a real local address or licensing details is harder to hold accountable if something goes wrong after the job is done.',
+              },
+              {
+                title: 'Quotes Given Entirely Over the Phone',
+                body: 'Crawl space conditions vary too much to price accurately without seeing them. A phone-only quote skips the step that matters most.',
+              },
+            ].map((card) => (
+              <div
+                key={card.title}
                 style={{
-                  fontFamily: "'Barlow Condensed',sans-serif",
-                  fontWeight: 800,
-                  fontSize: 20,
-                  textTransform: 'uppercase' as const,
-                  color: '#1B3A6B',
-                  margin: '0 0 12px',
+                  background: '#fff',
+                  border: '1px solid #E5E7EB',
+                  borderRadius: 12,
+                  padding: 20,
+                  display: 'flex',
+                  gap: 12,
+                  alignItems: 'flex-start',
                 }}
               >
-                White Mold
-              </h3>
-              <p style={{ fontSize: 15, color: '#4b5563', margin: 0, lineHeight: 1.6 }}>
-                Often appears powdery or fuzzy on wood surfaces and can spread quickly across framing in humid conditions. It can be easy to overlook because it sometimes blends in with raw wood or efflorescence.
-              </p>
-            </div>
-            <div
-              style={{
-                background: '#fff',
-                border: '1px solid #E5E7EB',
-                borderRadius: 12,
-                padding: 24,
-              }}
-            >
-              <h3
-                style={{
-                  fontFamily: "'Barlow Condensed',sans-serif",
-                  fontWeight: 800,
-                  fontSize: 20,
-                  textTransform: 'uppercase' as const,
-                  color: '#1B3A6B',
-                  margin: '0 0 12px',
-                }}
-              >
-                Dark / Black Mold
-              </h3>
-              <p style={{ fontSize: 15, color: '#4b5563', margin: 0, lineHeight: 1.6 }}>
-                Tends to appear as dark gray, green-black, or black staining and is more visible against wood. It often signals more prolonged or repeated moisture exposure in that area.
-              </p>
-            </div>
+                <XMark size={18} />
+                <div>
+                  <h3
+                    style={{
+                      fontFamily: "'Barlow Condensed',sans-serif",
+                      fontWeight: 800,
+                      fontSize: 18,
+                      textTransform: 'uppercase' as const,
+                      color: '#1B3A6B',
+                      margin: '0 0 8px',
+                    }}
+                  >
+                    {card.title}
+                  </h3>
+                  <p style={{ fontSize: 15, color: '#4b5563', margin: 0, lineHeight: 1.6 }}>{card.body}</p>
+                </div>
+              </div>
+            ))}
           </div>
-          <p style={{ fontSize: 15, color: '#6B7280', fontStyle: 'italic', margin: '24px 0 0', lineHeight: 1.6, maxWidth: 760 }}>
-            Color is not a reliable way to judge severity or species on its own. Both white and dark growth indicate active moisture and should be evaluated rather than compared by appearance alone.
-          </p>
         </div>
       </section>
 
-      {/* Why Mold Keeps Coming Back */}
+      {/* Questions to Ask */}
       <section
         style={{
           background: '#1B3A6B',
@@ -477,7 +527,7 @@ export default function CrawlSpaceMoldWarningSignsPage() {
               margin: '0 0 12px',
             }}
           >
-            Recurring Mold
+            During the Inspection
           </p>
           <h2
             style={{
@@ -489,29 +539,28 @@ export default function CrawlSpaceMoldWarningSignsPage() {
               margin: '0 0 32px',
             }}
           >
-            Why Mold Keeps Coming Back After Cleaning
+            Questions to Ask During the Inspection
           </h2>
           <div style={{ display: 'flex', flexDirection: 'column' as const, gap: 16, maxWidth: 700, marginBottom: 24 }}>
             {[
-              'Surface cleaning removes visible growth but not the moisture feeding it',
-              'Ground moisture continues to evaporate into the crawl space air',
-              'No vapor barrier means humidity keeps cycling above the mold threshold',
-              'Open or leaking vents let humid outdoor air in during warm months',
-              'Plumbing leaks or poor drainage are never identified or repaired',
+              'What is actually causing the moisture or problem, not just what fix are you proposing to sell me?',
+              'What specific materials will be used — vapor barrier mil thickness, drainage components, dehumidifier brand and capacity?',
+              'What does the warranty cover if something fails in 5 years, and does it cover materials, labor, or both?',
+              'Who do I call if there is an issue after the work is done, and is that the same company that did the install?',
             ].map((item) => (
               <div key={item} style={{ display: 'flex', alignItems: 'flex-start', gap: 12 }}>
-                <XMark size={18} />
+                <Check size={18} color="#F5A623" />
                 <span style={{ fontSize: 16, color: '#D1D5DB', lineHeight: 1.6 }}>{item}</span>
               </div>
             ))}
           </div>
           <p style={{ fontSize: 15, color: '#9CA3AF', fontStyle: 'italic', margin: 0, lineHeight: 1.6, maxWidth: 700 }}>
-            Mold remediation that does not address moisture is typically a temporary fix. Lasting results come from controlling the conditions mold needs to grow.
+            A contractor who answers these questions clearly and specifically, without hesitation, is a good sign. Vague or evasive answers are worth taking seriously before you sign anything.
           </p>
         </div>
       </section>
 
-      {/* Moisture Control: The Real Fix */}
+      {/* Why It Matters More */}
       <section
         style={{
           background: '#F9FAFB',
@@ -528,7 +577,7 @@ export default function CrawlSpaceMoldWarningSignsPage() {
               margin: '0 0 12px',
             }}
           >
-            The Real Fix
+            Why It Matters
           </p>
           <h2
             style={{
@@ -540,61 +589,14 @@ export default function CrawlSpaceMoldWarningSignsPage() {
               margin: '0 0 24px',
             }}
           >
-            Moisture Control: Encapsulation and Dehumidification
+            Why This Matters More for Crawl Spaces Than Other Home Repairs
           </h2>
-          <p style={{ fontSize: 17, color: '#4b5563', lineHeight: 1.7, margin: '0 0 36px', maxWidth: 760 }}>
-            Long-term mold control starts with controlling moisture, not just cleaning what is already there. A full encapsulation system combines a sealed ground and wall vapor barrier with vent sealing and active dehumidification to keep crawl space humidity below the level mold needs to grow.
+          <p style={{ fontSize: 17, color: '#4b5563', lineHeight: 1.7, margin: '0 0 20px', maxWidth: 760 }}>
+            If a contractor does a poor job painting a room or installing a fence, you can see it right away and call them back. Crawl space work is different. Once a vapor barrier is installed and the crawl space is sealed up, you cannot easily look underneath it to verify the drainage was installed correctly, the vapor barrier is properly seamed, or the moisture source was actually addressed — not without cutting it open.
           </p>
-          <div
-            style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit,minmax(240px,1fr))',
-              gap: 20,
-            }}
-          >
-            {[
-              {
-                title: 'Sealed Vapor Barrier',
-                body: 'A heavy-duty liner on the ground and walls blocks ground moisture from evaporating into the crawl space air.',
-              },
-              {
-                title: 'Vent and Air Sealing',
-                body: 'Sealing foundation vents and gaps keeps humid outdoor air from entering and re-raising crawl space humidity.',
-              },
-              {
-                title: 'Dehumidification',
-                body: 'A crawl space dehumidifier actively maintains target humidity year-round, which standard ventilation cannot reliably do.',
-              },
-              {
-                title: 'Drainage Where Needed',
-                body: 'In crawl spaces with standing water or seasonal flooding, drainage matting and a sump pump remove bulk water before it becomes a moisture source.',
-              },
-            ].map((card) => (
-              <div
-                key={card.title}
-                style={{
-                  background: '#fff',
-                  border: '1px solid #E5E7EB',
-                  borderRadius: 12,
-                  padding: 20,
-                }}
-              >
-                <h3
-                  style={{
-                    fontFamily: "'Barlow Condensed',sans-serif",
-                    fontWeight: 800,
-                    fontSize: 18,
-                    textTransform: 'uppercase' as const,
-                    color: '#1B3A6B',
-                    margin: '0 0 10px',
-                  }}
-                >
-                  {card.title}
-                </h3>
-                <p style={{ fontSize: 15, color: '#4b5563', margin: 0, lineHeight: 1.6 }}>{card.body}</p>
-              </div>
-            ))}
-          </div>
+          <p style={{ fontSize: 17, color: '#4b5563', lineHeight: 1.7, margin: 0, maxWidth: 760 }}>
+            That means the diagnosis and workmanship have to be right the first time, and that you are largely trusting the contractor's judgment and integrity going in. It's exactly why the vetting steps above — licensing, a real inspection, a written estimate, and clear warranty terms — matter more here than they would for a repair you could simply look at again later.
+          </p>
         </div>
       </section>
 
@@ -700,7 +702,7 @@ export default function CrawlSpaceMoldWarningSignsPage() {
               margin: '0 0 36px',
             }}
           >
-            Crawl Space Mold FAQ
+            Contractor Vetting FAQ
           </h2>
           <div style={{ display: 'flex', flexDirection: 'column' as const, gap: 16 }}>
             {faqItems.map((item) => (
@@ -746,7 +748,7 @@ export default function CrawlSpaceMoldWarningSignsPage() {
                 color: '#fff',
               }}
             >
-              Get a Free Crawl Space Estimate
+              Get a Free, No-Pressure Crawl Space Estimate
             </h2>
             <p style={{ fontSize: 16, color: '#9CA3AF', margin: 0 }}>
               No obligation. Same-week appointments available in Kansas City.

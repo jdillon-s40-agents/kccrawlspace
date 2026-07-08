@@ -7,7 +7,9 @@ import { PHONE, PHONE_HREF } from '@/lib/constants';
 export const metadata: Metadata = {
   title: { absolute: 'Crawl Space Waterproofing Kansas City | Fix a Wet Crawl Space' },
   description: 'Fix a wet crawl space in Kansas City: interior drainage, sump pump & encapsulation. We handle standing water, foundation seepage & water after rain. Free inspection.',
-};
+  alternates: {
+    canonical: 'https://www.crawlspacekc.com/crawl-space-waterproofing-kansas-city/',
+  }};
 
 function Check({ color = '#16A34A', size = 16 }: { color?: string; size?: number }) {
   return (
@@ -78,6 +80,22 @@ const faqItems = [
   {
     q: 'Can crawl space water damage the structure of my home?',
     a: 'Yes. Persistent moisture causes wood rot in joists and subfloor, attracts pests, and can compromise pier stability over time. Addressing water problems early prevents more costly repairs later.',
+  },
+  {
+    q: 'Does homeowners insurance cover crawl space water damage in Kansas City?',
+    a: 'Usually not. Most policies exclude gradual seepage, groundwater, and flooding, and only cover sudden events like a burst pipe. Because most Kansas City crawl space water comes from grading, hydrostatic pressure, or foundation seepage over time, it is typically treated as a maintenance issue rather than a covered claim.',
+  },
+  {
+    q: 'What is a French drain and do I need one in my crawl space?',
+    a: 'A French drain is a gravel-filled trench with a perforated pipe that redirects water away from the foundation before it reaches the crawl space. It is most effective for exterior grading problems. Homes with interior water intrusion through the foundation wall or floor typically need an interior drainage system instead, which is installed under the crawl space floor rather than in the yard.',
+  },
+  {
+    q: 'Can I install a sump pump in my crawl space myself?',
+    a: 'A basic pump can be DIY-installed, but most crawl space sump systems fail from poor basin placement, missing check valves, or discharge lines that drain back toward the foundation. We size and place systems based on where water actually collects during the inspection, which is difficult to judge without seeing the crawl space during an active rain event.',
+  },
+  {
+    q: 'Why do older Kansas City neighborhoods have more crawl space water problems?',
+    a: 'Neighborhoods like Brookside, Waldo, Hyde Park, and Westport sit on expansive clay soil and often have limestone block foundations from before 1950. Clay soil drains poorly and holds water against the foundation, while aging mortar joints in limestone block walls give that water a path inside. Homes in these areas typically need drainage correction, not just a vapor barrier.',
   },
 ];
 
@@ -341,6 +359,30 @@ export default function CrawlSpaceWaterproofingKansasCity() {
         </div>
       </section>
 
+      {/* ── 3B. LOCAL SOIL & FOUNDATION CONTEXT ── */}
+      <section style={{ background: '#111827', padding: 'clamp(52px,8vw,88px) clamp(16px,5vw,24px)' }}>
+        <div style={{ maxWidth: 900, margin: '0 auto' }}>
+          <h2
+            style={{
+              fontFamily: "'Barlow Condensed',sans-serif",
+              fontWeight: 800,
+              fontSize: 'clamp(26px,4.5vw,38px)',
+              textTransform: 'uppercase' as const,
+              color: '#fff',
+              margin: '0 0 20px',
+            }}
+          >
+            Why Older KC Neighborhoods Get Hit Hardest
+          </h2>
+          <p style={{ fontSize: 16, color: '#D1D5DB', lineHeight: 1.75, margin: '0 0 16px', maxWidth: 760 }}>
+            Much of the Kansas City metro sits on Wymore-Ladoga clay — an expansive soil with one of the lowest infiltration rates in the Midwest. Instead of draining away, rain sits against the foundation and builds hydrostatic pressure that pushes water through walls and floors.
+          </p>
+          <p style={{ fontSize: 16, color: '#D1D5DB', lineHeight: 1.75, margin: 0, maxWidth: 760 }}>
+            Established neighborhoods like Brookside, Waldo, Hyde Park, and Westport compound the problem: many homes there were built before 1950 on limestone block foundations, and decades of freeze-thaw cycling — KC sees roughly 50 to 70 per winter — has widened the mortar joints water travels through. If your home is in one of these areas, drainage correction usually matters more than encapsulation alone.
+          </p>
+        </div>
+      </section>
+
       {/* ── 4. SOLUTIONS ── */}
       <section style={{ background: '#F9FAFB', padding: 'clamp(52px,8vw,88px) clamp(16px,5vw,24px)' }}>
         <div style={{ maxWidth: 1100, margin: '0 auto' }}>
@@ -577,6 +619,65 @@ export default function CrawlSpaceWaterproofingKansasCity() {
         </div>
       </section>
 
+      {/* ── 7B. WHY CHOOSE US ── */}
+      <section style={{ background: '#F9FAFB', padding: 'clamp(52px,8vw,88px) clamp(16px,5vw,24px)' }}>
+        <div style={{ maxWidth: 1100, margin: '0 auto' }}>
+          <h2
+            style={{
+              fontFamily: "'Barlow Condensed',sans-serif",
+              fontWeight: 800,
+              fontSize: 'clamp(28px,5vw,44px)',
+              textTransform: 'uppercase' as const,
+              color: '#0D0D0D',
+              margin: '0 0 40px',
+            }}
+          >
+            Why Kansas City Homeowners Choose Us
+          </h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(240px,1fr))', gap: 20 }}>
+            {[
+              {
+                title: 'We Only Do Crawl Spaces',
+                body: 'No basements, no foundations, no general contracting split across a dozen services. Every inspection and installation is our full focus.',
+              },
+              {
+                title: 'Water Control Before Encapsulation',
+                body: 'We diagnose the actual water source first instead of selling a vapor barrier over a problem it cannot fix — a step some competitors skip.',
+              },
+              {
+                title: 'Written, Itemized Estimates',
+                body: 'You see exactly what is being done and why before any work starts, with no vague "waterproofing package" line items.',
+              },
+              {
+                title: 'Lifetime Warranty',
+                body: 'Drainage, sump pump, and encapsulation work is backed in writing, not just verbally promised at the sales pitch.',
+              },
+            ].map((card) => (
+              <div
+                key={card.title}
+                style={{
+                  background: '#fff',
+                  border: '1px solid #E5E7EB',
+                  borderRadius: 12,
+                  padding: '24px 22px',
+                }}
+              >
+                <p
+                  style={{
+                    font: "700 15px 'Inter',sans-serif",
+                    color: '#1B3A6B',
+                    margin: '0 0 10px',
+                  }}
+                >
+                  {card.title}
+                </p>
+                <p style={{ fontSize: 14, color: '#374151', margin: 0, lineHeight: 1.6 }}>{card.body}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ── 8. FINANCING ── */}
       <section style={{ background: '#1B3A6B', padding: 'clamp(52px,8vw,88px) clamp(16px,5vw,24px)' }}>
         <div style={{ maxWidth: 680, margin: '0 auto' }}>
@@ -640,6 +741,7 @@ export default function CrawlSpaceWaterproofingKansasCity() {
               { label: 'Drainage & Sump Pump', href: '/crawl-space-repair-kansas-city/' },
               { label: 'Crawl Space Dehumidifier', href: '/crawl-space-dehumidifier-kansas-city/' },
               { label: 'Encapsulation Cost', href: '/crawl-space-encapsulation-cost-kansas-city/' },
+              { label: 'Sagging Floor Repair', href: '/crawl-space-sagging-floor-repair-kansas-city/' },
             ].map((link) => (
               <Link
                 key={link.label}

@@ -8,7 +8,9 @@ export const metadata: Metadata = {
   title: { absolute: 'Crawl Space Encapsulation Gardner, KS | KC Crawl Space Specialists' },
   description:
     'Crawl space encapsulation in Gardner, KS. Serving downtown and new subdivisions in south Johnson County. Free inspection. Same-week service.',
-};
+  alternates: {
+    canonical: 'https://www.crawlspacekc.com/crawl-space-encapsulation-gardner-ks/',
+  }};
 
 function Check({ size = 16 }: { size?: number }) {
   return (

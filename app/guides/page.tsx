@@ -6,7 +6,9 @@ import { PHONE, PHONE_HREF } from '@/lib/constants';
 export const metadata: Metadata = {
   title: { absolute: 'Crawl Space Guides & FAQ | Kansas City Homeowners' },
   description: 'Answers to the most common crawl space questions — moisture, mold, vapor barriers, vents, insulation, and more — from Kansas City crawl space specialists.',
-};
+  alternates: {
+    canonical: 'https://www.crawlspacekc.com/guides/',
+  }};
 
 const guides = [
   {
@@ -68,6 +70,36 @@ const guides = [
     href: '/do-i-need-crawl-space-dehumidifier/',
     answer:
       'You may need one if humidity stays high after sealing, or if you notice musty odors, condensation, sweating pipes, or damp insulation.',
+  },
+  {
+    title: 'Sagging Floor Repair',
+    href: '/crawl-space-sagging-floor-repair-kansas-city/',
+    answer:
+      'Bouncy or sagging floors are usually caused by undersized or rot-weakened joists and support posts settling into weak soil — a structural, not cosmetic, issue.',
+  },
+  {
+    title: 'Free Crawl Space Inspection',
+    href: '/free-crawl-space-inspection-kansas-city/',
+    answer:
+      "What's actually included in a free inspection, what happens afterward, and why it isn't a high-pressure sales visit in disguise.",
+  },
+  {
+    title: 'Crawl Space Pest & Rodent Control',
+    href: '/crawl-space-pest-control-kansas-city/',
+    answer:
+      'Mice, snakes, and insects get into crawl spaces through open vents and gaps. Sealing and encapsulation remove the entry points and conditions they need.',
+  },
+  {
+    title: 'How to Choose a Crawl Space Contractor',
+    href: '/how-to-choose-a-crawl-space-contractor-kansas-city/',
+    answer:
+      'A vetting checklist covering licensing, written estimates, warranty terms, and red flags — since crawl space work is hard to inspect after it is sealed.',
+  },
+  {
+    title: 'Local Specialist vs. National Franchise',
+    href: '/local-vs-national-crawl-space-company-kansas-city/',
+    answer:
+      'How independently owned local specialists and national home-services franchises differ in pricing, scheduling, and warranty backing.',
   },
 ];
 

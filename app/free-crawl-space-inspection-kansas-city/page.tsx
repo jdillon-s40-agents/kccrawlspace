@@ -5,11 +5,11 @@ import FinancingOptions from '@/components/FinancingOptions';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: { absolute: 'Crawl Space Mold Warning Signs | Kansas City Mold Guide' },
+  title: { absolute: 'Free Crawl Space Inspection Kansas City | No-Obligation Assessment' },
   description:
-    'Learn the warning signs of crawl space mold — musty odors, white or dark growth, condensation — and why fixing the moisture source matters in Kansas City homes.',
+    'Free, no-obligation crawl space inspection in Kansas City. We check moisture, structure, mold, pests, and insulation, then give you honest findings. Same-week visits.',
   alternates: {
-    canonical: 'https://www.crawlspacekc.com/crawl-space-mold-warning-signs/',
+    canonical: 'https://www.crawlspacekc.com/free-crawl-space-inspection-kansas-city/',
   }};
 
 function Check({ color = '#16A34A', size = 16 }: { color?: string; size?: number }) {
@@ -51,47 +51,104 @@ function XMark({ size = 16 }: { size?: number }) {
 
 const faqItems = [
   {
-    q: 'What does mold look like in a crawl space?',
-    a: 'Crawl space mold commonly appears as fuzzy white patches, dark gray or black staining, or a powdery coating on wood framing, subfloor, and insulation. It is often paired with a musty, earthy smell even before it is visible.',
+    q: 'Is the crawl space inspection really free?',
+    a: 'Yes. There is no cost and no obligation to book any work. We inspect the crawl space, explain what we find in plain language, and give you a written estimate only if you want one. You are never charged just for having us come look.',
   },
   {
-    q: 'Is white mold or black mold worse?',
-    a: 'Color alone does not tell you how serious a mold problem is. White mold tends to grow faster on damp wood and can spread quickly across framing, while dark mold often signals more prolonged moisture exposure. Both indicate a moisture problem that needs to be corrected.',
+    q: 'How long does a crawl space inspection take?',
+    a: 'Most inspections take 30 to 60 minutes, depending on the size and accessibility of the crawl space. We take photos throughout so you can see exactly what the inspector saw, even in areas that are hard to view directly.',
   },
   {
-    q: 'Can I just clean the mold myself?',
-    a: 'Surface cleaning can remove visible growth temporarily, but if the moisture source is not corrected, mold typically returns. For larger or recurring growth, a professional evaluation is recommended to assess the extent of the problem and the right remediation approach.',
+    q: 'Do I need to be present for the inspection?',
+    a: 'We recommend being home, especially at the start and end of the visit, so the inspector can walk you through what was found and answer questions in person. If your schedule does not allow it, we can still complete the inspection and go over photos and findings with you by phone.',
   },
   {
-    q: 'Why does crawl space mold keep coming back after cleaning?',
-    a: 'Mold needs moisture to grow, so cleaning the surface without addressing humidity, ground moisture, or water intrusion leaves the underlying condition in place. Recurring mold is usually a sign that the crawl space needs a vapor barrier, sealing, or dehumidification, not just another cleaning.',
+    q: 'Will I be pressured to sign a contract on the spot?',
+    a: 'No. Our inspectors are not paid on same-day close rates, and we do not use expiring "today only" pricing to force a decision. You will get a written estimate and as much time as you need to review it, compare it, or think it over.',
   },
   {
-    q: 'Does crawl space mold affect air quality in my house?',
-    a: 'Crawl space air can move into the living space through gaps, ductwork, and the stack effect, so conditions below the home may contribute to indoor air quality concerns. An inspection can help determine whether your crawl space is a factor in your home\'s air quality.',
+    q: 'Do you inspect crawl spaces before a home sale or purchase?',
+    a: 'Yes. We regularly inspect crawl spaces for buyers and sellers ahead of closing, so you can address moisture, structural, or pest issues before they become a negotiation point or a surprise after the sale.',
   },
   {
-    q: 'How do I know if I need a professional mold inspection?',
-    a: 'If you notice a persistent musty odor, visible staining or growth on wood, recurring high humidity, or mold that returns after cleaning, a professional inspection can identify the extent of the issue and the moisture source causing it.',
+    q: 'What if the inspector does not find anything wrong?',
+    a: 'That is a good outcome, and we will tell you exactly that. Not every crawl space needs work. If we do not find a problem worth addressing, we will say so directly instead of manufacturing a reason to sell you something.',
   },
   {
-    q: 'Does encapsulation stop mold from growing?',
-    a: 'Encapsulation is designed to control the humidity and ground moisture that mold needs to grow. Combined with a sealed vapor barrier and dehumidification, it addresses the conditions that allow mold to return after cleaning or remediation.',
+    q: 'How far in advance do I need to book an inspection?',
+    a: 'We typically offer same-week appointments in the Kansas City metro. If you have a specific deadline, such as a closing date, let us know when you request the inspection and we will do our best to prioritize it.',
   },
   {
-    q: 'Is crawl space mold dangerous to my health?',
-    a: 'Reactions to mold vary by individual, and we are not able to make medical claims. If you or household members have ongoing respiratory or allergy concerns, it is best to consult a physician and have the crawl space professionally evaluated for moisture and mold.',
+    q: 'Do you inspect mobile home underbellies too?',
+    a: 'Yes. We inspect mobile and manufactured home underbellies for the same moisture, insulation, and pest issues we look for in a traditional crawl space, and we can access most skirting and belly board configurations.',
   },
 ];
 
 const relatedLinks = [
-  { label: 'Crawl Space Mold KC', href: '/crawl-space-mold-kansas-city/' },
-  { label: 'Musty Crawl Space', href: '/crawl-space-smells-musty/' },
-  { label: 'Dehumidifier KC', href: '/crawl-space-dehumidifier-kansas-city/' },
   { label: 'Crawl Space Encapsulation KC', href: '/crawl-space-encapsulation-kansas-city/' },
+  { label: 'Crawl Space Repair KC', href: '/crawl-space-repair-kansas-city/' },
+  { label: 'Crawl Space Waterproofing KC', href: '/crawl-space-waterproofing-kansas-city/' },
+  { label: 'Encapsulation Cost KC', href: '/crawl-space-encapsulation-cost-kansas-city/' },
 ];
 
-export default function CrawlSpaceMoldWarningSignsPage() {
+const whatWeCheck = [
+  {
+    title: 'Moisture & Humidity',
+    body: 'We measure crawl space humidity and check for standing water, damp soil, and condensation that can point to a bigger moisture problem.',
+  },
+  {
+    title: 'Structural Integrity',
+    body: 'We inspect floor joists, support posts, and beams for sagging, rot, or settling that can affect the floor above.',
+  },
+  {
+    title: 'Mold & Wood Rot',
+    body: 'We look for visible growth, staining, and soft or crumbling wood, and note the moisture conditions that are feeding it.',
+  },
+  {
+    title: 'Pest & Rodent Signs',
+    body: 'We check for entry points, droppings, nesting material, and damage caused by rodents, insects, or other pests.',
+  },
+  {
+    title: 'Insulation Condition',
+    body: 'We check whether insulation is wet, sagging, missing, or falling from the joists, all of which reduce its effectiveness.',
+  },
+  {
+    title: 'Vents & Airflow',
+    body: 'We evaluate foundation vents and airflow patterns to see whether they are helping or hurting your crawl space conditions.',
+  },
+];
+
+const afterSteps = [
+  {
+    title: 'On-Site Walkthrough With Photos',
+    body: 'The inspector walks the crawl space and documents what they find with photos, so you can see the actual conditions rather than take our word for it.',
+  },
+  {
+    title: 'Written, Itemized Findings',
+    body: 'You receive a written summary of what was found and what it means, usually the same day or the next business day.',
+  },
+  {
+    title: 'No-Pressure Explanation of Options',
+    body: 'If work is recommended, we walk through the options and the reasoning behind them. If nothing is needed, we tell you that instead.',
+  },
+  {
+    title: 'A Written Estimate, No Expiration Games',
+    body: 'Any recommended work comes with a written estimate. We do not use fake deadlines or "price goes up tomorrow" tactics to rush your decision.',
+  },
+  {
+    title: 'You Decide, On Your Timeline',
+    body: 'The decision to move forward, get a second opinion, or wait is entirely yours. There is no follow-up pressure campaign after the visit.',
+  },
+];
+
+const notList = [
+  'Not a bait to get you to sign a contract the same day',
+  'Not a scare tactic that invents or inflates problems',
+  'Not a phone quote given without ever seeing the crawl space',
+  'Not a required purchase just to get your findings in writing',
+];
+
+export default function FreeCrawlSpaceInspectionPage() {
   return (
     <main>
       <script
@@ -107,8 +164,8 @@ export default function CrawlSpaceMoldWarningSignsPage() {
                   {
                     '@type': 'ListItem',
                     position: 2,
-                    name: 'Crawl Space Mold Warning Signs',
-                    item: 'https://crawlspacekc.com/crawl-space-mold-warning-signs/',
+                    name: 'Free Crawl Space Inspection Kansas City',
+                    item: 'https://crawlspacekc.com/free-crawl-space-inspection-kansas-city/',
                   },
                 ],
               },
@@ -167,7 +224,7 @@ export default function CrawlSpaceMoldWarningSignsPage() {
               margin: '0 0 16px',
             }}
           >
-            Crawl Space Mold
+            No Cost. No Obligation.
           </p>
           <h1
             style={{
@@ -180,8 +237,8 @@ export default function CrawlSpaceMoldWarningSignsPage() {
               lineHeight: 1.05,
             }}
           >
-            Crawl Space Mold{' '}
-            <span style={{ color: '#F5A623' }}>Warning Signs</span>
+            Free Crawl Space{' '}
+            <span style={{ color: '#F5A623' }}>Inspection in Kansas City</span>
           </h1>
           <p
             style={{
@@ -192,7 +249,7 @@ export default function CrawlSpaceMoldWarningSignsPage() {
               lineHeight: 1.6,
             }}
           >
-            Mold under your home rarely shows up out of nowhere. Here are the warning signs Kansas City homeowners should watch for, and why fixing the moisture behind it matters more than cleaning the surface.
+            A free inspection should mean exactly that: someone comes out, looks honestly at your crawl space, and tells you what they see. No inflated problems, no same-day pressure, no phone quotes. Just a straight answer from a local inspector.
           </p>
           <div style={{ display: 'flex', gap: 16, flexWrap: 'wrap' as const, alignItems: 'center' }}>
             <Link
@@ -208,7 +265,7 @@ export default function CrawlSpaceMoldWarningSignsPage() {
                 display: 'inline-block',
               }}
             >
-              Get a Free Estimate
+              Book Your Free Inspection
             </Link>
             <a
               href={PHONE_HREF}
@@ -259,10 +316,10 @@ export default function CrawlSpaceMoldWarningSignsPage() {
               margin: '0 0 24px',
             }}
           >
-            What Are the Warning Signs of Crawl Space Mold?
+            What&apos;s Included in a Free Crawl Space Inspection?
           </h2>
           <p style={{ fontSize: 17, color: '#4b5563', lineHeight: 1.7, margin: '0 0 28px', maxWidth: 760 }}>
-            Common crawl space mold warning signs include musty odors, visible white or dark growth on wood, high humidity, damp insulation, condensation, wood staining, and recurring moisture. Mold should be treated as a moisture problem first because it can return if humidity, water intrusion, or ventilation issues are not corrected.
+            A free crawl space inspection covers moisture and humidity levels, signs of mold or wood rot, the structural condition of joists and support posts, the condition of any existing vapor barrier, signs of pest or rodent activity, insulation condition, and vent and airflow condition. You get a full picture of your crawl space, not just a glance.
           </p>
           <div
             style={{
@@ -274,13 +331,13 @@ export default function CrawlSpaceMoldWarningSignsPage() {
             }}
           >
             <p style={{ fontSize: 16, color: '#0D0D0D', margin: 0, lineHeight: 1.6 }}>
-              <strong>Short answer:</strong> Musty smells, visible growth, and recurring humidity are the clearest signs. Cleaning mold without fixing the moisture source usually means it comes back.
+              <strong>Short answer:</strong> A trained inspector checks moisture, structure, mold, pests, insulation, and airflow, then gives you written, photo-documented findings with no obligation to buy anything.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Common Warning Signs */}
+      {/* What We Check */}
       <section
         style={{
           background: '#0D0D0D',
@@ -297,7 +354,7 @@ export default function CrawlSpaceMoldWarningSignsPage() {
               margin: '0 0 12px',
             }}
           >
-            What to Look For
+            The Full Checklist
           </p>
           <h2
             style={{
@@ -309,10 +366,10 @@ export default function CrawlSpaceMoldWarningSignsPage() {
               margin: '0 0 24px',
             }}
           >
-            Common Warning Signs of Mold in a Crawl Space
+            What We Check During Your Inspection
           </h2>
           <p style={{ fontSize: 17, color: '#9CA3AF', lineHeight: 1.7, margin: '0 0 36px', maxWidth: 760 }}>
-            Mold growth is often noticed in the living space before it is ever seen in the crawl space. These are the most common indicators homeowners report, either upstairs or during a crawl space inspection.
+            Every crawl space inspection covers the same six areas, whether or not you have a known problem. This gives you a complete, documented baseline of your crawl space condition.
           </p>
           <div
             style={{
@@ -321,24 +378,7 @@ export default function CrawlSpaceMoldWarningSignsPage() {
               gap: 20,
             }}
           >
-            {[
-              {
-                title: 'Musty Odor',
-                body: 'A persistent earthy or musty smell in the home, especially near floor vents or in rooms above the crawl space, is one of the earliest signs.',
-              },
-              {
-                title: 'Visible Growth on Wood',
-                body: 'Fuzzy white patches or dark staining on floor joists, subfloor, and beams indicate active or past mold growth.',
-              },
-              {
-                title: 'Condensation and Damp Insulation',
-                body: 'Sweating pipes, ductwork, or insulation that feels damp to the touch points to humidity levels high enough to support mold.',
-              },
-              {
-                title: 'High Humidity Readings',
-                body: 'Crawl space humidity consistently above 60% creates the conditions mold needs to establish and spread.',
-              },
-            ].map((card) => (
+            {whatWeCheck.map((card) => (
               <div
                 key={card.title}
                 style={{
@@ -367,7 +407,7 @@ export default function CrawlSpaceMoldWarningSignsPage() {
         </div>
       </section>
 
-      {/* White Mold vs Dark Mold */}
+      {/* What Happens After */}
       <section
         style={{
           background: '#F9FAFB',
@@ -384,7 +424,7 @@ export default function CrawlSpaceMoldWarningSignsPage() {
               margin: '0 0 12px',
             }}
           >
-            Comparison
+            After the Visit
           </p>
           <h2
             style={{
@@ -396,71 +436,49 @@ export default function CrawlSpaceMoldWarningSignsPage() {
               margin: '0 0 36px',
             }}
           >
-            White Mold vs Dark Mold in a Crawl Space
+            What Happens After the Inspection
           </h2>
-          <div
-            style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit,minmax(260px,1fr))',
-              gap: 20,
-            }}
-          >
-            <div
-              style={{
-                background: '#fff',
-                border: '1px solid #E5E7EB',
-                borderRadius: 12,
-                padding: 24,
-              }}
-            >
-              <h3
-                style={{
-                  fontFamily: "'Barlow Condensed',sans-serif",
-                  fontWeight: 800,
-                  fontSize: 20,
-                  textTransform: 'uppercase' as const,
-                  color: '#1B3A6B',
-                  margin: '0 0 12px',
-                }}
-              >
-                White Mold
-              </h3>
-              <p style={{ fontSize: 15, color: '#4b5563', margin: 0, lineHeight: 1.6 }}>
-                Often appears powdery or fuzzy on wood surfaces and can spread quickly across framing in humid conditions. It can be easy to overlook because it sometimes blends in with raw wood or efflorescence.
-              </p>
-            </div>
-            <div
-              style={{
-                background: '#fff',
-                border: '1px solid #E5E7EB',
-                borderRadius: 12,
-                padding: 24,
-              }}
-            >
-              <h3
-                style={{
-                  fontFamily: "'Barlow Condensed',sans-serif",
-                  fontWeight: 800,
-                  fontSize: 20,
-                  textTransform: 'uppercase' as const,
-                  color: '#1B3A6B',
-                  margin: '0 0 12px',
-                }}
-              >
-                Dark / Black Mold
-              </h3>
-              <p style={{ fontSize: 15, color: '#4b5563', margin: 0, lineHeight: 1.6 }}>
-                Tends to appear as dark gray, green-black, or black staining and is more visible against wood. It often signals more prolonged or repeated moisture exposure in that area.
-              </p>
-            </div>
+          <div style={{ display: 'flex', flexDirection: 'column' as const, gap: 20, maxWidth: 760 }}>
+            {afterSteps.map((step, i) => (
+              <div key={step.title} style={{ display: 'flex', gap: 18, alignItems: 'flex-start' }}>
+                <div
+                  style={{
+                    flex: 'none',
+                    width: 36,
+                    height: 36,
+                    borderRadius: '50%',
+                    background: '#1B3A6B',
+                    color: '#fff',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    font: "800 16px 'Inter',sans-serif",
+                  }}
+                >
+                  {i + 1}
+                </div>
+                <div>
+                  <h3
+                    style={{
+                      fontFamily: "'Barlow Condensed',sans-serif",
+                      fontWeight: 800,
+                      fontSize: 19,
+                      textTransform: 'uppercase' as const,
+                      color: '#0D0D0D',
+                      margin: '0 0 6px',
+                    }}
+                  >
+                    {step.title}
+                  </h3>
+                  <p style={{ fontSize: 15, color: '#4b5563', margin: 0, lineHeight: 1.6 }}>{step.body}</p>
+                </div>
+              </div>
+            ))}
           </div>
-          <p style={{ fontSize: 15, color: '#6B7280', fontStyle: 'italic', margin: '24px 0 0', lineHeight: 1.6, maxWidth: 760 }}>
-            Color is not a reliable way to judge severity or species on its own. Both white and dark growth indicate active moisture and should be evaluated rather than compared by appearance alone.
-          </p>
         </div>
       </section>
 
-      {/* Why Mold Keeps Coming Back */}
+      {/* What a Free Inspection Is NOT */}
       <section
         style={{
           background: '#1B3A6B',
@@ -477,7 +495,7 @@ export default function CrawlSpaceMoldWarningSignsPage() {
               margin: '0 0 12px',
             }}
           >
-            Recurring Mold
+            Let&apos;s Be Direct
           </p>
           <h2
             style={{
@@ -489,16 +507,13 @@ export default function CrawlSpaceMoldWarningSignsPage() {
               margin: '0 0 32px',
             }}
           >
-            Why Mold Keeps Coming Back After Cleaning
+            What a Free Inspection Is NOT
           </h2>
+          <p style={{ fontSize: 16, color: '#D1D5DB', lineHeight: 1.6, margin: '0 0 24px', maxWidth: 700 }}>
+            We know the reputation this industry has earned from national franchises that use "free inspection" as an excuse for a high-pressure, in-home sales pitch. Here is what our inspection is not, in plain terms.
+          </p>
           <div style={{ display: 'flex', flexDirection: 'column' as const, gap: 16, maxWidth: 700, marginBottom: 24 }}>
-            {[
-              'Surface cleaning removes visible growth but not the moisture feeding it',
-              'Ground moisture continues to evaporate into the crawl space air',
-              'No vapor barrier means humidity keeps cycling above the mold threshold',
-              'Open or leaking vents let humid outdoor air in during warm months',
-              'Plumbing leaks or poor drainage are never identified or repaired',
-            ].map((item) => (
+            {notList.map((item) => (
               <div key={item} style={{ display: 'flex', alignItems: 'flex-start', gap: 12 }}>
                 <XMark size={18} />
                 <span style={{ fontSize: 16, color: '#D1D5DB', lineHeight: 1.6 }}>{item}</span>
@@ -506,12 +521,12 @@ export default function CrawlSpaceMoldWarningSignsPage() {
             ))}
           </div>
           <p style={{ fontSize: 15, color: '#9CA3AF', fontStyle: 'italic', margin: 0, lineHeight: 1.6, maxWidth: 700 }}>
-            Mold remediation that does not address moisture is typically a temporary fix. Lasting results come from controlling the conditions mold needs to grow.
+            If our inspector cannot explain a recommendation in plain language and back it up with photos, we have not done our job. You should never feel rushed into a decision about your own home.
           </p>
         </div>
       </section>
 
-      {/* Moisture Control: The Real Fix */}
+      {/* Why Get an Inspection Even If You Don't See a Problem */}
       <section
         style={{
           background: '#F9FAFB',
@@ -528,7 +543,7 @@ export default function CrawlSpaceMoldWarningSignsPage() {
               margin: '0 0 12px',
             }}
           >
-            The Real Fix
+            Why Bother
           </p>
           <h2
             style={{
@@ -540,61 +555,17 @@ export default function CrawlSpaceMoldWarningSignsPage() {
               margin: '0 0 24px',
             }}
           >
-            Moisture Control: Encapsulation and Dehumidification
+            Why Get an Inspection Even If You Don&apos;t See a Problem
           </h2>
-          <p style={{ fontSize: 17, color: '#4b5563', lineHeight: 1.7, margin: '0 0 36px', maxWidth: 760 }}>
-            Long-term mold control starts with controlling moisture, not just cleaning what is already there. A full encapsulation system combines a sealed ground and wall vapor barrier with vent sealing and active dehumidification to keep crawl space humidity below the level mold needs to grow.
+          <p style={{ fontSize: 17, color: '#4b5563', lineHeight: 1.7, margin: '0 0 20px', maxWidth: 760 }}>
+            Many of the conditions that damage a crawl space over time are not something you would ever notice from inside your house. High humidity, early-stage wood rot, and small pest entry points rarely announce themselves with an odor or a stain you can see from the living room floor. By the time a problem is obvious upstairs, it has often been developing under the house for a year or more.
           </p>
-          <div
-            style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit,minmax(240px,1fr))',
-              gap: 20,
-            }}
-          >
-            {[
-              {
-                title: 'Sealed Vapor Barrier',
-                body: 'A heavy-duty liner on the ground and walls blocks ground moisture from evaporating into the crawl space air.',
-              },
-              {
-                title: 'Vent and Air Sealing',
-                body: 'Sealing foundation vents and gaps keeps humid outdoor air from entering and re-raising crawl space humidity.',
-              },
-              {
-                title: 'Dehumidification',
-                body: 'A crawl space dehumidifier actively maintains target humidity year-round, which standard ventilation cannot reliably do.',
-              },
-              {
-                title: 'Drainage Where Needed',
-                body: 'In crawl spaces with standing water or seasonal flooding, drainage matting and a sump pump remove bulk water before it becomes a moisture source.',
-              },
-            ].map((card) => (
-              <div
-                key={card.title}
-                style={{
-                  background: '#fff',
-                  border: '1px solid #E5E7EB',
-                  borderRadius: 12,
-                  padding: 20,
-                }}
-              >
-                <h3
-                  style={{
-                    fontFamily: "'Barlow Condensed',sans-serif",
-                    fontWeight: 800,
-                    fontSize: 18,
-                    textTransform: 'uppercase' as const,
-                    color: '#1B3A6B',
-                    margin: '0 0 10px',
-                  }}
-                >
-                  {card.title}
-                </h3>
-                <p style={{ fontSize: 15, color: '#4b5563', margin: 0, lineHeight: 1.6 }}>{card.body}</p>
-              </div>
-            ))}
-          </div>
+          <p style={{ fontSize: 17, color: '#4b5563', lineHeight: 1.7, margin: '0 0 20px', maxWidth: 760 }}>
+            Catching these issues early is almost always far cheaper than repairing the damage they eventually cause, whether that is replacing rotted joists, remediating mold, or dealing with a pest infestation that has spread into the home. An inspection gives you a baseline reading and an early warning, even when everything turns out fine.
+          </p>
+          <p style={{ fontSize: 17, color: '#4b5563', lineHeight: 1.7, margin: 0, maxWidth: 760 }}>
+            This is also why a free inspection is one of the most useful steps homeowners can take before buying or selling a house. Knowing the true condition of the crawl space before closing can prevent a costly surprise, and can also give buyers and sellers leverage in negotiations.
+          </p>
         </div>
       </section>
 
@@ -700,7 +671,7 @@ export default function CrawlSpaceMoldWarningSignsPage() {
               margin: '0 0 36px',
             }}
           >
-            Crawl Space Mold FAQ
+            Free Inspection FAQ
           </h2>
           <div style={{ display: 'flex', flexDirection: 'column' as const, gap: 16 }}>
             {faqItems.map((item) => (
@@ -746,7 +717,7 @@ export default function CrawlSpaceMoldWarningSignsPage() {
                 color: '#fff',
               }}
             >
-              Get a Free Crawl Space Estimate
+              Book Your Free Crawl Space Inspection
             </h2>
             <p style={{ fontSize: 16, color: '#9CA3AF', margin: 0 }}>
               No obligation. Same-week appointments available in Kansas City.

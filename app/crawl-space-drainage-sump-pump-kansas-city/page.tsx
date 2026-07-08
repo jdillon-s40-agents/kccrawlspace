@@ -7,7 +7,9 @@ import { PHONE, PHONE_HREF } from '@/lib/constants';
 export const metadata: Metadata = {
   title: { absolute: 'Crawl Space Drainage & Sump Pump Kansas City | Same-Week Service' },
   description: 'Crawl space drainage & sump pump installation in Kansas City. Fix standing water & foundation seepage before encapsulation. Same-week available. Free estimate.',
-};
+  alternates: {
+    canonical: 'https://www.crawlspacekc.com/crawl-space-drainage-sump-pump-kansas-city/',
+  }};
 
 function Check({ color = '#16A34A', size = 16 }: { color?: string; size?: number }) {
   return (

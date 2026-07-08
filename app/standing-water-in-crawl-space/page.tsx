@@ -8,7 +8,9 @@ export const metadata: Metadata = {
   title: { absolute: 'Standing Water in Crawl Space | Kansas City Emergency Repair' },
   description:
     'Standing water in your crawl space after rain? Learn why it happens, why it is urgent, and how Kansas City pros remove water and stop it from coming back.',
-};
+  alternates: {
+    canonical: 'https://www.crawlspacekc.com/standing-water-in-crawl-space/',
+  }};
 
 function Check({ color = '#16A34A', size = 16 }: { color?: string; size?: number }) {
   return (

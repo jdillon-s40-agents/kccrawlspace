@@ -7,7 +7,9 @@ import { PHONE, PHONE_HREF } from '@/lib/constants';
 export const metadata: Metadata = {
   title: { absolute: 'Crawl Space Vapor Barrier Thickness | 6, 10 & 20-Mil Guide' },
   description: 'Which crawl space vapor barrier thickness do you need? Understand the difference between 6, 10, 12 & 20-mil liners and why thicker reinforced barriers last longer.',
-};
+  alternates: {
+    canonical: 'https://www.crawlspacekc.com/crawl-space-vapor-barrier-thickness/',
+  }};
 
 function Check({ color = '#16A34A', size = 16 }: { color?: string; size?: number }) {
   return (

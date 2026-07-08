@@ -8,7 +8,9 @@ export const metadata: Metadata = {
   title: { absolute: 'Crawl Space Encapsulation Belton, MO | KC Crawl Space Specialists' },
   description:
     'Crawl space encapsulation in Belton, MO. Serving established Cass County neighborhoods. Older homes especially. Free inspection. Same-week service.',
-};
+  alternates: {
+    canonical: 'https://www.crawlspacekc.com/crawl-space-encapsulation-belton-mo/',
+  }};
 
 const cardStyle = {
   background: '#111827',

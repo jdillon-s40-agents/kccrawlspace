@@ -7,7 +7,9 @@ import { PHONE, PHONE_HREF } from '@/lib/constants';
 export const metadata: Metadata = {
   title: { absolute: 'Crawl Space Smells Musty | Causes & Fix for Kansas City Homes' },
   description: 'Musty crawl space smell means excess moisture, mold or wet insulation. Learn the causes and how Kansas City homeowners get rid of the odor for good.',
-};
+  alternates: {
+    canonical: 'https://www.crawlspacekc.com/crawl-space-smells-musty/',
+  }};
 
 function Check({ color = '#16A34A', size = 16 }: { color?: string; size?: number }) {
   return (

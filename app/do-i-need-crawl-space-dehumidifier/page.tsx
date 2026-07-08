@@ -7,7 +7,9 @@ import { PHONE, PHONE_HREF } from '@/lib/constants';
 export const metadata: Metadata = {
   title: { absolute: 'Do I Need a Crawl Space Dehumidifier? | Kansas City Guide' },
   description: 'Not sure if you need a crawl space dehumidifier? Learn the signs, what humidity level is too high & why it works best as part of a sealed crawl space system.',
-};
+  alternates: {
+    canonical: 'https://www.crawlspacekc.com/do-i-need-crawl-space-dehumidifier/',
+  }};
 
 function Check({ color = '#16A34A', size = 16 }: { color?: string; size?: number }) {
   return (

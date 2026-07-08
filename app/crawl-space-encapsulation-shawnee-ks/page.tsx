@@ -8,7 +8,9 @@ export const metadata: Metadata = {
   title: { absolute: 'Crawl Space Encapsulation Shawnee, KS | KC Crawl Space Specialists' },
   description:
     'Crawl space encapsulation in Shawnee, KS. Serving Shawnee Mission area, Clear Creek, and western Johnson County. Older ranch homes especially. Free inspection.',
-};
+  alternates: {
+    canonical: 'https://www.crawlspacekc.com/crawl-space-encapsulation-shawnee-ks/',
+  }};
 
 function Check({ size = 16 }: { size?: number }) {
   return (

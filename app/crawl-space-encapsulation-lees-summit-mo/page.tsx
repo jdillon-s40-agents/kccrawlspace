@@ -8,7 +8,9 @@ export const metadata: Metadata = {
   title: { absolute: "Crawl Space Encapsulation Lee's Summit, MO | KC Crawl Space Specialists" },
   description:
     "Crawl space encapsulation in Lee's Summit, MO. We serve Lakewood, Legacy, Downtown Lee's Summit, and all Jackson County neighborhoods. Free inspection. Same-week service.",
-};
+  alternates: {
+    canonical: 'https://www.crawlspacekc.com/crawl-space-encapsulation-lees-summit-mo/',
+  }};
 
 function Check({ size = 16 }: { size?: number }) {
   return (

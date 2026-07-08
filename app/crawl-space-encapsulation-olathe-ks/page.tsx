@@ -8,7 +8,9 @@ export const metadata: Metadata = {
   title: { absolute: 'Crawl Space Encapsulation Olathe, KS | KC Crawl Space Specialists' },
   description:
     'Crawl space encapsulation in Olathe, KS. Serving Historic Downtown Olathe, Cedar Creek, and all of Johnson County. Free inspection. Same-week appointments available.',
-};
+  alternates: {
+    canonical: 'https://www.crawlspacekc.com/crawl-space-encapsulation-olathe-ks/',
+  }};
 
 function Check({ size = 16 }: { size?: number }) {
   return (

@@ -8,7 +8,9 @@ export const metadata: Metadata = {
   title: { absolute: 'Crawl Space Encapsulation Smithville, MO | KC Crawl Space Specialists' },
   description:
     'Crawl space encapsulation in Smithville, MO. Serving Smithville Lake area, downtown neighborhoods, and all of Clay County north of Liberty. Free inspection.',
-};
+  alternates: {
+    canonical: 'https://www.crawlspacekc.com/crawl-space-encapsulation-smithville-mo/',
+  }};
 
 const jsonLd = {
   '@context': 'https://schema.org',

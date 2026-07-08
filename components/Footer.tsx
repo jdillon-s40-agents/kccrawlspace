@@ -73,6 +73,7 @@ export default function Footer() {
                 { label: 'Vapor Barrier Installation', href: '/crawl-space-vapor-barrier-kansas-city/' },
                 { label: 'Crawl Space Waterproofing', href: '/crawl-space-waterproofing-kansas-city/' },
                 { label: 'Crawl Space Dehumidifiers', href: '/crawl-space-dehumidifier-kansas-city/' },
+                { label: 'Pest & Rodent Sealing', href: '/crawl-space-pest-control-kansas-city/' },
                 { label: 'Mobile Home Underbelly', href: '/mobile-homes' },
                 { label: 'Pricing & Financing', href: '/pricing' },
               ].map((l) => (
@@ -113,7 +114,9 @@ export default function Footer() {
                 { label: 'Encapsulation Cost', href: '/crawl-space-encapsulation-cost-kansas-city/' },
                 { label: 'Mold in Crawl Space', href: '/crawl-space-mold-kansas-city/' },
                 { label: 'Standing Water', href: '/standing-water-in-crawl-space/' },
-                { label: 'Musty Smell', href: '/crawl-space-smells-musty/' },
+                { label: 'Sagging Floor Repair', href: '/crawl-space-sagging-floor-repair-kansas-city/' },
+                { label: 'Free Inspection Explained', href: '/free-crawl-space-inspection-kansas-city/' },
+                { label: 'Choosing a Contractor', href: '/how-to-choose-a-crawl-space-contractor-kansas-city/' },
                 { label: 'All Guides & FAQ', href: '/guides/' },
               ].map((l) => (
                 <Link key={l.href} href={l.href} style={{ color: '#9CA3AF', fontSize: 14.5, textDecoration: 'none' }}>

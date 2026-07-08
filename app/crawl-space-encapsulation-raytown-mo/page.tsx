@@ -8,7 +8,9 @@ export const metadata: Metadata = {
   title: { absolute: 'Crawl Space Encapsulation Raytown, MO | KC Crawl Space Specialists' },
   description:
     'Crawl space encapsulation in Raytown, MO. Serving mid-century neighborhoods south of Kansas City. Jackson County clay soil specialist. Free inspection · same-week service.',
-};
+  alternates: {
+    canonical: 'https://www.crawlspacekc.com/crawl-space-encapsulation-raytown-mo/',
+  }};
 
 const jsonLd = {
   '@context': 'https://schema.org',

@@ -355,4 +355,36 @@
     <priority>0.6</priority>
   </url>
 
+  <!-- New Guides & Service Pages -->
+  <url>
+    <loc>https://www.crawlspacekc.com/crawl-space-sagging-floor-repair-kansas-city/</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.crawlspacekc.com/free-crawl-space-inspection-kansas-city/</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.crawlspacekc.com/crawl-space-pest-control-kansas-city/</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.crawlspacekc.com/how-to-choose-a-crawl-space-contractor-kansas-city/</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.crawlspacekc.com/local-vs-national-crawl-space-company-kansas-city/</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>

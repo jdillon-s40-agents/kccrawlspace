@@ -8,7 +8,9 @@ export const metadata: Metadata = {
   title: { absolute: 'Crawl Space Encapsulation Prairie Village, KS | Free Inspection' },
   description:
     "Crawl space encapsulation in Prairie Village, KS. One of Johnson County's oldest suburbs — 1950s and 1960s ranch homes. Free inspection. Same-week service.",
-};
+  alternates: {
+    canonical: 'https://www.crawlspacekc.com/crawl-space-encapsulation-prairie-village-ks/',
+  }};
 
 const jsonLd = {
   '@context': 'https://schema.org',

@@ -8,7 +8,9 @@ export const metadata: Metadata = {
   title: { absolute: 'Crawl Space Encapsulation Basehor, KS | KC Crawl Space Specialists' },
   description:
     'Crawl space encapsulation in Basehor, KS. Leavenworth County suburb growing along K-7. Free inspection. Same-week service.',
-};
+  alternates: {
+    canonical: 'https://www.crawlspacekc.com/crawl-space-encapsulation-basehor-ks/',
+  }};
 
 function Check({ size = 16 }: { size?: number }) {
   return (

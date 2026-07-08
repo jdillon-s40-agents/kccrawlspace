@@ -8,7 +8,9 @@ export const metadata: Metadata = {
   title: { absolute: 'Crawl Space Encapsulation Overland Park, KS | Free Inspection' },
   description:
     'Crawl space encapsulation in Overland Park, KS. Serving Corinth, Blue Valley, Indian Creek, Nall Hills, and all of Johnson County. Free inspection. Same-week service.',
-};
+  alternates: {
+    canonical: 'https://www.crawlspacekc.com/crawl-space-encapsulation-overland-park-ks/',
+  }};
 
 function Check({ size = 16 }: { size?: number }) {
   return (
