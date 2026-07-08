@@ -141,6 +141,14 @@ export default function CrawlSpaceAssessmentPage() {
           >
             Get My DIY Game Plan ↓
           </Link>
+          <div style={{ marginTop: 18 }}>
+            <Link
+              href="/diy-crawl-space-kansas-city/sample-plan/"
+              style={{ color: '#9CA3AF', font: "700 14px 'Inter',sans-serif", textDecoration: 'underline', textUnderlineOffset: 4 }}
+            >
+              See a real sample game plan first →
+            </Link>
+          </div>
         </div>
       </section>
 
