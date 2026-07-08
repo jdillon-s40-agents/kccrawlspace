@@ -23,7 +23,7 @@ const faqItems = [
   },
   {
     q: 'What’s the difference between virtual and in-person?',
-    a: 'Virtual means you submit your own photos and measurements, and Jason reviews everything remotely. In-person means Jason comes to your property and does the inspection himself. In-person costs $197 but is credited toward any installation job booked within 90 days.',
+    a: 'Virtual means you submit your own photos and measurements, and Jason reviews everything remotely. In-person means Jason comes to your property and does the inspection himself for the most accurate read on your specific crawlspace.',
   },
   {
     q: 'What if I don’t have a moisture meter?',
@@ -211,7 +211,6 @@ export default function CrawlSpaceAssessmentPage() {
                 'Photo documentation of all conditions',
                 'Step-by-step DIY install plan built on what he finds under your home',
                 'Exact materials list with quantities and sourcing links',
-                '$197 credited toward full installation if you’d rather we do it*',
               ].map((t) => (
                 <li key={t} style={{ display: 'flex', gap: 9, fontSize: 14.5, color: '#e5e7eb' }}>
                   <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#16A34A" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" style={{ flex: 'none', marginTop: 2 }}>
@@ -223,8 +222,6 @@ export default function CrawlSpaceAssessmentPage() {
             </ul>
             <p style={{ fontSize: 13, color: '#6b7280', marginBottom: 20 }}>
               Most appointments scheduled within 3 days of booking. For homeowners who want eyes-on accuracy before committing to a DIY project.
-              <br />
-              *Credit applies to KC Crawl Space Specialists installation jobs booked within 90 days.
             </p>
             <Link
               href="#assessment-form"

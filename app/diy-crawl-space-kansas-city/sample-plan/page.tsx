@@ -364,7 +364,7 @@ function SampleGamePlanDoc() {
             <p>CrawlspaceKC.com</p>
           </div>
         </div>
-        <div className="gp-footer-note">Your $97 assessment fee becomes a $75 credit toward any KC Crawl Space Specialists installation booked within 90 days · Order #KCS-0047</div>
+        <div className="gp-footer-note">Order #KCS-0047</div>
       </div>
     </>
   );

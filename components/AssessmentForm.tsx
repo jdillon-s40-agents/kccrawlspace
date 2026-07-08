@@ -234,7 +234,7 @@ export default function AssessmentForm() {
             onClick={() => setServiceType('in-person')}
             title="In-Person Assessment"
             price="$197"
-            blurb="Jason visits your property. Credited toward installation if you book within 90 days."
+            blurb="Jason visits your property in person for the most accurate evaluation."
           />
         </div>
         {error && !serviceType && (
