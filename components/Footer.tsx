@@ -68,6 +68,7 @@ export default function Footer() {
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 11 }}>
               {[
+                { label: 'Crawlspace Assessment ($97+)', href: '/crawl-space-assessment-kansas-city/' },
                 { label: 'Crawlspace Encapsulation', href: '/encapsulation' },
                 { label: 'Crawl Space Repair', href: '/crawl-space-repair-kansas-city/' },
                 { label: 'Vapor Barrier Installation', href: '/crawl-space-vapor-barrier-kansas-city/' },
