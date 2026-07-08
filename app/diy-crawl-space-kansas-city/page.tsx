@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     'Get a step-by-step DIY crawlspace plan from $97 — exact products, quantities, and install instructions for your specific space. Virtual or in-person. Fix it yourself, done right.',
   alternates: {
-    canonical: 'https://www.crawlspacekc.com/crawl-space-assessment-kansas-city/',
+    canonical: 'https://www.crawlspacekc.com/diy-crawl-space-kansas-city/',
   },
 };
 
@@ -82,8 +82,8 @@ export default function CrawlSpaceAssessmentPage() {
                   {
                     '@type': 'ListItem',
                     position: 2,
-                    name: 'Crawl Space Assessment',
-                    item: 'https://www.crawlspacekc.com/crawl-space-assessment-kansas-city/',
+                    name: 'DIY Crawl Space Game Plan',
+                    item: 'https://www.crawlspacekc.com/diy-crawl-space-kansas-city/',
                   },
                 ],
               },
