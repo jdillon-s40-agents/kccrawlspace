@@ -4,15 +4,23 @@ import AssessmentForm from '@/components/AssessmentForm';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: { absolute: 'DIY Crawl Space Game Plan Kansas City | KC Crawl Space Specialists' },
+  title: { absolute: 'DIY Crawl Space Encapsulation Kansas City | Step-By-Step Game Plan' },
   description:
-    'Get a step-by-step DIY crawlspace plan from $97 — exact products, quantities, and install instructions for your specific space. Virtual or in-person. Fix it yourself, done right.',
+    'Can you DIY crawl space encapsulation? Yes — get a step-by-step Kansas City plan from $97: exact products, quantities, and install instructions for your specific space.',
   alternates: {
     canonical: 'https://www.crawlspacekc.com/diy-crawl-space-kansas-city/',
   },
 };
 
 const faqItems = [
+  {
+    q: 'Can I encapsulate my own crawl space?',
+    a: 'Yes. Crawl space encapsulation is a legitimate DIY project for a reasonably handy homeowner — the work itself (sealing, vapor barrier, vent block-off) doesn’t require a license. The hard part isn’t the labor, it’s knowing what your specific crawlspace actually needs. That’s what the game plan solves: Jason evaluates your space first, so you’re following a plan built for your conditions instead of a generic YouTube tutorial.',
+  },
+  {
+    q: 'DIY vs. professional crawl space encapsulation — what’s the real cost difference?',
+    a: 'Professional encapsulation in the Kansas City area typically runs $5,000–$20,000 depending on size and condition. Doing it yourself with a plan built for your space usually runs $1,200–$3,000 in materials — you’re paying for parts, not labor. The tradeoff is your own time and effort instead of a crew doing it in a day or two.',
+  },
   {
     q: 'What’s the difference between virtual and in-person?',
     a: 'Virtual means you submit your own photos and measurements, and Jason reviews everything remotely. In-person means Jason comes to your property and does the inspection himself. In-person costs $197 but is credited toward any installation job booked within 90 days.',
@@ -82,7 +90,7 @@ export default function CrawlSpaceAssessmentPage() {
                   {
                     '@type': 'ListItem',
                     position: 2,
-                    name: 'DIY Crawl Space Game Plan',
+                    name: 'DIY Crawl Space Encapsulation',
                     item: 'https://www.crawlspacekc.com/diy-crawl-space-kansas-city/',
                   },
                 ],
@@ -121,7 +129,7 @@ export default function CrawlSpaceAssessmentPage() {
       <section style={{ background: '#0D0D0D', padding: 'clamp(52px,8vw,88px) clamp(16px,5vw,24px)' }}>
         <div style={{ maxWidth: 900, margin: '0 auto', textAlign: 'center' }}>
           <p style={{ font: "600 13px 'Inter',sans-serif", letterSpacing: '.16em', textTransform: 'uppercase' as const, color: '#F5A623', margin: '0 0 16px' }}>
-            DIY Crawlspace Game Plans
+            DIY Crawl Space Encapsulation — Kansas City
           </p>
           <h1 style={{ fontFamily: "'Barlow Condensed',sans-serif", fontWeight: 800, fontSize: 'clamp(36px,7vw,64px)', textTransform: 'uppercase' as const, color: '#fff', margin: '0 0 20px', lineHeight: 1.05 }}>
             We&apos;ll Show You <span style={{ color: '#F5A623' }}>Exactly How To Fix It Yourself</span>

@@ -12,6 +12,12 @@ export const metadata: Metadata = {
 
 const guides = [
   {
+    title: 'DIY Crawl Space Encapsulation',
+    href: '/diy-crawl-space-kansas-city/',
+    answer:
+      'Can you encapsulate your own crawl space? Yes — with the right evaluation and a step-by-step plan built for your specific space, materials and all.',
+  },
+  {
     title: 'Wet Crawl Space After Rain',
     href: '/wet-crawl-space-after-rain/',
     answer:
