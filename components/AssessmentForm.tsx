@@ -206,10 +206,9 @@ export default function AssessmentForm() {
           Got it, {firstName}!
         </h3>
         <p style={{ fontSize: 15.5, lineHeight: 1.6, color: '#c3d0e6', margin: '0 0 14px' }}>
-          Jason will review your submission and send an invoice to your email within a few hours.
-          {isVirtual
-            ? ' Once you pay, he’ll send your photo submission guide and moisture meter info to get started.'
-            : ' Once you pay, he’ll text or call to schedule your visit.'}
+          Jason will review what you shared and reach out soon to go over the details
+          {isVirtual ? ' and walk you through exactly what to send over' : ' and get your visit scheduled'}.
+          Once everything’s set, he’ll send a simple invoice to lock it in.
         </p>
         <p style={{ fontSize: 14, color: '#9CA3AF', margin: 0 }}>
           Questions in the meantime? Text Jason directly: <strong style={{ color: '#F5A623' }}>816-962-2111</strong>
@@ -445,7 +444,7 @@ export default function AssessmentForm() {
           </button>
 
           <p style={{ fontSize: 12.5, color: '#6b7280', margin: '14px 0 0', textAlign: 'center' }}>
-            After submitting, Jason will email you an invoice within a few hours. Once paid, he&apos;ll send everything you need to get started.
+            After submitting, Jason will reach out to go over the details and get things scheduled.
             Questions? Text Jason: 816-962-2111
           </p>
         </>

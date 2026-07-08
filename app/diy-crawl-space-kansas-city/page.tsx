@@ -19,11 +19,11 @@ const faqItems = [
   },
   {
     q: 'What if I don’t have a moisture meter?',
-    a: 'No problem — Jason will include a link to an inexpensive one ($15–25 on Amazon) with your invoice. You’ll want one on hand before submitting your photos.',
+    a: 'No problem — Jason will point you to an inexpensive one ($15–25 on Amazon) when he reaches out to go over your details. You’ll want one on hand before submitting your photos.',
   },
   {
     q: 'How long does the virtual photo submission take?',
-    a: 'About 30 minutes. Jason sends a photo guide with your invoice showing exactly what shots to capture.',
+    a: 'About 30 minutes. Jason will walk you through exactly what shots and measurements to send when he calls to go over your details.',
   },
   {
     q: 'What’s actually in the game plan?',
@@ -43,7 +43,7 @@ const faqItems = [
   },
   {
     q: 'How do I pay?',
-    a: 'After you submit the form below, Jason sends you a secure invoice link by email. You pay online — it takes about 2 minutes.',
+    a: 'No need to worry about that up front. Once Jason’s talked with you and your assessment is on the schedule, he’ll send a simple invoice you can pay online in a couple minutes.',
   },
   {
     q: 'What if I’m not satisfied with my game plan?',
@@ -57,12 +57,12 @@ const steps = [
     body: 'Takes 5 minutes. Tell us about your crawlspace and what you’re experiencing.',
   },
   {
-    n: '2', title: 'Jason Sends An Invoice',
-    body: 'Pay securely via the invoice link sent to your email. Virtual: then submit your photos. In-person: Jason schedules your visit.',
+    n: '2', title: 'Jason Reaches Out',
+    body: 'He calls or texts to go over the details and get your assessment scheduled — virtual or in-person, whatever works for you.',
   },
   {
     n: '3', title: 'Receive Your DIY Game Plan',
-    body: 'Get a written plan telling you exactly what to buy, how much, and how to install it — step by step, for your specific crawlspace. 48 hours (virtual) or 24 hours (in-person).',
+    body: 'Once everything’s set, you get a written plan telling you exactly what to buy and how to install it — built for your specific crawlspace.',
   },
 ];
 
