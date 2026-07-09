@@ -1,5 +1,7 @@
 'use client';
-import { useState, useRef, FormEvent } from 'react';
+import { useState, useRef, useEffect, FormEvent } from 'react';
+
+export const DIY_SELECT_SERVICE_EVENT = 'diy-select-service';
 
 const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mbdvvlkp';
 
@@ -102,6 +104,15 @@ function ServiceCard({
 
 export default function AssessmentForm() {
   const [serviceType, setServiceType] = useState<'virtual' | 'in-person' | ''>('');
+
+  useEffect(() => {
+    function handleSelect(e: Event) {
+      const detail = (e as CustomEvent<'virtual' | 'in-person'>).detail;
+      if (detail === 'virtual' || detail === 'in-person') setServiceType(detail);
+    }
+    window.addEventListener(DIY_SELECT_SERVICE_EVENT, handleSelect);
+    return () => window.removeEventListener(DIY_SELECT_SERVICE_EVENT, handleSelect);
+  }, []);
   const [propType, setPropType] = useState('');
   const [size, setSize] = useState('');
   const [symptoms, setSymptoms] = useState<string[]>([]);

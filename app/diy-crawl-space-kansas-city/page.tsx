@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import AssessmentForm from '@/components/AssessmentForm';
+import SelectDiyServiceLink from '@/components/SelectDiyServiceLink';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
@@ -189,12 +190,13 @@ export default function CrawlSpaceAssessmentPage() {
             <p style={{ fontSize: 13, color: '#6b7280', marginBottom: 20 }}>
               Delivered within 48 hours of photo submission. Built for homeowners who want to do the work themselves — or at least know exactly what needs to happen.
             </p>
-            <Link
+            <SelectDiyServiceLink
+              service="virtual"
               href="#assessment-form"
               style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#F5A623', color: '#0D0D0D', font: "800 15px 'Inter',sans-serif", textDecoration: 'none', padding: '14px 20px', borderRadius: 10, minHeight: 50 }}
             >
               Get My Virtual DIY Plan — $97
-            </Link>
+            </SelectDiyServiceLink>
           </div>
 
           <div style={{ background: '#0D0D0D', border: '1px solid rgba(255,255,255,.1)', borderRadius: 16, padding: 32 }}>
@@ -223,12 +225,13 @@ export default function CrawlSpaceAssessmentPage() {
             <p style={{ fontSize: 13, color: '#6b7280', marginBottom: 20 }}>
               Most appointments scheduled within 3 days of booking. For homeowners who want eyes-on accuracy before committing to a DIY project.
             </p>
-            <Link
+            <SelectDiyServiceLink
+              service="in-person"
               href="#assessment-form"
               style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#F5A623', color: '#0D0D0D', font: "800 15px 'Inter',sans-serif", textDecoration: 'none', padding: '14px 20px', borderRadius: 10, minHeight: 50 }}
             >
               Get My In-Person DIY Plan — $197
-            </Link>
+            </SelectDiyServiceLink>
           </div>
         </div>
       </section>
