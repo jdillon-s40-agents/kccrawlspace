@@ -96,7 +96,7 @@ export default function Footer() {
                 { label: 'Overland Park, KS', href: '/crawl-space-encapsulation-overland-park-ks/' },
                 { label: "Lee's Summit, MO", href: '/crawl-space-encapsulation-lees-summit-mo/' },
                 { label: 'Olathe, KS', href: '/crawl-space-encapsulation-olathe-ks/' },
-                { label: 'View All 29 Cities', href: '/service-areas/' },
+                { label: 'View All 35 Cities', href: '/service-areas/' },
               ].map((l) => (
                 <Link key={l.href} href={l.href} style={{ color: '#9CA3AF', fontSize: 14.5, textDecoration: 'none' }}>
                   {l.label}

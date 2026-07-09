@@ -24,6 +24,7 @@ const faqSchema = {
     { '@type': 'Question', name: 'Does encapsulation get rid of mold?', acceptedAnswer: { '@type': 'Answer', text: 'Encapsulation removes the conditions mold needs by sealing out moisture and holding humidity below 60%. We treat any existing mold on the joists and framing during installation, and the sealed, dehumidified environment keeps it from returning.' } },
     { '@type': 'Question', name: 'Will encapsulation lower my energy bills?', acceptedAnswer: { '@type': 'Answer', text: 'Yes — sealed crawl spaces improve efficiency by about 15–20% in most KC homes by eliminating the biggest source of uncontrolled air and moisture.' } },
     { '@type': 'Question', name: 'How long does crawl space encapsulation last?', acceptedAnswer: { '@type': 'Answer', text: 'A properly installed system lasts 20–30 years. The 20-mil vapor barrier carries a 25-year manufacturer warranty, and our labor is backed by a transferable lifetime Dry Crawlspace Promise.' } },
+    { '@type': 'Question', name: 'Is there crawl space encapsulation near me?', acceptedAnswer: { '@type': 'Answer', text: 'Almost certainly, yes. We serve 35 cities across the Kansas City metro on both the Missouri and Kansas sides — see our full service area list or just call and ask if we cover your specific neighborhood.' } },
   ],
 };
 
@@ -59,6 +60,7 @@ const resultFaqs = [
   { q: 'What is the Dry Crawlspace Promise?', a: "It's our lifetime guarantee: if moisture in your crawl space ever exceeds 60% relative humidity for more than 48 hours after our installation, we come back and fix it at zero cost. No questions, forever — and it transfers to the next owner." },
   { q: 'Does homeowners insurance cover encapsulation?', a: "Usually not, because encapsulation is preventive. But if moisture has already caused structural damage, some policies may cover the remediation. We document everything with photos and a written report for your insurer." },
   { q: 'What areas do you serve?', a: "We serve the greater Kansas City region — anywhere within about an hour of Kansas City, on both the Missouri and Kansas sides of the metro. Not sure if we cover you? Just call and ask." },
+  { q: 'Is there crawl space encapsulation near me?', a: "Almost certainly, yes. We serve 35 cities across the Kansas City metro on both the Missouri and Kansas sides — see our full service area list or just call and ask if we cover your specific neighborhood." },
   { q: 'How is your work different from a foundation company\'s?', a: "Crawl spaces are all we do. Our field team works exclusively on crawl space and underbelly installations — trained specifically for KC's clay soil, humidity, and housing stock — so you're not getting an upsell from a general contractor." },
 ];
 

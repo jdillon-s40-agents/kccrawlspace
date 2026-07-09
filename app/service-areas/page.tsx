@@ -4,8 +4,8 @@ import InspectionForm from '@/components/InspectionForm';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: { absolute: 'Crawl Space Encapsulation Service Areas | Kansas City Metro' },
-  description: 'KC Crawl Space Specialists serves 29 cities across the Kansas City metro. Find crawl space encapsulation, repair & waterproofing in your MO or KS city.',
+  title: { absolute: 'Crawl Space Encapsulation Near Me | Kansas City Metro Service Areas' },
+  description: 'Searching for crawl space encapsulation near me? We serve 35 cities across the Kansas City metro. Find encapsulation, repair & waterproofing in your MO or KS city.',
   alternates: {
     canonical: 'https://www.crawlspacekc.com/service-areas/',
   }};
@@ -26,6 +26,9 @@ const moCities = [
   { label: 'Smithville, MO', href: '/crawl-space-encapsulation-smithville-mo/' },
   { label: 'Kearney, MO', href: '/crawl-space-encapsulation-kearney-mo/' },
   { label: 'Platte City, MO', href: '/crawl-space-encapsulation-platte-city-mo/' },
+  { label: 'Excelsior Springs, MO', href: '/crawl-space-encapsulation-excelsior-springs-mo/' },
+  { label: 'Riverside, MO', href: '/crawl-space-encapsulation-riverside-mo/' },
+  { label: 'Brookside, MO', href: '/crawl-space-encapsulation-brookside-mo/' },
 ];
 
 const ksCities = [
@@ -43,6 +46,9 @@ const ksCities = [
   { label: 'Bonner Springs, KS', href: '/crawl-space-encapsulation-bonner-springs-ks/' },
   { label: 'Basehor, KS', href: '/crawl-space-encapsulation-basehor-ks/' },
   { label: 'De Soto, KS', href: '/crawl-space-encapsulation-de-soto-ks/' },
+  { label: 'Fairway, KS', href: '/crawl-space-encapsulation-fairway-ks/' },
+  { label: 'Mission Woods, KS', href: '/crawl-space-encapsulation-mission-woods-ks/' },
+  { label: 'Lake Quivira, KS', href: '/crawl-space-encapsulation-lake-quivira-ks/' },
 ];
 
 const coreServices = [
@@ -158,7 +164,7 @@ export default function ServiceAreasPage() {
             <span style={{ color: '#F5A623' }}>Kansas City Metro</span>
           </h1>
           <p style={{ fontSize: 'clamp(16px,2.5vw,19px)', color: '#9CA3AF', margin: '0 0 36px', maxWidth: 680, lineHeight: 1.6 }}>
-            We provide crawl space encapsulation, repair, and moisture control throughout the Missouri and Kansas sides of the metro. Find your city below or request a free inspection anywhere in our service area.
+            Searching for crawl space encapsulation near me? We provide crawl space encapsulation, repair, and moisture control throughout the Missouri and Kansas sides of the metro. Find your city below or request a free inspection anywhere in our service area.
           </p>
           <div style={{ display: 'flex', gap: 16, flexWrap: 'wrap' as const, alignItems: 'center' }}>
             <Link
