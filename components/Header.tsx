@@ -63,7 +63,7 @@ export default function Header() {
             justifyContent: 'space-between',
             gap: 12,
             padding: '0 clamp(14px,4vw,24px)',
-            height: 'clamp(88px,12vw,100px)',
+            height: 'clamp(88px,12vw,166px)',
           }}
         >
           <Link href="/" style={{ display: 'flex', alignItems: 'center', flex: 'none' }}>
