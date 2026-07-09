@@ -135,10 +135,41 @@ export default function CrawlSpaceAssessmentPage() {
           <h1 style={{ fontFamily: "'Barlow Condensed',sans-serif", fontWeight: 800, fontSize: 'clamp(36px,7vw,64px)', textTransform: 'uppercase' as const, color: '#fff', margin: '0 0 20px', lineHeight: 1.05 }}>
             We&apos;ll Show You <span style={{ color: '#F5A623' }}>Exactly How To Fix It Yourself</span>
           </h1>
-          <p style={{ fontSize: 'clamp(16px,2.3vw,19px)', lineHeight: 1.6, color: '#9CA3AF', maxWidth: '52ch', margin: '0 auto 32px' }}>
-            Skip the guesswork and the contractor markup. Jason evaluates your specific crawlspace and hands you a step-by-step plan —
-            what to buy, how much, and exactly how to install it — whether you go virtual or in person.
+          <p style={{ fontSize: 'clamp(16px,2.3vw,19px)', lineHeight: 1.6, color: '#9CA3AF', maxWidth: '58ch', margin: '0 auto 36px' }}>
+            Skip the guesswork and the contractor markup. Jason evaluates your specific crawlspace — virtually or on-site —
+            then writes you a step-by-step plan for exactly how to fix it yourself. You get the exact list of materials you
+            need, help sourcing them at bulk pricing instead of retail, and Jason stays available for questions while you
+            do the work.
           </p>
+
+          <div
+            style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit,minmax(200px,1fr))',
+              gap: 14,
+              maxWidth: 820,
+              margin: '0 auto 36px',
+              textAlign: 'left' as const,
+            }}
+          >
+            {[
+              { n: '1', title: 'Evaluation', body: 'Virtual or on-site — Jason assesses your specific crawlspace.' },
+              { n: '2', title: 'Step-By-Step Plan', body: 'A written, custom plan for exactly how to fix your crawlspace.' },
+              { n: '3', title: 'Exact Materials List', body: 'What to buy and how much — plus help getting it at bulk pricing, not retail.' },
+              { n: '4', title: 'Support While You Work', body: 'Jason stays available for questions as you complete the project.' },
+            ].map((s) => (
+              <div key={s.n} style={{ background: '#111827', border: '1px solid rgba(255,255,255,.08)', borderRadius: 12, padding: '16px 18px' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 9, marginBottom: 6 }}>
+                  <span style={{ background: '#F5A623', color: '#0D0D0D', font: "800 12px 'Inter',sans-serif", width: 20, height: 20, borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', flex: 'none' }}>
+                    {s.n}
+                  </span>
+                  <span style={{ font: "800 14px 'Inter',sans-serif", color: '#fff' }}>{s.title}</span>
+                </div>
+                <p style={{ fontSize: 13.5, color: '#9CA3AF', margin: 0, lineHeight: 1.5 }}>{s.body}</p>
+              </div>
+            ))}
+          </div>
+
           <Link
             href="#assessment-form"
             style={{
