@@ -1,5 +1,6 @@
 'use client';
 import { useState, useRef, useEffect, FormEvent } from 'react';
+import { trackFbEvent } from '@/lib/fbPixel';
 
 export const DIY_SELECT_SERVICE_EVENT = 'diy-select-service';
 
@@ -179,6 +180,7 @@ export default function AssessmentForm() {
         body: JSON.stringify(body),
       });
       if (res.ok) {
+        trackFbEvent('Contact');
         setSubmitted(true);
       } else {
         const data = await res.json().catch(() => ({}));

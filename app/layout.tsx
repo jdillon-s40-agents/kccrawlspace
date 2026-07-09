@@ -6,6 +6,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import MobileBottomBar from '@/components/MobileBottomBar';
+import PixelContactTracker from '@/components/PixelContactTracker';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -94,6 +95,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main>{children}</main>
         <Footer />
         <MobileBottomBar />
+        <PixelContactTracker />
         <SpeedInsights />
       </body>
     </html>

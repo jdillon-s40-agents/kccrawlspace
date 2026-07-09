@@ -1,5 +1,6 @@
 'use client';
 import { useState, useRef, FormEvent } from 'react';
+import { trackFbEvent } from '@/lib/fbPixel';
 
 const SYMPTOMS = [
   'Musty smell', 'High humidity', 'Mold concern', 'Cold floors',
@@ -97,6 +98,7 @@ export default function InspectionForm() {
         body: JSON.stringify(body),
       });
       if (res.ok) {
+        trackFbEvent('Contact');
         setSubmitted(true);
       } else {
         const data = await res.json().catch(() => ({}));
