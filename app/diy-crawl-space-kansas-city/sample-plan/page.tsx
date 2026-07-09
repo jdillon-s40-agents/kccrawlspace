@@ -230,10 +230,10 @@ function SampleGamePlanDoc() {
                 <tr><td>6</td><td>Great Stuff Pro Gaps &amp; Cracks spray foam</td><td>2 cans</td><td className="gp-cost">$18</td><td><span className="gp-buy-link">Buy →</span></td></tr>
                 <tr><td>7</td><td>Evoseal MS polymer sealant</td><td>4 tubes</td><td className="gp-cost">$48</td><td><span className="gp-buy-link">Buy →</span></td></tr>
                 <tr><td>8</td><td>Boracare mold treatment — 1 gallon</td><td>1 unit</td><td className="gp-cost">$89</td><td><span className="gp-buy-link">Buy →</span></td></tr>
-                <tr><td>9</td><td style={{ color: '#185FA5', fontWeight: 600 }}>AprilAire E70 dehumidifier ★ Recommended</td><td>1 unit</td><td className="gp-cost" style={{ color: '#185FA5' }}>$549</td><td><span className="gp-buy-link">Buy →</span></td></tr>
+                <tr><td>9</td><td style={{ color: '#185FA5', fontWeight: 600 }}>AlorAir Sentinel HDi90 commercial dehumidifier ★ Recommended</td><td>1 unit</td><td className="gp-cost" style={{ color: '#185FA5' }}>$1,500</td><td><span className="gp-buy-link">Buy →</span></td></tr>
                 <tr><td>10</td><td>N95 respirators (box of 10)</td><td>1 box</td><td className="gp-cost">$18</td><td><span className="gp-buy-link">Buy →</span></td></tr>
                 <tr><td>11</td><td>Tyvek disposable coveralls</td><td>2 suits</td><td className="gp-cost">$16</td><td><span className="gp-buy-link">Buy →</span></td></tr>
-                <tr className="gp-total-row"><td colSpan={3}><strong>Total estimated materials (with dehumidifier)</strong></td><td className="gp-cost"><strong>$1,285</strong></td><td /></tr>
+                <tr className="gp-total-row"><td colSpan={3}><strong>Total estimated materials (with dehumidifier)</strong></td><td className="gp-cost"><strong>$2,236</strong></td><td /></tr>
               </tbody>
             </table>
           </div>
@@ -244,7 +244,7 @@ function SampleGamePlanDoc() {
           <div className="gp-cost-compare">
             <div className="gp-compare-card gp-diy">
               <div className="gp-compare-label gp-diy">DIY — your cost</div>
-              <div className="gp-compare-amount gp-diy">$1,285</div>
+              <div className="gp-compare-amount gp-diy">$2,236</div>
               <div className="gp-compare-sub">Materials + your weekend</div>
             </div>
             <div className="gp-compare-card gp-pro">
@@ -255,7 +255,7 @@ function SampleGamePlanDoc() {
           </div>
           <div className="gp-savings-bar">
             <span className="gp-savings-label">Your estimated savings doing this yourself</span>
-            <span className="gp-savings-amount">$3,215 – $5,215</span>
+            <span className="gp-savings-amount">$2,264 – $4,264</span>
           </div>
         </div>
 
@@ -317,7 +317,7 @@ function SampleGamePlanDoc() {
               </div>
             </div>
             <div className="gp-step">
-              <div className="gp-step-header"><span className="gp-step-num">Step 7</span><span className="gp-step-title">Install AprilAire E70 dehumidifier</span></div>
+              <div className="gp-step-header"><span className="gp-step-num">Step 7</span><span className="gp-step-title">Install AlorAir Sentinel HDi90 dehumidifier</span></div>
               <div className="gp-step-body">
                 <span className="gp-step-item">On cinder blocks — 4+ inches off barrier</span>
                 <span className="gp-step-item">Connect drain hose — test water flows</span>
