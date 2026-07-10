@@ -5,8 +5,8 @@ import FinancingOptions from '@/components/FinancingOptions';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: { absolute: 'Crawl Space Waterproofing Kansas City | Fix a Wet Crawl Space' },
-  description: 'Fix a wet crawl space in Kansas City: interior drainage, sump pump & encapsulation. We handle standing water, foundation seepage & water after rain. Free inspection.',
+  title: { absolute: 'Crawl Space Waterproofing Near Me | Kansas City Wet Crawl Space Fix' },
+  description: 'Searching for crawl space waterproofing near me? We fix wet crawl spaces in Kansas City: interior drainage, sump pump & encapsulation. Standing water, seepage, water after rain. Free inspection.',
   alternates: {
     canonical: 'https://www.crawlspacekc.com/crawl-space-waterproofing-kansas-city/',
   }};
@@ -49,6 +49,10 @@ function XIcon({ size = 16 }: { size?: number }) {
 }
 
 const faqItems = [
+  {
+    q: 'Is there crawl space waterproofing near me?',
+    a: 'Almost certainly, yes. We serve 35 cities across the Kansas City metro on both the Missouri and Kansas sides, and crawl space water problems are common throughout the area due to Wymore-Ladoga clay soil. See our full service area list or just call and ask if we cover your specific neighborhood.',
+  },
   {
     q: 'Can encapsulation alone fix standing water?',
     a: 'No. Encapsulation controls moisture from the ground and air, but it cannot stop active water intrusion through walls or floor. Drainage and sump pump work is needed first for crawl spaces with standing water.',
@@ -179,7 +183,7 @@ export default function CrawlSpaceWaterproofingKansasCity() {
               margin: '0 0 16px',
             }}
           >
-            Crawl Space Waterproofing
+            Crawl Space Waterproofing Near Me
           </p>
           <h1
             style={{
@@ -196,7 +200,7 @@ export default function CrawlSpaceWaterproofingKansasCity() {
             <span style={{ color: '#F5A623' }}>in Kansas City</span>
           </h1>
           <p style={{ fontSize: 'clamp(16px,2.5vw,19px)', color: '#D1D5DB', margin: '0 0 32px', maxWidth: 680, lineHeight: 1.6 }}>
-            Water in a crawl space doesn't fix itself. We diagnose why your crawl space is wet and install the right solution — drainage, sump pump, vapor barrier, or full encapsulation.
+            Searching for crawl space waterproofing near me? Water in a crawl space doesn't fix itself. We diagnose why your Kansas City crawl space is wet and install the right solution — drainage, sump pump, vapor barrier, or full encapsulation.
           </p>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 14, alignItems: 'center', marginBottom: 28 }}>
             <Link
