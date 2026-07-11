@@ -264,6 +264,19 @@ const BODY_HTML = `
         <div class="row"><label>Amazon sealer caulk per crack</label><input type="number" id="pAmzCrack" value="11.99" step="0.01"></div>
       </div>
 
+      <div class="slbl">Drainage System — Both Sources (Only When Job Needs an Interior Drain)</div>
+      <div class="g3">
+        <div class="row"><label>Drainage pipe needed (linear ft, 0 if none)</label><input type="number" id="drainPipeFt" value="0"></div>
+        <div class="row"><label>CSD drain pipe per linear ft <span class="sku">4in perforated pipe</span></label><input type="number" id="pCsdDrainPipe" value="2.25" step="0.01"></div>
+        <div class="row"><label>Amazon drain pipe per linear ft</label><input type="number" id="pAmzDrainPipe" value="1.85" step="0.01"></div>
+      </div>
+      <div class="g3">
+        <div class="row"><label>CSD drainage filler per linear ft <span class="sku">CSD proprietary plastic filler, replaces gravel</span></label><input type="number" id="pCsdDrainFiller" value="8.50" step="0.01"></div>
+        <div class="row"><label>Amazon drainage filler per linear ft <span class="sku">generic drain matting equivalent</span></label><input type="number" id="pAmzDrainFiller" value="6.75" step="0.01"></div>
+        <div class="row"><label>Liner strip width over filler (inches)</label><input type="number" id="drainLinerWidth" value="12"></div>
+      </div>
+      <div class="pnot">Leave drainage pipe at 0 for jobs that don't need an interior french drain — it adds no cost. When set, the extra liner needed to cover the filler trench is automatically folded into the vapor barrier roll count above.</div>
+
       <div class="slbl">Dehumidifier — Basic Unit (Essential &amp; Complete Tiers)</div>
       <div class="g2">
         <div class="row"><label>CSD price <span class="sku">AlorAir 70 Pint</span></label><input type="number" id="pCsdDehumBasic" value="649.99" step="0.01"></div>
@@ -405,18 +418,22 @@ window.go=async function(){
     tape:+$('pCsdTape').value, vent:+$('pCsdVent').value,
     dehum:+$('pCsdDehum').value, mold:+$('pCsdMold').value,
     wallIns:+$('pCsdWallIns').value, joistIns:+$('pCsdJoistIns').value,
-    crack:+$('pCsdCrack').value, dehumBasic:+$('pCsdDehumBasic').value
+    crack:+$('pCsdCrack').value, dehumBasic:+$('pCsdDehumBasic').value,
+    drainPipe:+$('pCsdDrainPipe').value, drainFiller:+$('pCsdDrainFiller').value
   };
   const amz={
     liner:+$('pAmzLiner').value, linerSqft:+$('pAmzLinerSqft').value,
     tape:+$('pAmzTape').value, vent:+$('pAmzVent').value,
     dehum:+$('pAmzDehum').value, mold:+$('pAmzMold').value,
     wallIns:+$('pAmzWallIns').value, joistIns:+$('pAmzJoistIns').value,
-    crack:+$('pAmzCrack').value, dehumBasic:+$('pAmzDehumBasic').value
+    crack:+$('pAmzCrack').value, dehumBasic:+$('pAmzDehumBasic').value,
+    drainPipe:+$('pAmzDrainPipe').value, drainFiller:+$('pAmzDrainFiller').value
   };
   const fixed={butyl:+$('pButyl').value, foam:+$('pFoam').value, ppe:+$('pPpe').value};
   const labor={rate:+$('pLabor').value, helper:+$('pHelper').value};
   const crackCount=+$('crackCount').value||4;
+  const drainPipeFt=+$('drainPipeFt').value||0;
+  const drainLinerWidth=+$('drainLinerWidth').value||12;
 
   const linerName=$('linerSel').value.split('|')[2];
   const dehumName=$('dehumSel').value.split('|')[1];
@@ -430,7 +447,7 @@ window.go=async function(){
   const userMsg='JOB: sqft='+sqft+' wallHeight='+wh+'in vents='+vents+'\\n\\nNOTES:\\n'+notes.replace(/"/g,"'").replace(/\\\\/g,'').replace(/\\n+/g,' ')+'\\n\\nCALCULATE:\\n'+
 'perim=round(4*sqrt('+sqft+')*1.1)\\n'+
 'wallSqft=round(perim*('+wh+'/12))\\n'+
-'totalBarrier=round(('+sqft+'+wallSqft)*1.20)\\n'+
+'totalBarrier=round(('+sqft+'+wallSqft)*1.20)+'+drainPipeFt+'*('+drainLinerWidth+'/12)  -- includes liner strip to cover the drainage filler trench\\n'+
 'csdLinerRolls=ceil(totalBarrier/'+csd.linerSqft+')\\n'+
 'amzLinerRolls=ceil(totalBarrier/'+amz.linerSqft+')\\n'+
 'tapeRolls=ceil(totalBarrier/360)\\n'+
@@ -447,10 +464,16 @@ window.go=async function(){
 'joistInsAmzCost=perim*'+amz.joistIns+'\\n'+
 'crackCsdCost=crackCount*'+csd.crack+'\\n'+
 'crackAmzCost=crackCount*'+amz.crack+'\\n'+
+'drainPipeFt='+drainPipeFt+'\\n'+
+'drainPipeCsdCost='+drainPipeFt+'*'+csd.drainPipe+'\\n'+
+'drainPipeAmzCost='+drainPipeFt+'*'+amz.drainPipe+'\\n'+
+'drainFillerCsdCost='+drainPipeFt+'*'+csd.drainFiller+'\\n'+
+'drainFillerAmzCost='+drainPipeFt+'*'+amz.drainFiller+'\\n'+
 '-- NOTE: 20mil vapor barrier, wall insulation, joist insulation, and foundation crack sealing are baseline scope on EVERY tier (Essential, Complete, Premium) — not upsells.\\n'+
 '-- NOTE: a dehumidifier is included on EVERY tier. Essential and Complete use the Basic unit ('+csd.dehumBasic+' CSD / '+amz.dehumBasic+' Amazon). Premium upgrades to the contractor unit ('+csd.dehum+' CSD / '+amz.dehum+' Amazon).\\n'+
-'csdBaseMats=csdLinerRolls*'+csd.liner+'+tapeRolls*'+csd.tape+'+ventCount*'+csd.vent+'+fixedCost+wallInsCsdCost+joistInsCsdCost+crackCsdCost\\n'+
-'amzBaseMats=amzLinerRolls*'+amz.liner+'+tapeRolls*'+amz.tape+'+ventCount*'+amz.vent+'+fixedCost+wallInsAmzCost+joistInsAmzCost+crackAmzCost\\n'+
+'-- NOTE: drainage pipe/filler only apply if drainPipeFt > 0 — otherwise their cost is zero.\\n'+
+'csdBaseMats=csdLinerRolls*'+csd.liner+'+tapeRolls*'+csd.tape+'+ventCount*'+csd.vent+'+fixedCost+wallInsCsdCost+joistInsCsdCost+crackCsdCost+drainPipeCsdCost+drainFillerCsdCost\\n'+
+'amzBaseMats=amzLinerRolls*'+amz.liner+'+tapeRolls*'+amz.tape+'+ventCount*'+amz.vent+'+fixedCost+wallInsAmzCost+joistInsAmzCost+crackAmzCost+drainPipeAmzCost+drainFillerAmzCost\\n'+
 'csdTotalMats=csdBaseMats+'+csd.dehumBasic+'+(moldFound?'+csd.mold+':0)\\n'+
 'amzTotalMats=amzBaseMats+'+amz.dehumBasic+'+(moldFound?'+amz.mold+':0)\\n'+
 'goodPrice=round((csdBaseMats+'+csd.dehumBasic+'+laborCost)*3.2/50)*50\\n'+
@@ -533,7 +556,7 @@ window.go=async function(){
     const wallSqft=Math.round(perim*(wh/12));
 
     // Build concrete, data-driven scope items for each tier instead of relying on the AI's generic bullets
-    const filterDup=arr=>(arr||[]).filter(i=>!/liner|vent|penetrat|moisture report|dehumidifier|mold|debris|photo|insulation|crack/i.test(i));
+    const filterDup=arr=>(arr||[]).filter(i=>!/liner|vent|penetrat|moisture report|dehumidifier|mold|debris|photo|insulation|crack|drain/i.test(i));
     const scopeGood=[
       linerName+' vapor barrier — '+(+(r.linerRollsCsd||0))+' rolls, full floor + walls',
       'Wall insulation — rigid foam board on all foundation walls ('+wallSqft+' sq ft)',
@@ -543,7 +566,7 @@ window.go=async function(){
       (+(r.tapeRolls||0))+' rolls seam tape — all seams and penetrations sealed',
       dehumBasicName+' dehumidifier installed with drain line',
       'Written moisture inspection report'
-    ];
+    ].concat(drainPipeFt>0?['Interior drain line installed — '+drainPipeFt+' linear ft with drainage filler and liner over the trench']:[]);
     const scopeBetter=(moldFound?['Mold treatment — Penashield antimicrobial applied to all affected joists and framing']:[]).concat([
       'Crawlspace debris removal',
       'Before/after photo documentation'
@@ -574,6 +597,10 @@ window.go=async function(){
         {n:'Dehumidifier ('+dehumBasicName+')',q:'1 unit',uc:pr.dehumBasic,t:pr.dehumBasic},
       ];
       if(moldFound) rows.push({n:'Mold treatment',q:'1 gal',uc:pr.mold,t:pr.mold});
+      if(drainPipeFt>0){
+        rows.push({n:'Drainage pipe',q:drainPipeFt+' linear ft',uc:pr.drainPipe,t:drainPipeFt*pr.drainPipe});
+        rows.push({n:'Drainage filler',q:drainPipeFt+' linear ft',uc:pr.drainFiller,t:drainPipeFt*pr.drainFiller});
+      }
       const matTotal=rows.reduce((s,row)=>s+row.t,0);
       const fullTotal=matTotal+lc;
       const cc=isAmz?'cc amz':'cc';
@@ -634,6 +661,11 @@ window.go=async function(){
       {n:'PPE',v:'1 kit (suits, respirators, gloves)'},
     ];
     if(moldFound) eqRows.push({n:'Mold treatment',v:'1 gal Penashield'});
+    if(drainPipeFt>0){
+      eqRows.push({n:'Drainage pipe',v:drainPipeFt+' linear ft (4in perforated)'});
+      eqRows.push({n:'Drainage filler',v:drainPipeFt+' linear ft (CSD proprietary plastic filler)'});
+      eqRows.push({n:'Liner over drainage filler',v:'Included in liner roll count above ('+drainLinerWidth+'in strip x '+drainPipeFt+' ft)'});
+    }
     $('equipment_list').innerHTML=eqRows.map(e=>'<li><span>'+e.n+'</span><b>'+e.v+'</b></li>').join('');
 
     const today=new Date().toLocaleDateString('en-US',{month:'long',day:'numeric',year:'numeric'});
