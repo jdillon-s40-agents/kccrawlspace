@@ -245,7 +245,32 @@ const BODY_HTML = `
         <div class="row"><label>Amazon vent cover each <span class="sku">Foam block sheet ~$8-10 each</span></label><input type="number" id="pAmzVent" value="8.99" step="0.01"></div>
       </div>
 
-      <div class="slbl">Dehumidifier — Both Sources (Premium Tier)</div>
+      <div class="slbl">Wall Insulation — Both Sources (Every Tier)</div>
+      <div class="g2">
+        <div class="row"><label>CSD wall insulation per sq ft <span class="sku">rigid foam board</span></label><input type="number" id="pCsdWallIns" value="1.85" step="0.01"></div>
+        <div class="row"><label>Amazon wall insulation per sq ft</label><input type="number" id="pAmzWallIns" value="1.45" step="0.01"></div>
+      </div>
+
+      <div class="slbl">Joist Insulation — Both Sources (Every Tier)</div>
+      <div class="g2">
+        <div class="row"><label>CSD joist insulation per sq ft <span class="sku">batts between floor joists</span></label><input type="number" id="pCsdJoistIns" value="1.25" step="0.01"></div>
+        <div class="row"><label>Amazon joist insulation per sq ft</label><input type="number" id="pAmzJoistIns" value="0.95" step="0.01"></div>
+      </div>
+
+      <div class="slbl">Foundation Crack Sealing — Both Sources (Every Tier)</div>
+      <div class="g3">
+        <div class="row"><label>Foundation cracks to seal</label><input type="number" id="crackCount" value="4"></div>
+        <div class="row"><label>CSD sealer caulk per crack <span class="sku">foundation sealer caulk</span></label><input type="number" id="pCsdCrack" value="14.99" step="0.01"></div>
+        <div class="row"><label>Amazon sealer caulk per crack</label><input type="number" id="pAmzCrack" value="11.99" step="0.01"></div>
+      </div>
+
+      <div class="slbl">Dehumidifier — Basic Unit (Essential &amp; Complete Tiers)</div>
+      <div class="g2">
+        <div class="row"><label>CSD price <span class="sku">AlorAir 70 Pint</span></label><input type="number" id="pCsdDehumBasic" value="649.99" step="0.01"></div>
+        <div class="row"><label>Amazon price <span class="sku">AlorAir 70 Pint</span></label><input type="number" id="pAmzDehumBasic" value="699.99" step="0.01"></div>
+      </div>
+
+      <div class="slbl">Dehumidifier — Premium Upgrade Unit (Premium Tier Only)</div>
       <div class="g2">
         <div class="row">
           <label>CSD dehumidifier</label>
@@ -378,18 +403,24 @@ window.go=async function(){
   const csd={
     liner:+$('pCsdLiner').value, linerSqft:+$('pCsdLinerSqft').value,
     tape:+$('pCsdTape').value, vent:+$('pCsdVent').value,
-    dehum:+$('pCsdDehum').value, mold:+$('pCsdMold').value
+    dehum:+$('pCsdDehum').value, mold:+$('pCsdMold').value,
+    wallIns:+$('pCsdWallIns').value, joistIns:+$('pCsdJoistIns').value,
+    crack:+$('pCsdCrack').value, dehumBasic:+$('pCsdDehumBasic').value
   };
   const amz={
     liner:+$('pAmzLiner').value, linerSqft:+$('pAmzLinerSqft').value,
     tape:+$('pAmzTape').value, vent:+$('pAmzVent').value,
-    dehum:+$('pAmzDehum').value, mold:+$('pAmzMold').value
+    dehum:+$('pAmzDehum').value, mold:+$('pAmzMold').value,
+    wallIns:+$('pAmzWallIns').value, joistIns:+$('pAmzJoistIns').value,
+    crack:+$('pAmzCrack').value, dehumBasic:+$('pAmzDehumBasic').value
   };
   const fixed={butyl:+$('pButyl').value, foam:+$('pFoam').value, ppe:+$('pPpe').value};
   const labor={rate:+$('pLabor').value, helper:+$('pHelper').value};
+  const crackCount=+$('crackCount').value||4;
 
   const linerName=$('linerSel').value.split('|')[2];
   const dehumName=$('dehumSel').value.split('|')[1];
+  const dehumBasicName='AlorAir 70 Pint';
   const amzLinerName=$('amzLinerSel').value.split('|')[2];
 
   hide('errMsg'); hide('FV'); show('LV');
@@ -409,19 +440,28 @@ window.go=async function(){
 'laborCost=laborHrs*('+labor.rate+'+'+labor.helper+')\\n'+
 'fixedCost='+fixed.butyl+'*2+'+fixed.foam+'*3+'+fixed.ppe+'\\n'+
 'moldFound=detect true or false from notes\\n'+
-'csdBaseMats=csdLinerRolls*'+csd.liner+'+tapeRolls*'+csd.tape+'+ventCount*'+csd.vent+'+fixedCost\\n'+
-'amzBaseMats=amzLinerRolls*'+amz.liner+'+tapeRolls*'+amz.tape+'+ventCount*'+amz.vent+'+fixedCost\\n'+
-'csdTotalMats=csdBaseMats+(moldFound?'+csd.mold+':0)\\n'+
-'amzTotalMats=amzBaseMats+(moldFound?'+amz.mold+':0)\\n'+
-'goodPrice=round((csdBaseMats+laborCost)*3.2/50)*50\\n'+
-'betterPrice=round((csdBaseMats+laborCost+(moldFound?'+csd.mold+':0)+300)*3.5/50)*50\\n'+
-'bestPrice=round((betterPrice+'+csd.dehum+'*2.3)/50)*50\\n'+
-'csdProfG=goodPrice-csdBaseMats-laborCost\\n'+
-'csdProfB=betterPrice-csdBaseMats-laborCost-(moldFound?'+csd.mold+':0)\\n'+
-'csdProfP=bestPrice-csdBaseMats-laborCost-(moldFound?'+csd.mold+':0)-'+csd.dehum+'\\n'+
-'amzProfG=goodPrice-amzBaseMats-laborCost\\n'+
-'amzProfB=betterPrice-amzBaseMats-laborCost-(moldFound?'+amz.mold+':0)\\n'+
-'amzProfP=bestPrice-amzBaseMats-laborCost-(moldFound?'+amz.mold+':0)-'+amz.dehum+'\\n'+
+'crackCount='+crackCount+'\\n'+
+'wallInsCsdCost=wallSqft*'+csd.wallIns+'\\n'+
+'wallInsAmzCost=wallSqft*'+amz.wallIns+'\\n'+
+'joistInsCsdCost='+sqft+'*'+csd.joistIns+'\\n'+
+'joistInsAmzCost='+sqft+'*'+amz.joistIns+'\\n'+
+'crackCsdCost=crackCount*'+csd.crack+'\\n'+
+'crackAmzCost=crackCount*'+amz.crack+'\\n'+
+'-- NOTE: 20mil vapor barrier, wall insulation, joist insulation, and foundation crack sealing are baseline scope on EVERY tier (Essential, Complete, Premium) — not upsells.\\n'+
+'-- NOTE: a dehumidifier is included on EVERY tier. Essential and Complete use the Basic unit ('+csd.dehumBasic+' CSD / '+amz.dehumBasic+' Amazon). Premium upgrades to the contractor unit ('+csd.dehum+' CSD / '+amz.dehum+' Amazon).\\n'+
+'csdBaseMats=csdLinerRolls*'+csd.liner+'+tapeRolls*'+csd.tape+'+ventCount*'+csd.vent+'+fixedCost+wallInsCsdCost+joistInsCsdCost+crackCsdCost\\n'+
+'amzBaseMats=amzLinerRolls*'+amz.liner+'+tapeRolls*'+amz.tape+'+ventCount*'+amz.vent+'+fixedCost+wallInsAmzCost+joistInsAmzCost+crackAmzCost\\n'+
+'csdTotalMats=csdBaseMats+'+csd.dehumBasic+'+(moldFound?'+csd.mold+':0)\\n'+
+'amzTotalMats=amzBaseMats+'+amz.dehumBasic+'+(moldFound?'+amz.mold+':0)\\n'+
+'goodPrice=round((csdBaseMats+'+csd.dehumBasic+'+laborCost)*3.2/50)*50\\n'+
+'betterPrice=round((csdBaseMats+'+csd.dehumBasic+'+laborCost+(moldFound?'+csd.mold+':0)+300)*3.5/50)*50\\n'+
+'bestPrice=round((betterPrice+('+csd.dehum+'-'+csd.dehumBasic+')*2.3)/50)*50\\n'+
+'csdProfG=goodPrice-csdBaseMats-'+csd.dehumBasic+'-laborCost\\n'+
+'csdProfB=betterPrice-csdBaseMats-'+csd.dehumBasic+'-laborCost-(moldFound?'+csd.mold+':0)\\n'+
+'csdProfP=bestPrice-csdBaseMats-'+csd.dehum+'-laborCost-(moldFound?'+csd.mold+':0)\\n'+
+'amzProfG=goodPrice-amzBaseMats-'+amz.dehumBasic+'-laborCost\\n'+
+'amzProfB=betterPrice-amzBaseMats-'+amz.dehumBasic+'-laborCost-(moldFound?'+amz.mold+':0)\\n'+
+'amzProfP=bestPrice-amzBaseMats-'+amz.dehum+'-laborCost-(moldFound?'+amz.mold+':0)\\n'+
 'matSavings=csdTotalMats-amzTotalMats\\n\\n'+
 'OUTPUT JSON:\\n'+
 '{\\n'+
@@ -453,9 +493,9 @@ window.go=async function(){
 '"bestPrice":0,\\n'+
 '"csdProfG":0,"csdProfB":0,"csdProfP":0,\\n'+
 '"amzProfG":0,"amzProfB":0,"amzProfP":0,\\n'+
-'"goodItems":["Liner full floor and walls","All vents sealed","Penetrations sealed","Written moisture report","Lifetime transferable warranty"],\\n'+
+'"goodItems":["Liner full floor and walls","Wall and joist insulation","Foundation cracks sealed","Basic dehumidifier installed","All vents sealed","Penetrations sealed","Written moisture report","Lifetime transferable warranty"],\\n'+
 '"betterItems":["Everything in Essential","Mold treatment all joists","Debris removal","Photo documentation","Lifetime transferable warranty"],\\n'+
-'"bestItems":["Everything in Complete","Dehumidifier installed and set","Drain line connected","Annual service included","Priority customer status","Lifetime transferable warranty"],\\n'+
+'"bestItems":["Everything in Complete","Upgraded contractor grade dehumidifier","Drain line connected","Annual service included","Priority customer status","Lifetime transferable warranty"],\\n'+
 '"findings_summary":"1-2 sentence plain language what you found for homeowner",\\n'+
 '"note":"Special job considerations no special chars",\\n'+
 '"tp":"Bullet point talking points for Jason. Reference specific findings. No special chars or symbols."\\n'+
@@ -489,13 +529,18 @@ window.go=async function(){
     const lc=+(r.laborCost||0);
     const lh=+(r.laborHrs||0);
     const moldFound=r.moldFound||false;
+    const wallSqft=Math.round(4*Math.sqrt(+sqft)*1.1*(wh/12));
 
     // Build concrete, data-driven scope items for each tier instead of relying on the AI's generic bullets
-    const filterDup=arr=>(arr||[]).filter(i=>!/liner|vent|penetrat|moisture report|dehumidifier|mold|debris|photo/i.test(i));
+    const filterDup=arr=>(arr||[]).filter(i=>!/liner|vent|penetrat|moisture report|dehumidifier|mold|debris|photo|insulation|crack/i.test(i));
     const scopeGood=[
       linerName+' vapor barrier — '+(+(r.linerRollsCsd||0))+' rolls, full floor + walls',
+      'Wall insulation — rigid foam board on all foundation walls ('+wallSqft+' sq ft)',
+      'Joist insulation — batts installed between all floor joists ('+sqft+' sq ft)',
+      crackCount+' foundation cracks sealed with foundation sealer caulk',
       (+(r.ventCount||0))+' foundation vents sealed and blocked',
       (+(r.tapeRolls||0))+' rolls seam tape — all seams and penetrations sealed',
+      dehumBasicName+' dehumidifier installed with drain line',
       'Written moisture inspection report'
     ];
     const scopeBetter=(moldFound?['Mold treatment — Penashield antimicrobial applied to all affected joists and framing']:[]).concat([
@@ -503,13 +548,13 @@ window.go=async function(){
       'Before/after photo documentation'
     ]);
     const scopePremium=[
-      dehumName+' dehumidifier installed with dedicated drain line',
+      'Upgraded to '+dehumName+' dehumidifier (contractor grade unit)',
       'Digital humidity monitoring station',
       'Annual service visit included (year 1)'
     ];
     r.goodItems=scopeGood.concat(filterDup(r.goodItems));
     r.betterItems=scopeGood.concat(scopeBetter).concat(filterDup(r.betterItems));
-    r.bestItems=scopeGood.concat(scopeBetter).concat(scopePremium).concat(filterDup(r.bestItems));
+    r.bestItems=scopeGood.filter(i=>!i.startsWith(dehumBasicName)).concat(scopeBetter).concat(scopePremium).concat(filterDup(r.bestItems));
 
     function matTable(isAmz){
       const pr=isAmz?amz:csd;
@@ -521,7 +566,11 @@ window.go=async function(){
         {n:'Liner ('+linerName_+')',q:rolls+' rolls',uc:pr.liner,t:rolls*pr.liner},
         {n:'Seam tape 4x180',q:tp+' rolls',uc:pr.tape,t:tp*pr.tape},
         {n:'Vent covers',q:vc+' covers',uc:pr.vent,t:vc*pr.vent},
+        {n:'Wall insulation',q:wallSqft+' sq ft',uc:pr.wallIns,t:wallSqft*pr.wallIns},
+        {n:'Joist insulation',q:sqft+' sq ft',uc:pr.joistIns,t:(+sqft)*pr.joistIns},
+        {n:'Foundation crack sealant',q:crackCount+' cracks',uc:pr.crack,t:crackCount*pr.crack},
         {n:'Butyl tape + foam + PPE',q:'fixed',uc:0,t:fixed.butyl*2+fixed.foam*3+fixed.ppe},
+        {n:'Dehumidifier ('+dehumBasicName+')',q:'1 unit',uc:pr.dehumBasic,t:pr.dehumBasic},
       ];
       if(moldFound) rows.push({n:'Mold treatment',q:'1 gal',uc:pr.mold,t:pr.mold});
       const matTotal=rows.reduce((s,row)=>s+row.t,0);
@@ -563,18 +612,22 @@ window.go=async function(){
         '<ul class="tinc">'+(items||[]).map(i=>'<li>'+i+'</li>').join('')+'</ul>'+
       '</div>';
     $('r_tiers').innerHTML=
-      mkT('t1','GOOD','Essential',r.goodPrice,r.goodItems,'Liner and vent sealing — solid protection','g',costGoodCsd,costGoodAmz)+
-      mkT('t2','RECOMMENDED','Complete',r.betterPrice,r.betterItems,'Full encapsulation with mold treatment','b',costBetterCsd,costBetterAmz)+
-      mkT('t3','BEST VALUE','Premium',r.bestPrice,r.bestItems,'Complete active moisture control system','p',costBestCsd,costBestAmz);
+      mkT('t1','GOOD','Essential',r.goodPrice,r.goodItems,'Full encapsulation, insulation, and dehumidifier — solid protection','g',costGoodCsd,costGoodAmz)+
+      mkT('t2','RECOMMENDED','Complete',r.betterPrice,r.betterItems,'Everything in Essential plus mold treatment','b',costBetterCsd,costBetterAmz)+
+      mkT('t3','BEST VALUE','Premium',r.bestPrice,r.bestItems,'Everything in Complete with a contractor-grade dehumidifier upgrade','p',costBestCsd,costBestAmz);
 
     $('r_note').textContent=r.note||'';
 
     // Equipment list — what to bring/order for this job
     const eqRows=[
       {n:'Vapor barrier liner',v:linerName+' — '+(+(r.linerRollsCsd||0))+' rolls'},
+      {n:'Wall insulation',v:'Rigid foam board — '+wallSqft+' sq ft'},
+      {n:'Joist insulation',v:'Batts — '+sqft+' sq ft'},
+      {n:'Foundation crack sealant',v:crackCount+' tubes (foundation sealer caulk)'},
       {n:'Seam tape',v:(+(r.tapeRolls||0))+' rolls (4x180 7.5mil)'},
       {n:'Vent covers',v:(+(r.ventCount||0))+' covers'},
-      {n:'Dehumidifier (exact unit quoted)',v:dehumName},
+      {n:'Dehumidifier — Essential/Complete',v:dehumBasicName},
+      {n:'Dehumidifier — Premium upgrade',v:dehumName},
       {n:'Butyl tape',v:'2 rolls'},
       {n:'Todol IPF foam',v:'3 cans'},
       {n:'PPE',v:'1 kit (suits, respirators, gloves)'},
