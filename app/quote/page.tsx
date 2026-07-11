@@ -251,10 +251,10 @@ const BODY_HTML = `
         <div class="row"><label>Amazon wall insulation per sq ft</label><input type="number" id="pAmzWallIns" value="1.45" step="0.01"></div>
       </div>
 
-      <div class="slbl">Joist Insulation — Both Sources (Every Tier)</div>
+      <div class="slbl">Rim/Band Joist Insulation — Both Sources (Every Tier)</div>
       <div class="g2">
-        <div class="row"><label>CSD joist insulation per sq ft <span class="sku">batts between floor joists</span></label><input type="number" id="pCsdJoistIns" value="1.25" step="0.01"></div>
-        <div class="row"><label>Amazon joist insulation per sq ft</label><input type="number" id="pAmzJoistIns" value="0.95" step="0.01"></div>
+        <div class="row"><label>CSD price per linear ft <span class="sku">rigid foam at rim joist / band joist perimeter only, not full floor</span></label><input type="number" id="pCsdJoistIns" value="3.25" step="0.01"></div>
+        <div class="row"><label>Amazon price per linear ft</label><input type="number" id="pAmzJoistIns" value="2.65" step="0.01"></div>
       </div>
 
       <div class="slbl">Foundation Crack Sealing — Both Sources (Every Tier)</div>
@@ -443,8 +443,8 @@ window.go=async function(){
 'crackCount='+crackCount+'\\n'+
 'wallInsCsdCost=wallSqft*'+csd.wallIns+'\\n'+
 'wallInsAmzCost=wallSqft*'+amz.wallIns+'\\n'+
-'joistInsCsdCost='+sqft+'*'+csd.joistIns+'\\n'+
-'joistInsAmzCost='+sqft+'*'+amz.joistIns+'\\n'+
+'joistInsCsdCost=perim*'+csd.joistIns+'\\n'+
+'joistInsAmzCost=perim*'+amz.joistIns+'\\n'+
 'crackCsdCost=crackCount*'+csd.crack+'\\n'+
 'crackAmzCost=crackCount*'+amz.crack+'\\n'+
 '-- NOTE: 20mil vapor barrier, wall insulation, joist insulation, and foundation crack sealing are baseline scope on EVERY tier (Essential, Complete, Premium) — not upsells.\\n'+
@@ -529,14 +529,15 @@ window.go=async function(){
     const lc=+(r.laborCost||0);
     const lh=+(r.laborHrs||0);
     const moldFound=r.moldFound||false;
-    const wallSqft=Math.round(4*Math.sqrt(+sqft)*1.1*(wh/12));
+    const perim=Math.round(4*Math.sqrt(+sqft)*1.1);
+    const wallSqft=Math.round(perim*(wh/12));
 
     // Build concrete, data-driven scope items for each tier instead of relying on the AI's generic bullets
     const filterDup=arr=>(arr||[]).filter(i=>!/liner|vent|penetrat|moisture report|dehumidifier|mold|debris|photo|insulation|crack/i.test(i));
     const scopeGood=[
       linerName+' vapor barrier — '+(+(r.linerRollsCsd||0))+' rolls, full floor + walls',
       'Wall insulation — rigid foam board on all foundation walls ('+wallSqft+' sq ft)',
-      'Joist insulation — batts installed between all floor joists ('+sqft+' sq ft)',
+      'Rim/band joist insulation — foam board at the perimeter where joists tie into the foundation wall ('+perim+' linear ft)',
       crackCount+' foundation cracks sealed with foundation sealer caulk',
       (+(r.ventCount||0))+' foundation vents sealed and blocked',
       (+(r.tapeRolls||0))+' rolls seam tape — all seams and penetrations sealed',
@@ -567,7 +568,7 @@ window.go=async function(){
         {n:'Seam tape 4x180',q:tp+' rolls',uc:pr.tape,t:tp*pr.tape},
         {n:'Vent covers',q:vc+' covers',uc:pr.vent,t:vc*pr.vent},
         {n:'Wall insulation',q:wallSqft+' sq ft',uc:pr.wallIns,t:wallSqft*pr.wallIns},
-        {n:'Joist insulation',q:sqft+' sq ft',uc:pr.joistIns,t:(+sqft)*pr.joistIns},
+        {n:'Rim/band joist insulation',q:perim+' linear ft',uc:pr.joistIns,t:perim*pr.joistIns},
         {n:'Foundation crack sealant',q:crackCount+' cracks',uc:pr.crack,t:crackCount*pr.crack},
         {n:'Butyl tape + foam + PPE',q:'fixed',uc:0,t:fixed.butyl*2+fixed.foam*3+fixed.ppe},
         {n:'Dehumidifier ('+dehumBasicName+')',q:'1 unit',uc:pr.dehumBasic,t:pr.dehumBasic},
@@ -622,7 +623,7 @@ window.go=async function(){
     const eqRows=[
       {n:'Vapor barrier liner',v:linerName+' — '+(+(r.linerRollsCsd||0))+' rolls'},
       {n:'Wall insulation',v:'Rigid foam board — '+wallSqft+' sq ft'},
-      {n:'Joist insulation',v:'Batts — '+sqft+' sq ft'},
+      {n:'Rim/band joist insulation',v:'Foam board — '+perim+' linear ft (perimeter only, where joists meet foundation wall)'},
       {n:'Foundation crack sealant',v:crackCount+' tubes (foundation sealer caulk)'},
       {n:'Seam tape',v:(+(r.tapeRolls||0))+' rolls (4x180 7.5mil)'},
       {n:'Vent covers',v:(+(r.ventCount||0))+' covers'},
