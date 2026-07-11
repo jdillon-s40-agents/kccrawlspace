@@ -78,6 +78,17 @@ const STYLE = `
 #quote-app .t1 .tprice{color:#4ade80}
 #quote-app .t2 .tprice{color:#F5A623}
 #quote-app .t3 .tprice{color:#60a5fa}
+#quote-app .tprice-row{display:flex;align-items:baseline;gap:1px;margin-bottom:2px}
+#quote-app .tprice-sign{font-size:20px;font-weight:700}
+#quote-app .tprice-input{width:auto;flex:1;font-size:22px;font-weight:700;background:transparent;border:none;border-bottom:1px dashed currentColor;padding:0 0 2px;color:inherit}
+#quote-app .tprice-input:focus{outline:none;border-bottom-style:solid}
+#quote-app .tprice-input::-webkit-outer-spin-button,#quote-app .tprice-input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
+#quote-app .tprice-input{-moz-appearance:textfield}
+#quote-app .t1 .tprice-sign,#quote-app .t1 .tprice-input{color:#4ade80}
+#quote-app .t2 .tprice-sign,#quote-app .t2 .tprice-input{color:#F5A623}
+#quote-app .t3 .tprice-sign,#quote-app .t3 .tprice-input{color:#60a5fa}
+#quote-app .tprofit{display:flex;justify-content:space-between;font-size:9px;color:#64748b;margin-bottom:6px;gap:6px}
+#quote-app .tprofit b{color:#94a3b8;font-weight:700}
 #quote-app .tsub{font-size:10px;color:#64748b;margin-bottom:8px}
 #quote-app .tinc{font-size:11px;color:#94a3b8;line-height:1.8;list-style:none}
 #quote-app .t1 .tinc li::before{content:"+ ";color:#4ade80;font-weight:700}
@@ -108,6 +119,11 @@ const STYLE = `
 #quote-app .cq-meta-val{font-size:13px;font-weight:600;color:#1B3A6B;margin-top:2px}
 #quote-app .cq-finding-box{background:#fef3c7;border:1px solid #fbbf24;border-radius:6px;padding:10px 12px;margin-bottom:12px;font-size:12px;color:#92400e}
 #quote-app .cq-finding-title{font-weight:700;margin-bottom:4px;color:#78350f}
+#quote-app .cq-scope{background:#f8fafc;border:1px solid #e2e8f0;border-radius:6px;padding:10px 12px;margin-bottom:12px;font-size:12px;color:#334155}
+#quote-app .cq-scope-title{font-weight:700;margin-bottom:6px;color:#1B3A6B}
+#quote-app .cq-scope-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+#quote-app .cq-scope-grid div{background:#fff;border-radius:4px;padding:6px 8px}
+#quote-app .cq-scope-grid b{color:#1B3A6B}
 #quote-app .cq-tiers{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-bottom:12px}
 #quote-app .cq-tier{border-radius:7px;padding:12px;border:2px solid #e2e8f0;text-align:center}
 #quote-app .cq-tier.rec{border-color:#1B3A6B;background:#eff6ff}
@@ -462,9 +478,6 @@ window.go=async function(){
 
     hide('LV'); show('RV');
 
-    // Make sure the exact dehumidifier model quoted shows up wherever "dehumidifier" is mentioned
-    r.bestItems=(r.bestItems||[]).map(i=>/dehumidifier/i.test(i)?i.replace(/dehumidifier/i,'Dehumidifier ('+dehumName+')'):i);
-
     $('r_analysis').textContent=r.analysis||'';
 
     $('r_findings').innerHTML=(r.findings||[]).map(f=>{
@@ -475,6 +488,27 @@ window.go=async function(){
     const lc=+(r.laborCost||0);
     const lh=+(r.laborHrs||0);
     const moldFound=r.moldFound||false;
+
+    // Build concrete, data-driven scope items for each tier instead of relying on the AI's generic bullets
+    const filterDup=arr=>(arr||[]).filter(i=>!/liner|vent|penetrat|moisture report|dehumidifier|mold|debris|photo/i.test(i));
+    const scopeGood=[
+      linerName+' vapor barrier — '+(+(r.linerRollsCsd||0))+' rolls, full floor + walls',
+      (+(r.ventCount||0))+' foundation vents sealed and blocked',
+      (+(r.tapeRolls||0))+' rolls seam tape — all seams and penetrations sealed',
+      'Written moisture inspection report'
+    ];
+    const scopeBetter=(moldFound?['Mold treatment — Penashield antimicrobial applied to all affected joists and framing']:[]).concat([
+      'Crawlspace debris removal',
+      'Before/after photo documentation'
+    ]);
+    const scopePremium=[
+      dehumName+' dehumidifier installed with dedicated drain line',
+      'Digital humidity monitoring station',
+      'Annual service visit included (year 1)'
+    ];
+    r.goodItems=scopeGood.concat(filterDup(r.goodItems));
+    r.betterItems=scopeGood.concat(scopeBetter).concat(filterDup(r.betterItems));
+    r.bestItems=scopeGood.concat(scopeBetter).concat(scopePremium).concat(filterDup(r.bestItems));
 
     function matTable(isAmz){
       const pr=isAmz?amz:csd;
@@ -514,18 +548,23 @@ window.go=async function(){
     $('csd_profits').innerHTML=profHtml(r.csdProfG,r.csdProfB,r.csdProfP);
     $('amz_profits').innerHTML=profHtml(r.amzProfG,r.amzProfB,r.amzProfP);
 
-    const mkT=(cls,badge,name,price,items,desc)=>
+    const costGoodCsd=r.goodPrice-(+r.csdProfG||0), costGoodAmz=r.goodPrice-(+r.amzProfG||0);
+    const costBetterCsd=r.betterPrice-(+r.csdProfB||0), costBetterAmz=r.betterPrice-(+r.amzProfB||0);
+    const costBestCsd=r.bestPrice-(+r.csdProfP||0), costBestAmz=r.bestPrice-(+r.amzProfP||0);
+
+    const mkT=(cls,badge,name,price,items,desc,tierKey,costCsd,costAmz)=>
       '<div class="tier '+cls+'">'+
         '<div class="tbadge">'+badge+'</div>'+
         '<div class="tname">'+name+'</div>'+
-        '<div class="tprice">'+fmtK(price)+'</div>'+
+        '<div class="tprice-row"><span class="tprice-sign">$</span><input type="number" class="tprice-input" id="tprice_'+tierKey+'" data-tier="'+tierKey+'" data-cost-csd="'+costCsd+'" data-cost-amz="'+costAmz+'" value="'+Math.round(price)+'" step="50" oninput="updateTierPrice(this)"></div>'+
+        '<div class="tprofit"><span>CSD profit: <b id="tprof_csd_'+tierKey+'">'+fmtK(Math.round(price-costCsd))+'</b></span><span>Amazon profit: <b id="tprof_amz_'+tierKey+'">'+fmtK(Math.round(price-costAmz))+'</b></span></div>'+
         '<div class="tsub">'+desc+'</div>'+
         '<ul class="tinc">'+(items||[]).map(i=>'<li>'+i+'</li>').join('')+'</ul>'+
       '</div>';
     $('r_tiers').innerHTML=
-      mkT('t1','GOOD','Essential',r.goodPrice,r.goodItems,'Liner and vent sealing — solid protection')+
-      mkT('t2','RECOMMENDED','Complete',r.betterPrice,r.betterItems,'Full encapsulation with mold treatment')+
-      mkT('t3','BEST VALUE','Premium',r.bestPrice,r.bestItems,'Complete active moisture control system');
+      mkT('t1','GOOD','Essential',r.goodPrice,r.goodItems,'Liner and vent sealing — solid protection','g',costGoodCsd,costGoodAmz)+
+      mkT('t2','RECOMMENDED','Complete',r.betterPrice,r.betterItems,'Full encapsulation with mold treatment','b',costBetterCsd,costBetterAmz)+
+      mkT('t3','BEST VALUE','Premium',r.bestPrice,r.bestItems,'Complete active moisture control system','p',costBestCsd,costBestAmz);
 
     $('r_note').textContent=r.note||'';
 
@@ -567,27 +606,38 @@ window.go=async function(){
         '<div class="cq-finding-title">What We Found Under Your Home</div>'+
         (r.findings_summary||r.analysis||'See attached inspection report for full findings.')+
       '</div>'+
+      '<div class="cq-scope">'+
+        '<div class="cq-scope-title">Job Specifications</div>'+
+        '<div class="cq-scope-grid">'+
+          '<div><b>Crawlspace Area:</b> '+sqft+' sq ft</div>'+
+          '<div><b>Wall Height:</b> '+wh+' in</div>'+
+          '<div><b>Foundation Vents:</b> '+(+(r.ventCount||0))+'</div>'+
+          '<div><b>Estimated Labor:</b> '+lh+' hrs</div>'+
+          '<div><b>Mold Present:</b> '+(moldFound?'Yes — treatment included':'No')+'</div>'+
+          '<div><b>Vapor Barrier:</b> '+linerName+'</div>'+
+        '</div>'+
+      '</div>'+
       '<div class="cq-tiers">'+
         '<div class="cq-tier">'+
           '<div class="cq-tier-badge">Good</div>'+
           '<div class="cq-tier-name">Essential</div>'+
-          '<div class="cq-tier-price">'+fmtK(r.goodPrice)+'</div>'+
+          '<div class="cq-tier-price" id="cq_price_g">'+fmtK(r.goodPrice)+'</div>'+
           '<ul class="cq-tier-items">'+(r.goodItems||[]).map(i=>'<li>'+i+'</li>').join('')+'</ul>'+
         '</div>'+
         '<div class="cq-tier rec">'+
           '<div class="cq-tier-badge">Recommended</div>'+
           '<div class="cq-tier-name">Complete</div>'+
-          '<div class="cq-tier-price">'+fmtK(r.betterPrice)+'</div>'+
+          '<div class="cq-tier-price" id="cq_price_b">'+fmtK(r.betterPrice)+'</div>'+
           '<ul class="cq-tier-items">'+(r.betterItems||[]).map(i=>'<li>'+i+'</li>').join('')+'</ul>'+
         '</div>'+
         '<div class="cq-tier">'+
           '<div class="cq-tier-badge">Best Value</div>'+
           '<div class="cq-tier-name">Premium</div>'+
-          '<div class="cq-tier-price">'+fmtK(r.bestPrice)+'</div>'+
+          '<div class="cq-tier-price" id="cq_price_p">'+fmtK(r.bestPrice)+'</div>'+
           '<ul class="cq-tier-items">'+(r.bestItems||[]).map(i=>'<li>'+i+'</li>').join('')+'</ul>'+
         '</div>'+
       '</div>'+
-      '<div class="cq-finance">Financing available — as low as $'+Math.round(r.betterPrice/18)+'/month with approved credit. 60-second approval. No impact to credit score to check.</div>'+
+      '<div class="cq-finance">Financing available — as low as $<span id="cq_finance_amt">'+Math.round(r.betterPrice/18)+'</span>/month with approved credit. 60-second approval. No impact to credit score to check.</div>'+
       '<div class="cq-warranty">KC Dry Home Guarantee — Lifetime Transferable Warranty on all encapsulation work. If moisture ever exceeds 60% RH after our installation, we return and fix it at no charge. No expiration. Transfers to next owner at no cost.</div>'+
       '<div class="cq-next">'+
         '<strong style="font-size:12px;color:#1B3A6B;display:block;margin-bottom:4px">Next Steps:</strong>'+
@@ -616,6 +666,23 @@ window.go=async function(){
     hide('LV'); show('FV');
     $('errMsg').style.display='block';
     $('errMsg').textContent='Error: '+err.message;
+  }
+};
+
+window.updateTierPrice=function(el){
+  const price=+el.value||0;
+  const costCsd=+el.dataset.costCsd||0;
+  const costAmz=+el.dataset.costAmz||0;
+  const tier=el.dataset.tier;
+  const profCsdEl=$('tprof_csd_'+tier);
+  const profAmzEl=$('tprof_amz_'+tier);
+  if(profCsdEl) profCsdEl.textContent=fmtK(Math.round(price-costCsd));
+  if(profAmzEl) profAmzEl.textContent=fmtK(Math.round(price-costAmz));
+  const cqPriceEl=$('cq_price_'+tier);
+  if(cqPriceEl) cqPriceEl.textContent=fmtK(Math.round(price));
+  if(tier==='b'){
+    const financeEl=$('cq_finance_amt');
+    if(financeEl) financeEl.textContent=Math.round(price/18);
   }
 };
 
