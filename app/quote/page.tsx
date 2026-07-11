@@ -207,15 +207,16 @@ const BODY_HTML = `
         <div class="row">
           <label>CSD liner product</label>
           <select id="linerSel" onchange="syncLiner()">
-            <option value="279.99|1200|12mil WB 12x100 (1200sqft)">12mil WB 12x100ft 1200sqft — $279.99 RECOMMENDED</option>
+            <option value="481.94|1200|20mil WW 12x100 (1200sqft)">20mil WW 12x100ft 1200sqft — $481.94 STANDARD — LIFETIME WARRANTY</option>
+            <option value="279.99|1200|12mil WB 12x100 (1200sqft)">12mil WB 12x100ft 1200sqft — $279.99</option>
             <option value="559.99|2400|12mil WB 24x100 (2400sqft)">12mil WB 24x100ft 2400sqft — $559.99</option>
-            <option value="481.94|1200|20mil WW 12x100 (1200sqft)">20mil WW 12x100ft 1200sqft — $481.94 PREMIUM</option>
             <option value="209.99|1200|8mil WB 12x100 (1200sqft)">8mil WB 12x100ft 1200sqft — $209.99 BUDGET</option>
           </select>
         </div>
-        <div class="row"><label>CSD price per roll (auto)</label><input type="number" id="pCsdLiner" value="279.99" step="0.01"></div>
+        <div class="row"><label>CSD price per roll (auto)</label><input type="number" id="pCsdLiner" value="481.94" step="0.01"></div>
       </div>
       <div class="row"><label>CSD sqft per roll (auto)</label><input type="number" id="pCsdLinerSqft" value="1200"></div>
+      <div class="pnot">20mil is the floor standard on every job — it's what backs the lifetime transferable warranty. Only drop to 12mil/8mil for a homeowner who explicitly declines the warranty tier.</div>
 
       <div class="slbl">Liner — Amazon Best Price Found (as of July 2026)</div>
       <div class="g2">
