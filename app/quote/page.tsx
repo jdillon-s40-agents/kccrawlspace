@@ -129,7 +129,23 @@ const STYLE = `
 #quote-app .err{background:#3f0a0a;border:1px solid #7f1d1d;border-radius:7px;padding:12px;color:#f87171;font-size:12px;margin-top:10px}
 #quote-app .slbl{font-size:10px;font-weight:600;color:#475569;text-transform:uppercase;letter-spacing:.08em;margin:12px 0 7px;padding-top:12px;border-top:1px solid #334155}
 #quote-app .pnot{background:#0f172a;border:1px solid #334155;border-radius:5px;padding:7px 10px;font-size:10px;color:#64748b;margin-top:7px}
+#quote-app .eq-list{list-style:none}
+#quote-app .eq-list li{background:#0f172a;border-radius:5px;padding:8px 10px;margin-bottom:6px;font-size:12px;color:#e2e8f0;display:flex;justify-content:space-between;gap:8px}
+#quote-app .eq-list li b{color:#F5A623}
+#quote-app .editable{outline:1px dashed #475569;outline-offset:3px;border-radius:6px}
+#quote-app .editable:focus{outline:1px dashed #F5A623;background:rgba(245,166,35,.05)}
+#quote-app .edit-hint{font-size:10px;color:#64748b;margin-bottom:8px}
+#quote-app .toolbar{display:flex;gap:8px;margin-top:10px}
+#quote-app .toolbar .btn2{margin-top:0;flex:1;text-align:center}
 @media(max-width:600px){#quote-app .g2,#quote-app .g3,#quote-app .tiers,#quote-app .fg,#quote-app .dual,#quote-app .prof-grid,#quote-app .cq-meta,#quote-app .cq-tiers{grid-template-columns:1fr}}
+@media print{
+  body *{visibility:hidden}
+  #quote-app,#quote-app *{visibility:visible}
+  #quote-app{position:absolute;left:0;top:0;padding:0;margin:0}
+  #quote-app .hdr,#quote-app .card:not(.print-card),#quote-app .toolbar,#quote-app .btn2{display:none!important}
+  #quote-app .print-card{border:none;padding:0;margin:0;background:#fff}
+  #quote-app .cq{box-shadow:none}
+}
 `;
 
 const BODY_HTML = `
@@ -268,6 +284,12 @@ const BODY_HTML = `
     <div class="card"><div class="rt">AI Analysis</div><div class="ain" id="r_analysis"></div></div>
     <div class="card"><div class="rt">Key Findings</div><div class="fg" id="r_findings"></div></div>
 
+    <div class="card print-card">
+      <div class="rt">Equipment List — What To Bring / Order</div>
+      <div class="edit-hint">Click any line to edit before printing or saving</div>
+      <ul class="eq-list editable" id="equipment_list" contenteditable="true"></ul>
+    </div>
+
     <div class="card">
       <div class="rt">Materials Cost Comparison — Crawlspace Depot vs Amazon</div>
       <div class="dual">
@@ -303,9 +325,14 @@ const BODY_HTML = `
       <div class="pnote" id="r_note"></div>
     </div>
 
-    <div class="card">
+    <div class="card print-card">
       <div class="rt">Customer-Facing Quote — Ready to Email or Print</div>
-      <div class="cq" id="customer_quote"></div>
+      <div class="edit-hint">Click into the quote below to edit any text before printing or saving</div>
+      <div class="cq editable" id="customer_quote" contenteditable="true"></div>
+      <div class="toolbar">
+        <button class="btn2" onclick="printQuote()">Print / Save as PDF</button>
+        <button class="btn2" onclick="downloadQuote()">Save as HTML File</button>
+      </div>
     </div>
 
     <div class="card"><div class="rt">Talking Points for This Homeowner</div><div class="ibox" id="r_tp"></div></div>
@@ -435,6 +462,9 @@ window.go=async function(){
 
     hide('LV'); show('RV');
 
+    // Make sure the exact dehumidifier model quoted shows up wherever "dehumidifier" is mentioned
+    r.bestItems=(r.bestItems||[]).map(i=>/dehumidifier/i.test(i)?i.replace(/dehumidifier/i,'Dehumidifier ('+dehumName+')'):i);
+
     $('r_analysis').textContent=r.analysis||'';
 
     $('r_findings').innerHTML=(r.findings||[]).map(f=>{
@@ -498,6 +528,19 @@ window.go=async function(){
       mkT('t3','BEST VALUE','Premium',r.bestPrice,r.bestItems,'Complete active moisture control system');
 
     $('r_note').textContent=r.note||'';
+
+    // Equipment list — what to bring/order for this job
+    const eqRows=[
+      {n:'Vapor barrier liner',v:linerName+' — '+(+(r.linerRollsCsd||0))+' rolls'},
+      {n:'Seam tape',v:(+(r.tapeRolls||0))+' rolls (4x180 7.5mil)'},
+      {n:'Vent covers',v:(+(r.ventCount||0))+' covers'},
+      {n:'Dehumidifier (exact unit quoted)',v:dehumName},
+      {n:'Butyl tape',v:'2 rolls'},
+      {n:'Todol IPF foam',v:'3 cans'},
+      {n:'PPE',v:'1 kit (suits, respirators, gloves)'},
+    ];
+    if(moldFound) eqRows.push({n:'Mold treatment',v:'1 gal Penashield'});
+    $('equipment_list').innerHTML=eqRows.map(e=>'<li><span>'+e.n+'</span><b>'+e.v+'</b></li>').join('');
 
     const today=new Date().toLocaleDateString('en-US',{month:'long',day:'numeric',year:'numeric'});
     $('customer_quote').innerHTML=
@@ -576,7 +619,30 @@ window.go=async function(){
   }
 };
 
-window.reset=function(){hide('RV');show('FV');$('notes').value='';$('sqft').value='';$('wh').value='';$('vents').value='';};
+window.printQuote=function(){window.print();};
+
+window.downloadQuote=function(){
+  const eq=$('equipment_list').outerHTML;
+  const cq=$('customer_quote').outerHTML;
+  const html='<!DOCTYPE html><html><head><meta charset="UTF-8"><title>KC Crawl Space Quote</title><style>'+
+    'body{font-family:Arial,sans-serif;background:#f1f5f9;padding:24px}'+
+    '.eq-list{list-style:none;padding:0;max-width:640px;margin:0 auto 24px;background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.1)}'+
+    '.eq-list li{display:flex;justify-content:space-between;gap:8px;padding:10px 14px;border-bottom:1px solid #e2e8f0;font-size:13px;color:#1e293b}'+
+    '.eq-list li b{color:#166534}'+
+    '.cq{background:#fff;color:#111;border-radius:10px;padding:20px;max-width:640px;margin:0 auto;font-family:Arial,sans-serif;box-shadow:0 1px 3px rgba(0,0,0,.1)}'+
+    '</style></head><body>'+eq+cq+'</body></html>';
+  const blob=new Blob([html],{type:'text/html'});
+  const url=URL.createObjectURL(blob);
+  const a=document.createElement('a');
+  a.href=url;
+  a.download='KC-Crawlspace-Quote-'+(new Date().toISOString().slice(0,10))+'.html';
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  URL.revokeObjectURL(url);
+};
+
+window.reset=function(){hide('RV');show('FV');$('notes').value='';$('sqft').value='';$('wh').value='';$('vents').value='';$('equipment_list').innerHTML='';$('customer_quote').innerHTML='';};
 })();
 `;
 
