@@ -18,27 +18,27 @@ const jsonLd = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://crawlspacekc.com/' },
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.crawlspacekc.com/' },
         {
           '@type': 'ListItem',
           position: 2,
           name: 'Grandview MO Crawl Space Encapsulation',
-          item: 'https://crawlspacekc.com/crawl-space-encapsulation-grandview-mo/',
+          item: 'https://www.crawlspacekc.com/crawl-space-encapsulation-grandview-mo/',
         },
       ],
     },
     {
       '@type': 'LocalBusiness',
-      '@id': 'https://crawlspacekc.com/#business',
+      '@id': 'https://www.crawlspacekc.com/#business',
       name: 'KC Crawl Space Specialists',
       telephone: '+18169622111',
-      url: 'https://crawlspacekc.com',
+      url: 'https://www.crawlspacekc.com',
       areaServed: { '@type': 'City', name: 'Grandview', containedInPlace: { '@type': 'State', name: 'Missouri' } },
     },
     {
       '@type': 'Service',
       name: 'Crawl Space Encapsulation in Grandview, MO',
-      provider: { '@id': 'https://crawlspacekc.com/#business' },
+      provider: { '@id': 'https://www.crawlspacekc.com/#business' },
       areaServed: { '@type': 'City', name: 'Grandview', containedInPlace: { '@type': 'State', name: 'Missouri' } },
       description:
         'Complete crawl space encapsulation for Grandview MO homes including 20-mil liner, vent sealing, and commercial dehumidifier installation.',

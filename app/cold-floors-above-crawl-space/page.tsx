@@ -103,19 +103,19 @@ export default function ColdFloorsAboveCrawlSpacePage() {
               {
                 '@type': 'BreadcrumbList',
                 itemListElement: [
-                  { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://crawlspacekc.com' },
+                  { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.crawlspacekc.com' },
                   {
                     '@type': 'ListItem',
                     position: 2,
                     name: 'Cold Floors Above Crawl Space',
-                    item: 'https://crawlspacekc.com/cold-floors-above-crawl-space/',
+                    item: 'https://www.crawlspacekc.com/cold-floors-above-crawl-space/',
                   },
                 ],
               },
               {
                 '@type': 'LocalBusiness',
                 name: 'KC Crawl Space Specialists LLC',
-                url: 'https://crawlspacekc.com',
+                url: 'https://www.crawlspacekc.com',
                 telephone: '+18169622111',
                 priceRange: '$$-$$$$',
                 address: {

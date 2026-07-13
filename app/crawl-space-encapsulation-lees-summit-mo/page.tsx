@@ -72,20 +72,20 @@ const jsonLd = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://crawlspacekc.com' },
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.crawlspacekc.com' },
         {
           '@type': 'ListItem',
           position: 2,
           name: "Crawl Space Encapsulation Lee's Summit MO",
-          item: 'https://crawlspacekc.com/crawl-space-encapsulation-lees-summit-mo/',
+          item: 'https://www.crawlspacekc.com/crawl-space-encapsulation-lees-summit-mo/',
         },
       ],
     },
     {
       '@type': 'LocalBusiness',
       name: 'KC Crawl Space Specialists LLC',
-      '@id': 'https://crawlspacekc.com/#business',
-      url: 'https://crawlspacekc.com',
+      '@id': 'https://www.crawlspacekc.com/#business',
+      url: 'https://www.crawlspacekc.com',
       telephone: '+18169622111',
       priceRange: '$$-$$$$',
       address: {
@@ -105,7 +105,7 @@ const jsonLd = {
     {
       '@type': 'Service',
       name: "Crawl Space Encapsulation in Lee's Summit",
-      provider: { '@id': 'https://crawlspacekc.com/#business' },
+      provider: { '@id': 'https://www.crawlspacekc.com/#business' },
       areaServed: { '@type': 'City', name: "Lee's Summit" },
       description:
         "Complete crawl space encapsulation with 20-mil reinforced liner, vent sealing, and commercial dehumidifier for Lee's Summit, MO homeowners.",

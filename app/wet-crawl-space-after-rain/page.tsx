@@ -92,19 +92,19 @@ const jsonLd = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://crawlspacekc.com' },
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.crawlspacekc.com' },
         {
           '@type': 'ListItem',
           position: 2,
           name: 'Wet Crawl Space After Rain',
-          item: 'https://crawlspacekc.com/wet-crawl-space-after-rain/',
+          item: 'https://www.crawlspacekc.com/wet-crawl-space-after-rain/',
         },
       ],
     },
     {
       '@type': 'LocalBusiness',
       name: 'KC Crawl Space Specialists LLC',
-      url: 'https://crawlspacekc.com',
+      url: 'https://www.crawlspacekc.com',
       telephone: '+18169622111',
       priceRange: '$$-$$$$',
       address: {

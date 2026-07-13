@@ -72,20 +72,20 @@ const jsonLd = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://crawlspacekc.com' },
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.crawlspacekc.com' },
         {
           '@type': 'ListItem',
           position: 2,
           name: 'Crawl Space Encapsulation Overland Park KS',
-          item: 'https://crawlspacekc.com/crawl-space-encapsulation-overland-park-ks/',
+          item: 'https://www.crawlspacekc.com/crawl-space-encapsulation-overland-park-ks/',
         },
       ],
     },
     {
       '@type': 'LocalBusiness',
       name: 'KC Crawl Space Specialists LLC',
-      '@id': 'https://crawlspacekc.com/#business',
-      url: 'https://crawlspacekc.com',
+      '@id': 'https://www.crawlspacekc.com/#business',
+      url: 'https://www.crawlspacekc.com',
       telephone: '+18169622111',
       priceRange: '$$-$$$$',
       address: {
@@ -105,7 +105,7 @@ const jsonLd = {
     {
       '@type': 'Service',
       name: 'Crawl Space Encapsulation in Overland Park',
-      provider: { '@id': 'https://crawlspacekc.com/#business' },
+      provider: { '@id': 'https://www.crawlspacekc.com/#business' },
       areaServed: { '@type': 'City', name: 'Overland Park' },
       description:
         'Complete crawl space encapsulation with 20-mil reinforced liner, vent sealing, and commercial dehumidifier for Overland Park, KS homeowners.',

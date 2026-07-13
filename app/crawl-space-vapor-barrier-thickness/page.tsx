@@ -85,19 +85,19 @@ const jsonLd = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://crawlspacekc.com' },
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.crawlspacekc.com' },
         {
           '@type': 'ListItem',
           position: 2,
           name: 'Crawl Space Vapor Barrier Thickness',
-          item: 'https://crawlspacekc.com/crawl-space-vapor-barrier-thickness/',
+          item: 'https://www.crawlspacekc.com/crawl-space-vapor-barrier-thickness/',
         },
       ],
     },
     {
       '@type': 'LocalBusiness',
       name: 'KC Crawl Space Specialists LLC',
-      url: 'https://crawlspacekc.com',
+      url: 'https://www.crawlspacekc.com',
       telephone: '+18169622111',
       priceRange: '$$-$$$$',
       address: {

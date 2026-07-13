@@ -163,15 +163,15 @@ export default function GuidesPage() {
               {
                 '@type': 'BreadcrumbList',
                 itemListElement: [
-                  { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://crawlspacekc.com' },
-                  { '@type': 'ListItem', position: 2, name: 'Guides', item: 'https://crawlspacekc.com/guides/' },
+                  { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.crawlspacekc.com' },
+                  { '@type': 'ListItem', position: 2, name: 'Guides', item: 'https://www.crawlspacekc.com/guides/' },
                 ],
               },
               {
                 '@type': 'LocalBusiness',
-                '@id': 'https://crawlspacekc.com/#business',
+                '@id': 'https://www.crawlspacekc.com/#business',
                 name: 'KC Crawl Space Specialists LLC',
-                url: 'https://crawlspacekc.com',
+                url: 'https://www.crawlspacekc.com',
                 telephone: '+18169622111',
                 priceRange: '$$-$$$$',
                 address: {

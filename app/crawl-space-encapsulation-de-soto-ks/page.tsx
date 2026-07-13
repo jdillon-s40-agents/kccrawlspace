@@ -42,20 +42,20 @@ export default function DeSotoPage() {
               {
                 '@type': 'BreadcrumbList',
                 itemListElement: [
-                  { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://crawlspacekc.com' },
+                  { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.crawlspacekc.com' },
                   {
                     '@type': 'ListItem',
                     position: 2,
                     name: 'Crawl Space Encapsulation De Soto KS',
-                    item: 'https://crawlspacekc.com/crawl-space-encapsulation-de-soto-ks/',
+                    item: 'https://www.crawlspacekc.com/crawl-space-encapsulation-de-soto-ks/',
                   },
                 ],
               },
               {
                 '@type': 'LocalBusiness',
                 name: 'KC Crawl Space Specialists LLC',
-                '@id': 'https://crawlspacekc.com/#business',
-                url: 'https://crawlspacekc.com',
+                '@id': 'https://www.crawlspacekc.com/#business',
+                url: 'https://www.crawlspacekc.com',
                 telephone: '+18169622111',
                 priceRange: '$$-$$$$',
                 address: {
@@ -75,7 +75,7 @@ export default function DeSotoPage() {
               {
                 '@type': 'Service',
                 name: 'Crawl Space Encapsulation in De Soto',
-                provider: { '@id': 'https://crawlspacekc.com/#business' },
+                provider: { '@id': 'https://www.crawlspacekc.com/#business' },
                 areaServed: { '@type': 'City', name: 'De Soto' },
                 description:
                   'Full crawl space encapsulation with 20-mil reinforced liner, sealed vents, and commercial dehumidifier for De Soto, KS homeowners — serving both historic downtown and K-10 corridor developments in southwest Johnson County.',

@@ -103,19 +103,19 @@ export default function StandingWaterInCrawlSpacePage() {
               {
                 '@type': 'BreadcrumbList',
                 itemListElement: [
-                  { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://crawlspacekc.com' },
+                  { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.crawlspacekc.com' },
                   {
                     '@type': 'ListItem',
                     position: 2,
                     name: 'Standing Water in Crawl Space',
-                    item: 'https://crawlspacekc.com/standing-water-in-crawl-space/',
+                    item: 'https://www.crawlspacekc.com/standing-water-in-crawl-space/',
                   },
                 ],
               },
               {
                 '@type': 'LocalBusiness',
                 name: 'KC Crawl Space Specialists LLC',
-                url: 'https://crawlspacekc.com',
+                url: 'https://www.crawlspacekc.com',
                 telephone: '+18169622111',
                 priceRange: '$$-$$$$',
                 address: {

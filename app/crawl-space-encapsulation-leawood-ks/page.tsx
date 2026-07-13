@@ -18,27 +18,27 @@ const jsonLd = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://crawlspacekc.com/' },
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.crawlspacekc.com/' },
         {
           '@type': 'ListItem',
           position: 2,
           name: 'Leawood KS Crawl Space Encapsulation',
-          item: 'https://crawlspacekc.com/crawl-space-encapsulation-leawood-ks/',
+          item: 'https://www.crawlspacekc.com/crawl-space-encapsulation-leawood-ks/',
         },
       ],
     },
     {
       '@type': 'LocalBusiness',
-      '@id': 'https://crawlspacekc.com/#business',
+      '@id': 'https://www.crawlspacekc.com/#business',
       name: 'KC Crawl Space Specialists',
       telephone: '+18169622111',
-      url: 'https://crawlspacekc.com',
+      url: 'https://www.crawlspacekc.com',
       areaServed: { '@type': 'City', name: 'Leawood', containedInPlace: { '@type': 'State', name: 'Kansas' } },
     },
     {
       '@type': 'Service',
       name: 'Crawl Space Encapsulation in Leawood, KS',
-      provider: { '@id': 'https://crawlspacekc.com/#business' },
+      provider: { '@id': 'https://www.crawlspacekc.com/#business' },
       areaServed: { '@type': 'City', name: 'Leawood', containedInPlace: { '@type': 'State', name: 'Kansas' } },
       description:
         'Complete crawl space encapsulation for Leawood KS homes including 20-mil liner, vent sealing, and commercial dehumidifier installation.',

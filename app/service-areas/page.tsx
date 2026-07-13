@@ -121,15 +121,15 @@ export default function ServiceAreasPage() {
               {
                 '@type': 'BreadcrumbList',
                 itemListElement: [
-                  { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://crawlspacekc.com' },
-                  { '@type': 'ListItem', position: 2, name: 'Service Areas', item: 'https://crawlspacekc.com/service-areas/' },
+                  { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.crawlspacekc.com' },
+                  { '@type': 'ListItem', position: 2, name: 'Service Areas', item: 'https://www.crawlspacekc.com/service-areas/' },
                 ],
               },
               {
                 '@type': 'LocalBusiness',
-                '@id': 'https://crawlspacekc.com/#business',
+                '@id': 'https://www.crawlspacekc.com/#business',
                 name: 'KC Crawl Space Specialists LLC',
-                url: 'https://crawlspacekc.com',
+                url: 'https://www.crawlspacekc.com',
                 telephone: '+18169622111',
                 priceRange: '$$-$$$$',
                 address: {

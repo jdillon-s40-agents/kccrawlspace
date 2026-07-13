@@ -102,19 +102,19 @@ export default function CrawlSpaceVentsPage() {
               {
                 '@type': 'BreadcrumbList',
                 itemListElement: [
-                  { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://crawlspacekc.com' },
+                  { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.crawlspacekc.com' },
                   {
                     '@type': 'ListItem',
                     position: 2,
                     name: 'Should Crawl Space Vents Be Open or Closed',
-                    item: 'https://crawlspacekc.com/crawl-space-vents-open-or-closed/',
+                    item: 'https://www.crawlspacekc.com/crawl-space-vents-open-or-closed/',
                   },
                 ],
               },
               {
                 '@type': 'LocalBusiness',
                 name: 'KC Crawl Space Specialists LLC',
-                url: 'https://crawlspacekc.com',
+                url: 'https://www.crawlspacekc.com',
                 telephone: '+18169622111',
                 priceRange: '$$-$$$$',
                 address: {

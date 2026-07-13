@@ -145,19 +145,19 @@ export default function CrawlSpaceEncapsulationKansasCity() {
       {
         '@type': 'BreadcrumbList',
         itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://crawlspacekc.com' },
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.crawlspacekc.com' },
           {
             '@type': 'ListItem',
             position: 2,
             name: 'Crawl Space Encapsulation Kansas City',
-            item: 'https://crawlspacekc.com/crawl-space-encapsulation-kansas-city/',
+            item: 'https://www.crawlspacekc.com/crawl-space-encapsulation-kansas-city/',
           },
         ],
       },
       {
         '@type': 'LocalBusiness',
         name: 'KC Crawl Space Specialists LLC',
-        url: 'https://crawlspacekc.com',
+        url: 'https://www.crawlspacekc.com',
         telephone: '+18169622111',
         priceRange: '$$-$$$$',
         address: {

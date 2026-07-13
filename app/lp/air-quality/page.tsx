@@ -246,7 +246,7 @@ export default function AirQualityLandingPage() {
           </div>
           <FinancingOptions />
           <p style={{ textAlign: 'center', fontSize: 14, color: '#4b5563', marginTop: 20 }}>
-            Or call us directly: <a href={PHONE_HREF} style={{ color: '#F5A623', textDecoration: 'none', fontWeight: 700 }}>{PHONE}</a> · <a href="https://crawlspacekc.com" style={{ color: '#6b7280', textDecoration: 'none' }}>CrawlspaceKC.com</a>
+            Or call us directly: <a href={PHONE_HREF} style={{ color: '#F5A623', textDecoration: 'none', fontWeight: 700 }}>{PHONE}</a> · <a href="https://www.crawlspacekc.com" style={{ color: '#6b7280', textDecoration: 'none' }}>CrawlspaceKC.com</a>
           </p>
         </div>
       </section>

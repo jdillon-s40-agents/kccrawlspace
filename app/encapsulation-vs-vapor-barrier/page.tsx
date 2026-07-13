@@ -89,19 +89,19 @@ const jsonLd = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://crawlspacekc.com' },
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.crawlspacekc.com' },
         {
           '@type': 'ListItem',
           position: 2,
           name: 'Crawl Space Encapsulation vs Vapor Barrier',
-          item: 'https://crawlspacekc.com/encapsulation-vs-vapor-barrier/',
+          item: 'https://www.crawlspacekc.com/encapsulation-vs-vapor-barrier/',
         },
       ],
     },
     {
       '@type': 'LocalBusiness',
       name: 'KC Crawl Space Specialists LLC',
-      url: 'https://crawlspacekc.com',
+      url: 'https://www.crawlspacekc.com',
       telephone: '+18169622111',
       priceRange: '$$-$$$$',
       address: {
