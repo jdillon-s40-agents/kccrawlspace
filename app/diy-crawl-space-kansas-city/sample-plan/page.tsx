@@ -360,7 +360,7 @@ function SampleGamePlanDoc() {
           </div>
           <div className="gp-footer-right">
             <p style={{ color: '#F5A623', fontSize: 11, fontWeight: 600 }}>KC Crawl Space Specialists LLC</p>
-            <p>jason@crawlspacekc.com</p>
+            <p>jdillon@prckc.com</p>
             <p>CrawlspaceKC.com</p>
           </div>
         </div>

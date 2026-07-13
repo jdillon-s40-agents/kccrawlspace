@@ -41,7 +41,7 @@ const localBusiness = {
   '@type': 'LocalBusiness',
   name: 'KC Crawl Space Specialists LLC',
   telephone: '+18169622111',
-  email: 'info@crawlspacekc.com',
+  email: 'jdillon@prckc.com',
   url: 'https://crawlspacekc.com',
   address: {
     '@type': 'PostalAddress',

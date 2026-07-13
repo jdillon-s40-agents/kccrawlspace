@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import InspectionForm from '@/components/InspectionForm';
-import { PHONE, PHONE_HREF } from '@/lib/constants';
+import { PHONE, PHONE_HREF, EMAIL } from '@/lib/constants';
 
 export const metadata: Metadata = {
   title: { absolute: 'Free Crawlspace Inspection Kansas City | Book Same Week' },
@@ -48,7 +48,7 @@ export default function ContactPage() {
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F5A623" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flex: 'none' }}>
                   <rect x="2" y="4" width="20" height="16" rx="2" /><path d="m22 7-10 5L2 7" />
                 </svg>
-                info@kccrawlspacespecialists.com
+                {EMAIL}
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: 11, color: '#9CA3AF', fontSize: 15 }}>
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F5A623" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flex: 'none' }}>

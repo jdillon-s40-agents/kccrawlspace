@@ -1,6 +1,6 @@
 export const PHONE = '(816) 962-2111';
 export const PHONE_HREF = 'tel:+18169622111';
-export const EMAIL = 'info@kccrawlspacespecialists.com';
+export const EMAIL = 'jdillon@prckc.com';
 export const DOMAIN = 'KCCrawlSpaceSpecialists.com';
 
 export const NAV_LINKS = [

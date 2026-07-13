@@ -2,7 +2,7 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 import InspectionForm from '@/components/InspectionForm';
 import FinancingOptions from '@/components/FinancingOptions';
-import { PHONE, PHONE_HREF } from '@/lib/constants';
+import { PHONE, PHONE_HREF, EMAIL } from '@/lib/constants';
 
 export const metadata: Metadata = {
   title: { absolute: 'Crawl Space Encapsulation Near Me | KC Crawl Space Specialists' },
@@ -448,7 +448,7 @@ export default function HomePage() {
               <div style={{ fontSize: 14, color: '#9CA3AF', marginBottom: 16, paddingLeft: 33 }}>Mon–Sat 7am–7pm · Emergency line available</div>
               <div style={{ display: 'flex', alignItems: 'center', gap: 11, color: '#9CA3AF', fontSize: 15, marginBottom: 10 }}>
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F5A623" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flex: 'none' }}><rect x="2" y="4" width="20" height="16" rx="2" /><path d="m22 7-10 5L2 7" /></svg>
-                info@kccrawlspacespecialists.com
+                {EMAIL}
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: 11, color: '#9CA3AF', fontSize: 15 }}>
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F5A623" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flex: 'none' }}><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" /><circle cx="12" cy="10" r="3" /></svg>
