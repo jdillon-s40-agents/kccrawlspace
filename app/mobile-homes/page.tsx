@@ -18,9 +18,58 @@ function Check({ color = '#16A34A', size = 16 }: { color?: string; size?: number
   );
 }
 
+const faqItems = [
+  { q: 'How do I know if my underbelly needs repair?', a: 'Common signs: cold floors in winter, visible sagging or tears, frozen pipes, pest evidence, or a jump in heating bills.' },
+  { q: 'Can animals really damage it?', a: 'Yes — raccoons, opossums, and rodents tear through belly board to nest, which ruins insulation and can damage wiring and ductwork.' },
+  { q: 'How long does replacement take?', a: 'Most full replacements are done in a single day. Partial repairs take 2–4 hours depending on the damage.' },
+  { q: 'Does this work on older mobile homes?', a: 'Yes — we work on manufactured homes of all ages and configurations. Pre-1980 homes may need a little extra prep.' },
+  { q: 'Do you service homes in parks?', a: 'Absolutely — across the entire KC metro. We offer volume pricing for park managers with multiple homes.' },
+  { q: 'Do you repair or replace mobile home ductwork?', a: 'Yes. Underbelly ductwork often gets crushed, disconnected, or soaked when the belly board fails above it. We repair or fully replace flex duct while the underbelly is open, so you’re not paying for access twice.' },
+  { q: 'Do you install mobile home skirting?', a: 'Yes — both standard and insulated skirting. Insulated skirting adds another layer of energy efficiency and pipe protection on top of a repaired underbelly, and is one of the fastest ways to stop cold floors in a KC winter.' },
+];
+
 export default function MobileHomesPage() {
   return (
     <div style={{ background: '#0D0D0D', overflowX: 'hidden' }}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@graph': [
+              {
+                '@type': 'BreadcrumbList',
+                itemListElement: [
+                  { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.crawlspacekc.com' },
+                  { '@type': 'ListItem', position: 2, name: 'Mobile Home Underbelly Repair', item: 'https://www.crawlspacekc.com/mobile-homes/' },
+                ],
+              },
+              {
+                '@type': 'LocalBusiness',
+                name: 'KC Crawl Space Specialists LLC',
+                url: 'https://www.crawlspacekc.com',
+                telephone: '+18169622111',
+                priceRange: '$$-$$$$',
+                address: { '@type': 'PostalAddress', addressLocality: 'Kansas City', addressRegion: 'MO', addressCountry: 'US' },
+                areaServed: 'Kansas City Metro',
+              },
+              {
+                '@type': 'Service',
+                name: 'Mobile Home Underbelly Repair & Encapsulation',
+                serviceType: 'Manufactured Home Underbelly System',
+                provider: { '@type': 'LocalBusiness', name: 'KC Crawl Space Specialists LLC' },
+                areaServed: { '@type': 'AdministrativeArea', name: 'Kansas City Metro' },
+                description:
+                  'Complete mobile home underbelly restoration in Kansas City — belly board and insulation replacement, ductwork repair and replacement, and skirting or insulated skirting installation. Most jobs done in a single day.',
+              },
+              {
+                '@type': 'FAQPage',
+                mainEntity: faqItems.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+              },
+            ],
+          }),
+        }}
+      />
 
       {/* HERO */}
       <section style={{ position: 'relative', background: 'radial-gradient(120% 90% at 80% 0%, rgba(37,99,235,.2) 0%, rgba(37,99,235,0) 45%), radial-gradient(90% 80% at 0% 100%, rgba(245,166,35,.12) 0%, rgba(245,166,35,0) 50%), #0D0D0D', padding: 'clamp(40px,7vw,80px) clamp(16px,5vw,24px)' }}>
@@ -53,8 +102,11 @@ export default function MobileHomesPage() {
           <p style={{ fontSize: 16.5, lineHeight: 1.7, color: '#4b5563', margin: '0 0 14px' }}>
             The "underbelly" is the protective barrier — a belly board plus insulation — stretched beneath your manufactured home. It keeps the floor warm, protects your pipes and ductwork, and blocks moisture and pests from getting underneath.
           </p>
-          <p style={{ fontSize: 16.5, lineHeight: 1.7, color: '#4b5563', margin: 0 }}>
+          <p style={{ fontSize: 16.5, lineHeight: 1.7, color: '#4b5563', margin: '0 0 14px' }}>
             Over time it sags, tears, or gets ripped open by animals. When that happens, insulation falls out, pipes freeze, energy bills climb, and the damage spreads. We replace the whole system — belly board, insulation, and a fresh vapor barrier.
+          </p>
+          <p style={{ fontSize: 16.5, lineHeight: 1.7, color: '#4b5563', margin: 0 }}>
+            Think of it as encapsulating a crawl space, adapted for a mobile home: a sealed, insulated system underneath the entire home instead of an exposed one. Where damage extends beyond the belly wrap itself, we also repair or replace crushed and disconnected ductwork, and install skirting — insulated skirting where it makes sense — to give the whole underbelly a complete, energy-efficient envelope.
           </p>
         </div>
       </section>
@@ -100,7 +152,8 @@ export default function MobileHomesPage() {
             {[
               { title: 'Full belly board replacement', body: 'Old torn material removed; new heavy-duty board installed.' },
               { title: 'Fiberglass insulation', body: 'Fresh, full-depth insulation for warm floors and lower bills.' },
-              { title: 'Pipe & duct sealing', body: 'Plumbing and HVAC protected against freezing and leaks.' },
+              { title: 'Ductwork repair & replacement', body: 'Crushed, disconnected, or soaked flex duct repaired or fully replaced while the underbelly is open.' },
+              { title: 'Skirting & insulated skirting', body: 'New skirting installed or repaired — insulated options add another layer of energy efficiency and pipe protection.' },
               { title: 'Ground vapor barrier', body: 'Blocks rising soil moisture from re-soaking the new insulation.' },
               { title: 'Pest damage repair', body: 'Entry points sealed so critters stay out for good.' },
               { title: 'Transferable warranty', body: 'Documented, transferable coverage that adds resale value.' },
@@ -112,6 +165,29 @@ export default function MobileHomesPage() {
                   <div style={{ fontSize: 14, color: '#9CA3AF', lineHeight: 1.5 }}>{item.body}</div>
                 </div>
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* UNDERBELLY SERVICES BREAKDOWN */}
+      <section style={{ background: '#F9FAFB', padding: 'clamp(52px,8vw,88px) clamp(16px,5vw,24px)' }}>
+        <div style={{ maxWidth: 1000, margin: '0 auto' }}>
+          <div style={{ textAlign: 'center', maxWidth: '56ch', margin: '0 auto 40px' }}>
+            <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, color: '#1B3A6B', font: "600 13px 'Inter',sans-serif", letterSpacing: '.16em', textTransform: 'uppercase' as const, marginBottom: 14 }}>Explore Each Service</div>
+            <h2 style={{ fontFamily: "'Barlow Condensed',sans-serif", fontWeight: 800, fontSize: 'clamp(28px,5.5vw,46px)', lineHeight: 1.04, textTransform: 'uppercase' as const, margin: 0, color: '#0D0D0D' }}>Complete Underbelly Services</h2>
+          </div>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(260px,1fr))', gap: 16 }}>
+            {[
+              { title: 'Belly Wrap & Insulation', body: 'Full belly board and insulation replacement — the core of every underbelly job.', href: '#park', label: 'See what’s included ↑' },
+              { title: 'Ductwork Repair & Replacement', body: 'Crushed or disconnected flex duct fixed or replaced while the underbelly is already open.', href: '/mobile-home-ductwork-repair-kansas-city/', label: 'See ductwork repair →' },
+              { title: 'Skirting & Insulated Skirting', body: 'New or repaired skirting, with insulated options for maximum energy efficiency.', href: '/mobile-home-skirting-kansas-city/', label: 'See skirting options →' },
+            ].map((s) => (
+              <Link key={s.title} href={s.href} style={{ display: 'flex', flexDirection: 'column', background: '#0D0D0D', border: '1px solid rgba(255,255,255,.1)', borderRadius: 14, padding: 24, textDecoration: 'none' }}>
+                <div style={{ fontFamily: "'Barlow Condensed',sans-serif", fontWeight: 700, fontSize: 20, textTransform: 'uppercase' as const, color: '#fff', marginBottom: 8 }}>{s.title}</div>
+                <p style={{ fontSize: 14, lineHeight: 1.6, color: '#9CA3AF', margin: '0 0 16px', flex: 1 }}>{s.body}</p>
+                <span style={{ font: "700 14px 'Inter',sans-serif", color: '#F5A623' }}>{s.label}</span>
+              </Link>
             ))}
           </div>
         </div>
@@ -215,13 +291,7 @@ export default function MobileHomesPage() {
             <h2 style={{ fontFamily: "'Barlow Condensed',sans-serif", fontWeight: 800, fontSize: 'clamp(30px,6vw,50px)', lineHeight: 1.02, textTransform: 'uppercase' as const, margin: 0, color: '#fff' }}>Mobile Home FAQ</h2>
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
-            {[
-              { q: 'How do I know if my underbelly needs repair?', a: 'Common signs: cold floors in winter, visible sagging or tears, frozen pipes, pest evidence, or a jump in heating bills.' },
-              { q: 'Can animals really damage it?', a: 'Yes — raccoons, opossums, and rodents tear through belly board to nest, which ruins insulation and can damage wiring and ductwork.' },
-              { q: 'How long does replacement take?', a: 'Most full replacements are done in a single day. Partial repairs take 2–4 hours depending on the damage.' },
-              { q: 'Does this work on older mobile homes?', a: 'Yes — we work on manufactured homes of all ages and configurations. Pre-1980 homes may need a little extra prep.' },
-              { q: 'Do you service homes in parks?', a: 'Absolutely — across the entire KC metro. We offer volume pricing for park managers with multiple homes.' },
-            ].map((f) => (
+            {faqItems.map((f) => (
               <div key={f.q} style={{ background: '#0D0D0D', border: '1px solid rgba(255,255,255,.1)', borderRadius: 12, padding: '22px 24px' }}>
                 <div style={{ font: "800 17px 'Inter',sans-serif", color: '#fff', marginBottom: 8 }}>{f.q}</div>
                 <p style={{ fontSize: 15, lineHeight: 1.6, color: '#9CA3AF', margin: 0 }}>{f.a}</p>
