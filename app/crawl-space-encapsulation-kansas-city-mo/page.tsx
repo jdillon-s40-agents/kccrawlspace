@@ -5,9 +5,9 @@ import FinancingOptions from '@/components/FinancingOptions';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: { absolute: 'Crawl Space Encapsulation Kansas City, MO | KC Crawl Space Specialists' },
+  title: { absolute: 'Crawl Space Encapsulation Kansas City, MO | 4.9★ | Lifetime Warranty' },
   description:
-    'Crawl space encapsulation in Kansas City, MO. Serving Waldo, Brookside, Westport, Hyde Park, Northland, South KC, and all KCMO neighborhoods. Free inspection.',
+    "Kansas City, MO's only dedicated crawlspace specialist. Serving Waldo, Brookside, Westport, Hyde Park, Northland & all KCMO neighborhoods. Lifetime transferable warranty. Free inspection.",
   alternates: {
     canonical: 'https://www.crawlspacekc.com/crawl-space-encapsulation-kansas-city-mo/',
   }};

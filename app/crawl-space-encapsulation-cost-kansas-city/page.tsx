@@ -5,8 +5,8 @@ import FinancingOptions from '@/components/FinancingOptions';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: { absolute: 'Crawl Space Encapsulation Cost Kansas City | Honest Pricing' },
-  description: 'How much does crawl space encapsulation cost in Kansas City? See honest pricing by size, moisture level & liner type. Financing from $74/mo. Free estimate.',
+  title: { absolute: 'Crawl Space Encapsulation Cost KC | See Real Prices | $74/mo' },
+  description: 'Real crawl space encapsulation pricing for Kansas City — by size, moisture level, and liner type. Financing from $74/mo, no hidden fees, lifetime transferable warranty. Free estimate.',
   alternates: {
     canonical: 'https://www.crawlspacekc.com/crawl-space-encapsulation-cost-kansas-city/',
   }};

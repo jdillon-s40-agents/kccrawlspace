@@ -5,8 +5,8 @@ import FinancingOptions from '@/components/FinancingOptions';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: { absolute: 'Crawl Space Waterproofing Near Me | Kansas City Wet Crawl Space Fix' },
-  description: 'Searching for crawl space waterproofing near me? We fix wet crawl spaces in Kansas City: interior drainage, sump pump & encapsulation. Standing water, seepage, water after rain. Free inspection.',
+  title: { absolute: 'Crawl Space Waterproofing Near Me | Same-Week Fix | 4.9★' },
+  description: 'Wet crawl space after rain? We install drainage, sump pumps, and full encapsulation to stop it for good — same-week service, 4.9★ rated, lifetime transferable warranty. Free inspection.',
   alternates: {
     canonical: 'https://www.crawlspacekc.com/crawl-space-waterproofing-kansas-city/',
   }};

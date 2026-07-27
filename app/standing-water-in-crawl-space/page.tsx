@@ -5,9 +5,9 @@ import FinancingOptions from '@/components/FinancingOptions';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: { absolute: 'Standing Water in Crawl Space | Kansas City Emergency Repair' },
+  title: { absolute: 'Standing Water in Crawl Space? Same-Week Fix | Kansas City' },
   description:
-    'Standing water in your crawl space after rain? Learn why it happens, why it is urgent, and how Kansas City pros remove water and stop it from coming back.',
+    'Water under your home after rain? We remove it, install drainage and a sump pump, and stop it for good — same-week service, 4.9★ rated, lifetime transferable warranty. Free inspection.',
   alternates: {
     canonical: 'https://www.crawlspacekc.com/standing-water-in-crawl-space/',
   }};

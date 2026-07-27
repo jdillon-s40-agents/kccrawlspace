@@ -4,8 +4,8 @@ import InspectionForm from '@/components/InspectionForm';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: { absolute: 'Crawl Space Encapsulation Near Me | Kansas City Metro Service Areas' },
-  description: 'Searching for crawl space encapsulation near me? We serve 35 cities across the Kansas City metro. Find encapsulation, repair & waterproofing in your MO or KS city.',
+  title: { absolute: 'Crawl Space Encapsulation Near Me | 35 KC Cities | Lifetime Warranty' },
+  description: "KC's only dedicated crawlspace specialist — not a foundation company doing it as an upsell. Serving 35 cities across the Kansas City metro. Lifetime transferable warranty, 4.9★ rated, free inspection.",
   alternates: {
     canonical: 'https://www.crawlspacekc.com/service-areas/',
   }};
