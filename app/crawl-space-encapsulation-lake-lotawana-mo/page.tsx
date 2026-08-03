@@ -5,11 +5,11 @@ import FinancingOptions from '@/components/FinancingOptions';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: { absolute: 'Crawl Space Encapsulation Riverside, MO | Free Inspection' },
+  title: { absolute: 'Crawl Space Encapsulation Lake Lotawana, MO | Free Inspection' },
   description:
-    'Crawl space encapsulation in Riverside, MO. Serving neighborhoods near the Missouri River, KCI Airport corridor, and all of Platte County. Free inspection.',
+    'Crawl space encapsulation in Lake Lotawana, MO. Specialists in lake-community homes with higher water tables and older cottage-style foundations. Free inspection, lifetime warranty.',
   alternates: {
-    canonical: 'https://www.crawlspacekc.com/crawl-space-encapsulation-riverside-mo/',
+    canonical: 'https://www.crawlspacekc.com/crawl-space-encapsulation-lake-lotawana-mo/',
   }};
 
 const jsonLd = {
@@ -22,8 +22,8 @@ const jsonLd = {
         {
           '@type': 'ListItem',
           position: 2,
-          name: 'Crawl Space Encapsulation Riverside MO',
-          item: 'https://www.crawlspacekc.com/crawl-space-encapsulation-riverside-mo/',
+          name: 'Crawl Space Encapsulation Lake Lotawana MO',
+          item: 'https://www.crawlspacekc.com/crawl-space-encapsulation-lake-lotawana-mo/',
         },
       ],
     },
@@ -34,74 +34,74 @@ const jsonLd = {
       telephone: '+18169622111',
       address: {
         '@type': 'PostalAddress',
-        addressLocality: 'Riverside',
+        addressLocality: 'Lake Lotawana',
         addressRegion: 'MO',
-        postalCode: '64150',
+        postalCode: '64086',
         addressCountry: 'US',
       },
       areaServed: {
         '@type': 'City',
-        name: 'Riverside',
-        sameAs: 'https://en.wikipedia.org/wiki/Riverside,_Missouri',
+        name: 'Lake Lotawana',
+        sameAs: 'https://en.wikipedia.org/wiki/Lake_Lotawana,_Missouri',
       },
     },
     {
       '@type': 'Service',
       name: 'Crawl Space Encapsulation',
       provider: { '@type': 'LocalBusiness', name: 'KC Crawl Space Specialists LLC' },
-      areaServed: { '@type': 'City', name: 'Riverside, MO' },
+      areaServed: { '@type': 'City', name: 'Lake Lotawana, MO' },
       description:
-        'Complete crawl space encapsulation with 20-mil reinforced liner, sealed vents, and commercial dehumidifier for Riverside, MO homes.',
+        'Complete crawl space encapsulation with 20-mil reinforced liner, sealed vents, and commercial dehumidifier sized for Lake Lotawana, MO lake-community homes.',
     },
     {
       '@type': 'FAQPage',
       mainEntity: [
         {
           '@type': 'Question',
-          name: 'Do you serve Riverside, MO?',
+          name: 'Do you serve Lake Lotawana, MO?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Yes. All of Riverside, including neighborhoods near the Missouri River bottoms, the KCI Airport corridor, and Vivion Road. Primary ZIP: 64150.',
+            text: 'Yes. All of Lake Lotawana, the private lake community in Jackson County just east of Lee\'s Summit. Primary ZIP: 64086.',
           },
         },
         {
           '@type': 'Question',
-          name: 'Does being near the Missouri River affect crawl space moisture in Riverside?',
+          name: 'Does living on the lake affect crawl space moisture?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Yes. Riverside sits low in the Missouri River bottoms, which means a higher water table and more ambient moisture than homes on higher ground elsewhere in the metro — crawl spaces here tend to run wetter year-round.',
+            text: "Yes. Homes near Lake Lotawana's shoreline typically sit closer to a higher water table than homes further from the water, which adds to the moisture a crawl space vapor barrier and dehumidifier need to manage.",
           },
         },
         {
           '@type': 'Question',
-          name: 'My Riverside home has standing water under the house — what should I do?',
+          name: 'Do older Lake Lotawana lake cottages need different treatment than newer homes?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Call for a free inspection right away. Standing water needs to be addressed with drainage before a vapor barrier goes in, otherwise the barrier just traps the water underneath it.',
+            text: 'Often, yes. Lake Lotawana has a mix of original mid-century lake cottages and larger newer construction, and older cottage foundations sometimes need extra attention to framing and vent conditions before the liner goes in.',
           },
         },
         {
           '@type': 'Question',
-          name: 'Do newer homes near KCI in Riverside need encapsulation?',
+          name: 'Is a free inspection really no-obligation in Lake Lotawana?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: "Yes. Even newer construction near the airport corridor sits on the same river-bottom ground, so age alone doesn't protect a crawl space from humidity and moisture intrusion.",
+            text: 'Yes. We inspect, document conditions with photos, and provide a written estimate — no pressure, no obligation to move forward.',
           },
         },
         {
           '@type': 'Question',
-          name: 'How long does crawl space encapsulation take in Riverside?',
+          name: 'How long does crawl space encapsulation take in Lake Lotawana?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Most projects complete in one day. Homes with standing water or drainage issues first may take two to three days.',
+            text: 'Most projects complete in one day. Larger lakefront homes may take two.',
           },
         },
         {
           '@type': 'Question',
-          name: 'What does crawl space encapsulation cost in Riverside?',
+          name: 'What does crawl space encapsulation cost in Lake Lotawana?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Most Riverside homes run $2,800–$6,000 for a complete system, depending on whether drainage work is needed. Free inspection and written estimate at no cost.',
+            text: 'Most Lake Lotawana homes run $3,000–$6,500 for a complete system depending on size and proximity to the water table. Free inspection and written estimate at no cost.',
           },
         },
       ],
@@ -142,7 +142,7 @@ const faqCard: React.CSSProperties = {
   padding: '22px 24px',
 };
 
-export default function RiversideMOPage() {
+export default function LakeLotawanaMOPage() {
   return (
     <main>
       <script
@@ -153,14 +153,14 @@ export default function RiversideMOPage() {
       {/* 1. Hero */}
       <section style={{ ...sectionPadding, background: '#0D0D0D', color: '#F9FAFB', textAlign: 'center' }}>
         <p style={{ color: '#F5A623', fontSize: '0.85rem', letterSpacing: '0.12em', textTransform: 'uppercase' as const, marginBottom: 12 }}>
-          Riverside, MO
+          Lake Lotawana, MO
         </p>
         <h1 style={{ ...headingStyle, fontSize: 'clamp(2.2rem,6vw,3.6rem)', lineHeight: 1.05, marginBottom: 20 }}>
           Crawl Space Encapsulation{' '}
-          <span style={{ color: '#F5A623' }}>Riverside, MO</span>
+          <span style={{ color: '#F5A623' }}>Lake Lotawana, MO</span>
         </h1>
         <p style={{ maxWidth: 680, margin: '0 auto 32px', fontSize: '1.05rem', lineHeight: 1.7, color: 'rgba(249,250,251,.82)' }}>
-          Riverside sits low in the Missouri River bottoms in Platte County, where a high water table and river-adjacent ground create some of the wettest crawl space conditions in the metro. Whether your home is near the river, the KCI corridor, or Vivion Road, we provide complete crawl space moisture control for Riverside homeowners.
+          Lake Lotawana is a private lake community in Jackson County, just east of Lee&apos;s Summit, with a mix of original lake cottages and larger newer homes. We provide complete crawl space moisture control built around the higher water table that comes with living near the lake.
         </p>
         <div style={{ display: 'flex', gap: 16, justifyContent: 'center', flexWrap: 'wrap' }}>
           <Link
@@ -182,43 +182,43 @@ export default function RiversideMOPage() {
       <section style={{ ...sectionPadding, background: '#F9FAFB', color: '#0D0D0D' }}>
         <div style={{ maxWidth: 780, margin: '0 auto' }}>
           <h2 style={{ ...headingStyle, fontSize: 'clamp(1.6rem,4vw,2.4rem)', marginBottom: 18 }}>
-            Crawl Space Encapsulation in Riverside, MO
+            Crawl Space Encapsulation in Lake Lotawana, MO
           </h2>
           <p style={{ fontSize: '1.05rem', lineHeight: 1.75, color: '#374151' }}>
-            Crawl space encapsulation in Riverside seals the crawl space with a 20-mil reinforced liner, sealed vents, and a commercial dehumidifier. Riverside sits directly in the Missouri River bottoms in Platte County, which means a higher water table and more ambient ground moisture than homes on higher ground elsewhere in the metro.
+            Crawl space encapsulation in Lake Lotawana seals the crawl space with a 20-mil reinforced liner, sealed vents, and a commercial dehumidifier sized to the home&apos;s actual footprint. Because so many homes here sit close to the shoreline, the ground water table typically runs higher than in inland KC-metro suburbs — we plan drainage and dehumidifier sizing around that reality instead of a one-size-fits-all install.
           </p>
         </div>
       </section>
 
-      {/* 3. Why Riverside Homes Have Problems */}
+      {/* 3. Why Lake Lotawana Homes Have Problems */}
       <section style={{ ...sectionPadding, background: '#0D0D0D', color: '#F9FAFB' }}>
         <div style={{ maxWidth: 1100, margin: '0 auto' }}>
           <h2 style={{ ...headingStyle, fontSize: 'clamp(1.6rem,4vw,2.4rem)', marginBottom: 36, textAlign: 'center' }}>
-            Why Riverside Homes Have Crawl Space Problems
+            Why Lake Lotawana Homes Have Crawl Space Problems
           </h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(300px,1fr))', gap: 20 }}>
             <div style={contentCard}>
               <h3 style={{ ...headingStyle, fontSize: '1.15rem', color: '#F5A623', marginBottom: 12 }}>
-                Missouri River Bottom Ground
+                Higher Water Table Near the Lake
               </h3>
               <p style={{ lineHeight: 1.7, color: 'rgba(249,250,251,.8)', fontSize: '0.97rem' }}>
-                Riverside sits in the low-lying river bottoms along the Missouri River, where a shallow water table keeps ground moisture elevated year-round — a much wetter starting point than homes on higher ground.
+                Homes closer to Lake Lotawana&apos;s shoreline sit near a higher water table, which pushes more ground moisture up into the crawl space than a typical inland lot experiences.
               </p>
             </div>
             <div style={contentCard}>
               <h3 style={{ ...headingStyle, fontSize: '1.15rem', color: '#F5A623', marginBottom: 12 }}>
-                Drainage-Dependent Lots
+                Mix of Original Cottages &amp; Newer Homes
               </h3>
               <p style={{ lineHeight: 1.7, color: 'rgba(249,250,251,.8)', fontSize: '0.97rem' }}>
-                Because the water table sits close to the surface, proper drainage around the foundation matters more here than almost anywhere else in the metro — without it, water has nowhere to go but under the house.
+                Lake Lotawana has both original mid-century lake cottages and larger newer construction — older cottage crawl spaces often need extra framing and vent attention before a liner goes in.
               </p>
             </div>
             <div style={contentCard}>
               <h3 style={{ ...headingStyle, fontSize: '1.15rem', color: '#F5A623', marginBottom: 12 }}>
-                Mixed Residential &amp; Industrial Growth
+                Jackson County Clay Soil
               </h3>
               <p style={{ lineHeight: 1.7, color: 'rgba(249,250,251,.8)', fontSize: '0.97rem' }}>
-                Riverside has grown alongside industrial and commercial development near KCI, and residential lots in the flatter bottomland areas often need active drainage and dehumidification to keep crawl spaces dry.
+                Like the rest of Jackson County, Lake Lotawana sits on dense clay soil that holds moisture against the foundation, making active drainage and humidity control especially important this close to the water.
               </p>
             </div>
           </div>
@@ -229,7 +229,7 @@ export default function RiversideMOPage() {
       <section style={{ ...sectionPadding, background: '#F9FAFB', color: '#0D0D0D' }}>
         <div style={{ maxWidth: 1100, margin: '0 auto' }}>
           <h2 style={{ ...headingStyle, fontSize: 'clamp(1.6rem,4vw,2.4rem)', marginBottom: 36, textAlign: 'center' }}>
-            Our Crawl Space Services in Riverside, MO
+            Our Crawl Space Services in Lake Lotawana, MO
           </h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(280px,1fr))', gap: 16 }}>
             {services.map((svc) => (
@@ -262,14 +262,14 @@ export default function RiversideMOPage() {
       <section style={{ ...sectionPadding, background: '#1B3A6B', color: '#F9FAFB' }}>
         <div style={{ maxWidth: 1100, margin: '0 auto' }}>
           <h2 style={{ ...headingStyle, fontSize: 'clamp(1.6rem,4vw,2.4rem)', marginBottom: 12, textAlign: 'center' }}>
-            Riverside Areas We Serve
+            Lake Lotawana Areas We Serve
           </h2>
           <p style={{ textAlign: 'center', marginBottom: 28, color: 'rgba(249,250,251,.75)', lineHeight: 1.6 }}>
-            Missouri River bottoms · Vivion Road corridor · KCI Airport area · Horseshoe Bend area · Northland Platte County
+            All of Lake Lotawana · bordering Lee&apos;s Summit · Jackson County lake community
           </p>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10, justifyContent: 'center' }}>
             <span style={{ background: 'rgba(245,166,35,.15)', border: '1px solid rgba(245,166,35,.4)', color: '#F5A623', borderRadius: 6, padding: '4px 12px', fontSize: '0.85rem', fontWeight: 600 }}>
-              64150
+              64086
             </span>
           </div>
         </div>
@@ -283,8 +283,8 @@ export default function RiversideMOPage() {
           </h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(280px,1fr))', gap: 20 }}>
             {[
-              { n: '01', title: 'Free Inspection & Assessment', body: 'We inspect your Riverside crawl space — liner condition, framing, humidity levels, standing water — and provide a written estimate at no cost.' },
-              { n: '02', title: 'Drainage & Moisture System Install', body: 'We address any standing water with proper drainage, install a 20-mil reinforced liner, seal all foundation vents, and add a commercial-grade dehumidifier.' },
+              { n: '01', title: 'Free Inspection & Assessment', body: 'We inspect your Lake Lotawana crawl space — liner condition, framing, humidity levels, mold presence — and provide a written estimate at no cost.' },
+              { n: '02', title: 'Complete Moisture System Install', body: 'We install a 20-mil reinforced liner, seal all foundation vents, and install a commercial-grade dehumidifier sized for your crawl space.' },
               { n: '03', title: 'Final Walk-Through & Warranty', body: 'We walk you through the completed system, confirm target humidity levels are achievable, and provide a written warranty on our work.' },
             ].map((step) => (
               <div key={step.n} style={contentCard}>
@@ -313,33 +313,33 @@ export default function RiversideMOPage() {
       <section style={{ ...sectionPadding, background: '#1B3A6B', color: '#F9FAFB' }}>
         <div style={{ maxWidth: 820, margin: '0 auto' }}>
           <h2 style={{ ...headingStyle, fontSize: 'clamp(1.6rem,4vw,2.4rem)', marginBottom: 32, textAlign: 'center' }}>
-            Frequently Asked Questions — Riverside, MO
+            Frequently Asked Questions — Lake Lotawana, MO
           </h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
             {[
               {
-                q: 'Do you serve Riverside, MO?',
-                a: 'Yes. All of Riverside, including neighborhoods near the Missouri River bottoms, the KCI Airport corridor, and Vivion Road. Primary ZIP: 64150.',
+                q: 'Do you serve Lake Lotawana, MO?',
+                a: 'Yes. All of Lake Lotawana, the private lake community in Jackson County just east of Lee\'s Summit. Primary ZIP: 64086.',
               },
               {
-                q: 'Does being near the Missouri River affect crawl space moisture in Riverside?',
-                a: 'Yes. Riverside sits low in the Missouri River bottoms, which means a higher water table and more ambient moisture than homes on higher ground elsewhere in the metro — crawl spaces here tend to run wetter year-round.',
+                q: 'Does living on the lake affect crawl space moisture?',
+                a: 'Yes. Homes near Lake Lotawana\'s shoreline typically sit closer to a higher water table than homes further from the water, which adds to the moisture a crawl space vapor barrier and dehumidifier need to manage.',
               },
               {
-                q: 'My Riverside home has standing water under the house — what should I do?',
-                a: 'Call for a free inspection right away. Standing water needs to be addressed with drainage before a vapor barrier goes in, otherwise the barrier just traps the water underneath it.',
+                q: 'Do older Lake Lotawana lake cottages need different treatment than newer homes?',
+                a: 'Often, yes. Lake Lotawana has a mix of original mid-century lake cottages and larger newer construction, and older cottage foundations sometimes need extra attention to framing and vent conditions before the liner goes in.',
               },
               {
-                q: 'Do newer homes near KCI in Riverside need encapsulation?',
-                a: "Yes. Even newer construction near the airport corridor sits on the same river-bottom ground, so age alone doesn't protect a crawl space from humidity and moisture intrusion.",
+                q: 'Is a free inspection really no-obligation in Lake Lotawana?',
+                a: 'Yes. We inspect, document conditions with photos, and provide a written estimate — no pressure, no obligation to move forward.',
               },
               {
-                q: 'How long does crawl space encapsulation take in Riverside?',
-                a: 'Most projects complete in one day. Homes with standing water or drainage issues first may take two to three days.',
+                q: 'How long does crawl space encapsulation take in Lake Lotawana?',
+                a: 'Most projects complete in one day. Larger lakefront homes may take two.',
               },
               {
-                q: 'What does crawl space encapsulation cost in Riverside?',
-                a: 'Most Riverside homes run $2,800–$6,000 for a complete system, depending on whether drainage work is needed. Free inspection and written estimate at no cost.',
+                q: 'What does crawl space encapsulation cost in Lake Lotawana?',
+                a: 'Most Lake Lotawana homes run $3,000–$6,500 for a complete system depending on size and proximity to the water table. Free inspection and written estimate at no cost.',
               },
             ].map((faq) => (
               <div key={faq.q} style={faqCard}>
@@ -355,7 +355,7 @@ export default function RiversideMOPage() {
       <section id="estimate" style={{ ...sectionPadding, background: '#111827', color: '#F9FAFB' }}>
         <div style={{ maxWidth: 680, margin: '0 auto', textAlign: 'center' }}>
           <h2 style={{ ...headingStyle, fontSize: 'clamp(1.6rem,4vw,2.4rem)', marginBottom: 12 }}>
-            Get a Free Estimate in Riverside, MO
+            Get a Free Estimate in Lake Lotawana, MO
           </h2>
           <p style={{ color: 'rgba(249,250,251,.7)', marginBottom: 32, lineHeight: 1.6 }}>
             Schedule your free crawl space inspection. No obligation. Written estimate provided.

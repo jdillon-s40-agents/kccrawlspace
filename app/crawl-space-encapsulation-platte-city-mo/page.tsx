@@ -5,7 +5,7 @@ import FinancingOptions from '@/components/FinancingOptions';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: { absolute: 'Crawl Space Encapsulation Platte City, MO | KC Crawl Space Specialists' },
+  title: { absolute: 'Crawl Space Encapsulation Platte City, MO | Free Inspection' },
   description:
     'Crawl space encapsulation in Platte City, MO. Platte County seat near KCI Airport. Serving downtown and surrounding communities. Free inspection · same-week service.',
   alternates: {

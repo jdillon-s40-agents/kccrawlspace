@@ -5,7 +5,7 @@ import FinancingOptions from '@/components/FinancingOptions';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: { absolute: 'Crawl Space Encapsulation Grandview, MO | KC Crawl Space Specialists' },
+  title: { absolute: 'Crawl Space Encapsulation Grandview, MO | Lifetime Warranty' },
   description:
     'Crawl space encapsulation in Grandview, MO. Serving Truman Corners, 71 Highway corridor, and all of south Jackson County. Lifetime warranty. Free inspection.',
   alternates: {

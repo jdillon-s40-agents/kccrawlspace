@@ -5,7 +5,7 @@ import FinancingOptions from '@/components/FinancingOptions';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: { absolute: 'Crawl Space Encapsulation Mission Woods, KS | KC Crawl Space Specialists' },
+  title: { absolute: 'Crawl Space Encapsulation Mission Woods, KS | Lifetime Warranty' },
   description:
     'Crawl space encapsulation in Mission Woods, KS. Serving this wooded Johnson County community near Mission Hills. Free inspection, lifetime warranty.',
   alternates: {

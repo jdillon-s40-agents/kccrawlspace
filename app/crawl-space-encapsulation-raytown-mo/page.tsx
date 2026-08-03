@@ -5,7 +5,7 @@ import FinancingOptions from '@/components/FinancingOptions';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: { absolute: 'Crawl Space Encapsulation Raytown, MO | KC Crawl Space Specialists' },
+  title: { absolute: 'Crawl Space Encapsulation Raytown, MO | Free Inspection' },
   description:
     'Crawl space encapsulation in Raytown, MO. Serving mid-century neighborhoods south of Kansas City. Jackson County clay soil specialist. Free inspection · same-week service.',
   alternates: {

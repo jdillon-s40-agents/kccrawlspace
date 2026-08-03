@@ -5,7 +5,7 @@ import FinancingOptions from '@/components/FinancingOptions';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: { absolute: 'Crawl Space Encapsulation Smithville, MO | KC Crawl Space Specialists' },
+  title: { absolute: 'Crawl Space Encapsulation Smithville, MO | Free Inspection' },
   description:
     'Crawl space encapsulation in Smithville, MO. Serving Smithville Lake area, downtown neighborhoods, and all of Clay County north of Liberty. Free inspection.',
   alternates: {

@@ -5,7 +5,7 @@ import FinancingOptions from '@/components/FinancingOptions';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: { absolute: 'Crawl Space Encapsulation Merriam, KS | KC Crawl Space Specialists' },
+  title: { absolute: 'Crawl Space Encapsulation Merriam, KS | Lifetime Warranty' },
   description:
     'Crawl space encapsulation in Merriam, KS. Older Johnson County suburb. 1950s-1970s homes. Adjacent to Mission and Shawnee. Lifetime warranty. Free inspection.',
   alternates: {

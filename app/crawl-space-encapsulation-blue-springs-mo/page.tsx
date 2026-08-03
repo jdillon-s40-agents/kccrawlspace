@@ -5,7 +5,7 @@ import FinancingOptions from '@/components/FinancingOptions';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: { absolute: 'Crawl Space Encapsulation Blue Springs, MO | KC Crawl Space Specialists' },
+  title: { absolute: 'Crawl Space Encapsulation Blue Springs, MO | Same-Week Service' },
   description:
     'Crawl space encapsulation in Blue Springs, MO. Serving Adams Dairy, Adams Pointe, and all Jackson County neighborhoods. Free inspection. Same-week service.',
   alternates: {

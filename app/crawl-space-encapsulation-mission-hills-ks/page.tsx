@@ -5,11 +5,11 @@ import FinancingOptions from '@/components/FinancingOptions';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: { absolute: 'Crawl Space Encapsulation Riverside, MO | Free Inspection' },
+  title: { absolute: 'Crawl Space Encapsulation Mission Hills, KS | Lifetime Warranty' },
   description:
-    'Crawl space encapsulation in Riverside, MO. Serving neighborhoods near the Missouri River, KCI Airport corridor, and all of Platte County. Free inspection.',
+    'Crawl space encapsulation in Mission Hills, KS. Specialists in the large, historic estate homes built by J.C. Nichols in the 1910s-40s. Free inspection, lifetime warranty.',
   alternates: {
-    canonical: 'https://www.crawlspacekc.com/crawl-space-encapsulation-riverside-mo/',
+    canonical: 'https://www.crawlspacekc.com/crawl-space-encapsulation-mission-hills-ks/',
   }};
 
 const jsonLd = {
@@ -22,8 +22,8 @@ const jsonLd = {
         {
           '@type': 'ListItem',
           position: 2,
-          name: 'Crawl Space Encapsulation Riverside MO',
-          item: 'https://www.crawlspacekc.com/crawl-space-encapsulation-riverside-mo/',
+          name: 'Crawl Space Encapsulation Mission Hills KS',
+          item: 'https://www.crawlspacekc.com/crawl-space-encapsulation-mission-hills-ks/',
         },
       ],
     },
@@ -34,74 +34,74 @@ const jsonLd = {
       telephone: '+18169622111',
       address: {
         '@type': 'PostalAddress',
-        addressLocality: 'Riverside',
-        addressRegion: 'MO',
-        postalCode: '64150',
+        addressLocality: 'Mission Hills',
+        addressRegion: 'KS',
+        postalCode: '66208',
         addressCountry: 'US',
       },
       areaServed: {
         '@type': 'City',
-        name: 'Riverside',
-        sameAs: 'https://en.wikipedia.org/wiki/Riverside,_Missouri',
+        name: 'Mission Hills',
+        sameAs: 'https://en.wikipedia.org/wiki/Mission_Hills,_Kansas',
       },
     },
     {
       '@type': 'Service',
       name: 'Crawl Space Encapsulation',
       provider: { '@type': 'LocalBusiness', name: 'KC Crawl Space Specialists LLC' },
-      areaServed: { '@type': 'City', name: 'Riverside, MO' },
+      areaServed: { '@type': 'City', name: 'Mission Hills, KS' },
       description:
-        'Complete crawl space encapsulation with 20-mil reinforced liner, sealed vents, and commercial dehumidifier for Riverside, MO homes.',
+        'Complete crawl space encapsulation with 20-mil reinforced liner, sealed vents, and commercial dehumidifier sized for Mission Hills, KS estate homes.',
     },
     {
       '@type': 'FAQPage',
       mainEntity: [
         {
           '@type': 'Question',
-          name: 'Do you serve Riverside, MO?',
+          name: 'Do you serve Mission Hills, KS?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Yes. All of Riverside, including neighborhoods near the Missouri River bottoms, the KCI Airport corridor, and Vivion Road. Primary ZIP: 64150.',
+            text: 'Yes. All of Mission Hills, bordering Kansas City, MO\'s Ward Parkway neighborhood and adjacent to Fairway and Mission Woods. Primary ZIP: 66208.',
           },
         },
         {
           '@type': 'Question',
-          name: 'Does being near the Missouri River affect crawl space moisture in Riverside?',
+          name: 'Do older Mission Hills estate homes have different crawl space foundations?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Yes. Riverside sits low in the Missouri River bottoms, which means a higher water table and more ambient moisture than homes on higher ground elsewhere in the metro — crawl spaces here tend to run wetter year-round.',
+            text: 'Often, yes. Many Mission Hills homes were built in the 1910s-1940s as part of J.C. Nichols\' original development, and older masonry or fieldstone foundation walls in these homes are common, which we account for during liner installation and vent sealing.',
           },
         },
         {
           '@type': 'Question',
-          name: 'My Riverside home has standing water under the house — what should I do?',
+          name: 'Do larger Mission Hills homes need bigger dehumidifiers?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Call for a free inspection right away. Standing water needs to be addressed with drainage before a vapor barrier goes in, otherwise the barrier just traps the water underneath it.',
+            text: 'Usually, yes. Mission Hills lots and homes run larger than typical KC-metro suburbs, so we size the dehumidifier to the actual crawl space square footage rather than a one-size-fits-all unit.',
           },
         },
         {
           '@type': 'Question',
-          name: 'Do newer homes near KCI in Riverside need encapsulation?',
+          name: 'Is a free inspection really no-obligation in Mission Hills?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: "Yes. Even newer construction near the airport corridor sits on the same river-bottom ground, so age alone doesn't protect a crawl space from humidity and moisture intrusion.",
+            text: 'Yes. We inspect, document conditions with photos, and provide a written estimate — no pressure, no obligation to move forward.',
           },
         },
         {
           '@type': 'Question',
-          name: 'How long does crawl space encapsulation take in Riverside?',
+          name: 'How long does crawl space encapsulation take in Mission Hills?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Most projects complete in one day. Homes with standing water or drainage issues first may take two to three days.',
+            text: 'Most projects complete in one day. Larger estate homes with more complex crawl space layouts may take two.',
           },
         },
         {
           '@type': 'Question',
-          name: 'What does crawl space encapsulation cost in Riverside?',
+          name: 'What does crawl space encapsulation cost in Mission Hills?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Most Riverside homes run $2,800–$6,000 for a complete system, depending on whether drainage work is needed. Free inspection and written estimate at no cost.',
+            text: 'Most Mission Hills homes run $3,500–$7,500 for a complete system depending on size and foundation type. Free inspection and written estimate at no cost.',
           },
         },
       ],
@@ -142,7 +142,7 @@ const faqCard: React.CSSProperties = {
   padding: '22px 24px',
 };
 
-export default function RiversideMOPage() {
+export default function MissionHillsKSPage() {
   return (
     <main>
       <script
@@ -153,14 +153,14 @@ export default function RiversideMOPage() {
       {/* 1. Hero */}
       <section style={{ ...sectionPadding, background: '#0D0D0D', color: '#F9FAFB', textAlign: 'center' }}>
         <p style={{ color: '#F5A623', fontSize: '0.85rem', letterSpacing: '0.12em', textTransform: 'uppercase' as const, marginBottom: 12 }}>
-          Riverside, MO
+          Mission Hills, KS
         </p>
         <h1 style={{ ...headingStyle, fontSize: 'clamp(2.2rem,6vw,3.6rem)', lineHeight: 1.05, marginBottom: 20 }}>
           Crawl Space Encapsulation{' '}
-          <span style={{ color: '#F5A623' }}>Riverside, MO</span>
+          <span style={{ color: '#F5A623' }}>Mission Hills, KS</span>
         </h1>
         <p style={{ maxWidth: 680, margin: '0 auto 32px', fontSize: '1.05rem', lineHeight: 1.7, color: 'rgba(249,250,251,.82)' }}>
-          Riverside sits low in the Missouri River bottoms in Platte County, where a high water table and river-adjacent ground create some of the wettest crawl space conditions in the metro. Whether your home is near the river, the KCI corridor, or Vivion Road, we provide complete crawl space moisture control for Riverside homeowners.
+          Mission Hills is home to some of the largest and oldest estate homes in the Kansas City metro, developed by J.C. Nichols starting in the 1910s. We provide complete crawl space moisture control sized and detailed for Mission Hills&apos; larger, often historic foundations.
         </p>
         <div style={{ display: 'flex', gap: 16, justifyContent: 'center', flexWrap: 'wrap' }}>
           <Link
@@ -182,43 +182,43 @@ export default function RiversideMOPage() {
       <section style={{ ...sectionPadding, background: '#F9FAFB', color: '#0D0D0D' }}>
         <div style={{ maxWidth: 780, margin: '0 auto' }}>
           <h2 style={{ ...headingStyle, fontSize: 'clamp(1.6rem,4vw,2.4rem)', marginBottom: 18 }}>
-            Crawl Space Encapsulation in Riverside, MO
+            Crawl Space Encapsulation in Mission Hills, KS
           </h2>
           <p style={{ fontSize: '1.05rem', lineHeight: 1.75, color: '#374151' }}>
-            Crawl space encapsulation in Riverside seals the crawl space with a 20-mil reinforced liner, sealed vents, and a commercial dehumidifier. Riverside sits directly in the Missouri River bottoms in Platte County, which means a higher water table and more ambient ground moisture than homes on higher ground elsewhere in the metro.
+            Crawl space encapsulation in Mission Hills seals the crawl space with a 20-mil reinforced liner, sealed vents, and a commercial dehumidifier sized to the home&apos;s actual footprint. Many Mission Hills homes date to the 1910s-1940s, so original masonry or fieldstone foundation walls are common — we account for that during liner fitting and vent sealing rather than treating every crawl space as a modern poured-concrete build.
           </p>
         </div>
       </section>
 
-      {/* 3. Why Riverside Homes Have Problems */}
+      {/* 3. Why Mission Hills Homes Have Problems */}
       <section style={{ ...sectionPadding, background: '#0D0D0D', color: '#F9FAFB' }}>
         <div style={{ maxWidth: 1100, margin: '0 auto' }}>
           <h2 style={{ ...headingStyle, fontSize: 'clamp(1.6rem,4vw,2.4rem)', marginBottom: 36, textAlign: 'center' }}>
-            Why Riverside Homes Have Crawl Space Problems
+            Why Mission Hills Homes Have Crawl Space Problems
           </h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(300px,1fr))', gap: 20 }}>
             <div style={contentCard}>
               <h3 style={{ ...headingStyle, fontSize: '1.15rem', color: '#F5A623', marginBottom: 12 }}>
-                Missouri River Bottom Ground
+                Historic, Original Foundations
               </h3>
               <p style={{ lineHeight: 1.7, color: 'rgba(249,250,251,.8)', fontSize: '0.97rem' }}>
-                Riverside sits in the low-lying river bottoms along the Missouri River, where a shallow water table keeps ground moisture elevated year-round — a much wetter starting point than homes on higher ground.
+                Homes built during Mission Hills&apos; original 1910s-1940s development often have older masonry or fieldstone crawl space walls that need careful fitting rather than a standard modern liner install.
               </p>
             </div>
             <div style={contentCard}>
               <h3 style={{ ...headingStyle, fontSize: '1.15rem', color: '#F5A623', marginBottom: 12 }}>
-                Drainage-Dependent Lots
+                Larger, Estate-Sized Homes
               </h3>
               <p style={{ lineHeight: 1.7, color: 'rgba(249,250,251,.8)', fontSize: '0.97rem' }}>
-                Because the water table sits close to the surface, proper drainage around the foundation matters more here than almost anywhere else in the metro — without it, water has nowhere to go but under the house.
+                With larger footprints and more complex crawl space layouts than typical suburban tract homes, Mission Hills properties often need a properly sized commercial dehumidifier and more careful vent sealing.
               </p>
             </div>
             <div style={contentCard}>
               <h3 style={{ ...headingStyle, fontSize: '1.15rem', color: '#F5A623', marginBottom: 12 }}>
-                Mixed Residential &amp; Industrial Growth
+                Johnson County Clay Soil
               </h3>
               <p style={{ lineHeight: 1.7, color: 'rgba(249,250,251,.8)', fontSize: '0.97rem' }}>
-                Riverside has grown alongside industrial and commercial development near KCI, and residential lots in the flatter bottomland areas often need active drainage and dehumidification to keep crawl spaces dry.
+                Like the rest of Johnson County, Mission Hills sits on dense clay soil that holds moisture against the foundation, making active humidity control essential year-round.
               </p>
             </div>
           </div>
@@ -229,7 +229,7 @@ export default function RiversideMOPage() {
       <section style={{ ...sectionPadding, background: '#F9FAFB', color: '#0D0D0D' }}>
         <div style={{ maxWidth: 1100, margin: '0 auto' }}>
           <h2 style={{ ...headingStyle, fontSize: 'clamp(1.6rem,4vw,2.4rem)', marginBottom: 36, textAlign: 'center' }}>
-            Our Crawl Space Services in Riverside, MO
+            Our Crawl Space Services in Mission Hills, KS
           </h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(280px,1fr))', gap: 16 }}>
             {services.map((svc) => (
@@ -262,14 +262,14 @@ export default function RiversideMOPage() {
       <section style={{ ...sectionPadding, background: '#1B3A6B', color: '#F9FAFB' }}>
         <div style={{ maxWidth: 1100, margin: '0 auto' }}>
           <h2 style={{ ...headingStyle, fontSize: 'clamp(1.6rem,4vw,2.4rem)', marginBottom: 12, textAlign: 'center' }}>
-            Riverside Areas We Serve
+            Mission Hills Areas We Serve
           </h2>
           <p style={{ textAlign: 'center', marginBottom: 28, color: 'rgba(249,250,251,.75)', lineHeight: 1.6 }}>
-            Missouri River bottoms · Vivion Road corridor · KCI Airport area · Horseshoe Bend area · Northland Platte County
+            All of Mission Hills · bordering Fairway · bordering Mission Woods · Ward Parkway corridor
           </p>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10, justifyContent: 'center' }}>
             <span style={{ background: 'rgba(245,166,35,.15)', border: '1px solid rgba(245,166,35,.4)', color: '#F5A623', borderRadius: 6, padding: '4px 12px', fontSize: '0.85rem', fontWeight: 600 }}>
-              64150
+              66208
             </span>
           </div>
         </div>
@@ -283,8 +283,8 @@ export default function RiversideMOPage() {
           </h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(280px,1fr))', gap: 20 }}>
             {[
-              { n: '01', title: 'Free Inspection & Assessment', body: 'We inspect your Riverside crawl space — liner condition, framing, humidity levels, standing water — and provide a written estimate at no cost.' },
-              { n: '02', title: 'Drainage & Moisture System Install', body: 'We address any standing water with proper drainage, install a 20-mil reinforced liner, seal all foundation vents, and add a commercial-grade dehumidifier.' },
+              { n: '01', title: 'Free Inspection & Assessment', body: 'We inspect your Mission Hills crawl space — liner condition, framing, humidity levels, mold presence — and provide a written estimate at no cost.' },
+              { n: '02', title: 'Complete Moisture System Install', body: 'We install a 20-mil reinforced liner, seal all foundation vents, and install a commercial-grade dehumidifier sized for your crawl space.' },
               { n: '03', title: 'Final Walk-Through & Warranty', body: 'We walk you through the completed system, confirm target humidity levels are achievable, and provide a written warranty on our work.' },
             ].map((step) => (
               <div key={step.n} style={contentCard}>
@@ -313,33 +313,33 @@ export default function RiversideMOPage() {
       <section style={{ ...sectionPadding, background: '#1B3A6B', color: '#F9FAFB' }}>
         <div style={{ maxWidth: 820, margin: '0 auto' }}>
           <h2 style={{ ...headingStyle, fontSize: 'clamp(1.6rem,4vw,2.4rem)', marginBottom: 32, textAlign: 'center' }}>
-            Frequently Asked Questions — Riverside, MO
+            Frequently Asked Questions — Mission Hills, KS
           </h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
             {[
               {
-                q: 'Do you serve Riverside, MO?',
-                a: 'Yes. All of Riverside, including neighborhoods near the Missouri River bottoms, the KCI Airport corridor, and Vivion Road. Primary ZIP: 64150.',
+                q: 'Do you serve Mission Hills, KS?',
+                a: 'Yes. All of Mission Hills, bordering Kansas City, MO\'s Ward Parkway neighborhood and adjacent to Fairway and Mission Woods. Primary ZIP: 66208.',
               },
               {
-                q: 'Does being near the Missouri River affect crawl space moisture in Riverside?',
-                a: 'Yes. Riverside sits low in the Missouri River bottoms, which means a higher water table and more ambient moisture than homes on higher ground elsewhere in the metro — crawl spaces here tend to run wetter year-round.',
+                q: 'Do older Mission Hills estate homes have different crawl space foundations?',
+                a: 'Often, yes. Many Mission Hills homes were built in the 1910s-1940s as part of J.C. Nichols\' original development, and older masonry or fieldstone foundation walls in these homes are common, which we account for during liner installation and vent sealing.',
               },
               {
-                q: 'My Riverside home has standing water under the house — what should I do?',
-                a: 'Call for a free inspection right away. Standing water needs to be addressed with drainage before a vapor barrier goes in, otherwise the barrier just traps the water underneath it.',
+                q: 'Do larger Mission Hills homes need bigger dehumidifiers?',
+                a: 'Usually, yes. Mission Hills lots and homes run larger than typical KC-metro suburbs, so we size the dehumidifier to the actual crawl space square footage rather than a one-size-fits-all unit.',
               },
               {
-                q: 'Do newer homes near KCI in Riverside need encapsulation?',
-                a: "Yes. Even newer construction near the airport corridor sits on the same river-bottom ground, so age alone doesn't protect a crawl space from humidity and moisture intrusion.",
+                q: 'Is a free inspection really no-obligation in Mission Hills?',
+                a: 'Yes. We inspect, document conditions with photos, and provide a written estimate — no pressure, no obligation to move forward.',
               },
               {
-                q: 'How long does crawl space encapsulation take in Riverside?',
-                a: 'Most projects complete in one day. Homes with standing water or drainage issues first may take two to three days.',
+                q: 'How long does crawl space encapsulation take in Mission Hills?',
+                a: 'Most projects complete in one day. Larger estate homes with more complex crawl space layouts may take two.',
               },
               {
-                q: 'What does crawl space encapsulation cost in Riverside?',
-                a: 'Most Riverside homes run $2,800–$6,000 for a complete system, depending on whether drainage work is needed. Free inspection and written estimate at no cost.',
+                q: 'What does crawl space encapsulation cost in Mission Hills?',
+                a: 'Most Mission Hills homes run $3,500–$7,500 for a complete system depending on size and foundation type. Free inspection and written estimate at no cost.',
               },
             ].map((faq) => (
               <div key={faq.q} style={faqCard}>
@@ -355,7 +355,7 @@ export default function RiversideMOPage() {
       <section id="estimate" style={{ ...sectionPadding, background: '#111827', color: '#F9FAFB' }}>
         <div style={{ maxWidth: 680, margin: '0 auto', textAlign: 'center' }}>
           <h2 style={{ ...headingStyle, fontSize: 'clamp(1.6rem,4vw,2.4rem)', marginBottom: 12 }}>
-            Get a Free Estimate in Riverside, MO
+            Get a Free Estimate in Mission Hills, KS
           </h2>
           <p style={{ color: 'rgba(249,250,251,.7)', marginBottom: 32, lineHeight: 1.6 }}>
             Schedule your free crawl space inspection. No obligation. Written estimate provided.

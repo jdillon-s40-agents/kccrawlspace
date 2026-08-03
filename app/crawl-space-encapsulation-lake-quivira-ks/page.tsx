@@ -5,7 +5,7 @@ import FinancingOptions from '@/components/FinancingOptions';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: { absolute: 'Crawl Space Encapsulation Lake Quivira, KS | KC Crawl Space Specialists' },
+  title: { absolute: 'Crawl Space Encapsulation Lake Quivira, KS | Lifetime Warranty' },
   description:
     'Crawl space encapsulation in Lake Quivira, KS. Serving this private lake community on the Johnson/Wyandotte County line. Free inspection, lifetime warranty.',
   alternates: {

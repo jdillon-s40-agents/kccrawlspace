@@ -6,7 +6,7 @@ import FinancingOptions from '@/components/FinancingOptions';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: { absolute: 'Crawl Space Encapsulation Kansas City | KC Crawl Space Specialists' },
+  title: { absolute: 'Crawl Space Encapsulation Kansas City | 4.9★ | Free Inspection' },
   description: 'Fix musty odors, moisture & wet insulation under your Kansas City home. 20-mil vapor barrier, full encapsulation, mold treatment. Free inspection.',
   alternates: {
     canonical: 'https://www.crawlspacekc.com/crawl-space-encapsulation-kansas-city/',

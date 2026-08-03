@@ -5,7 +5,7 @@ import FinancingOptions from '@/components/FinancingOptions';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: { absolute: 'Crawl Space Encapsulation Fairway, KS | KC Crawl Space Specialists' },
+  title: { absolute: 'Crawl Space Encapsulation Fairway, KS | Lifetime Warranty' },
   description:
     'Crawl space encapsulation in Fairway, KS. Serving neighborhoods along State Line Road and throughout Johnson County. Free inspection, lifetime warranty.',
   alternates: {

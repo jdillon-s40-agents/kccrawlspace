@@ -5,7 +5,7 @@ import FinancingOptions from '@/components/FinancingOptions';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: { absolute: 'Crawl Space Encapsulation Liberty, MO | KC Crawl Space Specialists' },
+  title: { absolute: 'Crawl Space Encapsulation Liberty, MO | Free Inspection' },
   description:
     'Crawl space encapsulation in Liberty, MO. Serving Historic Liberty, Shoal Creek area, and all of Clay County. Older and newer homes. Free inspection · same-week service.',
   alternates: {

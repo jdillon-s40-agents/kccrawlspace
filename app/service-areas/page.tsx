@@ -4,8 +4,8 @@ import InspectionForm from '@/components/InspectionForm';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: { absolute: 'Crawl Space Encapsulation Near Me | 35 KC Cities | Lifetime Warranty' },
-  description: "KC's only dedicated crawlspace specialist — not a foundation company doing it as an upsell. Serving 35 cities across the Kansas City metro. Lifetime transferable warranty, 4.9★ rated, free inspection.",
+  title: { absolute: 'Crawl Space Encapsulation Near Me | 38 KC Cities | Lifetime Warranty' },
+  description: "KC's only dedicated crawlspace specialist — not a foundation company doing it as an upsell. Serving 38 cities across the Kansas City metro. Lifetime transferable warranty, 4.9★ rated, free inspection.",
   alternates: {
     canonical: 'https://www.crawlspacekc.com/service-areas/',
   }};
@@ -29,6 +29,7 @@ const moCities = [
   { label: 'Excelsior Springs, MO', href: '/crawl-space-encapsulation-excelsior-springs-mo/' },
   { label: 'Riverside, MO', href: '/crawl-space-encapsulation-riverside-mo/' },
   { label: 'Brookside, MO', href: '/crawl-space-encapsulation-brookside-mo/' },
+  { label: 'Lake Lotawana, MO', href: '/crawl-space-encapsulation-lake-lotawana-mo/' },
 ];
 
 const ksCities = [
@@ -49,6 +50,8 @@ const ksCities = [
   { label: 'Fairway, KS', href: '/crawl-space-encapsulation-fairway-ks/' },
   { label: 'Mission Woods, KS', href: '/crawl-space-encapsulation-mission-woods-ks/' },
   { label: 'Lake Quivira, KS', href: '/crawl-space-encapsulation-lake-quivira-ks/' },
+  { label: 'Mission Hills, KS', href: '/crawl-space-encapsulation-mission-hills-ks/' },
+  { label: 'Paola, KS', href: '/crawl-space-encapsulation-paola-ks/' },
 ];
 
 const coreServices = [

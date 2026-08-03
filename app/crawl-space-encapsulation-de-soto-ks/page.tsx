@@ -5,7 +5,7 @@ import FinancingOptions from '@/components/FinancingOptions';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: { absolute: 'Crawl Space Encapsulation De Soto, KS | KC Crawl Space Specialists' },
+  title: { absolute: 'Crawl Space Encapsulation De Soto, KS | Lifetime Warranty' },
   description:
     'Crawl space encapsulation in De Soto, KS. Southwest Johnson County near K-10 corridor. Older and newer homes. Lifetime warranty. Free inspection.',
   alternates: {

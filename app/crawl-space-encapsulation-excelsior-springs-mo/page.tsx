@@ -5,7 +5,7 @@ import FinancingOptions from '@/components/FinancingOptions';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: { absolute: 'Crawl Space Encapsulation Excelsior Springs, MO | KC Crawl Space Specialists' },
+  title: { absolute: 'Crawl Space Encapsulation Excelsior Springs, MO | Free Inspection' },
   description:
     'Crawl space encapsulation in Excelsior Springs, MO. Serving the historic downtown, Fishing River area, and all of Clay and Ray County. Free inspection.',
   alternates: {

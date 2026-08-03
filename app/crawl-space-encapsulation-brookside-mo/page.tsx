@@ -5,7 +5,7 @@ import FinancingOptions from '@/components/FinancingOptions';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: { absolute: 'Crawl Space Encapsulation Brookside, Kansas City MO | KC Crawl Space Specialists' },
+  title: { absolute: 'Crawl Space Encapsulation Brookside, Kansas City MO | Free Inspection' },
   description:
     'Crawl space encapsulation in Brookside, Kansas City, MO. Serving the Brookside shops district and surrounding 1920s-40s bungalow neighborhoods. Free inspection.',
   alternates: {
