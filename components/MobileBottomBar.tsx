@@ -1,5 +1,6 @@
-import Link from 'next/link';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
+
+const SMS_HREF = 'sms:+18169622111?&body=' + encodeURIComponent('Jason, I have a question about my crawl space');
 
 export default function MobileBottomBar() {
   return (
@@ -54,8 +55,8 @@ export default function MobileBottomBar() {
           {PHONE}
         </a>
 
-        <Link
-          href="/contact"
+        <a
+          href={SMS_HREF}
           style={{
             flex: 1,
             display: 'flex',
@@ -74,10 +75,10 @@ export default function MobileBottomBar() {
           }}
         >
           <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#0D0D0D" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-            <rect x="3" y="4" width="18" height="18" rx="2" /><line x1="16" y1="2" x2="16" y2="6" /><line x1="8" y1="2" x2="8" y2="6" /><line x1="3" y1="10" x2="21" y2="10" />
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
           </svg>
-          Get Estimate
-        </Link>
+          Text Jason
+        </a>
       </div>
     </>
   );
