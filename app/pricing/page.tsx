@@ -356,7 +356,7 @@ export default function PricingPage() {
             <div style={{ font: "600 13px 'Inter',sans-serif", letterSpacing: '.14em', textTransform: 'uppercase' as const, color: '#1B3A6B', marginBottom: 10 }}>The Math</div>
             <h2 style={{ fontFamily: "'Barlow Condensed',sans-serif", fontWeight: 800, fontSize: 'clamp(26px,5vw,42px)', lineHeight: 1.04, textTransform: 'uppercase' as const, margin: '0 0 16px', color: '#0D0D0D' }}>Why Our Pricing Makes Sense</h2>
             <p style={{ fontSize: 16, lineHeight: 1.7, color: '#4b5563', margin: '0 0 14px' }}>
-              The big chains — Groundworks, Thrasher — typically quote <strong style={{ color: '#0D0D0D' }}>$1,500–$3,000 more</strong> than us for comparable work. They carry corporate overhead, franchise fees, and national ad budgets. You pay for their ads. We&apos;re KC-owned, our overhead is lean, and our lifetime warranty is something no chain will match.
+              National franchise chains typically carry corporate overhead, franchise fees, and national ad budgets that get baked into their quotes. We&apos;re KC-owned, our overhead is lean, and our lifetime warranty stands on its own.
             </p>
             <div style={{ background: '#fef2f2', border: '1px solid #fecaca', borderRadius: 12, padding: 20, margin: '20px 0' }}>
               <div style={{ font: "800 14px 'Inter',sans-serif", color: '#DC2626', marginBottom: 12, textTransform: 'uppercase' as const, letterSpacing: '.04em' }}>The cost of waiting</div>

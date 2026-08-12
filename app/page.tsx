@@ -18,7 +18,7 @@ const reviews = [
     location: 'Raytown, MO',
   },
   {
-    text: '"I called Groundworks first — three-week wait and a quote that felt way too high. KC Crawl Space Specialists came out in 48 hours, and their Better package was $1,400 less. Same warranty. Way better service."',
+    text: '"I got a couple other quotes first with long wait times and prices that felt too high. KC Crawl Space Specialists came out in 48 hours with a fair price on their Better package and the same lifetime warranty. Way better experience."',
     name: 'Robert J.',
     location: 'Belton, MO',
   },
