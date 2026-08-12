@@ -91,6 +91,20 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             alt=""
           />
         </noscript>
+        <Script id="taboola-pixel" strategy="afterInteractive">
+          {`
+            window._tfa = window._tfa || [];
+            window._tfa.push({notify: 'event', name: 'page_view', id: 2088674});
+            !function (t, f, a, x) {
+                   if (!document.getElementById(x)) {
+                      t.async = 1;t.src = a;t.id=x;f.parentNode.insertBefore(t, f);
+                   }
+            }(document.createElement('script'),
+            document.getElementsByTagName('script')[0],
+            '//cdn.taboola.com/libtrc/unip/2088674/tfa.js',
+            'tb_tfa_script');
+          `}
+        </Script>
         <Header />
         <main>{children}</main>
         <Footer />
