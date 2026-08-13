@@ -45,6 +45,15 @@ export default function CrawlSpaceServicesLandingPage() {
   return (
     <div style={{ background: '#0D0D0D', overflowX: 'hidden' }}>
 
+      {/* OFFER BANNER */}
+      <div style={{ background: '#F5A623', padding: '10px 16px', textAlign: 'center' }}>
+        <Link href="#inspection" style={{ textDecoration: 'none' }}>
+          <p style={{ margin: 0, font: "800 14px 'Inter',sans-serif", color: '#0D0D0D', lineHeight: 1.4 }}>
+            🎁 LIMITED OFFER — The next 10 people to fill out the form and schedule encapsulation get a FREE dehumidifier
+          </p>
+        </Link>
+      </div>
+
       {/* HERO */}
       <section style={{ background: 'radial-gradient(110% 80% at 50% 0%, rgba(245,166,35,.14) 0%, rgba(245,166,35,0) 55%), #0D0D0D', padding: 'clamp(40px,7vw,80px) clamp(16px,5vw,24px) clamp(36px,6vw,64px)' }}>
         <div style={{ maxWidth: 780, margin: '0 auto', textAlign: 'center' }}>
@@ -173,6 +182,11 @@ export default function CrawlSpaceServicesLandingPage() {
             </h2>
             <p style={{ fontSize: 16, color: '#9CA3AF', maxWidth: '50ch', margin: '0 auto' }}>
               Repair, water removal, sump pump, dehumidifier, or full encapsulation — tell us what's going on and we'll give you honest options.
+            </p>
+          </div>
+          <div style={{ background: 'rgba(245,166,35,.1)', border: '1.5px solid rgba(245,166,35,.4)', borderRadius: 14, padding: '16px 22px', marginBottom: 24, textAlign: 'center' }}>
+            <p style={{ margin: 0, font: "800 15px 'Inter',sans-serif", color: '#F5A623', lineHeight: 1.5 }}>
+              🎁 The next 10 people to fill out this form and schedule encapsulation get a FREE dehumidifier included.
             </p>
           </div>
           <div style={{ background: '#0D0D0D', border: '1px solid rgba(255,255,255,.1)', borderRadius: 18, padding: 'clamp(24px,4vw,40px)', marginBottom: 24 }}>
