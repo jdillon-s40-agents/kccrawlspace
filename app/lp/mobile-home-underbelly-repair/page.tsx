@@ -135,6 +135,60 @@ export default function MobileHomeUnderbellyLandingPage() {
         </div>
       </section>
 
+      {/* SKIRTING SPOTLIGHT */}
+      <section style={{ background: '#0D0D0D', padding: 'clamp(52px,8vw,88px) clamp(16px,5vw,24px)' }}>
+        <div style={{ maxWidth: 1000, margin: '0 auto' }}>
+          <div style={{ background: 'linear-gradient(135deg, rgba(91,141,239,.14), rgba(245,166,35,.08))', border: '1.5px solid rgba(91,141,239,.35)', borderRadius: 18, padding: 'clamp(28px,5vw,48px)' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(280px,1fr))', gap: 'clamp(28px,5vw,48px)', alignItems: 'center' }}>
+              <div>
+                <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'rgba(91,141,239,.14)', border: '1px solid rgba(91,141,239,.4)', borderRadius: 30, padding: '6px 14px', marginBottom: 18 }}>
+                  <span style={{ font: "700 11px 'Inter',sans-serif", letterSpacing: '.1em', textTransform: 'uppercase', color: '#5b8def' }}>Now Offering</span>
+                </div>
+                <h2 style={{ fontFamily: "'Barlow Condensed',sans-serif", fontWeight: 800, fontSize: 'clamp(26px,5vw,42px)', textTransform: 'uppercase', color: '#fff', margin: '0 0 16px', lineHeight: 1.05 }}>
+                  Skirting Replacement
+                </h2>
+                <p style={{ fontSize: 15.5, lineHeight: 1.7, color: '#c3d0e6', margin: '0 0 20px' }}>
+                  Cracked, missing, or storm-damaged skirting is one of the most common repairs we see. We install full standard or insulated skirting kits — new panels, J-channel, corner posts, and vents — usually in a single day.
+                </p>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: 10, marginBottom: 24 }}>
+                  {[
+                    'Standard vinyl skirting: $1,000–$2,500 single-wide',
+                    'Insulated skirting: adds another layer of energy efficiency & pipe protection',
+                    'Double-wide homes: $2,000–$4,000',
+                  ].map((t) => (
+                    <div key={t} style={{ display: 'flex', gap: 10, alignItems: 'flex-start' }}>
+                      <Check />
+                      <p style={{ fontSize: 14, color: '#e5e7eb', margin: 0, lineHeight: 1.5 }}>{t}</p>
+                    </div>
+                  ))}
+                </div>
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: 12 }}>
+                  <Link href="#inspection" style={{ display: 'inline-flex', alignItems: 'center', gap: 9, background: '#F5A623', color: '#0D0D0D', font: "800 15px 'Inter',sans-serif", textDecoration: 'none', padding: '13px 22px', borderRadius: 9, minHeight: 48 }}>
+                    Get a Free Skirting Quote
+                  </Link>
+                  <Link href="/mobile-home-skirting-kansas-city/" style={{ display: 'inline-flex', alignItems: 'center', gap: 9, background: 'transparent', border: '1.5px solid rgba(255,255,255,.25)', color: '#fff', font: "800 15px 'Inter',sans-serif", textDecoration: 'none', padding: '13px 22px', borderRadius: 9, minHeight: 48 }}>
+                    See Skirting Details →
+                  </Link>
+                </div>
+              </div>
+              <div style={{ background: 'rgba(255,255,255,.04)', border: '1px solid rgba(255,255,255,.1)', borderRadius: 14, padding: 24, textAlign: 'center' }}>
+                <div style={{ font: "700 12px 'Inter',sans-serif", letterSpacing: '.1em', textTransform: 'uppercase', color: '#9CA3AF', marginBottom: 12 }}>Two Options</div>
+                <div style={{ display: 'grid', gap: 12 }}>
+                  <div style={{ background: '#111827', border: '1px solid rgba(255,255,255,.08)', borderRadius: 10, padding: 16, textAlign: 'left' }}>
+                    <div style={{ font: "800 15px 'Inter',sans-serif", color: '#fff', marginBottom: 4 }}>Standard Skirting</div>
+                    <div style={{ fontSize: 13, color: '#9CA3AF' }}>Durable vinyl panels, full perimeter install</div>
+                  </div>
+                  <div style={{ background: '#111827', border: '1.5px solid #F5A623', borderRadius: 10, padding: 16, textAlign: 'left' }}>
+                    <div style={{ font: "800 15px 'Inter',sans-serif", color: '#F5A623', marginBottom: 4 }}>Insulated Skirting</div>
+                    <div style={{ fontSize: 13, color: '#e5e7eb' }}>Extra energy efficiency & pipe protection through winter</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* WHY US */}
       <section style={{ background: '#1B3A6B', padding: 'clamp(44px,7vw,72px) clamp(16px,5vw,24px)' }}>
         <div style={{ maxWidth: 720, margin: '0 auto', textAlign: 'center' }}>
