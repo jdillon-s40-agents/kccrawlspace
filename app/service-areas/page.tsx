@@ -63,6 +63,7 @@ const coreServices = [
   { label: 'Crawl Space Drainage & Sump Pump Kansas City', href: '/crawl-space-drainage-sump-pump-kansas-city/' },
   { label: 'Crawl Space Insulation Removal Kansas City', href: '/crawl-space-insulation-removal-kansas-city/' },
   { label: 'Crawl Space Encapsulation Cost Kansas City', href: '/crawl-space-encapsulation-cost-kansas-city/' },
+  { label: 'Sagging Floor Repair & Support Jacks Kansas City', href: '/crawl-space-sagging-floor-repair-kansas-city/' },
 ];
 
 function eyebrow(text: string, color: string) {
