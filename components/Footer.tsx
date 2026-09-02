@@ -152,7 +152,7 @@ export default function Footer() {
               Trust
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 11, fontSize: 14, color: '#9CA3AF' }}>
-              {['Licensed & Insured', 'Lifetime Warranty', '4.9★ Google Verified', 'KC Owned & Operated'].map((t) => (
+              {['Licensed & Insured', 'Lifetime Warranty', 'Same-Week Service', 'KC Owned & Operated'].map((t) => (
                 <span key={t} style={{ display: 'flex', gap: 8, alignItems: 'center' }}>
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16A34A" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
                     <polyline points="20 6 9 17 4 12" />
