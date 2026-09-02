@@ -5,8 +5,8 @@ import FinancingOptions from '@/components/FinancingOptions';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: { absolute: 'Crawl Space Repair Kansas City | Same-Week Service | 4.9★' },
-  description: 'Moisture damage, wet insulation, standing water, mold, or wood rot? We fix it — same-week appointments, lifetime transferable warranty, 4.9★ rated. Free inspection.',
+  title: { absolute: 'Crawl Space Repair Kansas City | Same-Week Service | Lifetime Warranty' },
+  description: 'Moisture damage, wet insulation, standing water, mold, or wood rot? We fix it — same-week appointments, lifetime transferable warranty. Free inspection.',
   alternates: {
     canonical: 'https://www.crawlspacekc.com/crawl-space-repair-kansas-city/',
   },

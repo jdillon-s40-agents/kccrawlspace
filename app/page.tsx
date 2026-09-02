@@ -100,7 +100,7 @@ export default function HomePage() {
               />
             </div>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: 'clamp(8px,2vw,18px)', marginBottom: 30, maxWidth: 520 }}>
-              {[{ val: '10+', lbl: 'Years Exp.' }, { val: '4.9★', lbl: 'Google Rating' }, { val: 'Lifetime', lbl: 'Warranty', small: true }, { val: '48hr', lbl: 'Service' }].map((s) => (
+              {[{ val: '10+', lbl: 'Years Exp.' }, { val: '38', lbl: 'Cities Served' }, { val: 'Lifetime', lbl: 'Warranty', small: true }, { val: '48hr', lbl: 'Service' }].map((s) => (
                 <div key={s.lbl}>
                   <div style={{ fontFamily: "'Barlow Condensed',sans-serif", fontWeight: 800, fontSize: s.small ? 'clamp(22px,4vw,32px)' : 'clamp(28px,5vw,40px)', color: '#F5A623', lineHeight: 1 }}>{s.val}</div>
                   <div style={{ fontSize: 11, fontWeight: 600, letterSpacing: '.04em', textTransform: 'uppercase' as const, color: '#9CA3AF', marginTop: 3 }}>{s.lbl}</div>

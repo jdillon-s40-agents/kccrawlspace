@@ -5,7 +5,7 @@ import FinancingOptions from '@/components/FinancingOptions';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: { absolute: 'Crawl Space Encapsulation Kansas City, MO | 4.9★ | Lifetime Warranty' },
+  title: { absolute: 'Crawl Space Encapsulation Kansas City, MO | Free Inspection | Lifetime Warranty' },
   description:
     "Kansas City, MO's only dedicated crawlspace specialist. Serving Waldo, Brookside, Westport, Hyde Park, Northland & all KCMO neighborhoods. Lifetime transferable warranty. Free inspection.",
   alternates: {

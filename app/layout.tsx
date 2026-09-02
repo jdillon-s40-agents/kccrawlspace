@@ -51,11 +51,6 @@ const localBusiness = {
   },
   areaServed: 'Kansas City Metro',
   priceRange: '$$',
-  aggregateRating: {
-    '@type': 'AggregateRating',
-    ratingValue: '4.9',
-    reviewCount: '50',
-  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

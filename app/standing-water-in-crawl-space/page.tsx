@@ -7,7 +7,7 @@ import { PHONE, PHONE_HREF } from '@/lib/constants';
 export const metadata: Metadata = {
   title: { absolute: 'Standing Water in Crawl Space? Same-Week Fix | Kansas City' },
   description:
-    'Water under your home after rain? We remove it, install drainage and a sump pump, and stop it for good — same-week service, 4.9★ rated, lifetime transferable warranty. Free inspection.',
+    'Water under your home after rain? We remove it, install drainage and a sump pump, and stop it for good — same-week service, lifetime transferable warranty. Free inspection.',
   alternates: {
     canonical: 'https://www.crawlspacekc.com/standing-water-in-crawl-space/',
   }};

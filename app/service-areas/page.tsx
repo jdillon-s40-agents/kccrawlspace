@@ -5,7 +5,7 @@ import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
   title: { absolute: 'Crawl Space Encapsulation Near Me | 38 KC Cities | Lifetime Warranty' },
-  description: "KC's only dedicated crawlspace specialist — not a foundation company doing it as an upsell. Serving 38 cities across the Kansas City metro. Lifetime transferable warranty, 4.9★ rated, free inspection.",
+  description: "KC's only dedicated crawlspace specialist — not a foundation company doing it as an upsell. Serving 38 cities across the Kansas City metro. Lifetime transferable warranty, free inspection.",
   alternates: {
     canonical: 'https://www.crawlspacekc.com/service-areas/',
   }};
