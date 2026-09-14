@@ -179,7 +179,7 @@ export default function MobileHomesPage() {
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(260px,1fr))', gap: 16 }}>
             {[
-              { title: 'Belly Wrap & Insulation', body: 'Full belly board and insulation replacement — the core of every underbelly job.', href: '#park', label: 'See what’s included ↑' },
+              { title: 'Belly Wrap & Insulation', body: 'Full belly board and insulation replacement — the core of every underbelly job.', href: '/mobile-home-underbelly-repair-kansas-city/', label: 'See underbelly repair →' },
               { title: 'Ductwork Repair & Replacement', body: 'Crushed or disconnected flex duct fixed or replaced while the underbelly is already open.', href: '/mobile-home-ductwork-repair-kansas-city/', label: 'See ductwork repair →' },
               { title: 'Skirting & Insulated Skirting', body: 'New or repaired skirting, with insulated options for maximum energy efficiency.', href: '/mobile-home-skirting-kansas-city/', label: 'See skirting options →' },
             ].map((s) => (

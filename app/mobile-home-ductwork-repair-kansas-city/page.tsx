@@ -259,7 +259,7 @@ export default function MobileHomeDuctworkRepairPage() {
           <h2 style={{ fontFamily: "'Barlow Condensed',sans-serif", fontWeight: 800, fontSize: 'clamp(24px,4vw,36px)', textTransform: 'uppercase' as const, color: '#0D0D0D', margin: '0 0 28px' }}>More Mobile Home Solutions</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill,minmax(220px,1fr))', gap: 14 }}>
             {[
-              { label: 'Mobile Home Underbelly Repair', href: '/mobile-homes/' },
+              { label: 'Mobile Home Underbelly Repair', href: '/mobile-home-underbelly-repair-kansas-city/' },
               { label: 'Skirting & Insulated Skirting', href: '/mobile-home-skirting-kansas-city/' },
               { label: 'Crawl Space Dehumidifier Installation', href: '/crawl-space-dehumidifier-kansas-city/' },
             ].map((link) => (
