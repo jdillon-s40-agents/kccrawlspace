@@ -5,10 +5,10 @@ import FinancingOptions from '@/components/FinancingOptions';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: { absolute: 'Mobile Home Skirting Kansas City | Insulated Skirting Installation' },
-  description: 'Mobile home skirting installation and repair in Kansas City — standard and insulated options. Stop cold floors, frozen pipes, and pest entry. Free estimate.',
+  title: { absolute: 'Metal Skirting Replacement Kansas City | Vinyl-to-Metal Upgrade' },
+  description: 'Cracked or warped vinyl skirting? Replace it with durable steel or aluminum skirting backed by a lifetime warranty. Free estimate in Kansas City.',
   alternates: {
-    canonical: 'https://www.crawlspacekc.com/mobile-home-skirting-kansas-city/',
+    canonical: 'https://www.crawlspacekc.com/mobile-home-metal-skirting-kansas-city/',
   }};
 
 function Check({ color = '#16A34A', size = 16 }: { color?: string; size?: number }) {
@@ -29,38 +29,37 @@ function XMark({ size = 16 }: { size?: number }) {
 
 const faqItems = [
   {
-    question: 'What is the difference between standard and insulated mobile home skirting?',
+    question: 'Why replace vinyl skirting with metal?',
     answer:
-      'Standard skirting is a solid panel — usually vinyl — that closes off the space under the home from the outside. Insulated skirting adds a foam core inside that panel, which slows heat loss through the underbelly, protects plumbing from freezing, and reduces drafts coming up through the floor. It costs more upfront but pays back in lower winter heating bills.',
+      "Vinyl cracks, warps, and fades over time — especially through KC's hot summers and cold winters. Steel and aluminum skirting hold their shape in extreme temperatures, resist pests, and don't become brittle with age the way vinyl does. It costs more upfront, but it's a one-time replacement rather than a recurring one.",
   },
   {
-    question: 'How much does mobile home skirting cost in Kansas City?',
+    question: 'Will metal skirting rust?',
     answer:
-      'Standard vinyl skirting typically runs $1,000–$2,500 for a single-wide and $2,000–$4,000 for a double-wide, installed. Insulated skirting adds roughly 20–40% on top of that. Exact cost depends on linear footage around the home, ground slope, and whether access doors or vents are added. Written quotes provided at inspection.',
+      'Quality galvanized steel and aluminum panels are built to resist rust and corrosion, and most come with a manufacturer finish warranty of 20-40 years against fading and corrosion. We install products backed by strong manufacturer warranties, and back our own installation with a lifetime workmanship warranty on top of that.',
   },
   {
-    question: 'Can skirting be repaired instead of fully replaced?',
+    question: 'What does a lifetime warranty actually cover?',
     answer:
-      'Yes, if the damage is limited to a few panels — storm damage, a vehicle backing into it, or a section pests tore through. We assess during the free inspection whether a repair or full replacement makes more sense for your budget.',
+      "Our lifetime transferable warranty covers our workmanship — if the installation fails, we come back and fix it at no charge, for as long as you or a future owner owns the home. That's on top of whatever finish/material warranty the panel manufacturer provides. Most competitors only mention the manufacturer's limited-year warranty; we back the install itself for life.",
   },
   {
-    question: 'Does skirting need vents?',
+    question: 'How much does metal skirting cost compared to vinyl?',
     answer:
-      'Yes, in most cases. Skirting needs some ventilation to prevent moisture buildup underneath the home, even when insulated. We size and place vents correctly so you get the energy benefit without trapping humidity.',
+      'Metal panels run more than vinyl upfront — expect $1-4 per square foot in material versus vinyl\'s lower cost per panel — but metal typically lasts decades longer without cracking, warping, or needing replacement. For many homeowners replacing failed vinyl for the second or third time, metal ends up being the better long-term value.',
   },
   {
-    question: 'Will new skirting stop my pipes from freezing?',
+    question: 'Do I need to remove all the old vinyl first?',
     answer:
-      'Skirting alone helps by blocking wind, but insulated skirting paired with a repaired underbelly (belly board and insulation) is what actually protects plumbing through a Kansas City winter. If your pipes have frozen before, we recommend addressing both together.',
+      'Yes — we remove the damaged or failing vinyl skirting completely before installing new steel or aluminum panels, so the new skirting sits flush and properly secured rather than being installed over old, uneven material.',
   },
   {
-    question: 'How long does skirting installation take?',
-    answer:
-      'Most single-wide homes are done in a single day. Double-wides or homes needing belly repair alongside skirting may take 1–2 days.',
+    question: 'How long does a metal skirting replacement take?',
+    answer: 'Most single-wide and double-wide homes are completed in a single day, depending on perimeter length and site access.',
   },
 ];
 
-export default function MobileHomeSkirtingPage() {
+export default function MobileHomeMetalSkirtingPage() {
   return (
     <main>
       <script
@@ -74,7 +73,7 @@ export default function MobileHomeSkirtingPage() {
                 itemListElement: [
                   { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.crawlspacekc.com' },
                   { '@type': 'ListItem', position: 2, name: 'Mobile Homes', item: 'https://www.crawlspacekc.com/mobile-homes/' },
-                  { '@type': 'ListItem', position: 3, name: 'Mobile Home Skirting Kansas City', item: 'https://www.crawlspacekc.com/mobile-home-skirting-kansas-city/' },
+                  { '@type': 'ListItem', position: 3, name: 'Metal Skirting Replacement Kansas City', item: 'https://www.crawlspacekc.com/mobile-home-metal-skirting-kansas-city/' },
                 ],
               },
               {
@@ -91,12 +90,12 @@ export default function MobileHomeSkirtingPage() {
               },
               {
                 '@type': 'Service',
-                name: 'Mobile Home Skirting Installation',
-                serviceType: 'Mobile Home Skirting & Insulated Skirting',
+                name: 'Vinyl-to-Metal Skirting Replacement',
+                serviceType: 'Manufactured Home Metal Skirting Installation',
                 provider: { '@type': 'LocalBusiness', name: 'KC Crawl Space Specialists LLC' },
                 areaServed: { '@type': 'AdministrativeArea', name: 'Kansas City Metro' },
                 description:
-                  'Standard and insulated mobile home skirting installation and repair in Kansas City. Stops cold floors, protects plumbing from freezing, and blocks pest entry.',
+                  'Removal of cracked or failing vinyl skirting and replacement with durable steel or aluminum skirting, backed by a lifetime workmanship warranty.',
               },
               {
                 '@type': 'FAQPage',
@@ -111,15 +110,15 @@ export default function MobileHomeSkirtingPage() {
       <section style={{ background: '#0D0D0D', padding: 'clamp(52px,8vw,88px) clamp(16px,5vw,24px)' }}>
         <div style={{ maxWidth: 900, margin: '0 auto' }}>
           <p style={{ font: "600 13px 'Inter',sans-serif", letterSpacing: '.16em', textTransform: 'uppercase' as const, color: '#F5A623', margin: '0 0 16px' }}>
-            Mobile Home Skirting
+            Vinyl-to-Metal Upgrade
           </p>
           <h1 style={{ fontFamily: "'Barlow Condensed',sans-serif", fontWeight: 800, fontSize: 'clamp(36px,7vw,64px)', textTransform: 'uppercase' as const, color: '#fff', margin: '0 0 20px', lineHeight: 1.05 }}>
-            Mobile Home Skirting <span style={{ color: '#F5A623' }}>&amp; Insulated Skirting</span> in Kansas City
+            Metal Skirting Replacement <span style={{ color: '#F5A623' }}>in Kansas City</span>
           </h1>
           <p style={{ fontSize: 'clamp(15px,2vw,18px)', color: '#9CA3AF', margin: '0 0 32px', maxWidth: 680, lineHeight: 1.7 }}>
-            Damaged, missing, or non-insulated skirting is one of the fastest ways to lose heat, freeze pipes, and invite pests underneath your home. We install and repair both standard and insulated skirting across the KC metro.
+            Cracked, warped, or faded vinyl skirting? We remove it and replace it with durable steel or aluminum skirting built for KC winters — backed by a lifetime workmanship warranty, not just a limited-year manufacturer warranty.
           </p>
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: 12 }}>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: 12, marginBottom: 28 }}>
             <Link href="/contact" style={{ background: '#F5A623', color: '#0D0D0D', font: "800 16px 'Inter',sans-serif", padding: '16px 26px', borderRadius: 10, boxShadow: '0 12px 32px -10px rgba(245,166,35,.65)', textDecoration: 'none', display: 'inline-block' }}>
               Get a Free Estimate
             </Link>
@@ -130,26 +129,23 @@ export default function MobileHomeSkirtingPage() {
         </div>
       </section>
 
-      {/* Quick Answer */}
+      {/* Quick Answer / Warning Signs */}
       <section style={{ background: '#F9FAFB', padding: 'clamp(52px,8vw,88px) clamp(16px,5vw,24px)' }}>
         <div style={{ maxWidth: 900, margin: '0 auto' }}>
           <h2 style={{ fontFamily: "'Barlow Condensed',sans-serif", fontWeight: 800, fontSize: 'clamp(26px,5vw,42px)', textTransform: 'uppercase' as const, color: '#0D0D0D', margin: '0 0 20px' }}>
-            When Does a Mobile Home Need New Skirting?
+            Signs It's Time to Replace Vinyl With Metal
           </h2>
           <p style={{ fontSize: 16, color: '#4b5563', lineHeight: 1.75, margin: '0 0 32px', maxWidth: 760 }}>
-            Skirting needs attention when panels are cracked, missing, or bowed out, when cold air is noticeably coming up through the floor, or when the current skirting has no insulation at all. Skirting is also the first thing worth upgrading if you&apos;re already having belly board or insulation repaired — doing both at once saves a second site visit.
-          </p>
-          <p style={{ font: "600 13px 'Inter',sans-serif", letterSpacing: '.16em', textTransform: 'uppercase' as const, color: '#1B3A6B', margin: '0 0 16px' }}>
-            Warning Signs
+            Vinyl skirting is affordable up front, but it doesn't hold up forever — especially through KC's hot summers and cold winters. Once it starts cracking or warping, it usually needs to be replaced again within a few years. Metal is a one-time upgrade.
           </p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill,minmax(280px,1fr))', gap: 12 }}>
             {[
-              'Cracked, bowed, or missing panels',
-              'Cold drafts along the floor near exterior walls',
-              'Visible gaps at the ground line',
-              'No insulation in the current skirting',
-              'Pests getting in through damaged sections',
-              'Frozen pipes in past winters',
+              'Cracked, brittle, or warped panels',
+              'Faded or discolored vinyl',
+              'Panels popping out of track in high wind',
+              'Storm or impact damage',
+              'Pests getting in through gaps or cracks',
+              'Already replaced vinyl once or twice before',
             ].map((sign) => (
               <div key={sign} style={{ display: 'flex', gap: 10, alignItems: 'flex-start', background: '#fff', border: '1px solid #E5E7EB', borderRadius: 10, padding: '14px 16px' }}>
                 <XMark size={16} />
@@ -160,38 +156,51 @@ export default function MobileHomeSkirtingPage() {
         </div>
       </section>
 
-      {/* Standard vs Insulated */}
+      {/* Vinyl vs Metal */}
       <section style={{ background: '#0D0D0D', padding: 'clamp(52px,8vw,88px) clamp(16px,5vw,24px)' }}>
-        <div style={{ maxWidth: 1000, margin: '0 auto' }}>
+        <div style={{ maxWidth: 900, margin: '0 auto' }}>
           <p style={{ font: "600 13px 'Inter',sans-serif", letterSpacing: '.16em', textTransform: 'uppercase' as const, color: '#F5A623', margin: '0 0 12px' }}>
-            Choosing the Right Skirting
+            The Comparison
           </p>
           <h2 style={{ fontFamily: "'Barlow Condensed',sans-serif", fontWeight: 800, fontSize: 'clamp(26px,5vw,42px)', textTransform: 'uppercase' as const, color: '#fff', margin: '0 0 32px' }}>
-            Standard vs. Insulated Skirting
+            Vinyl vs. Metal Skirting
           </h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(280px,1fr))', gap: 16 }}>
             <div style={{ background: '#111827', borderRadius: 12, padding: 24, border: '1px solid rgba(255,255,255,.08)' }}>
-              <h3 style={{ fontFamily: "'Barlow Condensed',sans-serif", fontWeight: 700, fontSize: 20, textTransform: 'uppercase' as const, color: '#F5A623', margin: '0 0 10px' }}>Standard Skirting</h3>
-              <p style={{ fontSize: 15, color: '#9CA3AF', lineHeight: 1.7, margin: '0 0 14px' }}>
-                Solid vinyl or metal panels that close off the space beneath the home from view, wind, and pests. Lower upfront cost, no meaningful thermal benefit on its own.
-              </p>
-              <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: 8 }}>
-                {['Blocks pests and debris', 'Improves curb appeal', 'Lower material cost'].map((i) => (
-                  <li key={i} style={{ display: 'flex', gap: 9, fontSize: 14, color: '#e5e7eb' }}><Check size={16} />{i}</li>
-                ))}
-              </ul>
+              <h3 style={{ fontFamily: "'Barlow Condensed',sans-serif", fontWeight: 700, fontSize: 20, textTransform: 'uppercase' as const, color: '#9CA3AF', margin: '0 0 10px' }}>Vinyl</h3>
+              <p style={{ fontSize: 15, color: '#9CA3AF', lineHeight: 1.7, margin: 0 }}>Lower upfront cost, wide color selection. Cracks, warps, and fades with age and temperature swings — often needs replacing every several years.</p>
             </div>
-            <div style={{ background: '#111827', borderRadius: 12, padding: 24, border: '2px solid #F5A623' }}>
-              <h3 style={{ fontFamily: "'Barlow Condensed',sans-serif", fontWeight: 700, fontSize: 20, textTransform: 'uppercase' as const, color: '#F5A623', margin: '0 0 10px' }}>Insulated Skirting</h3>
-              <p style={{ fontSize: 15, color: '#9CA3AF', lineHeight: 1.7, margin: '0 0 14px' }}>
-                Same solid panel, with a foam core that slows heat loss through the underbelly. Pairs with a repaired belly board and insulation for the biggest impact on winter heating bills.
-              </p>
-              <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: 8 }}>
-                {['Everything in Standard', 'Reduces floor drafts and heat loss', 'Protects plumbing from freezing', 'Lowers heating & cooling costs'].map((i) => (
-                  <li key={i} style={{ display: 'flex', gap: 9, fontSize: 14, color: '#e5e7eb' }}><Check size={16} color="#F5A623" />{i}</li>
-                ))}
-              </ul>
+            <div style={{ background: '#111827', borderRadius: 12, padding: 24, border: '1.5px solid #F5A623' }}>
+              <h3 style={{ fontFamily: "'Barlow Condensed',sans-serif", fontWeight: 700, fontSize: 20, textTransform: 'uppercase' as const, color: '#F5A623', margin: '0 0 10px' }}>Metal (Steel/Aluminum)</h3>
+              <p style={{ fontSize: 15, color: '#E2E8F0', lineHeight: 1.7, margin: 0 }}>Higher upfront cost, but resists cracking, warping, and pests. Holds up through KC winters and summers without losing shape. A one-time investment instead of a recurring one.</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Warranty */}
+      <section style={{ background: '#1B3A6B', padding: 'clamp(52px,8vw,88px) clamp(16px,5vw,24px)' }}>
+        <div style={{ maxWidth: 900, margin: '0 auto' }}>
+          <p style={{ font: "600 13px 'Inter',sans-serif", letterSpacing: '.16em', textTransform: 'uppercase' as const, color: '#F5A623', margin: '0 0 12px' }}>
+            Backed for Life
+          </p>
+          <h2 style={{ fontFamily: "'Barlow Condensed',sans-serif", fontWeight: 800, fontSize: 'clamp(26px,5vw,42px)', textTransform: 'uppercase' as const, color: '#fff', margin: '0 0 20px' }}>
+            Lifetime Warranty on the Install
+          </h2>
+          <p style={{ fontSize: 16, color: '#CBD5E1', lineHeight: 1.75, margin: '0 0 24px', maxWidth: 760 }}>
+            Most companies only point you to the panel manufacturer's limited-year finish warranty. We go further — our own installation is backed by a lifetime transferable warranty. If it fails because of how we installed it, we come back and fix it at no charge, for as long as you or a future owner owns the home.
+          </p>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
+            {[
+              'Old, damaged vinyl fully removed before install',
+              'Steel or aluminum panels installed flush and properly secured',
+              'Lifetime transferable warranty on our workmanship',
+            ].map((spec) => (
+              <div key={spec} style={{ background: 'rgba(255,255,255,.07)', borderRadius: 10, padding: '16px 20px', display: 'flex', gap: 12, alignItems: 'center', border: '1px solid rgba(255,255,255,.12)' }}>
+                <Check size={16} color="#F5A623" />
+                <span style={{ fontSize: 15, color: '#E2E8F0', lineHeight: 1.5 }}>{spec}</span>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -200,14 +209,13 @@ export default function MobileHomeSkirtingPage() {
       <section style={{ background: '#F9FAFB', padding: 'clamp(52px,8vw,88px) clamp(16px,5vw,24px)' }}>
         <div style={{ maxWidth: 900, margin: '0 auto' }}>
           <h2 style={{ fontFamily: "'Barlow Condensed',sans-serif", fontWeight: 800, fontSize: 'clamp(26px,5vw,42px)', textTransform: 'uppercase' as const, color: '#0D0D0D', margin: '0 0 28px' }}>
-            Mobile Home Skirting Cost in Kansas City
+            Metal Skirting Replacement Cost in Kansas City
           </h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill,minmax(220px,1fr))', gap: 14, marginBottom: 28 }}>
             {[
-              { label: 'Standard skirting, single-wide', range: '$1,000–$2,500', note: 'Installed, vinyl panels' },
-              { label: 'Standard skirting, double-wide', range: '$2,000–$4,000', note: 'Installed, vinyl panels' },
-              { label: 'Insulated skirting upgrade', range: '+20–40%', note: 'On top of standard pricing' },
-              { label: 'Access door / vents', range: '$50–$85 / $7–$25 ea', note: 'Added as needed' },
+              { label: 'Metal panel material', range: '$1–$4 / sq ft', note: 'Galvanized steel to premium aluminum' },
+              { label: 'Professional installation', range: '$200–$800+', note: 'Depends on home size & perimeter' },
+              { label: 'Old vinyl removal', range: 'Included', note: 'Full removal before new install' },
             ].map((item) => (
               <div key={item.label} style={{ background: '#0D0D0D', borderRadius: 12, padding: 20, border: '1px solid rgba(255,255,255,.07)' }}>
                 <p style={{ fontSize: 13, color: '#6B7280', margin: '0 0 6px', textTransform: 'uppercase' as const, letterSpacing: '.08em', fontWeight: 600 }}>{item.label}</p>
@@ -216,12 +224,9 @@ export default function MobileHomeSkirtingPage() {
               </div>
             ))}
           </div>
-          <p style={{ fontSize: 15, color: '#4b5563', lineHeight: 1.7, margin: '0 0 16px' }}>
-            Final cost depends on linear footage around the home, ground slope, and whether belly repair is needed alongside skirting. Written quotes provided at inspection.
+          <p style={{ fontSize: 15, color: '#4b5563', lineHeight: 1.7, margin: 0 }}>
+            Final cost depends on home perimeter, panel grade, and site access. Written quotes provided at inspection — we never quote sight unseen.
           </p>
-          <Link href="/mobile-homes/" style={{ color: '#1B3A6B', fontWeight: 700, fontSize: 15, textDecoration: 'underline' }}>
-            See full underbelly repair pricing →
-          </Link>
         </div>
       </section>
 
@@ -239,10 +244,9 @@ export default function MobileHomeSkirtingPage() {
           <h2 style={{ fontFamily: "'Barlow Condensed',sans-serif", fontWeight: 800, fontSize: 'clamp(24px,4vw,36px)', textTransform: 'uppercase' as const, color: '#0D0D0D', margin: '0 0 28px' }}>More Mobile Home Solutions</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill,minmax(220px,1fr))', gap: 14 }}>
             {[
-              { label: 'Mobile Home Underbelly Repair', href: '/mobile-home-underbelly-repair-kansas-city/' },
-              { label: 'Metal Skirting Replacement', href: '/mobile-home-metal-skirting-kansas-city/' },
+              { label: 'Standard & Insulated Vinyl Skirting', href: '/mobile-home-skirting-kansas-city/' },
+              { label: 'Underbelly Repair', href: '/mobile-home-underbelly-repair-kansas-city/' },
               { label: 'Ductwork Repair & Replacement', href: '/mobile-home-ductwork-repair-kansas-city/' },
-              { label: 'Crawl Space Encapsulation', href: '/crawl-space-encapsulation-kansas-city/' },
             ].map((link) => (
               <Link key={link.href} href={link.href} style={{ display: 'block', background: '#fff', border: '1px solid #E5E7EB', borderRadius: 10, padding: '18px 20px', color: '#1B3A6B', fontWeight: 700, fontSize: 15, textDecoration: 'none' }}>
                 {link.label} →
@@ -256,7 +260,7 @@ export default function MobileHomeSkirtingPage() {
       <section style={{ background: '#1B3A6B', padding: 'clamp(52px,8vw,88px) clamp(16px,5vw,24px)' }}>
         <div style={{ maxWidth: 900, margin: '0 auto' }}>
           <p style={{ font: "600 13px 'Inter',sans-serif", letterSpacing: '.16em', textTransform: 'uppercase' as const, color: '#F5A623', margin: '0 0 12px' }}>FAQ</p>
-          <h2 style={{ fontFamily: "'Barlow Condensed',sans-serif", fontWeight: 800, fontSize: 'clamp(26px,5vw,42px)', textTransform: 'uppercase' as const, color: '#fff', margin: '0 0 32px' }}>Mobile Home Skirting FAQ</h2>
+          <h2 style={{ fontFamily: "'Barlow Condensed',sans-serif", fontWeight: 800, fontSize: 'clamp(26px,5vw,42px)', textTransform: 'uppercase' as const, color: '#fff', margin: '0 0 32px' }}>Metal Skirting FAQ</h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
             {faqItems.map((item) => (
               <div key={item.question} style={{ background: '#0D0D0D', border: '1px solid rgba(255,255,255,.1)', borderRadius: 12, padding: '22px 24px' }}>
@@ -273,7 +277,7 @@ export default function MobileHomeSkirtingPage() {
         <div style={{ maxWidth: 680, margin: '0 auto' }}>
           <div style={{ textAlign: 'center', marginBottom: 32 }}>
             <h2 style={{ fontFamily: "'Barlow Condensed',sans-serif", fontWeight: 800, fontSize: 'clamp(30px,6vw,50px)', textTransform: 'uppercase' as const, margin: '0 0 12px', color: '#fff' }}>
-              Get a Free Skirting Estimate
+              Get a Free Metal Skirting Estimate
             </h2>
             <p style={{ fontSize: 16, color: '#9CA3AF', margin: 0 }}>No obligation. Same-week appointments available in Kansas City.</p>
           </div>
