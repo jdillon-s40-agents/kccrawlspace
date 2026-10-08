@@ -85,8 +85,8 @@ const faqItems = [
 ];
 
 const relatedLinks = [
-  { label: 'Crawl Space Encapsulation KC', href: '/crawl-space-encapsulation-kansas-city/' },
-  { label: 'Encapsulation Cost KC', href: '/crawl-space-encapsulation-cost-kansas-city/' },
+  { label: 'Crawl Space Encapsulation KC', href: '/crawl-space-encapsulation-kansas-city' },
+  { label: 'Encapsulation Cost KC', href: '/crawl-space-encapsulation-cost-kansas-city' },
   { label: 'About Us', href: '/about' },
   { label: 'Pricing', href: '/pricing' },
 ];
@@ -144,7 +144,7 @@ export default function LocalVsNationalCrawlSpaceCompanyPage() {
                     '@type': 'ListItem',
                     position: 2,
                     name: 'Local Specialist vs. National Franchise',
-                    item: 'https://www.crawlspacekc.com/local-vs-national-crawl-space-company-kansas-city/',
+                    item: 'https://www.crawlspacekc.com/local-vs-national-crawl-space-company-kansas-city',
                   },
                 ],
               },

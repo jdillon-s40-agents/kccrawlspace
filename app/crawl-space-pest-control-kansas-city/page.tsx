@@ -85,10 +85,10 @@ const faqItems = [
 ];
 
 const relatedLinks = [
-  { label: 'Crawl Space Encapsulation KC', href: '/crawl-space-encapsulation-kansas-city/' },
-  { label: 'Crawl Space Vents: Open or Closed?', href: '/crawl-space-vents-open-or-closed/' },
-  { label: 'Falling Insulation in Crawl Space', href: '/falling-insulation-in-crawl-space/' },
-  { label: 'Crawl Space Repair KC', href: '/crawl-space-repair-kansas-city/' },
+  { label: 'Crawl Space Encapsulation KC', href: '/crawl-space-encapsulation-kansas-city' },
+  { label: 'Crawl Space Vents: Open or Closed?', href: '/crawl-space-vents-open-or-closed' },
+  { label: 'Falling Insulation in Crawl Space', href: '/falling-insulation-in-crawl-space' },
+  { label: 'Crawl Space Repair KC', href: '/crawl-space-repair-kansas-city' },
 ];
 
 export default function CrawlSpacePestControlPage() {
@@ -108,7 +108,7 @@ export default function CrawlSpacePestControlPage() {
                     '@type': 'ListItem',
                     position: 2,
                     name: 'Crawl Space Pest & Rodent Control Kansas City',
-                    item: 'https://www.crawlspacekc.com/crawl-space-pest-control-kansas-city/',
+                    item: 'https://www.crawlspacekc.com/crawl-space-pest-control-kansas-city',
                   },
                 ],
               },

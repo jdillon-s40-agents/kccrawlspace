@@ -75,13 +75,13 @@ const faqItems = [
 ];
 
 const relatedServices = [
-  { label: 'Crawl Space Repair KC', href: '/crawl-space-repair-kansas-city/' },
-  { label: 'Vapor Barrier KC', href: '/crawl-space-vapor-barrier-kansas-city/' },
-  { label: 'Waterproofing KC', href: '/crawl-space-waterproofing-kansas-city/' },
-  { label: 'Dehumidifier KC', href: '/crawl-space-dehumidifier-kansas-city/' },
-  { label: 'Cost Calculator', href: '/crawl-space-encapsulation-cost-kansas-city/' },
-  { label: 'Pest & Rodent Sealing', href: '/crawl-space-pest-control-kansas-city/' },
-  { label: 'Free Inspection Explained', href: '/free-crawl-space-inspection-kansas-city/' },
+  { label: 'Crawl Space Repair KC', href: '/crawl-space-repair-kansas-city' },
+  { label: 'Vapor Barrier KC', href: '/crawl-space-vapor-barrier-kansas-city' },
+  { label: 'Waterproofing KC', href: '/crawl-space-waterproofing-kansas-city' },
+  { label: 'Dehumidifier KC', href: '/crawl-space-dehumidifier-kansas-city' },
+  { label: 'Cost Calculator', href: '/crawl-space-encapsulation-cost-kansas-city' },
+  { label: 'Pest & Rodent Sealing', href: '/crawl-space-pest-control-kansas-city' },
+  { label: 'Free Inspection Explained', href: '/free-crawl-space-inspection-kansas-city' },
 ];
 
 const includedItems = [
@@ -150,7 +150,7 @@ export default function CrawlSpaceEncapsulationKansasCity() {
             '@type': 'ListItem',
             position: 2,
             name: 'Crawl Space Encapsulation Kansas City',
-            item: 'https://www.crawlspacekc.com/crawl-space-encapsulation-kansas-city/',
+            item: 'https://www.crawlspacekc.com/crawl-space-encapsulation-kansas-city',
           },
         ],
       },
@@ -566,7 +566,7 @@ export default function CrawlSpaceEncapsulationKansasCity() {
             inspection. We provide written quotes before any work begins.
           </div>
           <Link
-            href="/crawl-space-encapsulation-cost-kansas-city/"
+            href="/crawl-space-encapsulation-cost-kansas-city"
             style={{
               color: '#1B3A6B',
               fontWeight: 700,

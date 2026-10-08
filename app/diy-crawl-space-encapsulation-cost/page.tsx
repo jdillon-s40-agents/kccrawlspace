@@ -35,12 +35,12 @@ const faqItems = [
 ];
 
 const otherGuides = [
-  { title: 'DIY vs. Professional Encapsulation', href: '/diy-vs-professional-crawl-space-encapsulation/' },
-  { title: 'DIY Vapor Barrier Cost', href: '/diy-crawl-space-vapor-barrier-kansas-city/' },
-  { title: 'Tools & Materials You Need', href: '/diy-crawl-space-encapsulation-tools-and-materials/' },
-  { title: 'DIY Mold Treatment', href: '/diy-crawl-space-mold-treatment-kansas-city/' },
-  { title: 'DIY Vent Sealing', href: '/diy-crawl-space-vent-sealing-kansas-city/' },
-  { title: 'DIY Dehumidifier Installation', href: '/diy-crawl-space-dehumidifier-installation-kansas-city/' },
+  { title: 'DIY vs. Professional Encapsulation', href: '/diy-vs-professional-crawl-space-encapsulation' },
+  { title: 'DIY Vapor Barrier Cost', href: '/diy-crawl-space-vapor-barrier-kansas-city' },
+  { title: 'Tools & Materials You Need', href: '/diy-crawl-space-encapsulation-tools-and-materials' },
+  { title: 'DIY Mold Treatment', href: '/diy-crawl-space-mold-treatment-kansas-city' },
+  { title: 'DIY Vent Sealing', href: '/diy-crawl-space-vent-sealing-kansas-city' },
+  { title: 'DIY Dehumidifier Installation', href: '/diy-crawl-space-dehumidifier-installation-kansas-city' },
 ];
 
 export default function DiyEncapsulationCostPage() {
@@ -56,7 +56,7 @@ export default function DiyEncapsulationCostPage() {
                 '@type': 'BreadcrumbList',
                 itemListElement: [
                   { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.crawlspacekc.com' },
-                  { '@type': 'ListItem', position: 2, name: 'DIY Crawl Space Encapsulation Cost', item: 'https://www.crawlspacekc.com/diy-crawl-space-encapsulation-cost/' },
+                  { '@type': 'ListItem', position: 2, name: 'DIY Crawl Space Encapsulation Cost', item: 'https://www.crawlspacekc.com/diy-crawl-space-encapsulation-cost' },
                 ],
               },
               {
@@ -149,7 +149,7 @@ export default function DiyEncapsulationCostPage() {
             Skip the range — get a materials list and cost built for your specific crawlspace, wherever you are.
           </p>
           <Link
-            href="/diy-crawl-space-kansas-city/#assessment-form"
+            href="/diy-crawl-space-kansas-city#assessment-form"
             style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: 9, background: '#1B3A6B', color: '#fff', font: "800 16px 'Inter',sans-serif", textDecoration: 'none', padding: '15px 26px', borderRadius: 10, minHeight: 52 }}
           >
             Get My DIY Game Plan ↓

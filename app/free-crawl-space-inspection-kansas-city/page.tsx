@@ -85,10 +85,10 @@ const faqItems = [
 ];
 
 const relatedLinks = [
-  { label: 'Crawl Space Encapsulation KC', href: '/crawl-space-encapsulation-kansas-city/' },
-  { label: 'Crawl Space Repair KC', href: '/crawl-space-repair-kansas-city/' },
-  { label: 'Crawl Space Waterproofing KC', href: '/crawl-space-waterproofing-kansas-city/' },
-  { label: 'Encapsulation Cost KC', href: '/crawl-space-encapsulation-cost-kansas-city/' },
+  { label: 'Crawl Space Encapsulation KC', href: '/crawl-space-encapsulation-kansas-city' },
+  { label: 'Crawl Space Repair KC', href: '/crawl-space-repair-kansas-city' },
+  { label: 'Crawl Space Waterproofing KC', href: '/crawl-space-waterproofing-kansas-city' },
+  { label: 'Encapsulation Cost KC', href: '/crawl-space-encapsulation-cost-kansas-city' },
 ];
 
 const whatWeCheck = [
@@ -165,7 +165,7 @@ export default function FreeCrawlSpaceInspectionPage() {
                     '@type': 'ListItem',
                     position: 2,
                     name: 'Free Crawl Space Inspection Kansas City',
-                    item: 'https://www.crawlspacekc.com/free-crawl-space-inspection-kansas-city/',
+                    item: 'https://www.crawlspacekc.com/free-crawl-space-inspection-kansas-city',
                   },
                 ],
               },

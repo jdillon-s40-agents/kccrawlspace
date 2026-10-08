@@ -97,7 +97,7 @@ const jsonLd = {
           '@type': 'ListItem',
           position: 2,
           name: 'Wet Crawl Space After Rain',
-          item: 'https://www.crawlspacekc.com/wet-crawl-space-after-rain/',
+          item: 'https://www.crawlspacekc.com/wet-crawl-space-after-rain',
         },
       ],
     },
@@ -625,7 +625,7 @@ export default function WetCrawlSpaceAfterRainPage() {
             gives you an exact written quote.
           </p>
           <Link
-            href="/crawl-space-encapsulation-cost-kansas-city/"
+            href="/crawl-space-encapsulation-cost-kansas-city"
             style={{ color: '#F5A623', fontSize: 15, fontWeight: 600, textDecoration: 'underline' }}
           >
             See full encapsulation cost breakdown →
@@ -678,10 +678,10 @@ export default function WetCrawlSpaceAfterRainPage() {
           </h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill,minmax(220px,1fr))', gap: 14 }}>
             {[
-              { label: 'Crawl Space Waterproofing', href: '/crawl-space-waterproofing-kansas-city/' },
-              { label: 'Crawl Space Drainage & Sump Pump', href: '/crawl-space-drainage-sump-pump-kansas-city/' },
-              { label: 'Crawl Space Encapsulation KC', href: '/crawl-space-encapsulation-kansas-city/' },
-              { label: 'Encapsulation Cost', href: '/crawl-space-encapsulation-cost-kansas-city/' },
+              { label: 'Crawl Space Waterproofing', href: '/crawl-space-waterproofing-kansas-city' },
+              { label: 'Crawl Space Drainage & Sump Pump', href: '/crawl-space-drainage-sump-pump-kansas-city' },
+              { label: 'Crawl Space Encapsulation KC', href: '/crawl-space-encapsulation-kansas-city' },
+              { label: 'Encapsulation Cost', href: '/crawl-space-encapsulation-cost-kansas-city' },
             ].map((link) => (
               <Link
                 key={link.href}

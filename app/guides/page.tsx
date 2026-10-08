@@ -13,139 +13,139 @@ export const metadata: Metadata = {
 const guides = [
   {
     title: 'DIY Crawl Space Encapsulation',
-    href: '/diy-crawl-space-kansas-city/',
+    href: '/diy-crawl-space-kansas-city',
     answer:
       'Can you encapsulate your own crawl space? Yes — with the right evaluation and a step-by-step plan built for your specific space, materials and all.',
   },
   {
     title: 'DIY Encapsulation Cost Breakdown',
-    href: '/diy-crawl-space-encapsulation-cost/',
+    href: '/diy-crawl-space-encapsulation-cost',
     answer:
       'The full component-by-component cost of a DIY crawl space encapsulation — $1,200-$3,000 in materials nationwide vs. $3,000-$15,000 professionally installed.',
   },
   {
     title: 'DIY Vapor Barrier Cost',
-    href: '/diy-crawl-space-vapor-barrier-kansas-city/',
+    href: '/diy-crawl-space-vapor-barrier-kansas-city',
     answer:
       'DIY vapor barrier materials run $375-$525 for a typical 1,500 sq ft crawlspace vs. $1,200-$4,000 professionally installed.',
   },
   {
     title: 'DIY vs. Professional Encapsulation',
-    href: '/diy-vs-professional-crawl-space-encapsulation/',
+    href: '/diy-vs-professional-crawl-space-encapsulation',
     answer:
       'An honest side-by-side comparison of cost, time, and risk to help you decide which approach fits your crawlspace.',
   },
   {
     title: 'DIY Tools & Materials List',
-    href: '/diy-crawl-space-encapsulation-tools-and-materials/',
+    href: '/diy-crawl-space-encapsulation-tools-and-materials',
     answer:
       'The full checklist of tools, materials, and safety gear for a DIY crawl space encapsulation project.',
   },
   {
     title: 'DIY Crawl Space Mold Treatment',
-    href: '/diy-crawl-space-mold-treatment-kansas-city/',
+    href: '/diy-crawl-space-mold-treatment-kansas-city',
     answer:
       'What actually works for small areas of crawl space mold, what doesn\'t, and when it\'s time to call a professional.',
   },
   {
     title: 'DIY Crawl Space Vent Sealing',
-    href: '/diy-crawl-space-vent-sealing-kansas-city/',
+    href: '/diy-crawl-space-vent-sealing-kansas-city',
     answer:
       'How to seal crawl space vents yourself — and the one mistake (sealing too early) that can make moisture worse.',
   },
   {
     title: 'DIY Dehumidifier Installation',
-    href: '/diy-crawl-space-dehumidifier-installation-kansas-city/',
+    href: '/diy-crawl-space-dehumidifier-installation-kansas-city',
     answer:
       'Placement, drainage, and electrical basics for installing your own crawl space dehumidifier — and why it needs a sealed crawlspace to work.',
   },
   {
     title: 'Wet Crawl Space After Rain',
-    href: '/wet-crawl-space-after-rain/',
+    href: '/wet-crawl-space-after-rain',
     answer:
       'A crawl space that gets wet after rain may have poor exterior drainage, foundation seepage, low spots under the home, clogged gutters, grading problems, or hydrostatic pressure.',
   },
   {
     title: 'Standing Water in Crawl Space',
-    href: '/standing-water-in-crawl-space/',
+    href: '/standing-water-in-crawl-space',
     answer:
       'Standing water is an urgent issue usually caused by poor drainage or a high water table, and should be removed and addressed before any vapor barrier or encapsulation work.',
   },
   {
     title: 'Crawl Space Smells Musty',
-    href: '/crawl-space-smells-musty/',
+    href: '/crawl-space-smells-musty',
     answer:
       'A musty crawl space smell usually means there is excess moisture, damp soil, mold growth, wet insulation, poor air sealing, or high humidity under the home.',
   },
   {
     title: 'Crawl Space Mold Warning Signs',
-    href: '/crawl-space-mold-warning-signs/',
+    href: '/crawl-space-mold-warning-signs',
     answer:
       'Common warning signs include musty odors, visible white or dark growth on wood, high humidity, damp insulation, condensation, and wood staining.',
   },
   {
     title: 'Falling Insulation in Crawl Space',
-    href: '/falling-insulation-in-crawl-space/',
+    href: '/falling-insulation-in-crawl-space',
     answer:
       'Insulation falls when it absorbs moisture from high humidity or water intrusion — a moisture symptom, not just an installation problem.',
   },
   {
     title: 'Cold Floors Above Crawl Space',
-    href: '/cold-floors-above-crawl-space/',
+    href: '/cold-floors-above-crawl-space',
     answer:
       'Cold floors are usually caused by missing or wet insulation, air leaks, and an unsealed crawl space letting outside air contact the subfloor.',
   },
   {
     title: 'Crawl Space Vents: Open or Closed?',
-    href: '/crawl-space-vents-open-or-closed/',
+    href: '/crawl-space-vents-open-or-closed',
     answer:
       'Open vents let humid outdoor air into the crawl space during warm months. In a sealed crawl space, vents are usually closed and sealed.',
   },
   {
     title: 'Crawl Space Vapor Barrier Thickness',
-    href: '/crawl-space-vapor-barrier-thickness/',
+    href: '/crawl-space-vapor-barrier-thickness',
     answer:
       'Vapor barriers commonly come in 6 mil, 10 mil, 12 mil, and 20 mil thicknesses — thicker reinforced barriers hold up better over time.',
   },
   {
     title: 'Encapsulation vs Vapor Barrier',
-    href: '/encapsulation-vs-vapor-barrier/',
+    href: '/encapsulation-vs-vapor-barrier',
     answer:
       'A vapor barrier covers the ground; full encapsulation also seals walls and vents, adds air sealing, drainage, and often a dehumidifier.',
   },
   {
     title: 'Do I Need a Crawl Space Dehumidifier?',
-    href: '/do-i-need-crawl-space-dehumidifier/',
+    href: '/do-i-need-crawl-space-dehumidifier',
     answer:
       'You may need one if humidity stays high after sealing, or if you notice musty odors, condensation, sweating pipes, or damp insulation.',
   },
   {
     title: 'Sagging Floor Repair',
-    href: '/crawl-space-sagging-floor-repair-kansas-city/',
+    href: '/crawl-space-sagging-floor-repair-kansas-city',
     answer:
       'Bouncy or sagging floors are usually caused by undersized or rot-weakened joists and support posts settling into weak soil — a structural, not cosmetic, issue.',
   },
   {
     title: 'Free Crawl Space Inspection',
-    href: '/free-crawl-space-inspection-kansas-city/',
+    href: '/free-crawl-space-inspection-kansas-city',
     answer:
       "What's actually included in a free inspection, what happens afterward, and why it isn't a high-pressure sales visit in disguise.",
   },
   {
     title: 'Crawl Space Pest & Rodent Control',
-    href: '/crawl-space-pest-control-kansas-city/',
+    href: '/crawl-space-pest-control-kansas-city',
     answer:
       'Mice, snakes, and insects get into crawl spaces through open vents and gaps. Sealing and encapsulation remove the entry points and conditions they need.',
   },
   {
     title: 'How to Choose a Crawl Space Contractor',
-    href: '/how-to-choose-a-crawl-space-contractor-kansas-city/',
+    href: '/how-to-choose-a-crawl-space-contractor-kansas-city',
     answer:
       'A vetting checklist covering licensing, written estimates, warranty terms, and red flags — since crawl space work is hard to inspect after it is sealed.',
   },
   {
     title: 'Local Specialist vs. National Franchise',
-    href: '/local-vs-national-crawl-space-company-kansas-city/',
+    href: '/local-vs-national-crawl-space-company-kansas-city',
     answer:
       'How independently owned local specialists and national home-services franchises differ in pricing, scheduling, and warranty backing.',
   },
@@ -164,7 +164,7 @@ export default function GuidesPage() {
                 '@type': 'BreadcrumbList',
                 itemListElement: [
                   { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.crawlspacekc.com' },
-                  { '@type': 'ListItem', position: 2, name: 'Guides', item: 'https://www.crawlspacekc.com/guides/' },
+                  { '@type': 'ListItem', position: 2, name: 'Guides', item: 'https://www.crawlspacekc.com/guides' },
                 ],
               },
               {

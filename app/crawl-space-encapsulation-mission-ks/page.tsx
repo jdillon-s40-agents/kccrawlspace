@@ -23,7 +23,7 @@ const jsonLd = {
           '@type': 'ListItem',
           position: 2,
           name: 'Mission KS Crawl Space Encapsulation',
-          item: 'https://www.crawlspacekc.com/crawl-space-encapsulation-mission-ks/',
+          item: 'https://www.crawlspacekc.com/crawl-space-encapsulation-mission-ks',
         },
       ],
     },
@@ -312,12 +312,12 @@ export default function MissionEncapsulationPage() {
           </h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(280px,1fr))', gap: 16 }}>
             {[
-              { label: 'Crawl Space Encapsulation', href: '/crawl-space-encapsulation-kansas-city/' },
-              { label: 'Vapor Barrier Installation', href: '/crawl-space-vapor-barrier-kansas-city/' },
-              { label: 'Crawl Space Waterproofing', href: '/crawl-space-waterproofing-kansas-city/' },
-              { label: 'Crawl Space Dehumidifier', href: '/crawl-space-dehumidifier-kansas-city/' },
-              { label: 'Drainage & Sump Pump', href: '/crawl-space-drainage-sump-pump-kansas-city/' },
-              { label: 'Insulation Removal', href: '/crawl-space-insulation-removal-kansas-city/' },
+              { label: 'Crawl Space Encapsulation', href: '/crawl-space-encapsulation-kansas-city' },
+              { label: 'Vapor Barrier Installation', href: '/crawl-space-vapor-barrier-kansas-city' },
+              { label: 'Crawl Space Waterproofing', href: '/crawl-space-waterproofing-kansas-city' },
+              { label: 'Crawl Space Dehumidifier', href: '/crawl-space-dehumidifier-kansas-city' },
+              { label: 'Drainage & Sump Pump', href: '/crawl-space-drainage-sump-pump-kansas-city' },
+              { label: 'Insulation Removal', href: '/crawl-space-insulation-removal-kansas-city' },
             ].map((svc) => (
               <Link
                 key={svc.href}

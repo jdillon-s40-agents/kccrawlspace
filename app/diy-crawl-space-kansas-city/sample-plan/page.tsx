@@ -48,7 +48,7 @@ export default function SampleGamePlanPage() {
             Built for your specific crawlspace — starting at $97.
           </p>
           <Link
-            href="/diy-crawl-space-kansas-city/#assessment-form"
+            href="/diy-crawl-space-kansas-city#assessment-form"
             style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: 9, background: '#1B3A6B', color: '#fff', font: "800 16px 'Inter',sans-serif", textDecoration: 'none', padding: '16px 28px', borderRadius: 10, minHeight: 54, marginBottom: 18 }}
           >
             Get My DIY Game Plan ↓

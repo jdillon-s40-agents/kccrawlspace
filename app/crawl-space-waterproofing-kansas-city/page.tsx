@@ -114,7 +114,7 @@ const schemaData = {
           '@type': 'ListItem',
           position: 2,
           name: 'Crawl Space Waterproofing Kansas City',
-          item: 'https://www.crawlspacekc.com/crawl-space-waterproofing-kansas-city/',
+          item: 'https://www.crawlspacekc.com/crawl-space-waterproofing-kansas-city',
         },
       ],
     },
@@ -615,7 +615,7 @@ export default function CrawlSpaceWaterproofingKansasCity() {
             Exact pricing requires inspection. We provide written quotes. No work begins until you approve the scope.
           </p>
           <Link
-            href="/crawl-space-encapsulation-cost-kansas-city/"
+            href="/crawl-space-encapsulation-cost-kansas-city"
             style={{ color: '#F5A623', fontSize: 15, fontWeight: 600, textDecoration: 'underline' }}
           >
             See full crawl space encapsulation cost breakdown →
@@ -740,12 +740,12 @@ export default function CrawlSpaceWaterproofingKansasCity() {
           </h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(200px,1fr))', gap: 14 }}>
             {[
-              { label: 'Crawl Space Encapsulation KC', href: '/crawl-space-encapsulation-kansas-city/' },
-              { label: 'Crawl Space Repair KC', href: '/crawl-space-repair-kansas-city/' },
-              { label: 'Drainage & Sump Pump', href: '/crawl-space-repair-kansas-city/' },
-              { label: 'Crawl Space Dehumidifier', href: '/crawl-space-dehumidifier-kansas-city/' },
-              { label: 'Encapsulation Cost', href: '/crawl-space-encapsulation-cost-kansas-city/' },
-              { label: 'Sagging Floor Repair', href: '/crawl-space-sagging-floor-repair-kansas-city/' },
+              { label: 'Crawl Space Encapsulation KC', href: '/crawl-space-encapsulation-kansas-city' },
+              { label: 'Crawl Space Repair KC', href: '/crawl-space-repair-kansas-city' },
+              { label: 'Drainage & Sump Pump', href: '/crawl-space-repair-kansas-city' },
+              { label: 'Crawl Space Dehumidifier', href: '/crawl-space-dehumidifier-kansas-city' },
+              { label: 'Encapsulation Cost', href: '/crawl-space-encapsulation-cost-kansas-city' },
+              { label: 'Sagging Floor Repair', href: '/crawl-space-sagging-floor-repair-kansas-city' },
             ].map((link) => (
               <Link
                 key={link.label}

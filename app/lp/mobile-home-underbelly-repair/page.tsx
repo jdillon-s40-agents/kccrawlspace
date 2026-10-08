@@ -166,7 +166,7 @@ export default function MobileHomeUnderbellyLandingPage() {
                   <Link href="#inspection" style={{ display: 'inline-flex', alignItems: 'center', gap: 9, background: '#F5A623', color: '#0D0D0D', font: "800 15px 'Inter',sans-serif", textDecoration: 'none', padding: '13px 22px', borderRadius: 9, minHeight: 48 }}>
                     Get a Free Skirting Quote
                   </Link>
-                  <Link href="/mobile-home-skirting-kansas-city/" style={{ display: 'inline-flex', alignItems: 'center', gap: 9, background: 'transparent', border: '1.5px solid rgba(255,255,255,.25)', color: '#fff', font: "800 15px 'Inter',sans-serif", textDecoration: 'none', padding: '13px 22px', borderRadius: 9, minHeight: 48 }}>
+                  <Link href="/mobile-home-skirting-kansas-city" style={{ display: 'inline-flex', alignItems: 'center', gap: 9, background: 'transparent', border: '1.5px solid rgba(255,255,255,.25)', color: '#fff', font: "800 15px 'Inter',sans-serif", textDecoration: 'none', padding: '13px 22px', borderRadius: 9, minHeight: 48 }}>
                     See Skirting Details →
                   </Link>
                 </div>

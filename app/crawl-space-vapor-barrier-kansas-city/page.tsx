@@ -78,7 +78,7 @@ const schemaData = {
           '@type': 'ListItem',
           position: 2,
           name: 'Crawl Space Vapor Barrier Kansas City',
-          item: 'https://www.crawlspacekc.com/crawl-space-vapor-barrier-kansas-city/',
+          item: 'https://www.crawlspacekc.com/crawl-space-vapor-barrier-kansas-city',
         },
       ],
     },
@@ -194,7 +194,7 @@ export default function CrawlSpaceVaporBarrierPage() {
                 Get a Free Estimate
               </Link>
               <Link
-                href="/crawl-space-encapsulation-kansas-city/"
+                href="/crawl-space-encapsulation-kansas-city"
                 style={{
                   background: 'transparent',
                   color: '#fff',
@@ -442,7 +442,7 @@ export default function CrawlSpaceVaporBarrierPage() {
             </p>
             <div style={{ display: 'flex', gap: 20, flexWrap: 'wrap' }}>
               <Link
-                href="/crawl-space-encapsulation-kansas-city/"
+                href="/crawl-space-encapsulation-kansas-city"
                 style={{
                   color: '#F5A623',
                   font: "700 15px 'Inter',sans-serif",
@@ -452,7 +452,7 @@ export default function CrawlSpaceVaporBarrierPage() {
                 Learn About Full Encapsulation →
               </Link>
               <Link
-                href="/crawl-space-encapsulation-kansas-city/"
+                href="/crawl-space-encapsulation-kansas-city"
                 style={{
                   color: '#9CA3AF',
                   font: "600 15px 'Inter',sans-serif",
@@ -838,7 +838,7 @@ export default function CrawlSpaceVaporBarrierPage() {
               ))}
             </ul>
             <Link
-              href="/crawl-space-encapsulation-cost-kansas-city/"
+              href="/crawl-space-encapsulation-cost-kansas-city"
               style={{
                 display: 'inline-block',
                 color: '#1B3A6B',
@@ -976,16 +976,16 @@ export default function CrawlSpaceVaporBarrierPage() {
               {[
                 {
                   label: 'Crawl Space Encapsulation KC',
-                  href: '/crawl-space-encapsulation-kansas-city/',
+                  href: '/crawl-space-encapsulation-kansas-city',
                 },
-                { label: 'Crawl Space Repair KC', href: '/crawl-space-repair-kansas-city/' },
+                { label: 'Crawl Space Repair KC', href: '/crawl-space-repair-kansas-city' },
                 {
                   label: 'Waterproofing KC',
-                  href: '/crawl-space-waterproofing-kansas-city/',
+                  href: '/crawl-space-waterproofing-kansas-city',
                 },
                 {
                   label: 'Encapsulation Cost KC',
-                  href: '/crawl-space-encapsulation-cost-kansas-city/',
+                  href: '/crawl-space-encapsulation-cost-kansas-city',
                 },
               ].map((link) => (
                 <Link

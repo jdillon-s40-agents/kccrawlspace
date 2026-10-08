@@ -75,7 +75,7 @@ const schemaData = {
           '@type': 'ListItem',
           position: 2,
           name: 'Crawl Space Dehumidifier Kansas City',
-          item: 'https://www.crawlspacekc.com/crawl-space-dehumidifier-kansas-city/',
+          item: 'https://www.crawlspacekc.com/crawl-space-dehumidifier-kansas-city',
         },
       ],
     },
@@ -548,7 +548,7 @@ export default function CrawlSpaceDehumidifierKansasCity() {
             We size the dehumidifier to your crawl space during inspection. Undersized units run constantly without achieving target humidity.
           </p>
           <Link
-            href="/crawl-space-encapsulation-cost-kansas-city/"
+            href="/crawl-space-encapsulation-cost-kansas-city"
             style={{ color: '#1B3A6B', fontSize: 15, fontWeight: 600, textDecoration: 'underline' }}
           >
             See full crawl space encapsulation cost breakdown →
@@ -614,11 +614,11 @@ export default function CrawlSpaceDehumidifierKansasCity() {
           </h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(200px,1fr))', gap: 14 }}>
             {[
-              { label: 'Crawl Space Encapsulation KC', href: '/crawl-space-encapsulation-kansas-city/' },
-              { label: 'Vapor Barrier KC', href: '/crawl-space-vapor-barrier-kansas-city/' },
-              { label: 'Waterproofing KC', href: '/crawl-space-waterproofing-kansas-city/' },
-              { label: 'Crawl Space Repair KC', href: '/crawl-space-repair-kansas-city/' },
-              { label: 'Encapsulation Cost', href: '/crawl-space-encapsulation-cost-kansas-city/' },
+              { label: 'Crawl Space Encapsulation KC', href: '/crawl-space-encapsulation-kansas-city' },
+              { label: 'Vapor Barrier KC', href: '/crawl-space-vapor-barrier-kansas-city' },
+              { label: 'Waterproofing KC', href: '/crawl-space-waterproofing-kansas-city' },
+              { label: 'Crawl Space Repair KC', href: '/crawl-space-repair-kansas-city' },
+              { label: 'Encapsulation Cost', href: '/crawl-space-encapsulation-cost-kansas-city' },
             ].map((link) => (
               <Link
                 key={link.label}

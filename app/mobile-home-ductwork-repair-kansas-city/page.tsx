@@ -73,8 +73,8 @@ export default function MobileHomeDuctworkRepairPage() {
                 '@type': 'BreadcrumbList',
                 itemListElement: [
                   { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.crawlspacekc.com' },
-                  { '@type': 'ListItem', position: 2, name: 'Mobile Homes', item: 'https://www.crawlspacekc.com/mobile-homes/' },
-                  { '@type': 'ListItem', position: 3, name: 'Mobile Home Ductwork Repair Kansas City', item: 'https://www.crawlspacekc.com/mobile-home-ductwork-repair-kansas-city/' },
+                  { '@type': 'ListItem', position: 2, name: 'Mobile Homes', item: 'https://www.crawlspacekc.com/mobile-homes' },
+                  { '@type': 'ListItem', position: 3, name: 'Mobile Home Ductwork Repair Kansas City', item: 'https://www.crawlspacekc.com/mobile-home-ductwork-repair-kansas-city' },
                 ],
               },
               {
@@ -239,7 +239,7 @@ export default function MobileHomeDuctworkRepairPage() {
           <p style={{ fontSize: 15, color: '#4b5563', lineHeight: 1.7, margin: '0 0 16px' }}>
             Final cost depends on home length, duct configuration, and how much of the run needs replacing. Written quotes provided at inspection.
           </p>
-          <Link href="/mobile-homes/" style={{ color: '#1B3A6B', fontWeight: 700, fontSize: 15, textDecoration: 'underline' }}>
+          <Link href="/mobile-homes" style={{ color: '#1B3A6B', fontWeight: 700, fontSize: 15, textDecoration: 'underline' }}>
             See full underbelly repair pricing →
           </Link>
         </div>
@@ -259,9 +259,9 @@ export default function MobileHomeDuctworkRepairPage() {
           <h2 style={{ fontFamily: "'Barlow Condensed',sans-serif", fontWeight: 800, fontSize: 'clamp(24px,4vw,36px)', textTransform: 'uppercase' as const, color: '#0D0D0D', margin: '0 0 28px' }}>More Mobile Home Solutions</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill,minmax(220px,1fr))', gap: 14 }}>
             {[
-              { label: 'Mobile Home Underbelly Repair', href: '/mobile-home-underbelly-repair-kansas-city/' },
-              { label: 'Skirting & Insulated Skirting', href: '/mobile-home-skirting-kansas-city/' },
-              { label: 'Crawl Space Dehumidifier Installation', href: '/crawl-space-dehumidifier-kansas-city/' },
+              { label: 'Mobile Home Underbelly Repair', href: '/mobile-home-underbelly-repair-kansas-city' },
+              { label: 'Skirting & Insulated Skirting', href: '/mobile-home-skirting-kansas-city' },
+              { label: 'Crawl Space Dehumidifier Installation', href: '/crawl-space-dehumidifier-kansas-city' },
             ].map((link) => (
               <Link key={link.href} href={link.href} style={{ display: 'block', background: '#fff', border: '1px solid #E5E7EB', borderRadius: 10, padding: '18px 20px', color: '#1B3A6B', fontWeight: 700, fontSize: 15, textDecoration: 'none' }}>
                 {link.label} →

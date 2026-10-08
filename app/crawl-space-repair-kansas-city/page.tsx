@@ -176,11 +176,11 @@ const commonProblems = [
 ];
 
 const relatedServices = [
-  { label: 'Encapsulation KC', href: '/crawl-space-encapsulation-kansas-city/' },
-  { label: 'Waterproofing KC', href: '/crawl-space-waterproofing-kansas-city/' },
-  { label: 'Vapor Barrier KC', href: '/crawl-space-vapor-barrier-kansas-city/' },
-  { label: 'Dehumidifier KC', href: '/crawl-space-dehumidifier-kansas-city/' },
-  { label: 'Sagging Floor Repair', href: '/crawl-space-sagging-floor-repair-kansas-city/' },
+  { label: 'Encapsulation KC', href: '/crawl-space-encapsulation-kansas-city' },
+  { label: 'Waterproofing KC', href: '/crawl-space-waterproofing-kansas-city' },
+  { label: 'Vapor Barrier KC', href: '/crawl-space-vapor-barrier-kansas-city' },
+  { label: 'Dehumidifier KC', href: '/crawl-space-dehumidifier-kansas-city' },
+  { label: 'Sagging Floor Repair', href: '/crawl-space-sagging-floor-repair-kansas-city' },
   { label: 'Insulation Removal', href: '/encapsulation' },
 ];
 
@@ -196,7 +196,7 @@ export default function CrawlSpaceRepairKansasCity() {
             '@type': 'ListItem',
             position: 2,
             name: 'Crawl Space Repair Kansas City',
-            item: 'https://www.crawlspacekc.com/crawl-space-repair-kansas-city/',
+            item: 'https://www.crawlspacekc.com/crawl-space-repair-kansas-city',
           },
         ],
       },
@@ -322,7 +322,7 @@ export default function CrawlSpaceRepairKansasCity() {
               Get a Free Estimate
             </Link>
             <Link
-              href="/crawl-space-encapsulation-kansas-city/"
+              href="/crawl-space-encapsulation-kansas-city"
               style={{
                 background: 'transparent',
                 color: '#fff',
@@ -669,7 +669,7 @@ export default function CrawlSpaceRepairKansasCity() {
             inspection. We provide written quotes before any work begins.
           </div>
           <Link
-            href="/crawl-space-encapsulation-cost-kansas-city/"
+            href="/crawl-space-encapsulation-cost-kansas-city"
             style={{
               color: '#F5A623',
               fontWeight: 700,

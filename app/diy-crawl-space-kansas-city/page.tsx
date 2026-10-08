@@ -92,7 +92,7 @@ export default function CrawlSpaceAssessmentPage() {
                     '@type': 'ListItem',
                     position: 2,
                     name: 'DIY Crawl Space Encapsulation',
-                    item: 'https://www.crawlspacekc.com/diy-crawl-space-kansas-city/',
+                    item: 'https://www.crawlspacekc.com/diy-crawl-space-kansas-city',
                   },
                 ],
               },
@@ -183,7 +183,7 @@ export default function CrawlSpaceAssessmentPage() {
           </Link>
           <div style={{ marginTop: 18 }}>
             <Link
-              href="/diy-crawl-space-kansas-city/sample-plan/"
+              href="/diy-crawl-space-kansas-city/sample-plan"
               style={{ color: '#9CA3AF', font: "700 14px 'Inter',sans-serif", textDecoration: 'underline', textUnderlineOffset: 4 }}
             >
               See a real sample game plan first →
@@ -325,13 +325,13 @@ export default function CrawlSpaceAssessmentPage() {
           </h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(220px,1fr))', gap: 12 }}>
             {[
-              { title: 'DIY Encapsulation Cost Breakdown', href: '/diy-crawl-space-encapsulation-cost/' },
-              { title: 'DIY Vapor Barrier Cost', href: '/diy-crawl-space-vapor-barrier-kansas-city/' },
-              { title: 'DIY vs. Professional Encapsulation', href: '/diy-vs-professional-crawl-space-encapsulation/' },
-              { title: 'Tools & Materials You Need', href: '/diy-crawl-space-encapsulation-tools-and-materials/' },
-              { title: 'DIY Mold Treatment', href: '/diy-crawl-space-mold-treatment-kansas-city/' },
-              { title: 'DIY Vent Sealing', href: '/diy-crawl-space-vent-sealing-kansas-city/' },
-              { title: 'DIY Dehumidifier Installation', href: '/diy-crawl-space-dehumidifier-installation-kansas-city/' },
+              { title: 'DIY Encapsulation Cost Breakdown', href: '/diy-crawl-space-encapsulation-cost' },
+              { title: 'DIY Vapor Barrier Cost', href: '/diy-crawl-space-vapor-barrier-kansas-city' },
+              { title: 'DIY vs. Professional Encapsulation', href: '/diy-vs-professional-crawl-space-encapsulation' },
+              { title: 'Tools & Materials You Need', href: '/diy-crawl-space-encapsulation-tools-and-materials' },
+              { title: 'DIY Mold Treatment', href: '/diy-crawl-space-mold-treatment-kansas-city' },
+              { title: 'DIY Vent Sealing', href: '/diy-crawl-space-vent-sealing-kansas-city' },
+              { title: 'DIY Dehumidifier Installation', href: '/diy-crawl-space-dehumidifier-installation-kansas-city' },
             ].map((g) => (
               <Link key={g.href} href={g.href} style={{ background: '#0D0D0D', border: '1px solid rgba(255,255,255,.1)', borderRadius: 10, padding: '16px 18px', color: '#e5e7eb', textDecoration: 'none', fontSize: 14.5, fontWeight: 700 }}>
                 {g.title} →

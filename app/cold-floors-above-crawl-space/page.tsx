@@ -85,10 +85,10 @@ const faqItems = [
 ];
 
 const relatedLinks = [
-  { label: 'Crawl Space Encapsulation KC', href: '/crawl-space-encapsulation-kansas-city/' },
-  { label: 'Insulation Removal KC', href: '/crawl-space-insulation-removal-kansas-city/' },
-  { label: 'Vents Open or Closed', href: '/crawl-space-vents-open-or-closed/' },
-  { label: 'Crawl Space Dehumidifier KC', href: '/crawl-space-dehumidifier-kansas-city/' },
+  { label: 'Crawl Space Encapsulation KC', href: '/crawl-space-encapsulation-kansas-city' },
+  { label: 'Insulation Removal KC', href: '/crawl-space-insulation-removal-kansas-city' },
+  { label: 'Vents Open or Closed', href: '/crawl-space-vents-open-or-closed' },
+  { label: 'Crawl Space Dehumidifier KC', href: '/crawl-space-dehumidifier-kansas-city' },
 ];
 
 export default function ColdFloorsAboveCrawlSpacePage() {
@@ -108,7 +108,7 @@ export default function ColdFloorsAboveCrawlSpacePage() {
                     '@type': 'ListItem',
                     position: 2,
                     name: 'Cold Floors Above Crawl Space',
-                    item: 'https://www.crawlspacekc.com/cold-floors-above-crawl-space/',
+                    item: 'https://www.crawlspacekc.com/cold-floors-above-crawl-space',
                   },
                 ],
               },

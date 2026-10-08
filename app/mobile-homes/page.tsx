@@ -41,7 +41,7 @@ export default function MobileHomesPage() {
                 '@type': 'BreadcrumbList',
                 itemListElement: [
                   { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.crawlspacekc.com' },
-                  { '@type': 'ListItem', position: 2, name: 'Mobile Home Underbelly Repair', item: 'https://www.crawlspacekc.com/mobile-homes/' },
+                  { '@type': 'ListItem', position: 2, name: 'Mobile Home Underbelly Repair', item: 'https://www.crawlspacekc.com/mobile-homes' },
                 ],
               },
               {
@@ -179,10 +179,10 @@ export default function MobileHomesPage() {
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(260px,1fr))', gap: 16 }}>
             {[
-              { title: 'Belly Wrap & Insulation', body: 'Full belly board and insulation replacement — the core of every underbelly job.', href: '/mobile-home-underbelly-repair-kansas-city/', label: 'See underbelly repair →' },
-              { title: 'Ductwork Repair & Replacement', body: 'Crushed or disconnected flex duct fixed or replaced while the underbelly is already open.', href: '/mobile-home-ductwork-repair-kansas-city/', label: 'See ductwork repair →' },
-              { title: 'Skirting & Insulated Skirting', body: 'New or repaired skirting, with insulated options for maximum energy efficiency.', href: '/mobile-home-skirting-kansas-city/', label: 'See skirting options →' },
-              { title: 'Metal Skirting Replacement', body: 'Swap cracked or warped vinyl for durable steel or aluminum, backed by a lifetime warranty.', href: '/mobile-home-metal-skirting-kansas-city/', label: 'See metal skirting →' },
+              { title: 'Belly Wrap & Insulation', body: 'Full belly board and insulation replacement — the core of every underbelly job.', href: '/mobile-home-underbelly-repair-kansas-city', label: 'See underbelly repair →' },
+              { title: 'Ductwork Repair & Replacement', body: 'Crushed or disconnected flex duct fixed or replaced while the underbelly is already open.', href: '/mobile-home-ductwork-repair-kansas-city', label: 'See ductwork repair →' },
+              { title: 'Skirting & Insulated Skirting', body: 'New or repaired skirting, with insulated options for maximum energy efficiency.', href: '/mobile-home-skirting-kansas-city', label: 'See skirting options →' },
+              { title: 'Metal Skirting Replacement', body: 'Swap cracked or warped vinyl for durable steel or aluminum, backed by a lifetime warranty.', href: '/mobile-home-metal-skirting-kansas-city', label: 'See metal skirting →' },
             ].map((s) => (
               <Link key={s.title} href={s.href} style={{ display: 'flex', flexDirection: 'column', background: '#0D0D0D', border: '1px solid rgba(255,255,255,.1)', borderRadius: 14, padding: 24, textDecoration: 'none' }}>
                 <div style={{ fontFamily: "'Barlow Condensed',sans-serif", fontWeight: 700, fontSize: 20, textTransform: 'uppercase' as const, color: '#fff', marginBottom: 8 }}>{s.title}</div>

@@ -85,10 +85,10 @@ const faqItems = [
 ];
 
 const relatedLinks = [
-  { label: 'Crawl Space Mold KC', href: '/crawl-space-mold-kansas-city/' },
-  { label: 'Musty Crawl Space', href: '/crawl-space-smells-musty/' },
-  { label: 'Dehumidifier KC', href: '/crawl-space-dehumidifier-kansas-city/' },
-  { label: 'Crawl Space Encapsulation KC', href: '/crawl-space-encapsulation-kansas-city/' },
+  { label: 'Crawl Space Mold KC', href: '/crawl-space-mold-kansas-city' },
+  { label: 'Musty Crawl Space', href: '/crawl-space-smells-musty' },
+  { label: 'Dehumidifier KC', href: '/crawl-space-dehumidifier-kansas-city' },
+  { label: 'Crawl Space Encapsulation KC', href: '/crawl-space-encapsulation-kansas-city' },
 ];
 
 export default function CrawlSpaceMoldWarningSignsPage() {
@@ -108,7 +108,7 @@ export default function CrawlSpaceMoldWarningSignsPage() {
                     '@type': 'ListItem',
                     position: 2,
                     name: 'Crawl Space Mold Warning Signs',
-                    item: 'https://www.crawlspacekc.com/crawl-space-mold-warning-signs/',
+                    item: 'https://www.crawlspacekc.com/crawl-space-mold-warning-signs',
                   },
                 ],
               },

@@ -85,10 +85,10 @@ const faqItems = [
 ];
 
 const relatedLinks = [
-  { label: 'Crawl Space Repair KC', href: '/crawl-space-repair-kansas-city/' },
-  { label: 'Crawl Space Waterproofing KC', href: '/crawl-space-waterproofing-kansas-city/' },
-  { label: 'Crawl Space Encapsulation KC', href: '/crawl-space-encapsulation-kansas-city/' },
-  { label: 'Standing Water in Crawl Space', href: '/standing-water-in-crawl-space/' },
+  { label: 'Crawl Space Repair KC', href: '/crawl-space-repair-kansas-city' },
+  { label: 'Crawl Space Waterproofing KC', href: '/crawl-space-waterproofing-kansas-city' },
+  { label: 'Crawl Space Encapsulation KC', href: '/crawl-space-encapsulation-kansas-city' },
+  { label: 'Standing Water in Crawl Space', href: '/standing-water-in-crawl-space' },
 ];
 
 export default function CrawlSpaceSaggingFloorRepairKansasCityPage() {
@@ -108,7 +108,7 @@ export default function CrawlSpaceSaggingFloorRepairKansasCityPage() {
                     '@type': 'ListItem',
                     position: 2,
                     name: 'Sagging Floor Repair Kansas City',
-                    item: 'https://www.crawlspacekc.com/crawl-space-sagging-floor-repair-kansas-city/',
+                    item: 'https://www.crawlspacekc.com/crawl-space-sagging-floor-repair-kansas-city',
                   },
                 ],
               },

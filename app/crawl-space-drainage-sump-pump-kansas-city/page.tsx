@@ -108,7 +108,7 @@ export default function CrawlSpaceDrainageSumpPumpPage() {
                     '@type': 'ListItem',
                     position: 2,
                     name: 'Crawl Space Drainage & Sump Pump Kansas City',
-                    item: 'https://www.crawlspacekc.com/crawl-space-drainage-sump-pump-kansas-city/',
+                    item: 'https://www.crawlspacekc.com/crawl-space-drainage-sump-pump-kansas-city',
                   },
                 ],
               },
@@ -677,7 +677,7 @@ export default function CrawlSpaceDrainageSumpPumpPage() {
             provided at inspection.
           </p>
           <Link
-            href="/crawl-space-encapsulation-cost-kansas-city/"
+            href="/crawl-space-encapsulation-cost-kansas-city"
             style={{ color: '#1B3A6B', fontWeight: 700, fontSize: 15, textDecoration: 'underline' }}
           >
             See full encapsulation cost breakdown →
@@ -720,10 +720,10 @@ export default function CrawlSpaceDrainageSumpPumpPage() {
           </h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill,minmax(220px,1fr))', gap: 14 }}>
             {[
-              { label: 'Crawl Space Waterproofing', href: '/crawl-space-waterproofing-kansas-city/' },
-              { label: 'Wet Crawl Space After Rain', href: '/wet-crawl-space-after-rain/' },
-              { label: 'Crawl Space Encapsulation', href: '/crawl-space-encapsulation-kansas-city/' },
-              { label: 'Encapsulation Cost', href: '/crawl-space-encapsulation-cost-kansas-city/' },
+              { label: 'Crawl Space Waterproofing', href: '/crawl-space-waterproofing-kansas-city' },
+              { label: 'Wet Crawl Space After Rain', href: '/wet-crawl-space-after-rain' },
+              { label: 'Crawl Space Encapsulation', href: '/crawl-space-encapsulation-kansas-city' },
+              { label: 'Encapsulation Cost', href: '/crawl-space-encapsulation-cost-kansas-city' },
             ].map((link) => (
               <Link
                 key={link.href}

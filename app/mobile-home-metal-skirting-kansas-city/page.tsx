@@ -72,8 +72,8 @@ export default function MobileHomeMetalSkirtingPage() {
                 '@type': 'BreadcrumbList',
                 itemListElement: [
                   { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.crawlspacekc.com' },
-                  { '@type': 'ListItem', position: 2, name: 'Mobile Homes', item: 'https://www.crawlspacekc.com/mobile-homes/' },
-                  { '@type': 'ListItem', position: 3, name: 'Metal Skirting Replacement Kansas City', item: 'https://www.crawlspacekc.com/mobile-home-metal-skirting-kansas-city/' },
+                  { '@type': 'ListItem', position: 2, name: 'Mobile Homes', item: 'https://www.crawlspacekc.com/mobile-homes' },
+                  { '@type': 'ListItem', position: 3, name: 'Metal Skirting Replacement Kansas City', item: 'https://www.crawlspacekc.com/mobile-home-metal-skirting-kansas-city' },
                 ],
               },
               {
@@ -244,9 +244,9 @@ export default function MobileHomeMetalSkirtingPage() {
           <h2 style={{ fontFamily: "'Barlow Condensed',sans-serif", fontWeight: 800, fontSize: 'clamp(24px,4vw,36px)', textTransform: 'uppercase' as const, color: '#0D0D0D', margin: '0 0 28px' }}>More Mobile Home Solutions</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill,minmax(220px,1fr))', gap: 14 }}>
             {[
-              { label: 'Standard & Insulated Vinyl Skirting', href: '/mobile-home-skirting-kansas-city/' },
-              { label: 'Underbelly Repair', href: '/mobile-home-underbelly-repair-kansas-city/' },
-              { label: 'Ductwork Repair & Replacement', href: '/mobile-home-ductwork-repair-kansas-city/' },
+              { label: 'Standard & Insulated Vinyl Skirting', href: '/mobile-home-skirting-kansas-city' },
+              { label: 'Underbelly Repair', href: '/mobile-home-underbelly-repair-kansas-city' },
+              { label: 'Ductwork Repair & Replacement', href: '/mobile-home-ductwork-repair-kansas-city' },
             ].map((link) => (
               <Link key={link.href} href={link.href} style={{ display: 'block', background: '#fff', border: '1px solid #E5E7EB', borderRadius: 10, padding: '18px 20px', color: '#1B3A6B', fontWeight: 700, fontSize: 15, textDecoration: 'none' }}>
                 {link.label} →

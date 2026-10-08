@@ -102,7 +102,7 @@ const jsonLd = {
           '@type': 'ListItem',
           position: 2,
           name: 'Crawl Space Mold Kansas City',
-          item: 'https://www.crawlspacekc.com/crawl-space-mold-kansas-city/',
+          item: 'https://www.crawlspacekc.com/crawl-space-mold-kansas-city',
         },
       ],
     },
@@ -770,10 +770,10 @@ export default function CrawlSpaceMoldKansasCityPage() {
             }}
           >
             {[
-              { label: 'Crawl Space Encapsulation KC', href: '/crawl-space-encapsulation-kansas-city/' },
-              { label: 'Musty Crawl Space', href: '/crawl-space-smells-musty/' },
-              { label: 'Dehumidifier KC', href: '/crawl-space-dehumidifier-kansas-city/' },
-              { label: 'Crawl Space Repair KC', href: '/crawl-space-repair-kansas-city/' },
+              { label: 'Crawl Space Encapsulation KC', href: '/crawl-space-encapsulation-kansas-city' },
+              { label: 'Musty Crawl Space', href: '/crawl-space-smells-musty' },
+              { label: 'Dehumidifier KC', href: '/crawl-space-dehumidifier-kansas-city' },
+              { label: 'Crawl Space Repair KC', href: '/crawl-space-repair-kansas-city' },
             ].map((link) => (
               <Link
                 key={link.href}

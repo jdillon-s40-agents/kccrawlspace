@@ -31,12 +31,12 @@ function Check({ size = 16 }: { size?: number }) {
 }
 
 const services = [
-  { label: 'Crawl Space Encapsulation', href: '/crawl-space-encapsulation-kansas-city/' },
-  { label: 'Vapor Barrier Installation', href: '/crawl-space-vapor-barrier-kansas-city/' },
-  { label: 'Crawl Space Waterproofing', href: '/crawl-space-waterproofing-kansas-city/' },
-  { label: 'Dehumidifier Installation', href: '/crawl-space-dehumidifier-kansas-city/' },
-  { label: 'Drainage & Sump Pump', href: '/crawl-space-drainage-sump-pump-kansas-city/' },
-  { label: 'Insulation Removal', href: '/crawl-space-insulation-removal-kansas-city/' },
+  { label: 'Crawl Space Encapsulation', href: '/crawl-space-encapsulation-kansas-city' },
+  { label: 'Vapor Barrier Installation', href: '/crawl-space-vapor-barrier-kansas-city' },
+  { label: 'Crawl Space Waterproofing', href: '/crawl-space-waterproofing-kansas-city' },
+  { label: 'Dehumidifier Installation', href: '/crawl-space-dehumidifier-kansas-city' },
+  { label: 'Drainage & Sump Pump', href: '/crawl-space-drainage-sump-pump-kansas-city' },
+  { label: 'Insulation Removal', href: '/crawl-space-insulation-removal-kansas-city' },
 ];
 
 const faqs = [
@@ -77,7 +77,7 @@ const jsonLd = {
           '@type': 'ListItem',
           position: 2,
           name: 'Crawl Space Encapsulation Overland Park KS',
-          item: 'https://www.crawlspacekc.com/crawl-space-encapsulation-overland-park-ks/',
+          item: 'https://www.crawlspacekc.com/crawl-space-encapsulation-overland-park-ks',
         },
       ],
     },

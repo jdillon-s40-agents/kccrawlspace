@@ -97,7 +97,7 @@ const jsonLd = {
           '@type': 'ListItem',
           position: 2,
           name: 'Crawl Space Smells Musty',
-          item: 'https://www.crawlspacekc.com/crawl-space-smells-musty/',
+          item: 'https://www.crawlspacekc.com/crawl-space-smells-musty',
         },
       ],
     },
@@ -523,7 +523,7 @@ export default function CrawlSpaceSmellsMustyPage() {
             </p>
           </div>
           <Link
-            href="/crawl-space-insulation-removal-kansas-city/"
+            href="/crawl-space-insulation-removal-kansas-city"
             style={{ color: '#1B3A6B', fontSize: 15, fontWeight: 600, textDecoration: 'underline' }}
           >
             Learn about crawl space insulation removal →
@@ -631,7 +631,7 @@ export default function CrawlSpaceSmellsMustyPage() {
             ))}
           </div>
           <Link
-            href="/crawl-space-mold-kansas-city/"
+            href="/crawl-space-mold-kansas-city"
             style={{ color: '#F5A623', fontSize: 15, fontWeight: 600, textDecoration: 'underline' }}
           >
             Learn more about crawl space mold in Kansas City →
@@ -790,10 +790,10 @@ export default function CrawlSpaceSmellsMustyPage() {
             }}
           >
             {[
-              { label: 'Crawl Space Encapsulation KC', href: '/crawl-space-encapsulation-kansas-city/' },
-              { label: 'Crawl Space Mold KC', href: '/crawl-space-mold-kansas-city/' },
-              { label: 'Insulation Removal', href: '/crawl-space-insulation-removal-kansas-city/' },
-              { label: 'Dehumidifier KC', href: '/crawl-space-dehumidifier-kansas-city/' },
+              { label: 'Crawl Space Encapsulation KC', href: '/crawl-space-encapsulation-kansas-city' },
+              { label: 'Crawl Space Mold KC', href: '/crawl-space-mold-kansas-city' },
+              { label: 'Insulation Removal', href: '/crawl-space-insulation-removal-kansas-city' },
+              { label: 'Dehumidifier KC', href: '/crawl-space-dehumidifier-kansas-city' },
             ].map((link) => (
               <Link
                 key={link.href}

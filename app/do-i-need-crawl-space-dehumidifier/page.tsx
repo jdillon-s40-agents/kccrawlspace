@@ -80,10 +80,10 @@ const faqItems = [
 ];
 
 const relatedLinks = [
-  { label: 'Crawl Space Dehumidifier KC', href: '/crawl-space-dehumidifier-kansas-city/' },
-  { label: 'Crawl Space Encapsulation KC', href: '/crawl-space-encapsulation-kansas-city/' },
-  { label: 'Crawl Space Vents', href: '/crawl-space-vents-open-or-closed/' },
-  { label: 'Drainage & Sump Pump', href: '/crawl-space-drainage-sump-pump-kansas-city/' },
+  { label: 'Crawl Space Dehumidifier KC', href: '/crawl-space-dehumidifier-kansas-city' },
+  { label: 'Crawl Space Encapsulation KC', href: '/crawl-space-encapsulation-kansas-city' },
+  { label: 'Crawl Space Vents', href: '/crawl-space-vents-open-or-closed' },
+  { label: 'Drainage & Sump Pump', href: '/crawl-space-drainage-sump-pump-kansas-city' },
 ];
 
 export default function DoINeedCrawlSpaceDehumidifierPage() {
@@ -103,7 +103,7 @@ export default function DoINeedCrawlSpaceDehumidifierPage() {
                     '@type': 'ListItem',
                     position: 2,
                     name: 'Do I Need a Crawl Space Dehumidifier',
-                    item: 'https://www.crawlspacekc.com/do-i-need-crawl-space-dehumidifier/',
+                    item: 'https://www.crawlspacekc.com/do-i-need-crawl-space-dehumidifier',
                   },
                 ],
               },
@@ -654,7 +654,7 @@ export default function DoINeedCrawlSpaceDehumidifierPage() {
                 Start with drainage and sump pump before adding a dehumidifier.
               </p>
               <Link
-                href="/crawl-space-drainage-sump-pump-kansas-city/"
+                href="/crawl-space-drainage-sump-pump-kansas-city"
                 style={{
                   color: '#F5A623',
                   font: "600 14px 'Inter',sans-serif",
@@ -688,7 +688,7 @@ export default function DoINeedCrawlSpaceDehumidifierPage() {
                 Encapsulation + dehumidifier is the right path.
               </p>
               <Link
-                href="/crawl-space-encapsulation-kansas-city/"
+                href="/crawl-space-encapsulation-kansas-city"
                 style={{
                   color: '#F5A623',
                   font: "600 14px 'Inter',sans-serif",

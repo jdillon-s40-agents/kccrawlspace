@@ -85,10 +85,10 @@ const faqItems = [
 ];
 
 const relatedLinks = [
-  { label: 'Insulation Removal KC', href: '/crawl-space-insulation-removal-kansas-city/' },
-  { label: 'Crawl Space Encapsulation KC', href: '/crawl-space-encapsulation-kansas-city/' },
-  { label: 'Dehumidifier KC', href: '/crawl-space-dehumidifier-kansas-city/' },
-  { label: 'Cold Floors Above Crawl Space', href: '/cold-floors-above-crawl-space/' },
+  { label: 'Insulation Removal KC', href: '/crawl-space-insulation-removal-kansas-city' },
+  { label: 'Crawl Space Encapsulation KC', href: '/crawl-space-encapsulation-kansas-city' },
+  { label: 'Dehumidifier KC', href: '/crawl-space-dehumidifier-kansas-city' },
+  { label: 'Cold Floors Above Crawl Space', href: '/cold-floors-above-crawl-space' },
 ];
 
 export default function FallingInsulationPage() {
@@ -108,7 +108,7 @@ export default function FallingInsulationPage() {
                     '@type': 'ListItem',
                     position: 2,
                     name: 'Falling Insulation in Crawl Space',
-                    item: 'https://www.crawlspacekc.com/falling-insulation-in-crawl-space/',
+                    item: 'https://www.crawlspacekc.com/falling-insulation-in-crawl-space',
                   },
                 ],
               },

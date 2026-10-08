@@ -103,7 +103,7 @@ export default function CrawlSpaceInsulationRemovalPage() {
                     '@type': 'ListItem',
                     position: 2,
                     name: 'Crawl Space Insulation Removal Kansas City',
-                    item: 'https://www.crawlspacekc.com/crawl-space-insulation-removal-kansas-city/',
+                    item: 'https://www.crawlspacekc.com/crawl-space-insulation-removal-kansas-city',
                   },
                 ],
               },
@@ -682,7 +682,7 @@ export default function CrawlSpaceInsulationRemovalPage() {
             We provide written quotes that separate removal cost from encapsulation cost so you can see exactly what you are paying for.
           </p>
           <Link
-            href="/crawl-space-encapsulation-cost-kansas-city/"
+            href="/crawl-space-encapsulation-cost-kansas-city"
             style={{ color: '#1B3A6B', fontWeight: 700, fontSize: 15, textDecoration: 'underline' }}
           >
             See full encapsulation cost breakdown →
@@ -725,10 +725,10 @@ export default function CrawlSpaceInsulationRemovalPage() {
           </h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill,minmax(220px,1fr))', gap: 14 }}>
             {[
-              { label: 'Crawl Space Encapsulation KC', href: '/crawl-space-encapsulation-kansas-city/' },
-              { label: 'Crawl Space Mold KC', href: '/crawl-space-mold-kansas-city/' },
-              { label: 'Musty Crawl Space', href: '/crawl-space-smells-musty/' },
-              { label: 'Encapsulation Cost', href: '/crawl-space-encapsulation-cost-kansas-city/' },
+              { label: 'Crawl Space Encapsulation KC', href: '/crawl-space-encapsulation-kansas-city' },
+              { label: 'Crawl Space Mold KC', href: '/crawl-space-mold-kansas-city' },
+              { label: 'Musty Crawl Space', href: '/crawl-space-smells-musty' },
+              { label: 'Encapsulation Cost', href: '/crawl-space-encapsulation-cost-kansas-city' },
             ].map((link) => (
               <Link
                 key={link.href}

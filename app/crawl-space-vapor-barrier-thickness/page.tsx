@@ -90,7 +90,7 @@ const jsonLd = {
           '@type': 'ListItem',
           position: 2,
           name: 'Crawl Space Vapor Barrier Thickness',
-          item: 'https://www.crawlspacekc.com/crawl-space-vapor-barrier-thickness/',
+          item: 'https://www.crawlspacekc.com/crawl-space-vapor-barrier-thickness',
         },
       ],
     },
@@ -984,7 +984,7 @@ export default function VaporBarrierThicknessPage() {
             </p>
           </div>
           <Link
-            href="/crawl-space-encapsulation-cost-kansas-city/"
+            href="/crawl-space-encapsulation-cost-kansas-city"
             style={{
               color: '#1B3A6B',
               font: "600 15px 'Inter',sans-serif",
@@ -1047,10 +1047,10 @@ export default function VaporBarrierThicknessPage() {
             }}
           >
             {[
-              { label: 'Crawl Space Vapor Barrier KC', href: '/crawl-space-vapor-barrier-kansas-city/' },
-              { label: 'Encapsulation vs Vapor Barrier', href: '/encapsulation-vs-vapor-barrier/' },
-              { label: 'Crawl Space Encapsulation KC', href: '/crawl-space-encapsulation-kansas-city/' },
-              { label: 'Encapsulation Cost', href: '/crawl-space-encapsulation-cost-kansas-city/' },
+              { label: 'Crawl Space Vapor Barrier KC', href: '/crawl-space-vapor-barrier-kansas-city' },
+              { label: 'Encapsulation vs Vapor Barrier', href: '/encapsulation-vs-vapor-barrier' },
+              { label: 'Crawl Space Encapsulation KC', href: '/crawl-space-encapsulation-kansas-city' },
+              { label: 'Encapsulation Cost', href: '/crawl-space-encapsulation-cost-kansas-city' },
             ].map((link) => (
               <Link
                 key={link.href}

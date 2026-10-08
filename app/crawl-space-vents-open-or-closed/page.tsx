@@ -84,10 +84,10 @@ const faqItems = [
 ];
 
 const relatedLinks = [
-  { label: 'Crawl Space Encapsulation KC', href: '/crawl-space-encapsulation-kansas-city/' },
-  { label: 'Dehumidifier KC', href: '/crawl-space-dehumidifier-kansas-city/' },
-  { label: 'Vapor Barrier KC', href: '/crawl-space-vapor-barrier-kansas-city/' },
-  { label: 'Musty Crawl Space', href: '/crawl-space-smells-musty/' },
+  { label: 'Crawl Space Encapsulation KC', href: '/crawl-space-encapsulation-kansas-city' },
+  { label: 'Dehumidifier KC', href: '/crawl-space-dehumidifier-kansas-city' },
+  { label: 'Vapor Barrier KC', href: '/crawl-space-vapor-barrier-kansas-city' },
+  { label: 'Musty Crawl Space', href: '/crawl-space-smells-musty' },
 ];
 
 export default function CrawlSpaceVentsPage() {
@@ -107,7 +107,7 @@ export default function CrawlSpaceVentsPage() {
                     '@type': 'ListItem',
                     position: 2,
                     name: 'Should Crawl Space Vents Be Open or Closed',
-                    item: 'https://www.crawlspacekc.com/crawl-space-vents-open-or-closed/',
+                    item: 'https://www.crawlspacekc.com/crawl-space-vents-open-or-closed',
                   },
                 ],
               },

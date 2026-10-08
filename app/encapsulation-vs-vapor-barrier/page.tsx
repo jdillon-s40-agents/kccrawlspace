@@ -94,7 +94,7 @@ const jsonLd = {
           '@type': 'ListItem',
           position: 2,
           name: 'Crawl Space Encapsulation vs Vapor Barrier',
-          item: 'https://www.crawlspacekc.com/encapsulation-vs-vapor-barrier/',
+          item: 'https://www.crawlspacekc.com/encapsulation-vs-vapor-barrier',
         },
       ],
     },
@@ -896,7 +896,7 @@ export default function EncapsulationVsVaporBarrierPage() {
             damage, or repeated moisture problems a floor-only liner doesn&apos;t prevent.
           </p>
           <Link
-            href="/crawl-space-encapsulation-cost-kansas-city/"
+            href="/crawl-space-encapsulation-cost-kansas-city"
             style={{
               color: '#1B3A6B',
               font: "600 15px 'Inter',sans-serif",
@@ -959,10 +959,10 @@ export default function EncapsulationVsVaporBarrierPage() {
             }}
           >
             {[
-              { label: 'Crawl Space Encapsulation KC', href: '/crawl-space-encapsulation-kansas-city/' },
-              { label: 'Vapor Barrier KC', href: '/crawl-space-vapor-barrier-kansas-city/' },
-              { label: 'Vapor Barrier Thickness', href: '/crawl-space-vapor-barrier-thickness/' },
-              { label: 'Encapsulation Cost', href: '/crawl-space-encapsulation-cost-kansas-city/' },
+              { label: 'Crawl Space Encapsulation KC', href: '/crawl-space-encapsulation-kansas-city' },
+              { label: 'Vapor Barrier KC', href: '/crawl-space-vapor-barrier-kansas-city' },
+              { label: 'Vapor Barrier Thickness', href: '/crawl-space-vapor-barrier-thickness' },
+              { label: 'Encapsulation Cost', href: '/crawl-space-encapsulation-cost-kansas-city' },
             ].map((link) => (
               <Link
                 key={link.href}
