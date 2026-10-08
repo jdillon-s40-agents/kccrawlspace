@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     'How to seal crawl space vents yourself — materials, steps, and the one mistake that makes things worse: sealing vents before addressing moisture.',
   alternates: {
-    canonical: 'https://www.crawlspacekc.com/diy-crawl-space-vent-sealing-kansas-city/',
+    canonical: 'https://www.crawlspacekc.com/diy-crawl-space-vent-sealing-kansas-city',
   },
 };
 

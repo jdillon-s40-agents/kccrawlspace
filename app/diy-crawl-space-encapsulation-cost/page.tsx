@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     'DIY crawl space encapsulation costs $1,200-$3,000 in materials vs. $5,000-$20,000 professionally installed nationwide. See the full project cost breakdown by component.',
   alternates: {
-    canonical: 'https://www.crawlspacekc.com/diy-crawl-space-encapsulation-cost/',
+    canonical: 'https://www.crawlspacekc.com/diy-crawl-space-encapsulation-cost',
   },
 };
 

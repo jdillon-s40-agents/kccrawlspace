@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description:
     'Crawl space encapsulation in Lake Quivira, KS. Serving this private lake community on the Johnson/Wyandotte County line. Free inspection, lifetime warranty.',
   alternates: {
-    canonical: 'https://www.crawlspacekc.com/crawl-space-encapsulation-lake-quivira-ks/',
+    canonical: 'https://www.crawlspacekc.com/crawl-space-encapsulation-lake-quivira-ks',
   }};
 
 const jsonLd = {

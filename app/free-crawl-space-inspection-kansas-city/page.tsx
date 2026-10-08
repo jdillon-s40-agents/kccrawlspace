@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description:
     'Free, no-obligation crawl space inspection in Kansas City. We check moisture, structure, mold, pests, and insulation, then give you honest findings. Same-week visits.',
   alternates: {
-    canonical: 'https://www.crawlspacekc.com/free-crawl-space-inspection-kansas-city/',
+    canonical: 'https://www.crawlspacekc.com/free-crawl-space-inspection-kansas-city',
   }};
 
 function Check({ color = '#16A34A', size = 16 }: { color?: string; size?: number }) {

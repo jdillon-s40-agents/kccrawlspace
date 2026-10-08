@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description:
     'Crawl space encapsulation in Mission Woods, KS. Serving this wooded Johnson County community near Mission Hills. Free inspection, lifetime warranty.',
   alternates: {
-    canonical: 'https://www.crawlspacekc.com/crawl-space-encapsulation-mission-woods-ks/',
+    canonical: 'https://www.crawlspacekc.com/crawl-space-encapsulation-mission-woods-ks',
   }};
 
 const jsonLd = {

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description:
     'Comparing quotes for crawl space work in Kansas City? Learn the real differences between independently owned local specialists and national home-services franchises.',
   alternates: {
-    canonical: 'https://www.crawlspacekc.com/local-vs-national-crawl-space-company-kansas-city/',
+    canonical: 'https://www.crawlspacekc.com/local-vs-national-crawl-space-company-kansas-city',
   }};
 
 function Check({ color = '#16A34A', size = 16 }: { color?: string; size?: number }) {

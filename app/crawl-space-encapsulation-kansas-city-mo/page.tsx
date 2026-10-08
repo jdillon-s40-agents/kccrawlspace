@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description:
     "Kansas City, MO's only dedicated crawlspace specialist. Serving Waldo, Brookside, Westport, Hyde Park, Northland & all KCMO neighborhoods. Lifetime transferable warranty. Free inspection.",
   alternates: {
-    canonical: 'https://www.crawlspacekc.com/crawl-space-encapsulation-kansas-city-mo/',
+    canonical: 'https://www.crawlspacekc.com/crawl-space-encapsulation-kansas-city-mo',
   }};
 
 const jsonLd = {

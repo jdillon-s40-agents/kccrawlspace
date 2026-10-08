@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description:
     'Crawl space encapsulation in Fairway, KS. Serving neighborhoods along State Line Road and throughout Johnson County. Free inspection, lifetime warranty.',
   alternates: {
-    canonical: 'https://www.crawlspacekc.com/crawl-space-encapsulation-fairway-ks/',
+    canonical: 'https://www.crawlspacekc.com/crawl-space-encapsulation-fairway-ks',
   }};
 
 const jsonLd = {

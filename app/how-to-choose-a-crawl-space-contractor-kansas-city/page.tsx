@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description:
     'A homeowner\'s guide to vetting crawl space contractors in Kansas City — licensing, warranties, red flags, and the right questions to ask before you sign.',
   alternates: {
-    canonical: 'https://www.crawlspacekc.com/how-to-choose-a-crawl-space-contractor-kansas-city/',
+    canonical: 'https://www.crawlspacekc.com/how-to-choose-a-crawl-space-contractor-kansas-city',
   }};
 
 function Check({ color = '#16A34A', size = 16 }: { color?: string; size?: number }) {

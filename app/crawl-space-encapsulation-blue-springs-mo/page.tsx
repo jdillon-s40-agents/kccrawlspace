@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description:
     'Crawl space encapsulation in Blue Springs, MO. Serving Adams Dairy, Adams Pointe, and all Jackson County neighborhoods. Free inspection. Same-week service.',
   alternates: {
-    canonical: 'https://www.crawlspacekc.com/crawl-space-encapsulation-blue-springs-mo/',
+    canonical: 'https://www.crawlspacekc.com/crawl-space-encapsulation-blue-springs-mo',
   }};
 
 function Check({ size = 16 }: { size?: number }) {

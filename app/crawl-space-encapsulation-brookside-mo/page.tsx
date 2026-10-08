@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description:
     'Crawl space encapsulation in Brookside, Kansas City, MO. Serving the Brookside shops district and surrounding 1920s-40s bungalow neighborhoods. Free inspection.',
   alternates: {
-    canonical: 'https://www.crawlspacekc.com/crawl-space-encapsulation-brookside-mo/',
+    canonical: 'https://www.crawlspacekc.com/crawl-space-encapsulation-brookside-mo',
   }};
 
 const jsonLd = {

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: { absolute: 'Crawl Space Dehumidifier Kansas City | Stop Humidity & Mold' },
   description: 'Stop humidity, condensation & mold in your Kansas City crawl space. Commercial-grade dehumidifier for sealed crawl spaces. Same-week installation. Free estimate.',
   alternates: {
-    canonical: 'https://www.crawlspacekc.com/crawl-space-dehumidifier-kansas-city/',
+    canonical: 'https://www.crawlspacekc.com/crawl-space-dehumidifier-kansas-city',
   }};
 
 function Check({ color = '#16A34A', size = 16 }: { color?: string; size?: number }) {

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: { absolute: 'Mobile Home Ductwork Repair Kansas City | Flex Duct Replacement' },
   description: 'Mobile home underbelly ductwork repair and replacement in Kansas City. Fix crushed, disconnected, or soaked flex duct while the belly is open. Free estimate.',
   alternates: {
-    canonical: 'https://www.crawlspacekc.com/mobile-home-ductwork-repair-kansas-city/',
+    canonical: 'https://www.crawlspacekc.com/mobile-home-ductwork-repair-kansas-city',
   }};
 
 function Check({ color = '#16A34A', size = 16 }: { color?: string; size?: number }) {

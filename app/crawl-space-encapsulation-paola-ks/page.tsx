@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description:
     'Crawl space encapsulation in Paola, KS. Specialists in the historic downtown\'s older homes and Miami County rural properties. Free inspection, lifetime warranty.',
   alternates: {
-    canonical: 'https://www.crawlspacekc.com/crawl-space-encapsulation-paola-ks/',
+    canonical: 'https://www.crawlspacekc.com/crawl-space-encapsulation-paola-ks',
   }};
 
 const jsonLd = {

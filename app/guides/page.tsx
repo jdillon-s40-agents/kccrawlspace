@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: { absolute: 'Crawl Space Guides & FAQ | Kansas City Homeowners' },
   description: 'Answers to the most common crawl space questions — moisture, mold, vapor barriers, vents, insulation, and more — from Kansas City crawl space specialists.',
   alternates: {
-    canonical: 'https://www.crawlspacekc.com/guides/',
+    canonical: 'https://www.crawlspacekc.com/guides',
   }};
 
 const guides = [

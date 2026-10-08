@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description:
     'Crawl space encapsulation in Independence, MO. Serving historic neighborhoods, 23rd Street area, and all of Jackson County. Older homes especially. Free inspection.',
   alternates: {
-    canonical: 'https://www.crawlspacekc.com/crawl-space-encapsulation-independence-mo/',
+    canonical: 'https://www.crawlspacekc.com/crawl-space-encapsulation-independence-mo',
   }};
 
 function Check({ size = 16 }: { size?: number }) {

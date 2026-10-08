@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: { absolute: 'Crawl Space Encapsulation Kansas City | Same-Week Service | Free Inspection' },
   description: 'Fix musty odors, moisture & wet insulation under your Kansas City home. 20-mil vapor barrier, full encapsulation, mold treatment. Free inspection.',
   alternates: {
-    canonical: 'https://www.crawlspacekc.com/crawl-space-encapsulation-kansas-city/',
+    canonical: 'https://www.crawlspacekc.com/crawl-space-encapsulation-kansas-city',
   },
 };
 

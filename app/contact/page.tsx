@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: { absolute: 'Free Crawlspace Inspection Kansas City | Book Same Week' },
   description: 'Schedule your free crawlspace inspection in Kansas City. Takes 2 minutes online. We confirm within 2 hours and can schedule same week. Call (816) 962-2111.',
   alternates: {
-    canonical: 'https://www.crawlspacekc.com/contact/',
+    canonical: 'https://www.crawlspacekc.com/contact',
   }};
 
 export default function ContactPage() {

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: { absolute: 'Mobile Home Skirting Kansas City | Insulated Skirting Installation' },
   description: 'Mobile home skirting installation and repair in Kansas City — standard and insulated options. Stop cold floors, frozen pipes, and pest entry. Free estimate.',
   alternates: {
-    canonical: 'https://www.crawlspacekc.com/mobile-home-skirting-kansas-city/',
+    canonical: 'https://www.crawlspacekc.com/mobile-home-skirting-kansas-city',
   }};
 
 function Check({ color = '#16A34A', size = 16 }: { color?: string; size?: number }) {

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: { absolute: 'Metal Skirting Replacement Kansas City | Vinyl-to-Metal Upgrade' },
   description: 'Cracked or warped vinyl skirting? Replace it with durable steel or aluminum skirting backed by a lifetime warranty. Free estimate in Kansas City.',
   alternates: {
-    canonical: 'https://www.crawlspacekc.com/mobile-home-metal-skirting-kansas-city/',
+    canonical: 'https://www.crawlspacekc.com/mobile-home-metal-skirting-kansas-city',
   }};
 
 function Check({ color = '#16A34A', size = 16 }: { color?: string; size?: number }) {

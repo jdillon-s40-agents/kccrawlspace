@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description:
     'Crawl space encapsulation in Grandview, MO. Serving Truman Corners, 71 Highway corridor, and all of south Jackson County. Lifetime warranty. Free inspection.',
   alternates: {
-    canonical: 'https://www.crawlspacekc.com/crawl-space-encapsulation-grandview-mo/',
+    canonical: 'https://www.crawlspacekc.com/crawl-space-encapsulation-grandview-mo',
   }};
 
 const jsonLd = {

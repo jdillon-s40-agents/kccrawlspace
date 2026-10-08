@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description:
     'Crawl space encapsulation in Excelsior Springs, MO. Serving the historic downtown, Fishing River area, and all of Clay and Ray County. Free inspection.',
   alternates: {
-    canonical: 'https://www.crawlspacekc.com/crawl-space-encapsulation-excelsior-springs-mo/',
+    canonical: 'https://www.crawlspacekc.com/crawl-space-encapsulation-excelsior-springs-mo',
   }};
 
 const jsonLd = {

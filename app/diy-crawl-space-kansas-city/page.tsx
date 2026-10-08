@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description:
     'Can you DIY crawl space encapsulation? Yes — get a step-by-step Kansas City plan from $97: exact products, quantities, and install instructions for your specific space.',
   alternates: {
-    canonical: 'https://www.crawlspacekc.com/diy-crawl-space-kansas-city/',
+    canonical: 'https://www.crawlspacekc.com/diy-crawl-space-kansas-city',
   },
 };
 

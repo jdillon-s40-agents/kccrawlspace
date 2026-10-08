@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     'Everything you need for DIY crawl space encapsulation — vapor barrier, tape, fasteners, safety gear, and the tools to install them. Full checklist.',
   alternates: {
-    canonical: 'https://www.crawlspacekc.com/diy-crawl-space-encapsulation-tools-and-materials/',
+    canonical: 'https://www.crawlspacekc.com/diy-crawl-space-encapsulation-tools-and-materials',
   },
 };
 

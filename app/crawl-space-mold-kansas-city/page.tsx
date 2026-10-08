@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: { absolute: 'Crawl Space Mold Kansas City | Treatment & Root Cause Fix' },
   description: 'Crawl space mold in Kansas City signals excess moisture — not just a surface issue. Learn the warning signs and how encapsulation + treatment fixes the root cause.',
   alternates: {
-    canonical: 'https://www.crawlspacekc.com/crawl-space-mold-kansas-city/',
+    canonical: 'https://www.crawlspacekc.com/crawl-space-mold-kansas-city',
   }};
 
 function Check({ color = '#16A34A', size = 16 }: { color?: string; size?: number }) {

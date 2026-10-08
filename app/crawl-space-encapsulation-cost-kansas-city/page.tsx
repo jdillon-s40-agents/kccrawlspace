@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: { absolute: 'Crawl Space Encapsulation Cost KC | See Real Prices | $74/mo' },
   description: 'Real crawl space encapsulation pricing for Kansas City — by size, moisture level, and liner type. Financing from $74/mo, no hidden fees, lifetime transferable warranty. Free estimate.',
   alternates: {
-    canonical: 'https://www.crawlspacekc.com/crawl-space-encapsulation-cost-kansas-city/',
+    canonical: 'https://www.crawlspacekc.com/crawl-space-encapsulation-cost-kansas-city',
   }};
 
 function Check({ color = '#16A34A', size = 16 }: { color?: string; size?: number }) {

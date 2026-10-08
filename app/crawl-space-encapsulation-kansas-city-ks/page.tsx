@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description:
     'Crawl space encapsulation in Kansas City, KS. Serving Argentine, Armourdale, Turner, Piper, and all of Wyandotte County. Older homes. Free inspection.',
   alternates: {
-    canonical: 'https://www.crawlspacekc.com/crawl-space-encapsulation-kansas-city-ks/',
+    canonical: 'https://www.crawlspacekc.com/crawl-space-encapsulation-kansas-city-ks',
   }};
 
 const jsonLd = {

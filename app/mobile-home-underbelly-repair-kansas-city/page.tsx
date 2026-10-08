@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: { absolute: 'Mobile Home Underbelly Repair Kansas City | Belly Board & Insulation' },
   description: 'Torn belly board, cold floors, wet or missing insulation? We repair mobile home underbellies across the KC metro — most jobs done in a day. Free estimate.',
   alternates: {
-    canonical: 'https://www.crawlspacekc.com/mobile-home-underbelly-repair-kansas-city/',
+    canonical: 'https://www.crawlspacekc.com/mobile-home-underbelly-repair-kansas-city',
   }};
 
 function Check({ color = '#16A34A', size = 16 }: { color?: string; size?: number }) {

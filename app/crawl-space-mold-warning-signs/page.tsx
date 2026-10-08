@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description:
     'Learn the warning signs of crawl space mold — musty odors, white or dark growth, condensation — and why fixing the moisture source matters in Kansas City homes.',
   alternates: {
-    canonical: 'https://www.crawlspacekc.com/crawl-space-mold-warning-signs/',
+    canonical: 'https://www.crawlspacekc.com/crawl-space-mold-warning-signs',
   }};
 
 function Check({ color = '#16A34A', size = 16 }: { color?: string; size?: number }) {

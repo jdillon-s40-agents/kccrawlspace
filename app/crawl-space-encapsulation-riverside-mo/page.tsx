@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description:
     'Crawl space encapsulation in Riverside, MO. Serving neighborhoods near the Missouri River, KCI Airport corridor, and all of Platte County. Free inspection.',
   alternates: {
-    canonical: 'https://www.crawlspacekc.com/crawl-space-encapsulation-riverside-mo/',
+    canonical: 'https://www.crawlspacekc.com/crawl-space-encapsulation-riverside-mo',
   }};
 
 const jsonLd = {

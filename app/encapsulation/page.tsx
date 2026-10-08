@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: { absolute: 'Crawlspace Encapsulation Kansas City | Lifetime Warranty | Free Inspection' },
   description: "20-mil vapor barrier, vent sealing, mold treatment, commercial dehumidifier — done right, backed by a lifetime transferable warranty. Free inspection, most jobs done in days.",
   alternates: {
-    canonical: 'https://www.crawlspacekc.com/encapsulation/',
+    canonical: 'https://www.crawlspacekc.com/encapsulation',
   }};
 
 function Check({ color = '#16A34A', size = 16 }: { color?: string; size?: number }) {

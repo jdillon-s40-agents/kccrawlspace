@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: { absolute: 'Crawlspace Pricing Kansas City | 3 Honest Tiers | $74/mo' },
   description: "3 transparent pricing tiers for crawlspace encapsulation and mobile home underbelly repair. No hidden fees, financing from $74/mo, lifetime transferable warranty.",
   alternates: {
-    canonical: 'https://www.crawlspacekc.com/pricing/',
+    canonical: 'https://www.crawlspacekc.com/pricing',
   }};
 
 function Yes() {

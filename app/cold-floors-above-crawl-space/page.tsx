@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description:
     'Cold floors above your crawl space in winter? Learn what causes it and how air sealing, encapsulation, and insulation fix cold floors in Kansas City homes.',
   alternates: {
-    canonical: 'https://www.crawlspacekc.com/cold-floors-above-crawl-space/',
+    canonical: 'https://www.crawlspacekc.com/cold-floors-above-crawl-space',
   }};
 
 function Check({ color = '#16A34A', size = 16 }: { color?: string; size?: number }) {

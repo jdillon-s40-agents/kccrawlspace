@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description:
     'Crawl space encapsulation in Lake Lotawana, MO. Specialists in lake-community homes with higher water tables and older cottage-style foundations. Free inspection, lifetime warranty.',
   alternates: {
-    canonical: 'https://www.crawlspacekc.com/crawl-space-encapsulation-lake-lotawana-mo/',
+    canonical: 'https://www.crawlspacekc.com/crawl-space-encapsulation-lake-lotawana-mo',
   }};
 
 const jsonLd = {

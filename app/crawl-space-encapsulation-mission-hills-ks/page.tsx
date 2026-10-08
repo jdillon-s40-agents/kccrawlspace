@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description:
     'Crawl space encapsulation in Mission Hills, KS. Specialists in the large, historic estate homes built by J.C. Nichols in the 1910s-40s. Free inspection, lifetime warranty.',
   alternates: {
-    canonical: 'https://www.crawlspacekc.com/crawl-space-encapsulation-mission-hills-ks/',
+    canonical: 'https://www.crawlspacekc.com/crawl-space-encapsulation-mission-hills-ks',
   }};
 
 const jsonLd = {

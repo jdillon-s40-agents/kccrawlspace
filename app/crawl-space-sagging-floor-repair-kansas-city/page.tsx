@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description:
     'Bouncy or sagging floors above your crawl space? We install steel support jacks, sister joists, and fix the moisture causing rot. Free Kansas City inspection.',
   alternates: {
-    canonical: 'https://www.crawlspacekc.com/crawl-space-sagging-floor-repair-kansas-city/',
+    canonical: 'https://www.crawlspacekc.com/crawl-space-sagging-floor-repair-kansas-city',
   }};
 
 function Check({ color = '#16A34A', size = 16 }: { color?: string; size?: number }) {

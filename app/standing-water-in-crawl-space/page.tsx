@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description:
     'Water under your home after rain? We remove it, install drainage and a sump pump, and stop it for good — same-week service, lifetime transferable warranty. Free inspection.',
   alternates: {
-    canonical: 'https://www.crawlspacekc.com/standing-water-in-crawl-space/',
+    canonical: 'https://www.crawlspacekc.com/standing-water-in-crawl-space',
   }};
 
 function Check({ color = '#16A34A', size = 16 }: { color?: string; size?: number }) {

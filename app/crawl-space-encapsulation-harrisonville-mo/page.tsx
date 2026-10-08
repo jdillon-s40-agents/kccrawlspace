@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description:
     'Crawl space encapsulation in Harrisonville, MO. Cass County seat. Serving downtown neighborhoods and surrounding rural areas. Lifetime warranty. Free inspection.',
   alternates: {
-    canonical: 'https://www.crawlspacekc.com/crawl-space-encapsulation-harrisonville-mo/',
+    canonical: 'https://www.crawlspacekc.com/crawl-space-encapsulation-harrisonville-mo',
   }};
 
 const jsonLd = {

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description:
     'Crawl space encapsulation in Merriam, KS. Older Johnson County suburb. 1950s-1970s homes. Adjacent to Mission and Shawnee. Lifetime warranty. Free inspection.',
   alternates: {
-    canonical: 'https://www.crawlspacekc.com/crawl-space-encapsulation-merriam-ks/',
+    canonical: 'https://www.crawlspacekc.com/crawl-space-encapsulation-merriam-ks',
   }};
 
 function Check({ size = 16 }: { size?: number }) {

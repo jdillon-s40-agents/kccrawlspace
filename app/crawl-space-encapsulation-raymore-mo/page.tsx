@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description:
     'Crawl space encapsulation in Raymore, MO. Serving new and established neighborhoods in Cass County. Free inspection. Same-week service available.',
   alternates: {
-    canonical: 'https://www.crawlspacekc.com/crawl-space-encapsulation-raymore-mo/',
+    canonical: 'https://www.crawlspacekc.com/crawl-space-encapsulation-raymore-mo',
   }};
 
 const cardStyle = {

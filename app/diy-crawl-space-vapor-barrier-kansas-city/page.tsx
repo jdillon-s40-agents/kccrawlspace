@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     'DIY crawl space vapor barrier materials run $375-$525 for 1,500 sq ft vs. $1,200-$4,000 professionally installed. See the real cost breakdown for Kansas City homes.',
   alternates: {
-    canonical: 'https://www.crawlspacekc.com/diy-crawl-space-vapor-barrier-kansas-city/',
+    canonical: 'https://www.crawlspacekc.com/diy-crawl-space-vapor-barrier-kansas-city',
   },
 };
 

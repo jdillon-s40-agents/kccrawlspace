@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description:
     'Crawl space encapsulation in Mission, KS. Serving older urban Johnson County neighborhoods, Foxridge area, and all of Mission. Lifetime warranty. Free inspection.',
   alternates: {
-    canonical: 'https://www.crawlspacekc.com/crawl-space-encapsulation-mission-ks/',
+    canonical: 'https://www.crawlspacekc.com/crawl-space-encapsulation-mission-ks',
   }};
 
 const jsonLd = {

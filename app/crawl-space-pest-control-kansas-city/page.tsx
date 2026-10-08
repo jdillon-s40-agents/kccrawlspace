@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description:
     'Mice, rodents, and pests get into crawl spaces through open vents and gaps. We seal and encapsulate Kansas City crawl spaces to keep them out. Free inspection.',
   alternates: {
-    canonical: 'https://www.crawlspacekc.com/crawl-space-pest-control-kansas-city/',
+    canonical: 'https://www.crawlspacekc.com/crawl-space-pest-control-kansas-city',
   }};
 
 function Check({ color = '#16A34A', size = 16 }: { color?: string; size?: number }) {

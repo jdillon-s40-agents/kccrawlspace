@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     'How to install a crawl space dehumidifier yourself — placement, drainage, electrical, and sizing. Plus why it won\'t work without encapsulation first.',
   alternates: {
-    canonical: 'https://www.crawlspacekc.com/diy-crawl-space-dehumidifier-installation-kansas-city/',
+    canonical: 'https://www.crawlspacekc.com/diy-crawl-space-dehumidifier-installation-kansas-city',
   },
 };
 

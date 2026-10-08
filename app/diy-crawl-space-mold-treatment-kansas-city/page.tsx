@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     'Can you treat crawl space mold yourself? For small areas, yes — with the right products. Here\'s what actually works, and when it\'s time to call a professional.',
   alternates: {
-    canonical: 'https://www.crawlspacekc.com/diy-crawl-space-mold-treatment-kansas-city/',
+    canonical: 'https://www.crawlspacekc.com/diy-crawl-space-mold-treatment-kansas-city',
   },
 };
 

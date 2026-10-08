@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description:
     'Crawl space encapsulation in Kearney, MO. Serving I-35 corridor, Clay County communities north of Smithville. Free inspection. Same-week service.',
   alternates: {
-    canonical: 'https://www.crawlspacekc.com/crawl-space-encapsulation-kearney-mo/',
+    canonical: 'https://www.crawlspacekc.com/crawl-space-encapsulation-kearney-mo',
   }};
 
 const jsonLd = {

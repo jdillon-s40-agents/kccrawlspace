@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description:
     'Crawl space encapsulation in Leawood, KS. Serving Town Center area, Hallbrook, Ironwoods, and all of south Johnson County. Lifetime warranty. Free inspection.',
   alternates: {
-    canonical: 'https://www.crawlspacekc.com/crawl-space-encapsulation-leawood-ks/',
+    canonical: 'https://www.crawlspacekc.com/crawl-space-encapsulation-leawood-ks',
   }};
 
 const jsonLd = {

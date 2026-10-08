@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description:
     'Crawl space encapsulation in Gladstone, MO. Serving Barry Road corridor, Vivion Road area, and all of Clay County. Older ranch homes. Free inspection · same-week service.',
   alternates: {
-    canonical: 'https://www.crawlspacekc.com/crawl-space-encapsulation-gladstone-mo/',
+    canonical: 'https://www.crawlspacekc.com/crawl-space-encapsulation-gladstone-mo',
   }};
 
 const jsonLd = {

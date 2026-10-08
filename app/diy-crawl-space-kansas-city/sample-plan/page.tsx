@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     'See a real example of the written game plan you get with a $97 DIY crawlspace assessment — findings, materials list with costs, and step-by-step install instructions.',
   alternates: {
-    canonical: 'https://www.crawlspacekc.com/diy-crawl-space-kansas-city/sample-plan/',
+    canonical: 'https://www.crawlspacekc.com/diy-crawl-space-kansas-city/sample-plan',
   },
 };
 

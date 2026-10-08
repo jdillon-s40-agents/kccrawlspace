@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     'DIY crawl space encapsulation runs $1,200-$3,000 in materials vs. $5,000-$20,000 professionally installed in Kansas City. See the real cost, time, and risk comparison.',
   alternates: {
-    canonical: 'https://www.crawlspacekc.com/diy-vs-professional-crawl-space-encapsulation/',
+    canonical: 'https://www.crawlspacekc.com/diy-vs-professional-crawl-space-encapsulation',
   },
 };
 

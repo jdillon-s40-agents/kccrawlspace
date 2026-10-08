@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description:
     'Why is insulation falling in your crawl space? Learn the moisture causes behind sagging or fallen insulation and how Kansas City homeowners fix it for good.',
   alternates: {
-    canonical: 'https://www.crawlspacekc.com/falling-insulation-in-crawl-space/',
+    canonical: 'https://www.crawlspacekc.com/falling-insulation-in-crawl-space',
   }};
 
 function Check({ color = '#16A34A', size = 16 }: { color?: string; size?: number }) {

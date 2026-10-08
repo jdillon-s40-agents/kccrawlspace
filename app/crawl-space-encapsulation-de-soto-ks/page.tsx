@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description:
     'Crawl space encapsulation in De Soto, KS. Southwest Johnson County near K-10 corridor. Older and newer homes. Lifetime warranty. Free inspection.',
   alternates: {
-    canonical: 'https://www.crawlspacekc.com/crawl-space-encapsulation-de-soto-ks/',
+    canonical: 'https://www.crawlspacekc.com/crawl-space-encapsulation-de-soto-ks',
   }};
 
 function Check({ size = 16 }: { size?: number }) {
