@@ -5,7 +5,7 @@ import FinancingOptions from '@/components/FinancingOptions';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: { absolute: 'Crawl Space Waterproofing Near Me | Same-Week Fix | Free Inspection' },
+  title: { absolute: 'Crawl Space Waterproofing Near Me | Same-Week Fix' },
   description: 'Wet crawl space after rain? We install drainage, sump pumps, and full encapsulation to stop it for good — same-week service, lifetime transferable warranty. Free inspection.',
   alternates: {
     canonical: 'https://www.crawlspacekc.com/crawl-space-waterproofing-kansas-city',

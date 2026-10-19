@@ -76,6 +76,10 @@ export default function Footer() {
                 { label: 'Crawl Space Dehumidifiers', href: '/crawl-space-dehumidifier-kansas-city' },
                 { label: 'Pest & Rodent Sealing', href: '/crawl-space-pest-control-kansas-city' },
                 { label: 'Mobile Home Underbelly', href: '/mobile-homes' },
+                { label: 'Underbelly Repair', href: '/mobile-home-underbelly-repair-kansas-city' },
+                { label: 'Mobile Home Skirting', href: '/mobile-home-skirting-kansas-city' },
+                { label: 'Metal Skirting Replacement', href: '/mobile-home-metal-skirting-kansas-city' },
+                { label: 'Mobile Home Ductwork', href: '/mobile-home-ductwork-repair-kansas-city' },
                 { label: 'Pricing & Financing', href: '/pricing' },
               ].map((l) => (
                 <Link key={l.href} href={l.href} style={{ color: '#9CA3AF', fontSize: 14.5, textDecoration: 'none' }}>

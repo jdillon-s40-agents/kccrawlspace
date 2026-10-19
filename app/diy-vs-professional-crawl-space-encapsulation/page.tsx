@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: { absolute: 'DIY vs. Professional Crawl Space Encapsulation | Kansas City Comparison' },
+  title: { absolute: 'DIY vs. Professional Crawl Space Encapsulation | Kansas City' },
   description:
     'DIY crawl space encapsulation runs $1,200-$3,000 in materials vs. $5,000-$20,000 professionally installed in Kansas City. See the real cost, time, and risk comparison.',
   alternates: {

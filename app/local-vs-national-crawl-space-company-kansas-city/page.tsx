@@ -5,7 +5,7 @@ import FinancingOptions from '@/components/FinancingOptions';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: { absolute: 'Local Specialist vs. National Franchise | Kansas City Crawl Space Companies' },
+  title: { absolute: 'Local vs. National Crawl Space Company | Kansas City' },
   description:
     'Comparing quotes for crawl space work in Kansas City? Learn the real differences between independently owned local specialists and national home-services franchises.',
   alternates: {

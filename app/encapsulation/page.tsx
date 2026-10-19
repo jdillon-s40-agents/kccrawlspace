@@ -5,7 +5,7 @@ import FinancingOptions from '@/components/FinancingOptions';
 import { PHONE, PHONE_HREF } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: { absolute: 'Crawlspace Encapsulation Kansas City | Lifetime Warranty | Free Inspection' },
+  title: { absolute: 'Crawlspace Encapsulation Kansas City | Lifetime Warranty' },
   description: "20-mil vapor barrier, vent sealing, mold treatment, commercial dehumidifier — done right, backed by a lifetime transferable warranty. Free inspection, most jobs done in days.",
   alternates: {
     canonical: 'https://www.crawlspacekc.com/encapsulation',

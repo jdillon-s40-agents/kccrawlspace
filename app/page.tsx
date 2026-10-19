@@ -92,7 +92,7 @@ export default function HomePage() {
               {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
               <video
                 src="/hero.mp4"
-                poster="/hero-poster.png"
+                poster="/hero-poster.webp"
                 controls
                 playsInline
                 preload="metadata"
@@ -122,7 +122,7 @@ export default function HomePage() {
               {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
               <video
                 src="/hero.mp4"
-                poster="/hero-poster.png"
+                poster="/hero-poster.webp"
                 controls
                 playsInline
                 preload="metadata"
